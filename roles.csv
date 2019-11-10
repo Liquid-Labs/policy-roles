@@ -1,0 +1,25 @@
+Role Name, Super-Role, Summary
+Accountant,, Someone responsible for the company books and/or financial record keeping.
+Badge Manager,, Someone responsible for managing visitor badges.
+Data Engineer,, An Engineer generally qualified to modify, review, and manage database code and database management systems of a particular type.
+Chief Network Admin, Network Engineer, A Network Engineer who has final responsibility for the integrity and security of Company production networks.
+Chief Host Engineer, Host Engineer, A Host Engineer who has final responsibility for host systems in the Company's production environments.
+Compliance Manager,,A compliance agent with the authority to oversee and implement periodic reviews and routine updates of compliance documents and records.
+Compliance Officer,Compliance Manager,The chief Compliance Manager with ultimate responsibility for managing policy and infrastructure to ensure regulatory compliance and security.
+Customer Service Agent,, Someone responsible for handling customer service requests.
+Customer Service Manager, Customer Service Agent, A Customer Service Agent who is responsible for managing other Customer Service Agents.
+Executive, Manager, An executive of the Company empowered to fully represent the company and make final decisions within their designated domain.
+Host Engineer, Engineer, Someone responsible for the configuration and management of host (computer/device/VM) systems.
+Incident Responder,, Someone responsible for handling some aspect of Emergency Response or Disaster Recovery operations. This is always a companion role generally held by the Chief among a class of resources and at least one senior alternative for each class.
+Key Admin,, Someone responsible for managing one or more Company keys involved in critical operations.
+Human Resources Agent,, Someone responsible for some aspect of hiring, firing, and/or record keeping and compliance as regards Company personnel.
+Legal Agent,, Someone responsible for some aspect of developing and/or managing contracts and/or interpreting law/code/etc.
+Network Alert Responder, Network Engineer, Someone responsible for receiving and evaluating network alerts.
+Product Manager,, Someone responsible for coordinating stakeholder input and managing product specification and setting development priorities.
+Product Host Engineer, Host Engineer, A Host Engineer responsible for the management of production hosts.
+Production Data Reader,,Any individual with access to sensitive production data.
+Project Manager,,An individual responsible for working with implementation resources and the project’s Product Manager. The Product and Project Manager are jointly responsible setting Project Task priority. The Project Manager is responsible for managing Task assignment.
+Sales Personnel,,
+Software Developer,Technical, A super-role encompassing multiple technical disciplines. The 'Engineer' role should not be directly assigned to an individual or title. It is used to tag policy.
+Technical,,
+QA Engineer,Technical,
