@@ -1,5 +1,5 @@
 {
-  "name": "@liquid-labs/policy-roles",
+  "name": "@liquid-labs/policy-core",
   "version": "1.0.0-alpha.0",
   "description": "Standard 'roles' definitions compatible with Liquid Policy.",
   "main": "index.js",
@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/Liquid-Labs/policy-roles.git"
+    "url": "git+ssh://git@github.com/Liquid-Labs/policy-core.git"
   },
   "author": "Zane Rockenbaugh <zane@liquid-labs.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Liquid-Labs/policy-roles/issues"
+    "url": "https://github.com/Liquid-Labs/policy-core/issues"
   },
-  "homepage": "https://github.com/Liquid-Labs/policy-roles#readme"
+  "homepage": "https://github.com/Liquid-Labs/policy-core#readme"
 }
