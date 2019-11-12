@@ -4,7 +4,8 @@
   "description": "Standard 'roles' definitions compatible with Liquid Policy.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pretest": "catalyst-scripts pretest",
+    "test": "catalyst-scripts test"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/Liquid-Labs/policy-core/issues"
   },
-  "homepage": "https://github.com/Liquid-Labs/policy-core#readme"
+  "homepage": "https://github.com/Liquid-Labs/policy-core#readme",
+  "devDependencies": {
+    "fs": "0.0.1-security",
+    "tsv": "^0.2.0"
+  },
+  "dependencies": {
+    "@liquid-labs/catalyst-scripts": "^1.0.0-alpha.24"
+  }
 }
