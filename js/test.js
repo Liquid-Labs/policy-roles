@@ -2,11 +2,16 @@ import { TSV } from 'tsv'
 import { Roles } from './roles'
 
 describe(`Roles`, () => {
-	let roles
+	let testRoles
 	beforeAll(() => {
-		roles = new Roles(`./js/test_data.tsv`)
+		testRoles = new Roles(`./js/test_data.tsv`)
 	})
 
-	test('parses data file', () => expect(roles).toBeTruthy())
-	test('ignore blank lines', () => expect(roles.length).toBe(1))
+	test('parses test file', () => expect(testRoles).toBeTruthy())
+	test('ignore blank lines', () => expect(testRoles.length).toBe(1))
+	test(`parses 'roles.tsv' file`, () => {
+		const roles = new Roles()
+		expect(roles).toBeTruthy()
+		expect(roles.length).toBeGreaterThan(5)
+	})
 })
