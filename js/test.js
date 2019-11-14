@@ -1,10 +1,12 @@
 import { TSV } from 'tsv'
-import * as fs from 'fs'
+import { Roles } from './roles'
 
-describe(`roles.tsv`, () => {
-	test(`roles.tsv is parsable`, () => {
-		const contents = fs.readFileSync('roles.tsv', 'utf8')
-		const data = TSV.parse(contents)
-		console.log(data)
+describe(`Roles`, () => {
+	let roles
+	beforeAll(() => {
+		roles = new Roles(`./js/test_data.tsv`)
 	})
+
+	test('parses data file', () => expect(roles).toBeTruthy())
+	test('ignore blank lines', () => expect(roles.length).toBe(1))
 })
