@@ -1,7 +1,7 @@
 import * as fs from 'fs'
 import { TSV } from 'tsv'
 
-const rolesFile = `./roles.tsv`
+const rolesFile = `./policy/roles.tsv`
 
 const Roles = class {
 	#data
