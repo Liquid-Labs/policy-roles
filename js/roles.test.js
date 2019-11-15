@@ -1,16 +1,10 @@
-import { TSV } from 'tsv'
-import { Roles } from './roles'
+import { Roles } from '@liquid-labs/policies-model'
 
-describe(`Roles`, () => {
-	let testRoles
-	beforeAll(() => {
-		testRoles = new Roles(`./js/test_data.tsv`)
-	})
+const rolesFile = `./policy/roles.tsv`
 
-	test('parses test file', () => expect(testRoles).toBeTruthy())
-	test('ignore blank lines', () => expect(testRoles.length).toBe(1))
-	test(`parses 'roles.tsv' file`, () => {
-		const roles = new Roles()
+describe(`roles.tsv`, () => {
+	test(`is successfully parsed`, () => {
+		const roles = new Roles(rolesFile)
 		expect(roles).toBeTruthy()
 		expect(roles.length).toBeGreaterThan(5)
 	})
