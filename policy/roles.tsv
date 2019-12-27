@@ -6,6 +6,10 @@ Accountant	multiple; titular	-	Responsible for maintaining company financial rec
 
 Product Manager	multiple; titular	-	Responsible for coordinating stakeholder input and managing product specification and setting development priorities.
 
+Software Engineer	multiple; titular; qualified	-	Qualified to modify and review [qual] software code. Sensitive changes must be reviewed by a Senior Software Engineer prior to being deployed.
+Senior Software Engineer	multiple; titular; qualified	Software Engineer	Qualified to review and approve changes to sensitive [qual] code.
+Chief Software Engineer	singular; titular; qualified	Senior Software Engineer	Has final responsibility for production [qual] code.; Chief Software Engineer's approval is required for sensitive changes involving customer privacy, regulatory issues, and/or exceptional complexity.
+
 Data Engineer	multiple; titular; qualified	-	Qualified to modify, review, and manage [qual] database schemas and DBMSs.
 Senior Data Engineer	multiple; titular; qualified	Data Engineer	Qualified to review and approve changes to production [qual] schemas and DBMSs.
 Chief Data Engineer	singular; titular; qualified	Senior Data Engineer	Has final responsibility for production [qual] schemas and DBMSs.; Chief Data Engineer's approval is required for sensitive changes involving customer privacy, regulatory issues, and/or exceptional complexity.
