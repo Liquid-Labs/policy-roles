@@ -5,6 +5,7 @@ const rolesFile = `./policy/roles.tsv`
 describe(`roles.tsv`, () => {
 	let roles
 	beforeAll(() => { roles = new Roles(rolesFile) })
+	
 	test(`is successfully parsed`, () => {
 
 		expect(roles).toBeTruthy()
