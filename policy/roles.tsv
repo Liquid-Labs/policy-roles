@@ -1,35 +1,39 @@
 Role Name	Application	Super-Role	Job Description	Role Notes
 
-Executive	multiple; titular; qualified	-	Empowered to fully represent the company and generally make final decisions involving [qual] matters.
+Executive	multiple; titular; qualified	-	Empowered to fully represent the company and generally make final decisions involving [qual] matters.	-
 
-Accountant	multiple; titular	-	Responsible for maintaining company financial records.
+Accountant	multiple; titular	-	Responsible for maintaining company financial records.	-
 
-Product Manager	multiple; titular	-	Responsible for coordinating stakeholder input and managing product specification and setting development priorities.
+Product Manager	multiple; titular	-	Responsible for coordinating stakeholder input and managing product specification and setting development priorities.	-
 
-Data Engineer	multiple; titular; qualified	-	Qualified to modify, review, and manage [qual] database schemas and DBMSs.
-Senior Data Engineer	multiple; titular; qualified	Data Engineer	Qualified to review and approve changes to production [qual] schemas and DBMSs.
-Chief Data Engineer	singular; titular; qualified	Senior Data Engineer	Has final responsibility for production [qual] schemas and DBMSs.; Chief Data Engineer's approval is required for sensitive changes involving customer privacy, regulatory issues, and/or exceptional complexity.
+Software Engineer	multiple; titular; qualified	-	Qualified to modify and review [qual] software code. Sensitive changes must be reviewed by a Senior Software Engineer prior to being deployed.	-
+Senior Software Engineer	multiple; titular; qualified	Software Engineer	Qualified to review and approve changes to sensitive [qual] code.	-
+Chief Software Engineer	singular; titular; qualified	Senior Software Engineer	Has final responsibility for production [qual] code.; Chief Software Engineer's approval is required for sensitive changes involving customer privacy, regulatory issues, and/or exceptional complexity.	-
 
-Host Engineer	multiple; titular; qualified	-	Qualified to configure and management of [qual] hosts systems.
-Senior Host Engineer	multiple; titular; qualified	Host Engineer	Qualified to approve changes to production [qual] host systems.
-Chief Host Engineer	singular; titular; qualified	Senior Host Engineer	Has final responsibility for production [qual] host systems.; Chief Host Engineer approval is required for sensitive changes involving host security, regulatory issues, or exceptional complexity.
+Data Engineer	multiple; titular; qualified	-	Qualified to modify, review, and manage [qual] database schemas and DBMSs.	-
+Senior Data Engineer	multiple; titular; qualified	Data Engineer	Qualified to review and approve changes to production [qual] schemas and DBMSs.	-
+Chief Data Engineer	singular; titular; qualified	Senior Data Engineer	Has final responsibility for production [qual] schemas and DBMSs.; Chief Data Engineer's approval is required for sensitive changes involving customer privacy, regulatory issues, and/or exceptional complexity.	-
 
-Network Engineer	multiple; titular	-	Qualified to configure and manage Company networks networks.
-Senior Network Engineer	multiple; titular	Network Engineer	Qualified to review and approve changes to production networks
-Chief Network Engineer	singular; titular	Senior Network Engineer	Has final responsibility for the integrity and security of production networks.; Chief Network Engineer approval is required for changes to sensitive networks providing access to private customer data, under regulatory scrutiny, or any change of exceptional complexity.
+Host Engineer	multiple; titular; qualified	-	Qualified to configure and management of [qual] hosts systems.	-
+Senior Host Engineer	multiple; titular; qualified	Host Engineer	Qualified to approve changes to production [qual] host systems.	-
+Chief Host Engineer	singular; titular; qualified	Senior Host Engineer	Has final responsibility for production [qual] host systems.; Chief Host Engineer approval is required for sensitive changes involving host security, regulatory issues, or exceptional complexity.	-
 
-Project Manager	multiple; titular	-	Responsible for working with implementation product management to optimize implementation with regard to efficiency and stakeholder priorities.
+Network Engineer	multiple; titular	-	Qualified to configure and manage Company networks networks.	-
+Senior Network Engineer	multiple; titular	Network Engineer	Qualified to review and approve changes to production networks	-
+Chief Network Engineer	singular; titular	Senior Network Engineer	Has final responsibility for the integrity and security of production networks.; Chief Network Engineer approval is required for changes to sensitive networks providing access to private customer data, under regulatory scrutiny, or any change of exceptional complexity.	-
 
-Customer Service Agent	multiple; titular	-	Responsible for handling of customer service requests.
-Customer Service Manager	multiple; titular	-	Oversees Customer Service Agents.; Sensitive issues of particular complexity or involving particularly high value customers may be referred to the Customer Service Manager.
+Project Manager	multiple; titular	-	Responsible for working with implementation product management to optimize implementation with regard to efficiency and stakeholder priorities.	-
 
-Human Resources Agent	multiple; titular	-	Oversees personnel management and compliance.
-Lawyer	multiple; titular; qualified	-	Oversees legal matters, agreements, and advises Company on [qual] matters.
+Customer Service Agent	multiple; titular	-	Responsible for handling of customer service requests.	-
+Customer Service Manager	multiple; titular	-	Oversees Customer Service Agents.; Sensitive issues of particular complexity or involving particularly high value customers may be referred to the Customer Service Manager.	-
 
-Compliance Agent	multiple; titular	-	A compliance agent with the authority to oversee and implement periodic reviews and routine updates of compliance documents and records.
-Chief Compliance Officer	singular; titular	Compliance Agent	Has final responsibility for managing policy and infrastructure to ensure regulatory compliance and security.; Chief Compliance Office approval is required for sensitive policy changes involving security, regulator compliance, or exceptional complexity.
+Human Resources Agent	multiple; titular	-	Oversees personnel management and compliance.	-
+Lawyer	multiple; titular; qualified	-	Oversees legal matters, agreements, and advises Company on [qual] matters.	-
+
+Compliance Agent	multiple; titular	-	A compliance agent with the authority to oversee and implement periodic reviews and routine updates of compliance documents and records.	-
+Chief Compliance Officer	singular; titular	Compliance Agent	Has final responsibility for managing policy and infrastructure to ensure regulatory compliance and security.; Chief Compliance Office approval is required for sensitive policy changes involving security, regulator compliance, or exceptional complexity.	-
 Key Admin	multiple; designated	-	Responsible for managing one or more Company keys involved in critical operations or sensitive access.	The designation is generally applied to Executives, Compliance Agents, and/or domain Chiefs or Seniors.; Sufficient backups should be provided such that a Key Manager is available at all times for all key types.
 Incident Responder	multiple; designated	-	On call for Emergency Response and/or Disaster Recovery situations.	The 'Chief' and at least one 'Senior' of each type is generally designated an incident responder, where possible.; Sufficient backups should be provided such that Incident Responders with particular responsibilities are always available.
-Network Alert Responder	multiple; designated	Network Engineer	Responsible for receiving and evaluating network alerts.
-Badge Manager	multiple; designated	-	Badge Managers oversee issuing and tracking visitor badges.; Sufficient backups should be designated such that a Badge Manager is always available at each physical location.
-Production Data Reader	multiple; designated	-	An individual with access to sensitive production data.
+Network Alert Responder	multiple; designated	Network Engineer	Responsible for receiving and evaluating network alerts.	-
+Badge Manager	multiple; designated	-	Badge Managers oversee issuing and tracking visitor badges.; Sufficient backups should be designated such that a Badge Manager is always available at each physical location.	-
+Production Data Reader	multiple; designated	-	An individual with access to sensitive production data.	-

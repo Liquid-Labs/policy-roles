@@ -28,6 +28,12 @@
     "@liquid-labs/catalyst-scripts": "^1.0.0-alpha.24"
   },
   "dependencies": {
-    "@liquid-labs/policies-model": "^1.0.0-beta.1"
+    "@liquid-labs/policies-model": "file:.yalc/@liquid-labs/policies-model"
+  },
+  "liquidDev": {
+    "orgBase": "git@github.com:Liquid-Labs/Liquid-Labs.git",
+    "changeControl": {
+      "type": "policy"
+    }
   }
 }
