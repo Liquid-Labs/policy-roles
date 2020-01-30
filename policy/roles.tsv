@@ -20,9 +20,13 @@ Host Engineer	multiple; titular; qualified	-	Qualified to configure and manageme
 Senior Host Engineer	multiple; titular; qualified	Host Engineer	Qualified to approve changes to production [qual] host systems.	-
 Chief Host Engineer	singular; titular; qualified	Senior Host Engineer	Has final responsibility for production [qual] host systems.; Chief Host Engineer approval is required for sensitive changes involving host security, regulatory issues, or exceptional complexity.	-
 
-Network Engineer	multiple; titular	-	Qualified to configure and manage Company networks networks.	-
+Network Engineer	multiple; titular	-	Qualified to configure and manage Company networks.	-
 Senior Network Engineer	multiple; titular	Network Engineer	Qualified to review and approve changes to production networks	-
 Chief Network Engineer	singular; titular	Senior Network Engineer	Has final responsibility for the integrity and security of production networks.; Chief Network Engineer approval is required for changes to sensitive networks providing access to private customer data, under regulatory scrutiny, or any change of exceptional complexity.	-
+
+Cloud Engineer	multiple; titular	-	Qualified to configure and manage cloud services.	-
+Senior Cloud Engineer	multiple; titular	Cloud Engineer	Qualified to review and approve changes to production cloud services.	-
+Chief Cloud Engineer	singular; titular; qualified	Senior Cloud Engineer	Has final responsibility for production [qual] cloud services systems.; Chief Cloud Engineer approval is required for sensitive changes involving cloud services security, regulatory issues, or exceptional complexity.	-
 
 Project Manager	multiple; titular	-	Responsible for working with implementation product management to optimize implementation with regard to efficiency and stakeholder priorities.	-
 
