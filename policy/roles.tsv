@@ -2,7 +2,9 @@ Role Name	Application	Super-Role	Job Description	Role Notes
 
 Executive	multiple; titular; qualified	-	Empowered to fully represent the company and generally make final decisions involving [qual] matters.	-
 
-Accountant	multiple; titular	-	Responsible for maintaining company financial records.	-
+Accountant	multiple; titular	-	Responsible for maintaining Company financial records.	-
+Senior Accountant	multiple; titular	Accountant	Responsible for managing account structure and sensitive accounting operations.
+Chief Accountant	singular;	titular	Senior Accountant	Has ultimate responsibility for Company books.
 
 Product Manager	multiple; titular	-	Responsible for coordinating stakeholder input and managing product specification and setting development priorities.	-
 
@@ -32,8 +34,13 @@ Lawyer	multiple; titular; qualified	-	Oversees legal matters, agreements, and ad
 
 Compliance Agent	multiple; titular	-	A compliance agent with the authority to oversee and implement periodic reviews and routine updates of compliance documents and records.	-
 Chief Compliance Officer	singular; titular	Compliance Agent	Has final responsibility for managing policy and infrastructure to ensure regulatory compliance and security.; Chief Compliance Office approval is required for sensitive policy changes involving security, regulator compliance, or exceptional complexity.	-
+
 Key Admin	multiple; designated	-	Responsible for managing one or more Company keys involved in critical operations or sensitive access.	The designation is generally applied to Executives, Compliance Agents, and/or domain Chiefs or Seniors.; Sufficient backups should be provided such that a Key Manager is available at all times for all key types.
+Access Manager	multiple; designated; redundant	-	Manages and/or oversees user access to sensitive Company resources and systems.
+Operations Manager	multiple; designated; redundant	-	Has full admin access to operational services with the ability to create additional managers and grant read/write access. On it's own, this role does not necessarily imply the ability to modify operational systems, only the ability to appoint others to do so. The ability to separate these functions may be limited by the capabilities of the underlying access model, however.
+
 Incident Responder	multiple; designated	-	On call for Emergency Response and/or Disaster Recovery situations.	The 'Chief' and at least one 'Senior' of each type is generally designated an incident responder, where possible.; Sufficient backups should be provided such that Incident Responders with particular responsibilities are always available.
 Network Alert Responder	multiple; designated	Network Engineer	Responsible for receiving and evaluating network alerts.	-
+
 Badge Manager	multiple; designated	-	Badge Managers oversee issuing and tracking visitor badges.; Sufficient backups should be designated such that a Badge Manager is always available at each physical location.	-
 Production Data Reader	multiple; designated	-	An individual with access to sensitive production data.	-
