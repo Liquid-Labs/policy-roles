@@ -28,8 +28,9 @@ Cloud Engineer	multiple; titular; qualified	-	Qualified to configure and manage 
 Senior Cloud Engineer	multiple; titular; qualified	Cloud Engineer	Qualified to review and approve changes to production [qual] cloud services.	-
 Chief Cloud Engineer	singular; titular	Senior Cloud Engineer	Has final responsibility for production cloud services systems.; Chief Cloud Engineer approval is required for sensitive changes involving cloud services security, regulatory issues, or exceptional complexity.	-
 
-Quality Engineer	multiple; titular	-	Qualified to ascertain correctness and conformance of systems.	-
-Senior Quality Engineer	multiple; titular
+Quality Engineer	multiple; titular; qualified	-	Qualified to ascertain correctness and conformance of [qual] systems.	-
+Senior Quality Engineer	multiple; titular; qualified	Quality Engineer	Qualified to review and approve changes [qual] quality systems.	-
+Chief Quality Engineer	singular; titular	Senior Quality Engineer	Has final responsibility for quality assurance.	-
 
 Project Manager	multiple; titular	-	Responsible for working with implementation product management to optimize implementation with regard to efficiency and stakeholder priorities.	-
 
