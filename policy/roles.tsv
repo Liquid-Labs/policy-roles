@@ -38,7 +38,9 @@ Customer Service Agent	multiple; titular	-	Responsible for handling of customer 
 Customer Service Manager	multiple; titular	-	Oversees Customer Service Agents.; Sensitive issues of particular complexity or involving particularly high value customers may be referred to the Customer Service Manager.	-
 
 Human Resources Agent	multiple; titular	-	Oversees personnel management and compliance.	-
-Lawyer	multiple; titular; qualified	-	Oversees legal matters, agreements, and advises Company on [qual] matters.	-
+Chief Human Resources Agent	Human Resources Agent	singular; titular	- Manages Human Resources Agents and has final responsibility on HR matters.
+
+In House Counsel	multiple; titular; qualified	-	Oversees legal matters, agreements, and advises Company on [qual] matters.	-
 
 Compliance Agent	multiple; titular	-	A compliance agent with the authority to oversee and implement periodic reviews and routine updates of compliance documents and records.	-
 Chief Compliance Agent	singular; titular	Compliance Agent	Has final responsibility for managing policy and infrastructure to ensure regulatory compliance and security.; Chief Compliance Office approval is required for sensitive policy changes involving security, regulator compliance, or exceptional complexity.	-
