@@ -1,12 +1,33 @@
 Role Name	Application	Super-Role	Job Description	Role Notes
 
-Executive	multiple; titular; qualified	-	Empowered to fully represent the company and generally make final decisions involving [qual] matters.	-
+Chief Executive Officer	singular; titular	-	The highest ranking company executive with final responsibility for major strategic decisions and management of operation and corporate resources. Acts as primary contact between the Board of Directors and corporate operations. The CEO is also the "public face" of the company.	-
+
+Chief Operations Officer	singular; titular	-	The senior executive overseeing all day-to-day non-technical operational corporate functions.	-
+
+Chief Technical Officer	singular; titular	-	The senior executive in charge of technical implementation and operations.	-
+
+Chief Financial Officer	singular; titular	-	The senior executive in charge of corporate accounting records and strategic finance.	-
+
+Chief Marketing Officer	singular; titular	-	The senior executive in charge of brand management, corporate and product messaging, and revenue generation.	-
+
+Chief Sales Officer	singular; titular	-	The senior executive in charge of corporate sales strategy and oversight of the sales team.	-
+
+Chief Administrative Officer	singular; titular	-	Senior executive in charge of corporate administration, including human resources and legal matters.	-
+
+General Manager	singular; titular	-	Senior manager overseeing (non-consumer/non-client) internal, partner, and other 3rd party relationships, as well as overall company policy/processes and corporate expenses.	-
+
+Controller	singular; titular	-	Senior manager with direct responsibility for the corporate accounts and books. Oversees all payables and receivables. Conducts internal financial audits and is the primary contact for external financial auditors.	-
 
 Accountant	multiple; titular	-	Responsible for maintaining Company financial records.	-
-Senior Accountant	multiple; titular	Accountant	Responsible for managing account structure and sensitive accounting operations.
-Chief Accountant	singular;	titular	Senior Accountant	Has ultimate responsibility for Company books.
+Senior Accountant	multiple; titular	Accountant	Responsible for managing account structure and sensitive accounting operations.	-
+Chief Accountant	singular; titular	Senior Accountant	Has ultimate responsibility for Company books.	-
 
 Product Manager	multiple; titular	-	Responsible for coordinating stakeholder input and managing product specification and setting development priorities.	-
+
+Sales Agent	multiple; titular	-	Responsible for directly selling to potential clients.	-
+
+Implementations Manager	multiple; titular	-	Oversees implementation of corporate services/products with clients. Works directly with clients and with the client's assigned Account Manager during the implementation process.	-
+Account Manager	multiple; titular	-	Operates as the primary point of contact for assigned clients.	-
 
 Software Engineer	multiple; titular; qualified	-	Qualified to modify and review [qual] software code. Sensitive changes must be reviewed by a Senior Software Engineer prior to being deployed.	-
 Senior Software Engineer	multiple; titular; qualified	Software Engineer	Qualified to review and approve changes to sensitive [qual] code.	-
@@ -38,7 +59,7 @@ Customer Service Agent	multiple; titular	-	Responsible for handling of customer 
 Customer Service Manager	multiple; titular	-	Oversees Customer Service Agents.; Sensitive issues of particular complexity or involving particularly high value customers may be referred to the Customer Service Manager.	-
 
 Human Resources Agent	multiple; titular	-	Oversees personnel management and compliance.	-
-Chief Human Resources Agent	Human Resources Agent	singular; titular	- Manages Human Resources Agents and has final responsibility on HR matters.
+Chief Human Resources Agent	Human Resources Agent	singular; titular	- Manages Human Resources Agents and has final responsibility on HR matters.	-
 
 In House Counsel	multiple; titular; qualified	-	Oversees legal matters, agreements, and advises Company on [qual] matters.	-
 
@@ -46,8 +67,8 @@ Compliance Agent	multiple; titular	-	A compliance agent with the authority to ov
 Chief Compliance Agent	singular; titular	Compliance Agent	Has final responsibility for managing policy and infrastructure to ensure regulatory compliance and security.; Chief Compliance Office approval is required for sensitive policy changes involving security, regulator compliance, or exceptional complexity.	-
 
 Key Admin	multiple; designated	-	Responsible for managing one or more Company keys involved in critical operations or sensitive access.	The designation is generally applied to Executives, Compliance Agents, and/or domain Chiefs or Seniors.; Sufficient backups should be provided such that a Key Manager is available at all times for all key types.
-Access Manager	multiple; designated; redundant	-	Manages and/or oversees user access to sensitive Company resources and systems.
-Operations Manager	multiple; designated; redundant	-	Has full admin access to operational services with the ability to create additional managers and grant read/write access. On it's own, this role does not necessarily imply the ability to modify operational systems, only the ability to appoint others to do so. The ability to separate these functions may be limited by the capabilities of the underlying access model, however.
+Access Manager	multiple; designated; redundant	-	Manages and/or oversees user access to sensitive Company resources and systems.	-
+Operations Manager	multiple; designated; redundant	-	Has full admin access to operational services with the ability to create additional managers and grant read/write access. On it's own, this role does not necessarily imply the ability to modify operational systems, only the ability to appoint others to do so. The ability to separate these functions may be limited by the capabilities of the underlying access model, however.	-
 
 Incident Responder	multiple; designated	-	On call for Emergency Response and/or Disaster Recovery situations.	The 'Chief' and at least one 'Senior' of each type is generally designated an incident responder, where possible.; Sufficient backups should be provided such that Incident Responders with particular responsibilities are always available.
 Network Alert Responder	multiple; designated	Network Engineer	Responsible for receiving and evaluating network alerts.	-
