@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Organization Chart Plugin</title>
+  <link rel="icon" href="img/logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/orgchart/2.1.9/css/jquery.orgchart.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="chart-container"></div>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.slim.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/orgchart/2.1.9/js/jquery.orgchart.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+
+    var datasource =
+    ~~DATA~~
+    ;
+
+    $('#chart-container').orgchart({
+      'data' : datasource,
+      'nodeContent': 'title'
+    });
+
+  });
+  </script>
+  </body>
+</html>
