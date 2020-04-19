@@ -6,7 +6,21 @@
   <title>Organization Chart Plugin</title>
   <link rel="icon" href="img/logo.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/orgchart/2.1.9/css/jquery.orgchart.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .content .primary {
+      font-weight: bold;
+    }
+    .orgchart .node .title {
+      min-width: 130px;
+      width: auto;
+    }
+    .orgchart .node .content {
+      height: auto;
+    }
+    .orgchart {
+      font-family: sans-serif;
+    }
+  </style>
 </head>
 <body>
   <div id="chart-container"></div>
@@ -16,13 +30,22 @@
   <script type="text/javascript">
     $(function() {
 
-    var datasource =
+    const datasource =
     ~~DATA~~
     ;
 
+    const nodeTemplate = function(data) {
+      let content = `
+        <div class="title">${data.name}</div>
+        <div class="content"><div class="primary">${data.titles[0]}</div>`;
+      if (data.titles.length > 1) content += `<div>${data.titles.slice(1).join(', ')}</div>`;
+      content += `</div>`;
+      return content;
+    }
+
     $('#chart-container').orgchart({
       'data' : datasource,
-      'nodeContent': 'title'
+      'nodeTemplate': nodeTemplate
     });
 
   });
