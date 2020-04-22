@@ -25,6 +25,10 @@
     .orgchart table {
       margin: 0 auto;
     }
+
+    .orgchart .node .content {
+      white-space: normal;
+    }
   </style>
 </head>
 <body>
@@ -50,7 +54,8 @@
 
     $('#chart-container').orgchart({
       'data' : datasource,
-      'nodeTemplate': nodeTemplate
+      'nodeTemplate': nodeTemplate,
+      'verticalLevel': 4
     });
 
   });
