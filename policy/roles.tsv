@@ -37,28 +37,30 @@ Training Manager	singular; titular	-	Responsible for development and implementat
 Implementations Manager	multiple; titular	-	Oversees implementation of corporate services/products with clients. Works directly with clients and with the client's assigned Account Manager during the implementation process.	-
 Account Manager	multiple; titular	-	Operates as the primary point of contact for assigned clients.	-
 
-Software Engineer	multiple; titular; qualified	-	Qualified to modify and review [qual] software code. Sensitive changes must be reviewed by a Senior Software Engineer prior to being deployed.	-
-Senior Software Engineer	multiple; titular; qualified	Software Engineer	Qualified to review and approve changes to sensitive [qual] code.	-
-Chief Software Engineer	singular; titular; qualified	Senior Software Engineer	Has final responsibility for production [qual] code.; Chief Software Engineer's approval is required for sensitive changes involving customer privacy, regulatory issues, and/or exceptional complexity.	-
+UI Designer	multiple; titular	-	Produces style guidelines, graphic/UI assets, mockups, and similar artifacts to guide and support implementation of front-end user interface.	-
 
-Data Engineer	multiple; titular; qualified	-	Qualified to modify, review, and manage [qual] database schemas and DBMSs.	-
-Senior Data Engineer	multiple; titular; qualified	Data Engineer	Qualified to review and approve changes to production [qual] schemas and DBMSs.	-
+Software Engineer	multiple; titular; qualifiable	-	qualifiable to modify and review [qual] software code. Sensitive changes must be reviewed by a Senior Software Engineer prior to being deployed.	-
+Senior Software Engineer	multiple; titular; qualifiable	Software Engineer	qualifiable to review and approve changes to sensitive [qual] code.	-
+Chief Software Engineer	singular; titular; qualifiable	Senior Software Engineer	Has final responsibility for production [qual] code.; Chief Software Engineer's approval is required for sensitive changes involving customer privacy, regulatory issues, and/or exceptional complexity.	-
+
+Data Engineer	multiple; titular; qualifiable	-	qualifiable to modify, review, and manage [qual] database schemas and DBMSs.	-
+Senior Data Engineer	multiple; titular; qualifiable	Data Engineer	qualifiable to review and approve changes to production [qual] schemas and DBMSs.	-
 Chief Data Engineer	singular; titular	Senior Data Engineer	Has final responsibility for production schemas and DBMSs.; Chief Data Engineer's approval is required for sensitive changes involving customer privacy, regulatory issues, and/or exceptional complexity.	-
 
-Host Engineer	multiple; titular; qualified	-	Qualified to configure and management of [qual] hosts systems.	-
-Senior Host Engineer	multiple; titular; qualified	Host Engineer	Qualified to approve changes to production [qual] host systems.	-
+Host Engineer	multiple; titular; qualifiable	-	qualifiable to configure and management of [qual] hosts systems.	-
+Senior Host Engineer	multiple; titular; qualifiable	Host Engineer	qualifiable to approve changes to production [qual] host systems.	-
 Chief Host Engineer	singular; titular	Senior Host Engineer	Has final responsibility for production host systems.; Chief Host Engineer approval is required for sensitive changes involving host security, regulatory issues, or exceptional complexity.	-
 
-Network Engineer	multiple; titular	-	Qualified to configure and manage Company networks.	-
-Senior Network Engineer	multiple; titular	Network Engineer	Qualified to review and approve changes to production networks	-
+Network Engineer	multiple; titular	-	qualifiable to configure and manage Company networks.	-
+Senior Network Engineer	multiple; titular	Network Engineer	qualifiable to review and approve changes to production networks	-
 Chief Network Engineer	singular; titular	Senior Network Engineer	Has final responsibility for the integrity and security of production networks.; Chief Network Engineer approval is required for changes to sensitive networks providing access to private customer data, under regulatory scrutiny, or any change of exceptional complexity.	-
 
-Cloud Engineer	multiple; titular; qualified	-	Qualified to configure and manage [qual] cloud services.	-
-Senior Cloud Engineer	multiple; titular; qualified	Cloud Engineer	Qualified to review and approve changes to production [qual] cloud services.	-
+Cloud Engineer	multiple; titular; qualifiable	-	qualifiable to configure and manage [qual] cloud services.	-
+Senior Cloud Engineer	multiple; titular; qualifiable	Cloud Engineer	qualifiable to review and approve changes to production [qual] cloud services.	-
 Chief Cloud Engineer	singular; titular	Senior Cloud Engineer	Has final responsibility for production cloud services systems.; Chief Cloud Engineer approval is required for sensitive changes involving cloud services security, regulatory issues, or exceptional complexity.	-
 
-Quality Engineer	multiple; titular; qualified	-	Qualified to ascertain correctness and conformance of [qual] systems.	-
-Senior Quality Engineer	multiple; titular; qualified	Quality Engineer	Qualified to review and approve changes [qual] quality systems.	-
+Quality Engineer	multiple; titular; qualifiable	-	qualifiable to ascertain correctness and conformance of [qual] systems.	-
+Senior Quality Engineer	multiple; titular; qualifiable	Quality Engineer	qualifiable to review and approve changes [qual] quality systems.	-
 Chief Quality Engineer	singular; titular	Senior Quality Engineer	Has final responsibility for quality assurance.	-
 
 Project Manager	multiple; titular	-	Responsible for working with implementation product management to optimize implementation with regard to efficiency and stakeholder priorities.	-
@@ -69,7 +71,7 @@ Customer Service Manager	multiple; titular	-	Oversees Customer Service Agents.; 
 Human Resources Agent	multiple; titular	-	Oversees personnel management and compliance.	-
 Chief Human Resources Agent	Human Resources Agent	singular; titular	- Manages Human Resources Agents and has final responsibility on HR matters.	-
 
-In House Counsel	multiple; titular; qualified	-	Oversees legal matters, agreements, and advises Company on [qual] matters.	-
+In House Counsel	multiple; titular; qualifiable	-	Oversees legal matters, agreements, and advises Company on [qual] matters.	-
 
 Compliance Agent	multiple; titular	-	A compliance agent with the authority to oversee and implement periodic reviews and routine updates of compliance documents and records.	-
 Chief Compliance Agent	singular; titular	Compliance Agent	Has final responsibility for managing policy and infrastructure to ensure regulatory compliance and security.; Chief Compliance Office approval is required for sensitive policy changes involving security, regulator compliance, or exceptional complexity.	-
