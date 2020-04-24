@@ -3,3 +3,5 @@
 /coverage
 /yalc.lock
 /.yalc
+/test-out
+/.build
