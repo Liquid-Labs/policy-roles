@@ -52,7 +52,7 @@
   },
   "sensitive-dev-sec": {
     "audits": {
-      "secure-coding-training-and-audit": {
+      "secure-coding-training": {
         "condition": "USES_SELF_AUDIT && SENSITIVE_DATA_HANDLER",
         "period": 360
       }
