@@ -39,28 +39,30 @@ Account Manager	multiple; titular	-	Operates as the primary point of contact for
 
 UI Designer	multiple; titular	-	Produces style guidelines, graphic/UI assets, mockups, and similar artifacts to guide and support implementation of front-end user interface.	-
 
-Software Engineer	multiple; titular; qualifiable	-	qualifiable to modify and review [qual] software code. Sensitive changes must be reviewed by a Senior Software Engineer prior to being deployed.	-
-Senior Software Engineer	multiple; titular; qualifiable	Software Engineer	qualifiable to review and approve changes to sensitive [qual] code.	-
+Software Engineer	multiple; titular; qualifiable	-	Qualified to modify and review [qual] software code. Sensitive changes must be reviewed by a Senior Software Engineer prior to being deployed.	-
+Senior Software Engineer	multiple; titular; qualifiable	Software Engineer	Qualified to review and approve changes to sensitive [qual] code.	-
 Chief Software Engineer	singular; titular; qualifiable	Senior Software Engineer	Has final responsibility for production [qual] code.; Chief Software Engineer's approval is required for sensitive changes involving customer privacy, regulatory issues, and/or exceptional complexity.	-
 
-Data Engineer	multiple; titular; qualifiable	-	qualifiable to modify, review, and manage [qual] database schemas and DBMSs.	-
-Senior Data Engineer	multiple; titular; qualifiable	Data Engineer	qualifiable to review and approve changes to production [qual] schemas and DBMSs.	-
+Sensitive Data Handler	multiple; designated	-	Qualified to deal with sensitive data such as card holder data, social security numbers, or other information that requires special handling.	-
+
+Data Engineer	multiple; titular; qualifiable	-	Qualified to modify, review, and manage [qual] database schemas and DBMSs.	-
+Senior Data Engineer	multiple; titular; qualifiable	Data Engineer	Qualified to review and approve changes to production [qual] schemas and DBMSs.	-
 Chief Data Engineer	singular; titular	Senior Data Engineer	Has final responsibility for production schemas and DBMSs.; Chief Data Engineer's approval is required for sensitive changes involving customer privacy, regulatory issues, and/or exceptional complexity.	-
 
-Host Engineer	multiple; titular; qualifiable	-	qualifiable to configure and management of [qual] hosts systems.	-
-Senior Host Engineer	multiple; titular; qualifiable	Host Engineer	qualifiable to approve changes to production [qual] host systems.	-
+Host Engineer	multiple; titular; qualifiable	-	Qualified to configure and management of [qual] hosts systems.	-
+Senior Host Engineer	multiple; titular; qualifiable	Host Engineer	Qualified to approve changes to production [qual] host systems.	-
 Chief Host Engineer	singular; titular	Senior Host Engineer	Has final responsibility for production host systems.; Chief Host Engineer approval is required for sensitive changes involving host security, regulatory issues, or exceptional complexity.	-
 
-Network Engineer	multiple; titular	-	qualifiable to configure and manage Company networks.	-
-Senior Network Engineer	multiple; titular	Network Engineer	qualifiable to review and approve changes to production networks	-
+Network Engineer	multiple; titular	-	Qualified to configure and manage Company networks.	-
+Senior Network Engineer	multiple; titular	Network Engineer	Qualified to review and approve changes to production networks	-
 Chief Network Engineer	singular; titular	Senior Network Engineer	Has final responsibility for the integrity and security of production networks.; Chief Network Engineer approval is required for changes to sensitive networks providing access to private customer data, under regulatory scrutiny, or any change of exceptional complexity.	-
 
-Cloud Engineer	multiple; titular; qualifiable	-	qualifiable to configure and manage [qual] cloud services.	-
-Senior Cloud Engineer	multiple; titular; qualifiable	Cloud Engineer	qualifiable to review and approve changes to production [qual] cloud services.	-
+Cloud Engineer	multiple; titular; qualifiable	-	Qualified to configure and manage [qual] cloud services.	-
+Senior Cloud Engineer	multiple; titular; qualifiable	Cloud Engineer	Qualifief to review and approve changes to production [qual] cloud services.	-
 Chief Cloud Engineer	singular; titular	Senior Cloud Engineer	Has final responsibility for production cloud services systems.; Chief Cloud Engineer approval is required for sensitive changes involving cloud services security, regulatory issues, or exceptional complexity.	-
 
-Quality Engineer	multiple; titular; qualifiable	-	qualifiable to ascertain correctness and conformance of [qual] systems.	-
-Senior Quality Engineer	multiple; titular; qualifiable	Quality Engineer	qualifiable to review and approve changes [qual] quality systems.	-
+Quality Engineer	multiple; titular; qualifiable	-	Qualified to ascertain correctness and conformance of [qual] systems.	-
+Senior Quality Engineer	multiple; titular; qualifiable	Quality Engineer	Qualified to review and approve changes [qual] quality systems.	-
 Chief Quality Engineer	singular; titular	Senior Quality Engineer	Has final responsibility for quality assurance.	-
 
 Project Manager	multiple; titular	-	Responsible for working with implementation product management to optimize implementation with regard to efficiency and stakeholder priorities.	-
