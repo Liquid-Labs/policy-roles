@@ -25,11 +25,10 @@
   },
   "homepage": "https://github.com/Liquid-Labs/policy-core#readme",
   "devDependencies": {
-    "@liquid-labs/catalyst-scripts": "^1.0.0-alpha.24"
+    "@liquid-labs/catalyst-scripts": "^1.0.0-alpha.24",
+    "@liquid-labs/policies-model": "^1.0.0-beta.29"
   },
-  "dependencies": {
-    "@liquid-labs/policies-model": "^1.0.0-beta.27"
-  },
+  "dependencies": {},
   "liquidDev": {
     "orgBase": "git@github.com:Liquid-Labs/Liquid-Labs.git",
     "changeControl": {
