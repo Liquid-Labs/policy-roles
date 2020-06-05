@@ -1,7 +1,7 @@
 {
   "gen-sec": {
     "audits": {
-      "gen-sec-training-and-audit": {
+      "gen-sec-training": {
         "condition": "GEN_SEC_LVL > SEC_TRIVIAL",
         "period": 360
       },
