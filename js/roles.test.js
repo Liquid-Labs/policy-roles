@@ -1,11 +1,11 @@
-import { Roles } from '@liquid-labs/policies-model'
+import { RolesTsv } from '@liquid-labs/policies-model'
 
 const rolesFile = `./policy/roles.tsv`
 
 describe(`roles.tsv`, () => {
 	let roles
-	beforeAll(() => { roles = new Roles(rolesFile) })
-	
+	beforeAll(() => { roles = new RolesTsv(rolesFile) })
+
 	test(`is successfully parsed`, () => {
 
 		expect(roles).toBeTruthy()
