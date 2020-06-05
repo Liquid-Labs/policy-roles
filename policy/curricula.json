@@ -1,0 +1,62 @@
+{
+  "gen-sec": {
+    "audits": {
+      "gen-sec-training-and-audit": {
+        "condition": "GEN_SEC_LVL > SEC_TRIVIAL",
+        "period": 360
+      },
+      "malware-self-audit": {
+        "condition": "USES_SELF_AUDIT && GEN_SEC_LVL > SEC_TRIVIAL",
+        "period": 180
+      },
+      "firewall-self-audit": {
+        "condition": "USES_SELF_AUDIT && GEN_SEC_LVL > SEC_TRIVIAL",
+        "period": 180
+      },
+      "vpn-self-audit": {
+        "condition": "USES_SELF_AUDIT && GEN_SEC_LVL > SEC_TRIVIAL",
+        "period": 180
+      },
+      "device-serial-self-audit": {
+        "condition": "USES_SELF_AUDIT && TRACKS_ASSETS && IS_EMPLOYEE",
+        "period": 360
+      }
+    },
+    "roles": [ ".+" ]
+  },
+  "sensitive-gen-sec": {
+    "audits": {
+      "hd-encrypted-self-audit": {
+        "condition": "USES_SELF_AUDIT && GEN_SEC_LVL > SEC_TRIVIAL",
+        "period": 360
+      },
+      "pw-manager-self-audit": {
+        "condition": "USES_SELF_AUDIT && GEN_SEC_LVL > SEC_TRIVIAL",
+        "period": 360
+      }
+    },
+    "roles": [
+      "Chief.+",
+      "General Manager",
+      "Controller",
+      "Accountant",
+      ".*Engineer",
+      "Senitive Data Handler",
+      ".*Custmor Service.*",
+      ".* Human Resources Agent",
+      "In House Counsel",
+      "Compliance Agent",
+      "Key Admin",
+      "Operations Manager"
+    ]
+  },
+  "sensitive-dev-sec": {
+    "audits": {
+      "secure-coding-training-and-audit": {
+        "condition": "USES_SELF_AUDIT && SENSITIVE_DATA_HANDLER",
+        "period": 360
+      }
+    },
+    "roles": [".*Software Engineer"]
+  }
+}
