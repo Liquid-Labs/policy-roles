@@ -1,6 +1,6 @@
 {
   "name": "@liquid-labs/policy-core",
-  "version": "1.0.0-alpha.12",
+  "version": "1.0.0-alpha.13",
   "description": "Standard 'roles' definitions compatible with Liquid Policy.",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
