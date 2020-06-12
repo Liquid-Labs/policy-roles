@@ -3,22 +3,27 @@
     "audits": {
       "gen-sec-training": {
         "condition": "GEN_SEC_LVL > SEC_TRIVIAL",
+        "weighting-factor": 1,
         "period": 360
       },
       "malware-self-audit": {
         "condition": "USES_SELF_AUDIT && GEN_SEC_LVL > SEC_TRIVIAL",
+        "weighting-factor": 1,
         "period": 180
       },
       "firewall-self-audit": {
         "condition": "USES_SELF_AUDIT && GEN_SEC_LVL > SEC_TRIVIAL",
+        "weighting-factor": 1,
         "period": 180
       },
       "vpn-self-audit": {
         "condition": "USES_SELF_AUDIT && GEN_SEC_LVL > SEC_TRIVIAL",
+        "weighting-factor": 0.9,
         "period": 180
       },
       "device-serial-self-audit": {
         "condition": "USES_SELF_AUDIT && TRACKS_ASSETS && IS_EMPLOYEE",
+        "weighting-factor": 0.9,
         "period": 360
       }
     },
@@ -28,10 +33,12 @@
     "audits": {
       "hd-encrypted-self-audit": {
         "condition": "USES_SELF_AUDIT && GEN_SEC_LVL > SEC_TRIVIAL",
+        "weighting-factor": 1,
         "period": 360
       },
       "pw-manager-self-audit": {
         "condition": "USES_SELF_AUDIT && GEN_SEC_LVL > SEC_TRIVIAL",
+        "weighting-factor": 1.1,
         "period": 360
       }
     },
@@ -54,6 +61,7 @@
     "audits": {
       "secure-coding-training": {
         "condition": "USES_SELF_AUDIT && SENSITIVE_DATA_HANDLER",
+        "weighting-factor": 1.1,
         "period": 360
       }
     },
