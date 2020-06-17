@@ -8,7 +8,7 @@
 ]
 
 [
-  { "name": "Chief Executive Officer", "singular": true, "titular": true, "jobDescription": "The highest ranking company executive with final responsibility for major strategic decisions and management of operation and corporate resources. Acts as primary contact between the Board of Directors and corporate operations. The CEO is also the "public face" of the company." },
+  { "name": "Chief Executive Officer", "singular": true, "titular": true, "jobDescription": "The highest ranking company executive with final responsibility for major strategic decisions and management of operation and corporate resources. Acts as primary contact between the Board of Directors and corporate operations. The CEO is also the \"public face\" of the company." },
 
   { "name": "Chief Operations Officer", "singular": true, "titular": true, "jobDescription": "The senior executive overseeing all day-to-day non-technical operational corporate functions." },
   { "name": "General Manager", "singular": true, "titular": true, "jobDescription": "Senior manager overseeing (non-consumer/non-client) internal, partner, and other 3rd party relationships, as well as overall company policy/processes and corporate expenses." },
@@ -17,8 +17,7 @@
 
   { "name": "Chief Financial Officer", "singular": true, "titular": true, "jobDescription": "The senior executive in charge of corporate accounting records and strategic finance." },
   { "name": "Controller", "superRole": "Accountant", "singular": true, "titular": true, "jobDescription": "Senior manager with direct responsibility for the corporate accounts and books. Oversees all payables and receivables. Conducts internal financial audits and is the primary contact for external financial auditors." },
-  { "name": "Accountant", "titular": true, "jobDescription": "Responsible for maintaining Company financial records.	-
-  Senior Accountant	multiple; titular	Accountant	Responsible for managing account structure and sensitive accounting operations." },
+  { "name": "Accountant", "titular": true, "jobDescription": "Responsible for maintaining Company financial records." },
 
   { "name": "Chief Marketing Officer", "singular": true, "titular": true, "jobDescription": "The senior executive in charge of brand management, corporate and product messaging, and revenue generation." },
   { "name": "Training Manager", "singular": true, "titular": true, "jobDescription": "Responsible for development and implementation of client training curriculum." },
@@ -42,20 +41,20 @@
   { "name": "Regional Marketing Manager", "titular": true, "jobDescription": "Oversees implementation of corporate marketing campaigns. Develops and oversees implementation of local campaigns." },
 
   { "name": "Software Engineer", "titular": true, "jobDescription": "Qualified to modify and review [qual] software code. Sensitive changes must be reviewed by a Senior Software Engineer prior to being deployed.", "qualifiable": true},
-  { "name": "Senior Software Engineer", "superRole": "Software Engineer", "titular": true, "jobDescription": "Software Engineer	Qualified to review and approve changes to sensitive [qual] code.", "qualifiable": true },
+  { "name": "Senior Software Engineer", "superRole": "Software Engineer", "titular": true, "jobDescription": "Qualified to review and approve changes to sensitive [qual] code.", "qualifiable": true },
   { "name": "Chief Software Engineer", "superRole": "Senior Software Engineer", "singular": true, "titular": true, "jobDescription": "Has final responsibility for production [qual] code.; Chief Software Engineer's approval is required for sensitive changes involving customer privacy, regulatory issues, and/or exceptional complexity.", "qualifiable": true },
 
   { "name": "Data Engineer", "titular": true, "jobDescription": "Qualified to modify, review, and manage [qual] database schemas and DBMSs.", "qualifiable": true},
-  { "name": "Senior Data Engineer", "superRole": "Data Engineer", "titular": true, "jobDescription": "Data Engineer	Qualified to review and approve changes to production [qual] schemas and DBMSs.", "qualifiable": true },
+  { "name": "Senior Data Engineer", "superRole": "Data Engineer", "titular": true, "jobDescription": "Qualified to review and approve changes to production [qual] schemas and DBMSs.", "qualifiable": true },
   { "name": "Chief Data Engineer", "superRole": "Senior Data Engineer", "singular": true, "titular": true, "jobDescription": "Has final responsibility for production schemas and DBMSs.; Chief Data Engineer's approval is required for sensitive changes involving customer privacy, regulatory issues, and/or exceptional complexity.", "qualifiable": true },
 
   { "name": "Host Engineer", "titular": true, "jobDescription": "Qualified to configure and management of [qual] hosts systems.", "qualifiable": true},
-  { "name": "Senior Host Engineer", "superRole": "Host Engineer", "titular": true, "jobDescription": "Host Engineer	Qualified to approve changes to production [qual] host systems.", "qualifiable": true },
+  { "name": "Senior Host Engineer", "superRole": "Host Engineer", "titular": true, "jobDescription": "Qualified to approve changes to production [qual] host systems.", "qualifiable": true },
   { "name": "Chief Host Engineer", "superRole": "Senior Host Engineer", "singular": true, "titular": true, "jobDescription": "Has final responsibility for production host systems.; Chief Host Engineer approval is required for sensitive changes involving host security, regulatory issues, or exceptional complexity.", "qualifiable": true },
 
   { "name": "Network Engineer", "titular": true, "jobDescription": "Qualified to configure and manage Company networks.", "qualifiable": true},
   { "name": "Senior Network Engineer", "superRole": "Network Engineer", "titular": true, "jobDescription": "Qualified to review and approve changes to production networks.", "qualifiable": true },
-  { "name": "Chief Network Engineer", "superRole": "Senior Network Engineer", "singular": true, "titular": true, "jobDescription": "Senior Network Engineer	Has final responsibility for the integrity and security of production networks.; Chief Network Engineer approval is required for changes to sensitive networks providing access to private customer data, under regulatory scrutiny, or any change of exceptional complexity.", "qualifiable": true },
+  { "name": "Chief Network Engineer", "superRole": "Senior Network Engineer", "singular": true, "titular": true, "jobDescription": "Has final responsibility for the integrity and security of production networks.; Chief Network Engineer approval is required for changes to sensitive networks providing access to private customer data, under regulatory scrutiny, or any change of exceptional complexity.", "qualifiable": true },
 
   { "name": "Cloud Engineer", "titular": true, "jobDescription": "Qualified to configure and manage [qual] cloud services.", "qualifiable": true},
   { "name": "Senior Cloud Engineer", "superRole": "Cloud Engineer", "titular": true, "jobDescription": "Qualified to review and approve changes to production [qual] cloud services.", "qualifiable": true },
@@ -76,11 +75,10 @@
   { "name": "Chief Compliance Agent", "superRole": "Compliance Agent", "singular": true, "titular": true, "jobDescription": "Has final responsibility for managing policy and infrastructure to ensure regulatory compliance and security.; Chief Compliance Office approval is required for sensitive policy changes involving security, regulator compliance, or exceptional complexity." },
   { "name": "Compliance Agent", "titular": true, "jobDescription": "A compliance agent with the authority to oversee and implement periodic reviews and routine updates of compliance documents and records." },
 
-  { "name": "Key Admin", "designated": true, "jobDescription": "Responsible for managing one or more Company keys involved in critical operations or sensitive access.	The designation is generally applied to Executives, Compliance Agents, and/or domain Chiefs or Seniors.; Sufficient backups should be provided such that a Key Manager is available at all times for all key types.
-  Access Manager	multiple; designated; redundant	-	Manages and/or oversees user access to sensitive Company resources and systems." },
+  { "name": "Key Admin", "designated": true, "jobDescription": "Responsible for managing one or more Company keys involved in critical operations or sensitive access.", "notes": "The designation is generally applied to Executives, Compliance Agents, and/or domain Chiefs or Seniors. Sufficient backups should be provided such that a Key Manager is available at all times for all key types." },
   { "name": "Access Manager", "designated": true, "jobDescription": "Can oversee and grant access to sensitive systems." },
   { "name": "Operational Admin", "designated": true, "jobDescription": "Has full access to sensitive operational services. May be designated for emergency and/or backup purposes." },
-  { "name": "Incident Responder", "designated": true, "jobDescription": "On call for Emergency Response and/or Disaster Recovery situations.	The 'Chief' and at least one 'Senior' of each type is generally designated an incident responder, where possible.; Sufficient backups should be provided such that Incident Responders with particular responsibilities are always available." },
+  { "name": "Incident Responder", "designated": true, "jobDescription": "On call for Emergency Response and/or Disaster Recovery situations.", "notes": "The 'Chief' and at least one 'Senior' of each type is generally designated an incident responder, where possible.; Sufficient backups should be provided such that Incident Responders with particular responsibilities are always available." },
   { "name": "Network Alert Responder", "designated": true, "jobDescription": "Responsible for receiving and evaluating network alerts." },
   { "name": "Badge Manager", "designated": true, "jobDescription": "Badge Managers oversee issuing and tracking visitor badges.; Sufficient backups should be designated such that a Badge Manager is always available at each physical location." },
   { "name": "Production Data Reader", "designated": true, "jobDescription": "An individual with access to sensitive production data." },
