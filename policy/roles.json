@@ -1,13 +1,4 @@
 [
-  { "name": "CEO", "singular": true, "titular": true, "jobDescription": "Chief executive officer." },
-  { "name": "CTO", "singular": true, "titular": true, "jobDescription": "Chief technical officer." },
-  { "name": "Developer", "titular": true, "qualifiable": true, "jobDescription": "Hacker." },
-  { "name": "Senior Developer", "titular": true, "qualifiable": true, "superRole": "Developer", "jobDescription": "Hacker." },
-  { "name": "Tester", "titular": true, "qualifiable": true, "jobDescription": "QA." },
-  { "name": "Sensitive Data Handler", "jobDescription": "Knows secrets." }
-]
-
-[
   { "name": "Chief Executive Officer", "singular": true, "titular": true, "jobDescription": "The highest ranking company executive with final responsibility for major strategic decisions and management of operation and corporate resources. Acts as primary contact between the Board of Directors and corporate operations. The CEO is also the \"public face\" of the company." },
 
   { "name": "Chief Operations Officer", "singular": true, "titular": true, "jobDescription": "The senior executive overseeing all day-to-day non-technical operational corporate functions." },
