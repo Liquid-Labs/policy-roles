@@ -8,7 +8,10 @@
     "build": ":",
     "pretest": "catalyst-scripts pretest",
     "test": "catalyst-scripts test && ./test-policy.sh",
-    "postversion": "git push && git push --tags"
+    "preversion": "npm test",
+    "postversion": "git push && git push --tags",
+    "lint": "catalyst-scripts lint",
+    "lint-fix": "catalyst-scripts lint-fix"
   },
   "files": [
     "dist/",
@@ -25,8 +28,8 @@
   },
   "homepage": "https://github.com/Liquid-Labs/policy-core#readme",
   "devDependencies": {
-    "@liquid-labs/catalyst-scripts": "^1.0.0-alpha.24",
-    "@liquid-labs/policies-model": "^1.0.0-beta.29"
+    "@liquid-labs/catalyst-scripts": "^1.0.0-alpha.28",
+    "@liquid-labs/policies-model": "^1.0.0-beta.32"
   },
   "dependencies": {},
   "liquidDev": {
