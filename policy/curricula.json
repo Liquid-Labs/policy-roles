@@ -6,22 +6,22 @@
         "weightingFactor": 1,
         "period": 360
       },
-      "malware-self-audit": {
+      "staff-anti-malware-audit": {
         "condition": "USES_SELF_AUDIT && GEN_SEC_LVL > SEC_TRIVIAL",
         "weightingFactor": 1,
         "period": 180
       },
-      "firewall-self-audit": {
+      "staff-firewall-audit": {
         "condition": "USES_SELF_AUDIT && GEN_SEC_LVL > SEC_TRIVIAL",
         "weightingFactor": 1,
         "period": 180
       },
-      "vpn-self-audit": {
+      "staff-vpn-audit": {
         "condition": "USES_SELF_AUDIT && GEN_SEC_LVL > SEC_TRIVIAL",
         "weightingFactor": 0.9,
         "period": 180
       },
-      "device-serial-self-audit": {
+      "staff-device-serial-audit": {
         "condition": "USES_SELF_AUDIT && TRACKS_ASSETS && IS_EMPLOYEE",
         "weightingFactor": 0.9,
         "period": 360
@@ -31,12 +31,12 @@
   },
   "sensitive-gen-sec": {
     "audits": {
-      "hd-encrypted-self-audit": {
+      "staff-encrypted-hd-audit": {
         "condition": "USES_SELF_AUDIT && GEN_SEC_LVL > SEC_TRIVIAL",
         "weightingFactor": 1,
         "period": 360
       },
-      "pw-manager-self-audit": {
+      "staff-pw-manager-audit": {
         "condition": "USES_SELF_AUDIT && GEN_SEC_LVL > SEC_TRIVIAL",
         "weightingFactor": 1.1,
         "period": 360
