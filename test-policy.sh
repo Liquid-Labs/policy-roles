@@ -7,14 +7,14 @@ set -o pipefail
 
 MY_PACKAGE='@liquid-labs/policy-core'
 
-cat <<EOF > settings.sh
+SETTINGS="$(cat <<EOF
 EMAIL_DELEGATION_TOOL='Gmelius'
 EOF
+)"
 
 cleanup() {
   echo -n "Cleaning up... "
   rm node_modules/${MY_PACKAGE}
-  rm settings.sh
   echo "done."
 }
 
@@ -25,8 +25,11 @@ EXIT=0
 
 echo "Preparing..."
 rm -rf .build test-out
+mkdir test-out
 ln -s "$PWD" node_modules/${MY_PACKAGE}
 POLICY_COUNT=$(cd node_modules/@liquid-labs && find -L . -path "./policy-*" -name "*.md" -not -path "*/node_modules/*" -not -path "*/.yalc/*" -not -path "*/tmpl/*" | wc -l | awk '{print $1}')
+mkdir .build
+echo "$SETTINGS" > .build/settings.sh
 
 echo -n "Test document parsing: "
 "${BIN}/liq-init-docs" run test-out > /dev/null || { echo "FAIL"; EXIT=1; }

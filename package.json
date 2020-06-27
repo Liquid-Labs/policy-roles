@@ -29,7 +29,7 @@
   "homepage": "https://github.com/Liquid-Labs/policy-core#readme",
   "devDependencies": {
     "@liquid-labs/catalyst-scripts": "^1.0.0-alpha.28",
-    "@liquid-labs/orgs-model": "^1.0.0-beta.4"
+    "@liquid-labs/orgs-model": "^1.0.0-beta.5"
   },
   "dependencies": {},
   "liquidDev": {
