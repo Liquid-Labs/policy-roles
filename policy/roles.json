@@ -74,5 +74,7 @@
   { "name": "Badge Manager", "designated": true, "jobDescription": "Badge Managers oversee issuing and tracking visitor badges.; Sufficient backups should be designated such that a Badge Manager is always available at each physical location." },
   { "name": "Production Data Reader", "designated": true, "jobDescription": "An individual with access to sensitive production data." },
   { "name": "Sensitive Data Handler", "designated": true, "jobDescription": "Qualified to deal with sensitive data such as card holder data, social security numbers, or other information that requires special handling." },
-  { "name": "VPN Manager", "designated": true, "jobDescription": "Manages the company's centralized VPN services." }
+  { "name": "VPN Manager", "designated": true, "jobDescription": "Manages the company's centralized VPN services." },
+
+  { "name": "Consultant", "titular": true, "jobDescription": "Provides general or project specific [qual] expertise. Specific duties will be enumerated as part of the epmloyement or contractor agreement", "qualifiable": true }
 ]
