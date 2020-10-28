@@ -7,10 +7,7 @@
   "scripts": {
     "build": ":",
     "pretest": "catalyst-scripts pretest",
-    "test": "catalyst-scripts test && ./test/test-policy.sh && ./test/test-data.sh",
-    "test:js": "catalyst-scripts test",
-    "test:policy": "./test/test-policy.sh",
-    "test:data": "./test/test-data.sh",
+    "test": "catalyst-scripts test && ./test-policy.sh",
     "preversion": "npm test",
     "postversion": "git push && git push --tags",
     "lint": "catalyst-scripts lint",
