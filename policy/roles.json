@@ -3,6 +3,8 @@
 
   { "name": "Chief Operations Officer", "singular": true, "titular": true, "jobDescription": "The senior executive overseeing all day-to-day non-technical operational corporate functions." },
   { "name": "General Manager", "singular": true, "titular": true, "jobDescription": "Senior manager overseeing (non-consumer/non-client) internal, partner, and other 3rd party relationships, as well as overall company policy/processes and corporate expenses." },
+  { "name": "Senior Operations Agent", "titular": true, "jobDescription": "Performs general daily and ad-hoc non-technical operations tasks. Senior Agents may be assigned ownership of certain tasks and relationships." },
+  { "name": "Operations Agent", "titular": true, "jobDescription": "Performs general daily and ad-hoc non-technical operations tasks." },
 
   { "name": "Chief Technical Officer", "singular": true, "titular": true, "jobDescription": "The senior executive in charge of technical implementation and operations." },
 
