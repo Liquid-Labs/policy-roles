@@ -5,7 +5,8 @@
   "main": "bin/gen-roles-ref.js",
   "module": "bin/gen-roles-ref.es.js",
   "scripts": {
-    "build": "catalyst-scripts build",
+    "build": "make",
+    "build:js": "catalyst-scripts build",
     "pretest": "catalyst-scripts pretest",
     "test": "catalyst-scripts test && ./test/test-policy.sh && ./test/test-data.sh",
     "test:js": "catalyst-scripts test",
