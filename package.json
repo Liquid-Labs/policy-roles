@@ -2,10 +2,10 @@
   "name": "@liquid-labs/policy-core",
   "version": "1.0.0-alpha.19",
   "description": "Standard 'roles' definitions compatible with Liquid Policy.",
-  "main": "dist/index.js",
-  "module": "dist/index.es.js",
+  "main": "bin/gen-roles-ref.js",
+  "module": "bin/gen-roles-ref.es.js",
   "scripts": {
-    "build": ":",
+    "build": "catalyst-scripts build",
     "pretest": "catalyst-scripts pretest",
     "test": "catalyst-scripts test && ./test/test-policy.sh && ./test/test-data.sh",
     "test:js": "catalyst-scripts test",
@@ -32,9 +32,11 @@
   "homepage": "https://github.com/Liquid-Labs/policy-core#readme",
   "devDependencies": {
     "@liquid-labs/catalyst-scripts": "^1.0.0-alpha.28",
-    "@liquid-labs/orgs-model": "^1.0.0-beta.5"
+    "@liquid-labs/orgs-model": "^1.0.0-beta.15"
   },
-  "dependencies": {},
+  "dependencies": {
+    "fs": "0.0.1-security"
+  },
   "liquidDev": {
     "orgBase": "git@github.com:Liquid-Labs/Liquid-Labs.git",
     "changeControl": {

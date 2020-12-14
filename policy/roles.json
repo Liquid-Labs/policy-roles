@@ -78,5 +78,7 @@
   { "name": "Sensitive Data Handler", "designated": true, "jobDescription": "Qualified to deal with sensitive data such as card holder data, social security numbers, or other information that requires special handling." },
   { "name": "VPN Manager", "designated": true, "jobDescription": "Manages the company's centralized VPN services." },
 
-  { "name": "Consultant", "titular": true, "jobDescription": "Provides general or project specific [qual] expertise. Specific duties will be enumerated as part of the epmloyement or contractor agreement", "qualifiable": true }
+  { "name": "Consultant", "titular": true, "jobDescription": "Provides general or project specific [qual] expertise. Specific duties will be enumerated as part of the epmloyement or contractor agreement", "qualifiable": true },
+
+  { "name": "Senior Management Team", "designated": true, "jobDescription": "Annually reviews Company compliance and key processes." }
 ]
