@@ -60,7 +60,7 @@
   { "name": "Project Manager", "titular": true, "jobDescription": "Responsible for working with implementation product management to optimize implementation with regard to efficiency and stakeholder priorities." },
 
   { "name": "Customer Service Agent", "titular": true, "jobDescription": "Responsible for handling of customer service requests." },
-  { "name": "Customer Service Manager", "superRole": "Customer Service Agent", "titular": true, "jobDescription": "Oversees Customer Service Agents.; Sensitive issues of particular complexity or involving particularly high value customers may be referred to the Customer Service Manager." },
+  { "name": "Customer Service Manager", "superRole": "Customer Service Agent", "titular": true, "jobDescription": "Oversees Customer Service Agents. Sensitive issues of particular complexity or involving particularly high value customers may be referred to the Customer Service Manager." },
 
 
   { "name": "In House Counsel", "titular": true, "jobDescription": "Oversees legal matters, agreements, and advises Company on [qual] matters.", "qualifiable": true },
