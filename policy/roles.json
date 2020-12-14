@@ -60,7 +60,7 @@
   { "name": "Project Manager", "titular": true, "jobDescription": "Responsible for working with implementation product management to optimize implementation with regard to efficiency and stakeholder priorities." },
 
   { "name": "Customer Service Agent", "titular": true, "jobDescription": "Responsible for handling of customer service requests." },
-  { "name": "Customer Service Manager", "superRole": "Customer Service Agent", "titular": true, "jobDescription": "Oversees Customer Service Agents.; Sensitive issues of particular complexity or involving particularly high value customers may be referred to the Customer Service Manager." },
+  { "name": "Customer Service Manager", "superRole": "Customer Service Agent", "titular": true, "jobDescription": "Oversees Customer Service Agents. Sensitive issues of particular complexity or involving particularly high value customers may be referred to the Customer Service Manager." },
 
 
   { "name": "In House Counsel", "titular": true, "jobDescription": "Oversees legal matters, agreements, and advises Company on [qual] matters.", "qualifiable": true },
@@ -78,5 +78,7 @@
   { "name": "Sensitive Data Handler", "designated": true, "jobDescription": "Qualified to deal with sensitive data such as card holder data, social security numbers, or other information that requires special handling." },
   { "name": "VPN Manager", "designated": true, "jobDescription": "Manages the company's centralized VPN services." },
 
-  { "name": "Consultant", "titular": true, "jobDescription": "Provides general or project specific [qual] expertise. Specific duties will be enumerated as part of the epmloyement or contractor agreement", "qualifiable": true }
+  { "name": "Consultant", "titular": true, "jobDescription": "Provides general or project specific [qual] expertise. Specific duties will be enumerated as part of the epmloyement or contractor agreement", "qualifiable": true },
+
+  { "name": "Senior Management Team", "designated": true, "jobDescription": "Annually reviews Company compliance and key processes." }
 ]
