@@ -10,7 +10,7 @@ roles.sort((a,b) => a.name.toLowerCase().localeCompare(b.name.toLowerCase()))
 
 console.log(`# Company Roles Reference\n`)
 
-console.log(`## Purpos and scope\n`)
+console.log(`## Purpose and scope\n`)
 console.log(`This document provides a reference for all roles within the Company.\n`)
 
 console.log(`## Roles\n`)

@@ -1,6 +1,6 @@
 # Company Roles Reference
 
-## Purpos and scope
+## Purpose and scope
 
 This document provides a reference for all roles within the Company.
 
