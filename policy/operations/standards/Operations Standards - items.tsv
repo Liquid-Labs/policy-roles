@@ -1,0 +1,3 @@
+UUID	Subsection	Statement	Absolute Condition	Individual Condition	Audit Condition	Refs
+
+3A48770E-A165-49A3-8AD4-B7767144AD5C	General	The <role>Chief Operations Officer</role> shall annually prepare a report to be presented to the Senior Management Team on major operations related issues and status for the previous year which shall include any serious operational issues either ongoing or occurring in the report year.	ALWAYS	ROLE_TAGGED('senior management') || (ROLE =~ /.*Compliance Agent/)	IS_FULL_AUDIT	SOC 2 Type I ref 1.1, SOC 2 Type II ref 1.1
