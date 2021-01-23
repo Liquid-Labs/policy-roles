@@ -65,8 +65,8 @@
 
   { "name": "In House Counsel", "titular": true, "jobDescription": "Oversees legal matters, agreements, and advises Company on [qual] matters.", "qualifiable": true },
 
-  { "name": "Chief Compliance Agent", "superRole": "Compliance Agent", "singular": true, "titular": true, "jobDescription": "Has final responsibility for managing policy and infrastructure to ensure regulatory compliance and security.; Chief Compliance Office approval is required for sensitive policy changes involving security, regulator compliance, or exceptional complexity." },
-  { "name": "Compliance Agent", "titular": true, "jobDescription": "A compliance agent with the authority to oversee and implement periodic reviews and routine updates of compliance documents and records." },
+  { "name": "Chief Process Engineer", "superRole": "Process Engineer", "singular": true, "titular": true, "jobDescription": "Has final responsibility for managing policy and infrastructure to ensure regulatory compliance and security.; the Chief Process Engineer's approval is required for sensitive policy changes involving security, regulator compliance, or exceptional complexity." },
+  { "name": "Process Agent", "titular": true, "jobDescription": "Help manage process definition, compliance, and evidecnce." },
 
   { "name": "Key Admin", "designated": true, "jobDescription": "Responsible for managing one or more Company keys involved in critical operations or sensitive access.", "notes": "The designation is generally applied to Executives, Compliance Agents, and/or domain Chiefs or Seniors. Sufficient backups should be provided such that a Key Manager is available at all times for all key types." },
   { "name": "Access Manager", "designated": true, "jobDescription": "Can oversee and grant access to sensitive systems." },
