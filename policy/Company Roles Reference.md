@@ -26,6 +26,10 @@ Badge Managers oversee issuing and tracking visitor badges.; Sufficient backups 
 
 Manages brand assets and usage along with setting and enforcing policy regarding corporate messaging and identity.
 
+### Change Control Board
+
+Reviews proposed changes and assigns priorities in accordance with cost and strategic priorities.
+
 ### Chief Administrative Officer
 
 Senior executive in charge of corporate administration, including human resources and legal matters.
@@ -33,10 +37,6 @@ Senior executive in charge of corporate administration, including human resource
 ### Chief Cloud Engineer
 
 Has final responsibility for production cloud services systems.; Chief Cloud Engineer approval is required for sensitive changes involving cloud services security, regulatory issues, or exceptional complexity.
-
-### Chief Compliance Agent
-
-Has final responsibility for managing policy and infrastructure to ensure regulatory compliance and security.; Chief Compliance Office approval is required for sensitive policy changes involving security, regulator compliance, or exceptional complexity.
 
 ### Chief Data Engineer
 
@@ -54,10 +54,6 @@ The senior executive in charge of corporate accounting records and strategic fin
 
 Has final responsibility for production host systems.; Chief Host Engineer approval is required for sensitive changes involving host security, regulatory issues, or exceptional complexity.
 
-### Chief Human Resources Agent
-
-Manages Human Resources Agents and has final responsibility on HR matters.
-
 ### Chief Marketing Officer
 
 The senior executive in charge of brand management, corporate and product messaging, and revenue generation.
@@ -70,6 +66,10 @@ Has final responsibility for the integrity and security of production networks.;
 
 The senior executive overseeing all day-to-day non-technical operational corporate functions.
 
+### Chief Policy Engineer
+
+Leads the Company's internal policy development, implementation, and verification.
+
 ### Chief Quality Engineer
 
 Has final responsibility for quality assurance.
@@ -77,6 +77,10 @@ Has final responsibility for quality assurance.
 ### Chief Sales Officer
 
 The senior executive in charge of corporate sales strategy and oversight of the sales team.
+
+### Chief Security Officer
+
+Executive with final responsibility for matters relating to security including definition, implementation, and verification.
 
 ### Chief Software Engineer
 
@@ -89,10 +93,6 @@ The senior executive in charge of technical implementation and operations.
 ### Cloud Engineer
 
 Qualified to configure and manage [qual] cloud services.
-
-### Compliance Agent
-
-A compliance agent with the authority to oversee and implement periodic reviews and routine updates of compliance documents and records.
 
 ### Consultant
 
@@ -126,6 +126,10 @@ Qualified to configure and management of [qual] hosts systems.
 
 Oversees personnel management and compliance.
 
+### Human Resources Head
+
+Manages Human Resources Agents and has final responsibility on HR matters.
+
 ### Implementations Manager
 
 Oversees implementation of corporate services/products with clients. Works directly with clients and with the client's assigned Account Manager during the implementation process.
@@ -137,6 +141,10 @@ Oversees legal matters, agreements, and advises Company on [qual] matters.
 ### Incident Responder
 
 On call for Emergency Response and/or Disaster Recovery situations.
+
+### IT Personnel
+
+Any individual working within a technical capacity within the company.
 
 ### Key Admin
 
@@ -154,9 +162,9 @@ Qualified to configure and manage Company networks.
 
 Has full access to sensitive operational services. May be designated for emergency and/or backup purposes.
 
-### Operations Agent
+### Policy Engineer
 
-Performs general daily and ad-hoc non-technical operations tasks.
+Manages and develops Company policy definition and implementation. Also works on verification, evidence gathering and compliance.
 
 ### Product Manager
 
@@ -201,10 +209,6 @@ Annually reviews Company compliance and key processes.
 ### Senior Network Engineer
 
 Qualified to review and approve changes to production networks.
-
-### Senior Operations Agent
-
-Performs general daily and ad-hoc non-technical operations tasks. Senior Agents may be assigned ownership of certain tasks and relationships.
 
 ### Senior Quality Engineer
 
