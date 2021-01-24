@@ -347,8 +347,15 @@
   },
   {
     "name": "Senior Management Team",
+    "aliases": [ "SMT" ],
     "designated": true,
     "jobDescription": "Annually reviews Company compliance and key processes."
+  },
+  {
+    "name": "Change Control Board",
+    "aliases": [ "CCB" ],
+    "designated": true,
+    "jobDescription": "Reviews proposed changes and assigns priorities in accordance with cost and strategic priorities."
   },
   {
     "name": "IT Personnel",
