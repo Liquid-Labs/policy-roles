@@ -280,17 +280,22 @@
     "qualifiable": true
   },
   {
-    "name": "Chief Process Engineer",
-    "superRole": "Process Engineer",
-    "aliases": [ "Chief Security Officer", "CSec" ],
-    "singular": true,
+    "name": "Policy Engineer",
     "titular": true,
-    "jobDescription": "Has final responsibility for managing policy and infrastructure to ensure regulatory compliance and security.; the Chief Process Engineer's approval is required for sensitive policy changes involving security, regulator compliance, or exceptional complexity."
+    "jobDescription": "Manages and develops Company policy definition and implementation. Also works on verification, evidence gathering and compliance."
   },
   {
-    "name": "Process Engineer",
+    "name": "Chief Policy Engineer",
+    "superRole": "Process Engineer",
+    "singular": true,
     "titular": true,
-    "jobDescription": "Help manage process definition, compliance, and evidecnce."
+    "jobDescription": "Leads the Company's internal policy development, implementation, and verification."
+  },
+  {
+    "name": "Chief Security Officer",
+    "aliases": [ "CSO" ],
+    "superRole": "Process Engineer",
+    "jobDescription": "Executive with final responsibility for matters relating to security including definition, implementation, and verification."
   },
   {
     "name": "Key Admin",
