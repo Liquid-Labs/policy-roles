@@ -359,6 +359,7 @@
   },
   {
     "name": "IT Personnel",
+    "aliases": [ "Engineering" ],
     "designated": true,
     "abstract": true,
     "jobDescription": "Any individual working within a technical capacity within the company."
