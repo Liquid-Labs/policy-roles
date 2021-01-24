@@ -128,6 +128,7 @@
   },
   {
     "name": "Software Engineer",
+    "superRole": "IT Personnel",
     "titular": true,
     "jobDescription": "Qualified to modify and review [qual] software code. Sensitive changes must be reviewed by a Senior Software Engineer prior to being deployed.",
     "qualifiable": true
@@ -149,6 +150,7 @@
   },
   {
     "name": "Data Engineer",
+    "superRole": "IT Personnel",
     "titular": true,
     "jobDescription": "Qualified to modify, review, and manage [qual] database schemas and DBMSs.",
     "qualifiable": true
@@ -170,6 +172,7 @@
   },
   {
     "name": "Host Engineer",
+    "superRole": "IT Personnel",
     "titular": true,
     "jobDescription": "Qualified to configure and management of [qual] hosts systems.",
     "qualifiable": true
@@ -191,6 +194,7 @@
   },
   {
     "name": "Network Engineer",
+    "superRole": "IT Personnel",
     "titular": true,
     "jobDescription": "Qualified to configure and manage Company networks.",
     "qualifiable": true
@@ -212,6 +216,7 @@
   },
   {
     "name": "Cloud Engineer",
+    "superRole": "IT Personnel",
     "titular": true,
     "jobDescription": "Qualified to configure and manage [qual] cloud services.",
     "qualifiable": true
@@ -233,6 +238,7 @@
   },
   {
     "name": "Quality Engineer",
+    "superRole": "IT Personnel",
     "titular": true,
     "jobDescription": "Qualified to ascertain correctness and conformance of [qual] systems.",
     "qualifiable": true
@@ -343,5 +349,11 @@
     "name": "Senior Management Team",
     "designated": true,
     "jobDescription": "Annually reviews Company compliance and key processes."
+  },
+  {
+    "name": "IT Personnel",
+    "designated": true,
+    "abstract": true,
+    "jobDescription": "Any individual working within a technical capacity within the company."
   }
 ]
