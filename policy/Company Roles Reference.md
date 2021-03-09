@@ -114,6 +114,10 @@ Oversees Customer Service Agents. Sensitive issues of particular complexity or i
 
 Qualified to modify, review, and manage [qual] database schemas and DBMSs.
 
+### Department Heads
+
+Heads a company department. Genarally, non-executive personell report dircetly or indirectly to a department head and collectively the department heads should encompass all company staff with the exception of the CEO and the Department Heads themselves.
+
 ### General Manager
 
 Senior manager overseeing (non-consumer/non-client) internal, partner, and other 3rd party relationships, as well as overall company policy/processes and corporate expenses.
