@@ -357,6 +357,11 @@
     "jobDescription": "Annually reviews Company compliance and key processes."
   },
   {
+    "name": "Department Heads",
+    "designated": true,
+    "jobDescription": "Heads a company department. Genarally, non-executive personell report dircetly or indirectly to a department head and collectively the department heads should encompass all company staff with the exception of the CEO and the Department Heads themselves."
+  },
+  {
     "name": "Change Control Board",
     "aliases": [ "CCB" ],
     "designated": true,
