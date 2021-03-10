@@ -8,6 +8,7 @@ set -o pipefail
 MY_PACKAGE='@liquid-labs/policy-core'
 
 SETTINGS="$(cat <<EOF
+COMPLIES_SOC2=1
 EMAIL_DELEGATION_TOOL='Gmelius'
 EOF
 )"
