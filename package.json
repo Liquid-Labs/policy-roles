@@ -24,14 +24,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/Liquid-Labs/policy-core.git"
+    "url": "git+ssh://git@github.com/liquid-labs/policy-core.git"
   },
   "author": "Zane Rockenbaugh <zane@liquid-labs.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Liquid-Labs/policy-core/issues"
+    "url": "https://github.com/liquid-labs/policy-core/issues"
   },
-  "homepage": "https://github.com/Liquid-Labs/policy-core#readme",
+  "homepage": "https://github.com/liquid-labs/policy-core#readme",
   "devDependencies": {
     "@liquid-labs/catalyst-scripts": "^1.0.0-alpha.28",
     "@liquid-labs/orgs-model": "^1.0.0-beta.15"
@@ -40,7 +40,7 @@
     "fs": "0.0.1-security"
   },
   "liquidDev": {
-    "orgBase": "git@github.com:Liquid-Labs/Liquid-Labs.git",
+    "orgBase": "git@github.com:liquid-labs/Liquid-Labs.git",
     "changeControl": {
       "type": "policy"
     }
