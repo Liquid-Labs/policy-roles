@@ -66,10 +66,6 @@ Has final responsibility for the integrity and security of production networks.;
 
 The senior executive overseeing all day-to-day non-technical operational corporate functions.
 
-### Chief Policy Engineer
-
-Leads the Company's internal policy development, implementation, and verification.
-
 ### Chief Quality Engineer
 
 Has final responsibility for quality assurance.
@@ -77,10 +73,6 @@ Has final responsibility for quality assurance.
 ### Chief Sales Officer
 
 The senior executive in charge of corporate sales strategy and oversight of the sales team.
-
-### Chief Security Officer
-
-Executive with final responsibility for matters relating to security including definition, implementation, and verification.
 
 ### Chief Software Engineer
 
@@ -121,6 +113,10 @@ Heads a company department. Genarally, non-executive personell report dircetly o
 ### General Manager
 
 Senior manager overseeing (non-consumer/non-client) internal, partner, and other 3rd party relationships, as well as overall company policy/processes and corporate expenses.
+
+### Head Policy Engineer
+
+Leads the Company's internal policy development, implementation, and verification.
 
 ### Host Engineer
 
@@ -193,6 +189,16 @@ Oversees implementation of corporate marketing campaigns. Develops and oversees 
 ### Sales Agent
 
 Responsible for directly selling to potential clients.
+
+### Security Officer
+
+Executive with final responsibility for matters relating to security and compliance including definition, implementation, and verification. The Security Officer also has general oversight of all Company Policy.
+The Security Officer:
+* Is a member of the Senior Management Team.
+* Works with senior management to develop and maintain the Company's security policy and infrastructure and the Security Awareness Program in particular. _(PCI DSS 3.2.1 ref 12.4, 12.5.1, 12.5.3)_
+* Working with line management and technical staff to implement Company security policy to ensure understanding, improve effectiveness, and where possible simplify and automate end user procedures. _(PCI DSS 3.2.1 ref 12.4, 12.5.1, 12.5.3)_
+* Independently verifyies the implementation of Company Policy, especially as it relates to security, privacy, and compliance.
+* Chairs meetings and working groups related to security issues.
 
 ### Senior Cloud Engineer
 
