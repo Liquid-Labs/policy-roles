@@ -16,7 +16,7 @@
     "postversion": "git push && git push --tags",
     "prepare": "npm run build",
     "lint": "catalyst-scripts lint",
-    "lint-fix": "catalyst-scripts lint-fix"
+    "lint:fix": "catalyst-scripts lint-fix"
   },
   "files": [
     "dist/",
