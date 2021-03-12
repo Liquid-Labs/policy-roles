@@ -1,0 +1,26 @@
+{
+  "networks/acme-co": {
+    "loginId": "acmeadmin@test-company.com",
+    "emails": [ { "type": "main", "address": "acmeadmin@test-company.com" } ],
+    "access": [
+      { "route": "role", "name": "Acme Admin" }
+    ],
+    "sensitivity": "EXISTENTIAL",
+    "parameters": {
+      "REVIEW_PERIOD": 90,
+      "NETWORKING": 1
+    }
+  },
+  "business/fax-co": {
+    "loginId": "faxcoadmin@test-company.com",
+    "emails": [ { "type": "main", "address": "faxcoadmin@test-company.com" } ],
+    "access": [
+      { "route": "role", "name": "Internal Support Admin" }
+    ],
+    "sensitivity": "LOW",
+    "parameters": {
+      "REVIEW_PERIOD": 360,
+      "BUSINESS": 1
+    }
+  }
+}

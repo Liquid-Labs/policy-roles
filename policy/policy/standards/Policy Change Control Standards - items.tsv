@@ -1,0 +1,7 @@
+UUID	Subsection	Statement	Absolute Condition	Individual Condition	Audit Condition	Refs
+
+1B40ADE7-FBCD-436C-BAD5-8C9D9A012B6C	General	All changes to Company Policy must be processed via the company’s Change Management System to ensure formal approval is obtained, all testing successfully completed, and relevant parties are notified of Policy changes prior to or within 5 days of their taking effect.	ALWAYS	ROLE IN ('Security')	IS_PROCESS_AUDIT	PCI DSS v3.2.1 ref 12.6.2
+8D6959A4-CEE5-4C66-B922-73AA285ADF09	General	The <role>Security Officer</role> shall audit the change notification process quarterly to ensure that changes to the policy are disseminated as required by Company Policy.	ALWAYS	ROLE IN ('Security')	IS_PROCESS_AUDIT	PCI DSS v3.2.1 ref 12.6.2
+7BC00FA7-6ABD-4987-A2F8-94AED1553BFD	General	The <role>Security Officer</role> must approve emergency modifications to the Company Policy along with an explanation and justification for the emergency change.	ALWAYS	ROLE IN ('Security')	IS_PROCESS_AUDIT	-
+
+# include change_control/standards/Common Change Control Standards - PR Review - items
