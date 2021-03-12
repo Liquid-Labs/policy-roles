@@ -1,5 +1,5 @@
 /* global beforeAll describe expect test */
-import { Organization, Roles } from '@liquid-labs/orgs-model'
+import { Roles } from '@liquid-labs/orgs-model'
 
 const rolesFile = './policy/roles.json'
 
