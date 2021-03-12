@@ -12,7 +12,7 @@
     "test:js": "catalyst-scripts test",
     "test:policy": "./test/test-policy.sh",
     "test:data": "./test/test-data.sh",
-    "preversion": "npm run build && npm test && npm run lint",
+    "preversion": "npm test && npm run lint",
     "postversion": "git push && git push --tags",
     "prepare": "npm run build",
     "lint": "catalyst-scripts lint",
