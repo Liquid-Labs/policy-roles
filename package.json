@@ -8,7 +8,7 @@
     "build": "make && npm run build:js",
     "build:js": "catalyst-scripts build",
     "pretest": "catalyst-scripts pretest",
-    "test": "npm run build && catalyst-scripts test && ./test/test-policy.sh && ./test/test-data.sh",
+    "test": "catalyst-scripts test && ./test/test-policy.sh && ./test/test-data.sh",
     "test:js": "catalyst-scripts test",
     "test:policy": "./test/test-policy.sh",
     "test:data": "./test/test-data.sh",
