@@ -33,6 +33,8 @@ cleanup() {
   echo -n "Cleaning up... "
   rm node_modules/${MY_PACKAGE}
   echo "done."
+
+  return ${EXIT}
 }
 
 trap cleanup EXIT
@@ -44,7 +46,7 @@ echo "Preparing..."
 rm -rf .build test-out
 mkdir test-out
 ln -s "$PWD" node_modules/${MY_PACKAGE}
-POLICY_COUNT=$(cd node_modules/@liquid-labs && find -L . -path "./policy-*" -name "*.md" -not -path "*/node_modules/*" -not -path "*/.yalc/*" -not -path "*/tmpl/*" | wc -l | awk '{print $1}')
+POLICY_COUNT=$(cd node_modules/@liquid-labs && find -L . -path "./policy-*/policy/*" -name "*.md" -not -path "*/node_modules/*" -not -path "*/.yalc/*" -not -path "*/tmpl/*" | wc -l | awk '{print $1}')
 mkdir .build
 echo "$SETTINGS" > .build/settings.sh
 
