@@ -21,14 +21,13 @@ lint: $(LINT_TARGETS)
 
 qa: test lint
 
-clean:
-	rm $(ALL_TARGETS)
+clean: clean-build clean-qa
 clean-build:
-	rm $(BUILD_TARGETS)
+	rm -f $(BUILD_TARGETS)
 clean-test:
-	rm $(TEST_TARGETS) $(patsubst %, %.*, $(TEST_TARGETS))
+	rm -f $(TEST_TARGETS) $(patsubst %, %.*, $(TEST_TARGETS))
 clean-lint:
-	rm $(LINT_TARGETS) $(patsubst %, %.*, $(LINK_TARGETS))
+	rm -f $(LINT_TARGETS) $(patsubst %, %.*, $(LINT_TARGETS))
 clean-qa: clean-test clean-lint
 
 .DELETE_ON_ERROR:
