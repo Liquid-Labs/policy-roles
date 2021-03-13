@@ -5,17 +5,12 @@
   "main": "bin/gen-roles-ref.js",
   "module": "bin/gen-roles-ref.es.js",
   "scripts": {
-    "build": "make && npm run build:js",
-    "build:js": "catalyst-scripts build",
-    "pretest": "catalyst-scripts pretest",
-    "test": "catalyst-scripts test && ./test/test-policy.sh && ./test/test-data.sh",
-    "test:js": "catalyst-scripts test",
-    "test:policy": "./test/test-policy.sh",
-    "test:data": "./test/test-data.sh",
-    "preversion": "npm test && npm run lint",
+    "build": "make",
+    "test": "make test",
+    "preversion": "make qa",
     "postversion": "git push && git push --tags",
     "prepare": "npm run build",
-    "lint": "catalyst-scripts lint",
+    "lint": "make lint",
     "lint:fix": "catalyst-scripts lint-fix"
   },
   "files": [
