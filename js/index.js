@@ -8,6 +8,7 @@ const roles = JSON.parse(content)
 
 roles.sort((a, b) => a.name.toLowerCase().localeCompare(b.name.toLowerCase()))
 
+// Note: 'console.log' prints a newline itself, so the ending '\n' has the effect of adding an empty line.
 console.log('# Company Roles Reference\n')
 
 console.log('## Purpose and scope\n')
@@ -17,4 +18,11 @@ console.log('## Roles\n')
 roles.forEach((role) => {
   console.log(`### ${role.name}\n`)
   console.log(`${role.jobDescription}\n`)
+  if (role.duties) {
+    console.log('Duties:')
+    for (const duty of role.duties || []) {
+      console.log(`* ${duty.description}`)
+    }
+    console.log('')
+  }
 })
