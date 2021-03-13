@@ -86,6 +86,17 @@ The senior executive in charge of technical implementation and operations.
 
 Qualified to configure and manage [qual] cloud services.
 
+### Compliance Officer
+
+Non-executive officer with final responsibility for matters relating to compliance and Company Policy in general.
+
+Duties:
+* Ensures Company Policy is compliant with PCI DSS 3.2.1, SOC 2 Type I, and SOC 2 Type II compliance standards.
+* Oversee and ensure updates to Company Policy are according to the Company Change Control Policy.
+* Works with <role>department heads</role> to define, implement, and maintain procedures.
+* Indepndently verifies policy implementation.
+* Is a member of the Senior Management Team. _(SOC 2 Type I ref 1.1.d, SOC 2 Type II ref 1.1.d)_
+
 ### Consultant
 
 Provides general or project specific [qual] expertise. Specific duties will be enumerated as part of the epmloyement or contractor agreement
@@ -166,6 +177,13 @@ Has full access to sensitive operational services. May be designated for emergen
 
 Manages and develops Company policy definition and implementation. Also works on verification, evidence gathering and compliance.
 
+### Privacy Officer
+
+Non-executive officer with final responsibility for matters relating to customer and staff privacy.
+
+Duties:
+* Is a member of the Senior Management Team. _(SOC 2 Type I ref 1.1.d, SOC 2 Type II ref 1.1.d)_
+
 ### Product Manager
 
 Responsible for coordinating stakeholder input and managing product specification and setting development priorities.
@@ -192,13 +210,13 @@ Responsible for directly selling to potential clients.
 
 ### Security Officer
 
-Executive with final responsibility for matters relating to security and compliance including definition, implementation, and verification. The Security Officer also has general oversight of all Company Policy.
-The Security Officer:
-* Is a member of the Senior Management Team.
-* Works with senior management to develop and maintain the Company's security policy and infrastructure and the Security Awareness Program in particular. _(PCI DSS 3.2.1 ref 12.4, 12.5.1, 12.5.3)_
-* Working with line management and technical staff to implement Company security policy to ensure understanding, improve effectiveness, and where possible simplify and automate end user procedures. _(PCI DSS 3.2.1 ref 12.4, 12.5.1, 12.5.3)_
-* Independently verifyies the implementation of Company Policy, especially as it relates to security, privacy, and compliance.
-* Chairs meetings and working groups related to security issues.
+Non-executive officer with final responsibility for matters relating to Company security.
+
+Duties:
+* Works with senior management to develop and maintain the Company's security policy and infrastructure. _(PCI DSS 3.2.1 ref 12.4, 12.5.1, 12.5.3)_
+* Works with line management and technical staff to implement Company security policy to ensure understanding, improve effectiveness, and where possible simplify and automate end user procedures. _(PCI DSS 3.2.1 ref 12.4, 12.5.1, 12.5.3)
+* Develops curriculum for and oversees implementation of a Security Awareness Program. _(PCI DSS 3.2.1 ref 12.6)_
+* Is a member of the Senior Management Team. _(SOC 2 Type I ref 1.1.d, SOC 2 Type II ref 1.1.d)_
 
 ### Senior Cloud Engineer
 
