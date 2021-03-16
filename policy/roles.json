@@ -299,6 +299,7 @@
       { "description": "Works with senior management to develop and maintain the Company's security policy and infrastructure. _(PCI DSS 3.2.1 ref 12.4, 12.5.1, 12.5.3)_" },
       { "description": "Works with line management and technical staff to implement Company security policy to ensure understanding, improve effectiveness, and where possible simplify and automate end user procedures. _(PCI DSS 3.2.1 ref 12.4, 12.5.1, 12.5.3)" },
       { "description": "Develops curriculum for and oversees implementation of a Security Awareness Program. _(PCI DSS 3.2.1 ref 12.6)_" },
+      { "description": "Oversees development, verification, and implementation of the Incident Response Framework. _(PCI DSS v3.2.1 ref 12.10)_" },
       { "description": "Is a member of the Senior Management Team. _(SOC 2 Type I ref 1.1.d, SOC 2 Type II ref 1.1.d)_" }
     ]
   },
