@@ -11,7 +11,10 @@
     "aliases": [ "COO" ],
     "singular": true,
     "titular": true,
-    "jobDescription": "The senior executive overseeing all day-to-day non-technical operational corporate functions."
+    "jobDescription": "The senior executive overseeing all day-to-day non-technical operational corporate functions.",
+    "duties": [
+      { "description": "Serves on the Incident Response Team." }
+    ]
   },
   {
     "name": "General Manager",
@@ -24,7 +27,10 @@
     "aliases": [ "CTO" ],
     "singular": true,
     "titular": true,
-    "jobDescription": "The senior executive in charge of technical implementation and operations."
+    "jobDescription": "The senior executive in charge of technical implementation and operations.",
+    "duties": [
+      { "description": "Serves on the Incident Response Team." }
+    ]
   },
   {
     "name": "Chief Financial Officer",
@@ -85,7 +91,10 @@
     "aliases": [ "CAO" ],
     "singular": true,
     "titular": true,
-    "jobDescription": "Senior executive in charge of corporate administration, including human resources and legal matters."
+    "jobDescription": "Senior executive in charge of corporate administration, including human resources and legal matters.",
+    "duties": [
+      { "description": "Serves on the Incident Response Team." }
+    ]
   },
   {
     "name": "Human Resources Head",
@@ -146,7 +155,10 @@
     "singular": true,
     "titular": true,
     "jobDescription": "Has final responsibility for production [qual] code.; Chief Software Engineer's approval is required for sensitive changes involving customer privacy, regulatory issues, and/or exceptional complexity.",
-    "qualifiable": true
+    "qualifiable": true,
+    "duties": [
+      { "description": "Serves on the Incident Response Team." }
+    ]
   },
   {
     "name": "Data Engineer",
@@ -168,7 +180,10 @@
     "singular": true,
     "titular": true,
     "jobDescription": "Has final responsibility for production schemas and DBMSs.; Chief Data Engineer's approval is required for sensitive changes involving customer privacy, regulatory issues, and/or exceptional complexity.",
-    "qualifiable": true
+    "qualifiable": true,
+    "duties": [
+      { "description": "Serves on the Incident Response Team." }
+    ]
   },
   {
     "name": "Host Engineer",
@@ -190,7 +205,10 @@
     "singular": true,
     "titular": true,
     "jobDescription": "Has final responsibility for production host systems.; Chief Host Engineer approval is required for sensitive changes involving host security, regulatory issues, or exceptional complexity.",
-    "qualifiable": true
+    "qualifiable": true,
+    "duties": [
+      { "description": "Serves on the Incident Response Team." }
+    ]
   },
   {
     "name": "Network Engineer",
@@ -212,7 +230,10 @@
     "singular": true,
     "titular": true,
     "jobDescription": "Has final responsibility for the integrity and security of production networks.; Chief Network Engineer approval is required for changes to sensitive networks providing access to private customer data, under regulatory scrutiny, or any change of exceptional complexity.",
-    "qualifiable": true
+    "qualifiable": true,
+    "duties": [
+      { "description": "Serves on the Incident Response Team." }
+    ]
   },
   {
     "name": "Cloud Engineer",
@@ -234,7 +255,10 @@
     "singular": true,
     "titular": true,
     "jobDescription": "Has final responsibility for production cloud services systems.; Chief Cloud Engineer approval is required for sensitive changes involving cloud services security, regulatory issues, or exceptional complexity.",
-    "qualifiable": true
+    "qualifiable": true,
+    "duties": [
+      { "description": "Serves on the Incident Response Team." }
+    ]
   },
   {
     "name": "Quality Engineer",
@@ -300,7 +324,8 @@
       { "description": "Works with line management and technical staff to implement Company security policy to ensure understanding, improve effectiveness, and where possible simplify and automate end user procedures. _(PCI DSS 3.2.1 ref 12.4, 12.5.1, 12.5.3)" },
       { "description": "Develops curriculum for and oversees implementation of a Security Awareness Program. _(PCI DSS 3.2.1 ref 12.6)_" },
       { "description": "Oversees development, verification, and implementation of the Incident Response Framework. _(PCI DSS v3.2.1 ref 12.10)_" },
-      { "description": "Is a member of the Senior Management Team. _(SOC 2 Type I ref 1.1.d, SOC 2 Type II ref 1.1.d)_" }
+      { "description": "Serves on the Senior Management Team. _(SOC 2 Type I ref 1.1.d, SOC 2 Type II ref 1.1.d)_" },
+      { "description": "Serves on the Incident Response Team." }
     ]
   },
   {
@@ -314,7 +339,8 @@
       { "description": "Oversee and ensure updates to Company Policy are according to the Company Change Control Policy." },
       { "description": "Works with <role>department heads</role> to define, implement, and maintain procedures." },
       { "description": "Indepndently verifies policy implementation." },
-      { "description": "Is a member of the Senior Management Team. _(SOC 2 Type I ref 1.1.d, SOC 2 Type II ref 1.1.d)_" }
+      { "description": "Is a member of the Senior Management Team. _(SOC 2 Type I ref 1.1.d, SOC 2 Type II ref 1.1.d)_" },
+      { "description": "Serves on the Incident Response Team." }
     ]
   },
   {
@@ -324,7 +350,8 @@
     "titular": true,
     "jobDescription": "Non-executive officer with final responsibility for matters relating to customer and staff privacy.",
     "duties": [
-      { "description": "Is a member of the Senior Management Team. _(SOC 2 Type I ref 1.1.d, SOC 2 Type II ref 1.1.d)_" }
+      { "description": "Is a member of the Senior Management Team. _(SOC 2 Type I ref 1.1.d, SOC 2 Type II ref 1.1.d)_" },
+      { "description": "Serves on the Incident Response Team." }
     ]
   },
   {
@@ -344,10 +371,9 @@
     "jobDescription": "Has full access to sensitive operational services. May be designated for emergency and/or backup purposes."
   },
   {
-    "name": "Incident Responder",
+    "name": "Incident Response Team",
     "designated": true,
-    "jobDescription": "On call for Emergency Response and/or Disaster Recovery situations.",
-    "notes": "The 'Chief' and at least one 'Senior' of each type is generally designated an incident responder, where possible.; Sufficient backups should be provided such that Incident Responders with particular responsibilities are always available."
+    "jobDescription": "Team members are on call for emergency response and/or disaster recovery."
   },
   {
     "name": "Network Alert Responder",
