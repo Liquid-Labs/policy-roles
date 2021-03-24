@@ -7,7 +7,7 @@
   "scripts": {
     "build": "make",
     "test": "make test",
-    "preversion": "make qa",
+    "preversion": "make all && make qa",
     "postversion": "git push && git push --tags",
     "prepare": "npm run build",
     "lint": "make lint",

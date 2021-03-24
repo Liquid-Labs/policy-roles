@@ -1,0 +1,5 @@
+TESTED VERSION: 000f00e26194739a968f6f339b1584abe2eed12f
+Preparing...
+Test document parsing: PASS
+Expect 12 files; found 12: PASS
+Cleaning up... done.

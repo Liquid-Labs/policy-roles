@@ -35,6 +35,7 @@ Reviews proposed changes and assigns priorities in accordance with cost and stra
 Senior executive in charge of corporate administration, including human resources and legal matters.
 
 Duties:
+* Is a member of the Senior Management Team. _(SOC 2 Type I ref 1.1, SOC 2 Type II ref 1.1)_
 * Is a member of the Incident Response Team.
 
 ### Chief Cloud Engineer
