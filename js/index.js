@@ -1,28 +1,7 @@
-import * as fs from 'fs'
+import { genDoc } from './gen-doc'
 
 // TODO: the use of an 'index' file is a little misleading in this case. We want to build a tool, not a 'bundle'. We would like to update the catalyst-scripts (which need to be reworked) to be a bit more flexible.
 
-const args = process.argv.slice(2)
-const content = fs.readFileSync(args[0])
-const roles = JSON.parse(content)
-
-roles.sort((a, b) => a.name.toLowerCase().localeCompare(b.name.toLowerCase()))
-
-// Note: 'console.log' prints a newline itself, so the ending '\n' has the effect of adding an empty line.
-console.log('# Company Roles Reference\n')
-
-console.log('## Purpose and scope\n')
-console.log('This document provides a reference for all roles within the Company.\n')
-
-console.log('## Roles\n')
-roles.forEach((role) => {
-  console.log(`### ${role.name}\n`)
-  console.log(`${role.jobDescription}\n`)
-  if (role.duties) {
-    console.log('Duties:')
-    for (const duty of role.duties || []) {
-      console.log(`* ${duty.description}`)
-    }
-    console.log('')
-  }
-})
+for (const line of genDoc(process.argv.slice(2))) {
+  console.log(line)
+}

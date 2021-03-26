@@ -11,9 +11,11 @@ TEST_MARKER:=$(shell OUTPUT=$(git status --porcelain) && [ -z "${OUTPUT}" ] && g
 BUILD_TARGETS:=$(DOC_GENERATOR) $(HTML_GENERATOR)
 TEST_TARGETS:=.meta/test-roles.json.log .meta/test-policy.log
 LINT_TARGETS:=.meta/qa-lint.log
-ALL_TARGETS:=$(BUILD_TARGETS) $(TEST_TARGETS) $(LINT_TARGETS)
+# ALL_TARGETS:=$(BUILD_TARGETS) $(TEST_TARGETS) $(LINT_TARGETS)
+EXAMPLE_TARGETS:=example.md example-implied.md
 
-JS_SRC=js/index.js js/roles.test.js
+JS_SRC=js/index.js js/gen-doc.js
+TEST_SRC=js/roles.test.js js/gen-doc.test.js
 
 all: $(BUILD_TARGETS)
 
@@ -23,7 +25,9 @@ lint: $(LINT_TARGETS)
 
 qa: test lint
 
-clean: clean-build clean-qa
+example: $(EXAMPLE_TARGETS)
+
+clean: clean-build clean-qa clean-example
 clean-build:
 	rm -f $(BUILD_TARGETS)
 clean-test:
@@ -31,24 +35,21 @@ clean-test:
 clean-lint:
 	rm -f $(LINT_TARGETS) $(patsubst %, %.*, $(LINT_TARGETS))
 clean-qa: clean-test clean-lint
+clean-example: $(EXAMPLE_TARGETS)
+	rm -f $(EXAMPLE_TARGETS)
 
 .DELETE_ON_ERROR:
 
-.PHONY: all test lint qa clean
+.PHONY: all test lint qa example clean
 
-$(DOC_GENERATOR): package.json js/index.js js/gen-doc.js
+$(DOC_GENERATOR): package.json $(JS_SRC)
 	$(CATALYST_SCRIPTS) build
-	
+
 $(HTML_GENERATOR): src/md2x/md2x.sh
 	$(BASH_ROLLUP) $< $@
 
-policy/Company\ Roles\ Reference.md: policy/roles.json $(DOC_GENERATOR)
-	node $(DOC_GENERATOR) "$<" > "$@"
-
-test-staging/index.js: $(JS_SRC) package.json
+.meta/test-roles.json.log: policy/roles.json $(JS_SRC) $(TEST_SRC)
 	$(CATALYST_SCRIPTS) pretest
-
-.meta/test-roles.json.log: policy/roles.json test-staging/index.js js/roles.test.js # js/gen-doc.test.js
 	echo "TESTED VERSION: $(TEST_MARKER)" > $@
 	$(CATALYST_SCRIPTS) test | tee -a $@
 
@@ -59,3 +60,9 @@ test-staging/index.js: $(JS_SRC) package.json
 .meta/qa-lint.log: $(JS_SRC)
 	echo "TESTED VERSION: $(TEST_MARKER)" > $@
 	$(CATALYST_SCRIPTS) lint | tee -a $@
+
+example.md: $(DOC_GENERATOR) ./js/test/org-struct.json ./policy/roles.json
+	node $(DOC_GENERATOR) ./js/test/org-struct.json ./policy/roles.json > $@
+
+example-implied.md: $(DOC_GENERATOR) ./js/test/org-struct-implied.json ./policy/roles.json
+	node $(DOC_GENERATOR) ./js/test/org-struct-implied.json ./policy/roles.json > $@
