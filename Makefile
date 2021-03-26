@@ -2,13 +2,13 @@ SHELL=/bin/bash -o pipefail
 DOC_GENERATOR:=bin/gen-roles-ref.js
 HTML_GENERATOR:=bin/md2x
 NPM_BIN:=$(shell npm bin)
-CATALYST_SCRIPTS:=$(NPM_BIN)/catalyst-scripts $@
+CATALYST_SCRIPTS:=$(NPM_BIN)/catalyst-scripts
 BASH_ROLLUP:=$(NPM_BIN)/bash-rollup
 SPACE:=$(null) $(null)
 POLICY_SRC:=$(shell find policy -type f | sed 's/ /\\ /g')
 TEST_MARKER:=$(shell OUTPUT=$(git status --porcelain) && [ -z "${OUTPUT}" ] && git rev-parse HEAD || echo 'working')
 
-BUILD_TARGETS:=$(DOC_GENERATOR) $(HTML_GENERATOR) policy/Company\ Roles\ Reference.md
+BUILD_TARGETS:=$(DOC_GENERATOR) $(HTML_GENERATOR)
 TEST_TARGETS:=.meta/test-roles.json.log .meta/test-policy.log
 LINT_TARGETS:=.meta/qa-lint.log
 ALL_TARGETS:=$(BUILD_TARGETS) $(TEST_TARGETS) $(LINT_TARGETS)
@@ -36,9 +36,9 @@ clean-qa: clean-test clean-lint
 
 .PHONY: all test lint qa clean
 
-$(DOC_GENERATOR): js/index.js
+$(DOC_GENERATOR): package.json js/index.js js/gen-doc.js
 	$(CATALYST_SCRIPTS) build
-
+	
 $(HTML_GENERATOR): src/md2x/md2x.sh
 	$(BASH_ROLLUP) $< $@
 
@@ -48,7 +48,7 @@ policy/Company\ Roles\ Reference.md: policy/roles.json $(DOC_GENERATOR)
 test-staging/index.js: $(JS_SRC) package.json
 	$(CATALYST_SCRIPTS) pretest
 
-.meta/test-roles.json.log: policy/roles.json test-staging/index.js
+.meta/test-roles.json.log: policy/roles.json test-staging/index.js js/roles.test.js # js/gen-doc.test.js
 	echo "TESTED VERSION: $(TEST_MARKER)" > $@
 	$(CATALYST_SCRIPTS) test | tee -a $@
 
