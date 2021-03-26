@@ -2,16 +2,22 @@
 import { genDoc } from './gen-doc'
 
 describe('genDoc', () => {
-  let exampleA
+  let fullNoImp
+  let justSecComp
   beforeAll(() => {
-    exampleA = genDoc(['./js/test/org-struct.json', './policy/roles.json'])
+    fullNoImp = genDoc(['./js/test/org-struct.json', './policy/roles.json'])
+    justSecComp = genDoc(['./js/test/org-struct-sec-comp.json', './policy/roles.json'])
   })
 
   test('prints roles in org struct', () => {
-    expect(exampleA.find((line) => line.match(/## Security Officer/))).toBeTruthy()
+    expect(fullNoImp.find((line) => line.match(/## Security Officer/))).toBeTruthy()
   })
 
   test('skips roles not in org struct', () => {
-    expect(exampleA.find((line) => line.match(/## Policy Officer/))).not.toBeTruthy()
+    expect(fullNoImp.find((line) => line.match(/## Policy Officer/))).not.toBeTruthy()
+  })
+
+  test('prints unique implied duties', () => {
+    expect(justSecComp.filter((line) => line.match(/Is a member of the Senior Management Team\./))).toHaveLength(1)
   })
 })
