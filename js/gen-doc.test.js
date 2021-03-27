@@ -5,8 +5,8 @@ describe('genDoc', () => {
   let fullNoImp
   let justSecComp
   beforeAll(() => {
-    fullNoImp = genDoc(['./js/test/org-struct.json', './policy/roles.json'])
-    justSecComp = genDoc(['./js/test/org-struct-sec-comp.json', './policy/roles.json'])
+    fullNoImp = genDoc('./js/test/data-simple', './js/test/data-simple/orgs/staff.json')
+    justSecComp = genDoc('./js/test/data-just-sec-comp', './js/test/data-just-sec-comp/orgs/staff.json')
   })
 
   test('prints roles in org struct', () => {

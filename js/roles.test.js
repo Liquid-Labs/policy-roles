@@ -1,4 +1,6 @@
 /* global beforeAll describe expect test */
+import * as fs from 'fs'
+
 import { Roles } from '@liquid-labs/orgs-model'
 
 const rolesFile = './policy/roles.json'
@@ -7,7 +9,7 @@ const rolesFile = './policy/roles.json'
 describe('roles.json', () => {
   let roles
   beforeAll(() => {
-    roles = new Roles({}, rolesFile).hydrate()
+    roles = new Roles({}, JSON.parse(fs.readFileSync(rolesFile))).hydrate()
   })
 
   test('is successfully parsed', () => {

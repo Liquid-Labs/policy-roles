@@ -1,31 +1,35 @@
 /* global fs */
 import * as fs from 'fs'
 
-const getRole = (roleName, roles) => {
-  const role = roles.find(r => r.name === roleName)
-  if (role === undefined) {
-    throw new Error(`Role '${roleName}' defined in '${structurePath}' is not defined in roles def '${rolesPath}'.`)
-  }
+import { Organization } from '@liquid-labs/orgs-model'
 
-  return role
-}
+const genDoc = (dataPath, staffPath) => {
+  const org = new Organization(dataPath, staffPath)
 
-const processImpliedRoles = (role, roles, duties) => {
-  for (const impName of role.implies || []) {
-    const impRole = getRole(impName, roles)
-    duties = duties.concat(impRole.duties || [])
-
-    duties = processImpliedRoles(impRole, roles, duties)
-  }
-
-  return duties
-}
-
-const genDoc = ([structurePath, rolesPath]) => {
-  const companyRoles = JSON.parse(fs.readFileSync(structurePath)).map((r) => r[0])
-  const roles = JSON.parse(fs.readFileSync(rolesPath))
-
+  const companyRoles = org.orgStructure.getNodes().reduce((acc, node) => {
+    if (!node.implied) {
+      acc.push(node.name)
+    }
+    return acc
+  }, [])
   companyRoles.sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()))
+
+  const getRole = (roleName) =>
+    org.roles.get(roleName, {
+      required: true,
+      errMsgGen: (name) => `Role '${name}' defined in organization structure is not defined.`
+    })
+
+  const processImpliedRoles = (role, duties) => {
+    for (const impName of role.implies || []) {
+      const impRole = getRole(impName)
+      duties = duties.concat(impRole.duties || [])
+
+      duties = processImpliedRoles(impRole, duties)
+    }
+
+    return duties
+  }
 
   const sb = []
 
@@ -38,13 +42,13 @@ const genDoc = ([structurePath, rolesPath]) => {
 
   sb.push('## Job descriptions\n')
   for (const roleName of companyRoles) {
-    const role = getRole(roleName, roles)
+    const role = getRole(roleName)
 
     sb.push(`### ${role.name}\n`)
     sb.push(`${role.description}\n`)
 
     let duties = role.duties || []
-    duties = processImpliedRoles(role, roles, duties)
+    duties = processImpliedRoles(role, duties)
 
     if (duties) {
       const origCount = duties.length
@@ -61,6 +65,32 @@ const genDoc = ([structurePath, rolesPath]) => {
         sb.push(`* ${duty.description}`)
       }
       sb.push('')
+    }
+  }
+
+  sb.push('## Designations\n')
+
+  const designationsReducer = (designations, role) => {
+    if (role.designated) {
+      designations.push(role)
+    }
+    return designations
+  }
+  const nameSorter = (name) => (a, b) => a[name].toLowerCase().localeCompare(b[name].toLowerCase())
+
+  for (const role of org.roles.list().reduce(designationsReducer, []).sort(nameSorter('name'))) {
+    sb.push(`## ${role.name}\n`)
+
+    const staffInRole = org.roles.getStaffInRole(role.name).sort(nameSorter('familyName'))
+
+    if (staffInRole && staffInRole.length > 0) {
+      for (const staff of staffInRole) {
+        sb.push(`* ${staff.familyName}, ${staff.givenName} _${staff.email}_`)
+      }
+      sb.push('')
+    }
+    else {
+      sb.push('_*NONE*_\n')
     }
   }
 

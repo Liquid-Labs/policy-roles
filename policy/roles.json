@@ -5,9 +5,7 @@
     "singular": true,
     "titular": true,
     "description": "The highest ranking company executive with final responsibility for major strategic decisions and management of operation and corporate resources. Acts as primary contact between the Board of Directors and corporate operations. The CEO is also the \"public face\" of the company.",
-    "duties": [
-      { "description": "Is a member of the Senior Management Team. _(SOC 2 Type I ref 1.1, SOC 2 Type II ref 1.1)_" }
-    ]
+    "implies": [ "Senior Management Team" ]
   },
   {
     "name": "Chief Operations Officer",
@@ -16,9 +14,9 @@
     "titular": true,
     "description": "The senior executive overseeing all day-to-day non-technical operational corporate functions.",
     "duties": [
-      { "description": "Is a member of the Senior Management Team. _(SOC 2 Type I ref 1.1, SOC 2 Type II ref 1.1)_" },
       { "description": "Is a member of the Incident Response Team." }
-    ]
+    ],
+    "implies": [ "Senior Management Team" ]
   },
   {
     "name": "General Manager",
@@ -33,19 +31,16 @@
     "titular": true,
     "description": "The senior executive in charge of technical implementation and operations.",
     "duties": [
-      { "description": "Is a member of the Senior Management Team. _(SOC 2 Type I ref 1.1, SOC 2 Type II ref 1.1)_" },
       { "description": "Is a member of the Incident Response Team." }
-    ]
+    ],
+    "implies": [ "Senior Management Team" ]
   },
   {
     "name": "Chief Financial Officer",
     "aliases": [ "CFO" ],
     "singular": true,
     "titular": true,
-    "description": "The senior executive in charge of corporate accounting records and strategic finance.",
-    "duties": [
-      { "description": "Is a member of the Senior Management Team. _(SOC 2 Type I ref 1.1, SOC 2 Type II ref 1.1)_" }
-    ]
+    "description": "The senior executive in charge of corporate accounting records and strategic finance."
   },
   {
     "name": "Controller",
@@ -105,9 +100,9 @@
     "titular": true,
     "description": "Senior executive in charge of corporate administration, including human resources and legal matters.",
     "duties": [
-      { "description": "Is a member of the Senior Management Team. _(SOC 2 Type I ref 1.1, SOC 2 Type II ref 1.1)_" },
       { "description": "Is a member of the Incident Response Team." }
-    ]
+    ],
+    "implies": [ "Senior Management Team" ]
   },
   {
     "name": "Head of Human Resources",
@@ -351,9 +346,9 @@
       { "description": "Works with line management and technical staff to implement Company security policy to ensure understanding, improve effectiveness, and where possible simplify and automate end user procedures. _(PCI DSS 3.2.1 ref 12.4, 12.5.1, 12.5.3)" },
       { "description": "Develops curriculum for and oversees implementation of a Security Awareness Program. _(PCI DSS 3.2.1 ref 12.6)_" },
       { "description": "Oversees development, verification, and implementation of the Incident Response Framework. _(PCI DSS v3.2.1 ref 12.10)_" },
-      { "description": "Is a member of the Senior Management Team. _(SOC 2 Type I ref 1.1, SOC 2 Type II ref 1.1)_" },
       { "description": "Is a member of the Incident Response Team." }
-    ]
+    ],
+    "implies": [ "Senior Management Team" ]
   },
   {
     "name": "Compliance Officer",
@@ -366,9 +361,9 @@
       { "description": "Oversee and ensure updates to Company Policy are according to the Company Change Control Policy." },
       { "description": "Works with <role>department heads</role> to define, implement, and maintain procedures." },
       { "description": "Indepndently verifies policy implementation." },
-      { "description": "Is a member of the Senior Management Team. _(SOC 2 Type I ref 1.1, SOC 2 Type II ref 1.1)_" },
       { "description": "Is a member of the Incident Response Team." }
-    ]
+    ],
+    "implies": [ "Senior Management Team" ]
   },
   {
     "name": "Privacy Officer",
@@ -377,9 +372,9 @@
     "titular": true,
     "description": "Non-executive officer with final responsibility for matters relating to customer and staff privacy.",
     "duties": [
-      { "description": "Is a member of the Senior Management Team. _(SOC 2 Type I ref 1.1, SOC 2 Type II ref 1.1)_" },
       { "description": "Is a member of the Incident Response Team." }
-    ]
+    ],
+    "implies": [ "Senior Management Team" ]
   },
   {
     "name": "Key Admin",
@@ -437,7 +432,10 @@
     "name": "Senior Management Team",
     "aliases": [ "SMT" ],
     "designated": true,
-    "description": "Annually reviews Company compliance and key processes."
+    "description": "Annually reviews Company compliance and key processes.",
+    "duties": [
+      { "description": "Is a member of the Senior Management Team. _(SOC 2 Type I ref 1.1, SOC 2 Type II ref 1.1)_" }
+    ]
   },
   {
     "name": "Department Heads",

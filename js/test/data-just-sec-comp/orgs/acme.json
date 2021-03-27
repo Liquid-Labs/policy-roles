@@ -1,0 +1,14 @@
+{
+  "_meta": {
+    "com.liquid-labs.federated-json": {
+      "mountSpecs": [
+        {
+          "dataPath": "roles",
+          "dataFile": "${LIQ_PLAYGROUND}/liquid-labs/policy-core/policy/roles.json"
+        }
+      ]
+    }
+  },
+  "roles": null,
+  "thirdPartyAccounts": []
+}

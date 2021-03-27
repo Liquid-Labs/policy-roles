@@ -1,0 +1,14 @@
+[
+  {
+    "email": "john@acme.com",
+    "familyName": "Smith",
+    "givenName": "John",
+    "startDate": "2020-01-01",
+    "roles": [
+      {
+        "name": "Security and Compliance Officer"
+      }
+    ],
+    "employmentStatus": "employee"
+  }
+]
