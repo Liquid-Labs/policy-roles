@@ -14,7 +14,7 @@ LINT_TARGETS:=.meta/qa-lint.log
 EXAMPLE_TARGETS:=example.md example-implied.md
 
 JS_SRC=js/index.js js/gen-doc.js
-TEST_SRC=js/roles.test.js js/gen-doc.test.js
+TEST_SRC=js/test/roles.test.js js/test/gen-doc.test.js
 
 all: $(BUILD_TARGETS)
 

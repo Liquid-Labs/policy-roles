@@ -1,5 +1,5 @@
 /* global describe expect test */
-import { genDoc } from './gen-doc'
+import { genDoc } from '../gen-doc'
 
 describe('genDoc', () => {
   let fullNoImp
