@@ -1,6 +1,3 @@
-/* global fs */
-import * as fs from 'fs'
-
 import { Organization } from '@liquid-labs/orgs-model'
 
 const genDoc = (dataPath, staffPath) => {
@@ -16,8 +13,8 @@ const genDoc = (dataPath, staffPath) => {
 
   const getRole = (roleName) =>
     org.roles.get(roleName, {
-      required: true,
-      errMsgGen: (name) => `Role '${name}' defined in organization structure is not defined.`
+      required  : true,
+      errMsgGen : (name) => `Role '${name}' defined in organization structure is not defined.`
     })
 
   const processImpliedRoles = (role, duties) => {

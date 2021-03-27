@@ -1,4 +1,4 @@
-/* global describe expect test */
+/* global beforeAll describe expect test */
 import { genDoc } from '../gen-doc'
 
 describe('genDoc', () => {
