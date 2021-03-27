@@ -47,7 +47,8 @@ $(DOC_GENERATOR): package.json $(JS_SRC)
 $(HTML_GENERATOR): src/md2x/md2x.sh
 	$(BASH_ROLLUP) $< $@
 
-.meta/test-roles.json.log: policy/roles.json $(JS_SRC) $(TEST_SRC) package.json
+# TODO: package.json will cause to retest after every version update
+.meta/test-roles.json.log: policy/roles.json $(JS_SRC) $(TEST_SRC) # package.json
 	$(CATALYST_SCRIPTS) pretest
 	echo "TESTED VERSION: $(TEST_MARKER)" > $@
 	$(CATALYST_SCRIPTS) test | tee -a $@
