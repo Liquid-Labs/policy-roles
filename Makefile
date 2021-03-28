@@ -1,5 +1,6 @@
 SHELL=/bin/bash -o pipefail
-DOC_GENERATOR:=bin/gen-roles-ref.js
+DOC_GENERATOR_JS:=bin/gen-roles-ref.js
+DOC_GENERATOR:=bin/liq-gen-roles-ref.sh
 HTML_GENERATOR:=bin/md2x
 NPM_BIN:=$(shell npm bin)
 CATALYST_SCRIPTS:=$(NPM_BIN)/catalyst-scripts
@@ -41,8 +42,11 @@ clean-example: $(EXAMPLE_TARGETS)
 
 .PHONY: all test lint qa example clean
 
-$(DOC_GENERATOR): package.json $(JS_SRC)
+$(DOC_GENERATOR_JS): package.json $(JS_SRC)
 	$(CATALYST_SCRIPTS) build
+
+$(DOC_GENERATOR): src/liq-gen-roles-ref/liq-gen-roles-ref.sh $(DOC_GENERATOR_JS)
+	$(BASH_ROLLUP) $< $@
 
 $(HTML_GENERATOR): src/md2x/md2x.sh
 	$(BASH_ROLLUP) $< $@
@@ -61,8 +65,8 @@ $(HTML_GENERATOR): src/md2x/md2x.sh
 	echo "TESTED VERSION: $(TEST_MARKER)" > $@
 	$(CATALYST_SCRIPTS) lint | tee -a $@
 
-example.md: $(DOC_GENERATOR) $(shell find ./js/test/data-simple -name "*.json")
-	node $(DOC_GENERATOR) ./js/test/data-simple ./js/test/data-simple/orgs/staff.json > $@
+example.md: $(DOC_GENERATOR_JS) $(shell find ./js/test/data-simple -name "*.json")
+	node $(DOC_GENERATOR_JS) ./js/test/data-simple ./js/test/data-simple/orgs/staff.json > $@
 
-example-implied.md: $(DOC_GENERATOR) $(shell find ./js/test/data-implied -name "*.json")
-	node $(DOC_GENERATOR) ./js/test/data-implied ./js/test/data-implied/orgs/staff.json > $@
+example-implied.md: $(DOC_GENERATOR_JS) $(shell find ./js/test/data-implied -name "*.json")
+	node $(DOC_GENERATOR_JS) ./js/test/data-implied ./js/test/data-implied/orgs/staff.json > $@

@@ -4,6 +4,10 @@
   "description": "Standard 'roles' definitions compatible with Liquid Policy.",
   "main": "bin/gen-roles-ref.js",
   "module": "bin/gen-roles-ref.es.js",
+  "bin": {
+    "md2x": "bin/md2x",
+    "liq-gen-roles-ref": "bin/liq-gen-roles-ref.sh"
+  },
   "scripts": {
     "build": "make",
     "test": "make test",
@@ -27,10 +31,10 @@
   },
   "homepage": "https://github.com/liquid-labs/policy-core#readme",
   "devDependencies": {
-    "@liquid-labs/bash-rollup": "^1.0.0-alpha.4",
+    "@liquid-labs/bash-rollup": "^1.0.0-alpha.4+0fedf46f",
     "@liquid-labs/bash-toolkit": "^1.0.0-alpha.47",
     "@liquid-labs/catalyst-scripts": "^1.0.0-alpha.28",
-    "@liquid-labs/orgs-model": "^1.0.0-beta.25"
+    "@liquid-labs/orgs-model": "^1.0.0-beta.26"
   },
   "dependencies": {
     "@liquid-labs/policy-projects": "^1.0.0-alpha.10",

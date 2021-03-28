@@ -1,5 +1,7 @@
 import { Organization } from '@liquid-labs/orgs-model'
 
+const nameSorter = (name) => (a, b) => a[name].toLowerCase().localeCompare(b[name].toLowerCase())
+
 const genDoc = (dataPath, staffPath) => {
   const org = new Organization(dataPath, staffPath)
 
@@ -7,9 +9,13 @@ const genDoc = (dataPath, staffPath) => {
     if (!node.implied) {
       acc.push(node.name)
     }
+    /* else { // DEBUG
+      console.error(`skipping role ${node.name}`)
+    } */
     return acc
   }, [])
   companyRoles.sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()))
+  // console.error(companyRoles) // DEBUG
 
   const getRole = (roleName) =>
     org.roles.get(roleName, {
@@ -18,7 +24,7 @@ const genDoc = (dataPath, staffPath) => {
     })
 
   const processImpliedRoles = (role, duties) => {
-    for (const impName of role.implies || []) {
+    for (const { name: impName } of role.implies || []) {
       const impRole = getRole(impName)
       duties = duties.concat(impRole.duties || [])
 
@@ -63,6 +69,31 @@ const genDoc = (dataPath, staffPath) => {
       }
       sb.push('')
     }
+
+    const staffInRole = org.roles.getStaffInRole(role.name).sort(nameSorter('familyName'))
+
+    const hasMembers = staffInRole && staffInRole.length > 0
+
+    if (role.singular) {
+      const staff = staffInRole[0]
+      // TODO: check that we don't have multiples.
+      hasMembers
+        ? sb.push(`${staff.familyName}, ${staff.givenName} _${staff.email}_ is the current ${role.name}\n`)
+        : sb.push('_*This position is currently vacant.*_\n')
+    }
+    else {
+      sb.push('#### Members\n')
+
+      if (hasMembers) {
+        for (const staff of staffInRole) {
+          sb.push(`* ${staff.familyName}, ${staff.givenName} _${staff.email}_`)
+        }
+        sb.push('')
+      }
+      else {
+        sb.push('_*NONE*_\n')
+      }
+    }
   }
 
   sb.push('## Designations\n')
@@ -73,7 +104,6 @@ const genDoc = (dataPath, staffPath) => {
     }
     return designations
   }
-  const nameSorter = (name) => (a, b) => a[name].toLowerCase().localeCompare(b[name].toLowerCase())
 
   for (const role of org.roles.list().reduce(designationsReducer, []).sort(nameSorter('name'))) {
     sb.push(`## ${role.name}\n`)

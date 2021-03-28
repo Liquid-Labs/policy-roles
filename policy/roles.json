@@ -1,11 +1,29 @@
 [
   {
+    "name": "Board of Directors",
+    "titular": true,
+    "singular": true,
+    "description": "Appoints and monitors the Chief Executive Officer and the general health of the Company."
+  },
+  {
+    "name": "Board Member",
+    "titular": true,
+    "description": "Serves on the Board of Directors"
+  },
+  {
+    "name": "Chairman of the Board",
+    "singular": true,
+    "designated": true,
+    "description": "Chairs meetings of the Board of Directors.",
+    "implies": [ { "name": "Board Member", "mngrProtocol": "same", "mergeWith": "Chairman of the Board" } ]
+  },
+  {
     "name": "Chief Executive Officer",
     "aliases": [ "CEO" ],
     "singular": true,
     "titular": true,
     "description": "The highest ranking company executive with final responsibility for major strategic decisions and management of operation and corporate resources. Acts as primary contact between the Board of Directors and corporate operations. The CEO is also the \"public face\" of the company.",
-    "implies": [ "Senior Management Team" ]
+    "implies": [ { "name": "Senior Management Team", "mngrProtocol": "self" } ]
   },
   {
     "name": "Chief Operations Officer",
@@ -16,7 +34,7 @@
     "duties": [
       { "description": "Is a member of the Incident Response Team." }
     ],
-    "implies": [ "Senior Management Team" ]
+    "implies": [ { "name": "Senior Management Team", "mngrProtocol": "self" } ]
   },
   {
     "name": "General Manager",
@@ -33,7 +51,7 @@
     "duties": [
       { "description": "Is a member of the Incident Response Team." }
     ],
-    "implies": [ "Senior Management Team" ]
+    "implies": [ { "name": "Senior Management Team", "mngrProtocol": "self" }  ]
   },
   {
     "name": "Chief Financial Officer",
@@ -102,7 +120,7 @@
     "duties": [
       { "description": "Is a member of the Incident Response Team." }
     ],
-    "implies": [ "Senior Management Team" ]
+    "implies": [ { "name": "Senior Management Team", "mngrProtocol": "self" } ]
   },
   {
     "name": "Head of Human Resources",
@@ -348,7 +366,7 @@
       { "description": "Oversees development, verification, and implementation of the Incident Response Framework. _(PCI DSS v3.2.1 ref 12.10)_" },
       { "description": "Is a member of the Incident Response Team." }
     ],
-    "implies": [ "Senior Management Team" ]
+    "implies": [ { "name": "Senior Management Team", "mngrProtocol": "self" } ]
   },
   {
     "name": "Compliance Officer",
@@ -363,7 +381,7 @@
       { "description": "Indepndently verifies policy implementation." },
       { "description": "Is a member of the Incident Response Team." }
     ],
-    "implies": [ "Senior Management Team" ]
+    "implies": [ { "name": "Senior Management Team", "mngrProtocol": "self" } ]
   },
   {
     "name": "Privacy Officer",
@@ -374,7 +392,7 @@
     "duties": [
       { "description": "Is a member of the Incident Response Team." }
     ],
-    "implies": [ "Senior Management Team" ]
+    "implies": [ { "name": "Senior Management Team", "mngrProtocol": "self" } ]
   },
   {
     "name": "Key Admin",
@@ -458,10 +476,12 @@
   {
     "name": "Security and Compliance Officer",
     "description": "Oversees general security and compliance, including safeguarding customer and client data.",
+    "titular": true,
+    "singular": true,
     "implies": [
-      "Security Officer",
-      "Compliance Officer",
-      "Privacy Officer"
+      { "name": "Security Officer", "mngrProtocol": "self" },
+      { "name": "Compliance Officer", "mngrProtocol": "self" },
+      { "name": "Privacy Officer", "mngrProtocol": "self" }
     ]
   }
 ]
