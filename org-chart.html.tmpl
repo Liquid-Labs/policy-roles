@@ -13,9 +13,19 @@
     .orgchart .node .title {
       min-width: 130px;
       width: auto;
+      background-color: rgba(12, 83, 255, 0.8);
     }
+    .orgchart .node .title.acting {
+      background-color: rgba(217,83,79,.8);
+    }
+
     .orgchart .node .content {
       height: auto;
+      border-color: rgba(12, 83, 255, 0.8);
+    }
+    .orgchart .node .content.acting {
+      border-color: rgba(217,83,79,.8);
+      background-color: rgba(217,83,79,.2);
     }
 
     .orgchart {
@@ -28,6 +38,10 @@
 
     .orgchart .node .content {
       white-space: normal;
+    }
+
+    .orgchart .acting-tag {
+      font-style: italic;
     }
   </style>
 </head>
@@ -45,8 +59,8 @@
 
     const nodeTemplate = function(data) {
       let content = `
-        ${ data.hideName !== true ? `<div class="title">${data.name}</div>` : '' }
-        <div class="content"><div class="primary">${data.titles[0]}</div>`;
+        ${ data.hideName !== true ? `<div class="title${data.acting ? ' acting' : ''}">${data.name}${data.acting ? '<span class="acting-tag">(acting)</span>' : ''}</div>` : '' }
+        <div class="content${data.acting ? ' acting' : ''}"><div class="primary">${data.titles[0]}</div>`;
       if (data.titles.length > 1) content += `<div>${data.titles.slice(1).join(', ')}</div>`;
       content += `</div>`;
       return content;
@@ -55,7 +69,7 @@
     $('#chart-container').orgchart({
       'data' : datasource,
       'nodeTemplate': nodeTemplate,
-      'verticalLevel': 4
+      'verticalLevel': 5
     });
 
   });
