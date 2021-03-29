@@ -13,9 +13,31 @@
   {
     "name": "Chairman of the Board",
     "singular": true,
+    "titular": true,
+    "superRole": "Board Member",
+    "description": "Chairs meetings of the Board of Directors."
+  },
+  {
+    "name": "Executive Officer",
     "designated": true,
-    "description": "Chairs meetings of the Board of Directors.",
-    "implies": [ { "name": "Board Member", "mngrProtocol": "same", "mergeWith": "Chairman of the Board" } ]
+    "description": "Executive Officers wield executive decision making power.",
+    "duties": [
+      { "description": "Review and execute contracts on behalf of the Company within the Officer's designated domain." }
+    ]
+  },
+  {
+    "name": "Executive Vice President",
+    "designated": true,
+    "description": "Executive Officers wield executive decision making power.",
+    "duties": [
+      { "description": "Execute contracts on behalf of the Company." }
+    ],
+    "implies": [ { "name": "Executive Officer", "mngrProtocol": "self" } ]
+  },
+  {
+    "name": "Senior Vice President",
+    "designated": true,
+    "description": "The most senior, non-executive manager."
   },
   {
     "name": "Chief Executive Officer",
@@ -23,18 +45,34 @@
     "singular": true,
     "titular": true,
     "description": "The highest ranking company executive with final responsibility for major strategic decisions and management of operation and corporate resources. Acts as primary contact between the Board of Directors and corporate operations. The CEO is also the \"public face\" of the company.",
-    "implies": [ { "name": "Senior Management Team", "mngrProtocol": "self" } ]
+    "implies": [
+      { "name": "Senior Management Team", "mngrProtocol": "self" },
+      { "name": "Executive Officer", "mngrProtocol": "self" }
+    ]
+  },
+  {
+    "name": "President",
+    "singular": true,
+    "titular": true,
+    "description": "Oversees critical business operations.",
+    "duties": [
+      { "description": "Fulfills statutory requirements as Company President." }
+    ],
+    "implies": [ { "name": "Executive Officer", "mngrProtocol": "self" } ]
   },
   {
     "name": "Chief Operations Officer",
     "aliases": [ "COO" ],
     "singular": true,
     "titular": true,
-    "description": "The senior executive overseeing all day-to-day non-technical operational corporate functions.",
+    "description": "Senior executive overseeing all day-to-day non-technical operational corporate functions.",
     "duties": [
       { "description": "Is a member of the Incident Response Team." }
     ],
-    "implies": [ { "name": "Senior Management Team", "mngrProtocol": "self" } ]
+    "implies": [
+      { "name": "Senior Management Team", "mngrProtocol": "self" },
+      { "name": "Executive Officer", "mngrProtocol": "self" }
+    ]
   },
   {
     "name": "General Manager",
@@ -47,18 +85,24 @@
     "aliases": [ "CTO" ],
     "singular": true,
     "titular": true,
-    "description": "The senior executive in charge of technical implementation and operations.",
+    "description": "Senior executive in charge of technical implementation and operations.",
     "duties": [
       { "description": "Is a member of the Incident Response Team." }
     ],
-    "implies": [ { "name": "Senior Management Team", "mngrProtocol": "self" }  ]
+    "implies": [
+      { "name": "Senior Management Team", "mngrProtocol": "self" },
+      { "name": "Executive Officer", "mngrProtocol": "self" }
+    ]
   },
   {
     "name": "Chief Financial Officer",
     "aliases": [ "CFO" ],
     "singular": true,
     "titular": true,
-    "description": "The senior executive in charge of corporate accounting records and strategic finance."
+    "description": "Senior executive in charge of corporate accounting records and strategic finance.",
+    "implies": [
+      { "name": "Executive Officer", "mngrProtocol": "self" }
+    ]
   },
   {
     "name": "Controller",
@@ -73,10 +117,28 @@
     "description": "Responsible for maintaining Company financial records."
   },
   {
+    "name": "Chief Revenue Officer",
+    "singular": true,
+    "titular": true,
+    "description": "Senior executive in charge of revenue generation.",
+    "implies": [
+      { "name": "Executive Officer", "mngrProtocol": "self" }
+    ]
+  },
+  {
     "name": "Chief Marketing Officer",
     "singular": true,
     "titular": true,
-    "description": "The senior executive in charge of brand management, corporate and product messaging, and revenue generation."
+    "description": "Senior executive in charge of brand management, corporate and product messaging.",
+    "implies": [
+      { "name": "Executive Officer", "mngrProtocol": "self" }
+    ]
+  },
+  {
+    "name": "Head of Marketing",
+    "singular": true,
+    "titular": true,
+    "description": "Senior manager in charge marketing, brand management, and messaging."
   },
   {
     "name": "Training Manager",
@@ -88,7 +150,16 @@
     "name": "Chief Sales Officer",
     "singular": true,
     "titular": true,
-    "description": "The senior executive in charge of corporate sales strategy and oversight of the sales team."
+    "description": "Senior executive in charge of corporate sales strategy and oversight of the sales team.",
+    "implies": [
+      { "name": "Executive Officer", "mngrProtocol": "self" }
+    ]
+  },
+  {
+    "name": "Head of Sales",
+    "singular": true,
+    "titular": true,
+    "description": "Senior manager in charge of all sales."
   },
   {
     "name": "Sales Agent",
@@ -483,5 +554,15 @@
       { "name": "Compliance Officer", "mngrProtocol": "self" },
       { "name": "Privacy Officer", "mngrProtocol": "self" }
     ]
+  },
+  {
+    "name": "Outside Counsel",
+    "titular": true,
+    "description": "Legal counsel hired by and directly reporting to the Board of Directors."
+  },
+  {
+    "name": "Auditors",
+    "titular": true,
+    "description": "Perform financial audits and report directly to the Board of Directors."
   }
 ]
