@@ -61,7 +61,7 @@
     "implies": [ { "name": "Executive Officer", "mngrProtocol": "self" } ]
   },
   {
-    "name": "Chief Operations Officer",
+    "name": "Chief Operating Officer",
     "aliases": [ "COO" ],
     "singular": true,
     "titular": true,
@@ -167,6 +167,13 @@
     "description": "Responsible for directly selling to potential clients."
   },
   {
+    "name": "Head of Implementations",
+    "superRole": "Implementations Manager",
+    "singular": true,
+    "titular": true,
+    "description": "Oversees all client implementations."
+  },
+  {
     "name": "Implementations Manager",
     "titular": true,
     "description": "Oversees implementation of Company services/products with clients. Works directly with clients and with the client's assigned Account Manager during the implementation process."
@@ -194,11 +201,26 @@
     "implies": [ { "name": "Senior Management Team", "mngrProtocol": "self" } ]
   },
   {
+    "name": "Head of Administration",
+    "singular": true,
+    "titular": true,
+    "description": "Senior manager in charge of corporate administration, including human resources and legal matters.",
+    "duties": [
+      { "description": "Is a member of the Incident Response Team." }
+    ],
+    "implies": [ { "name": "Senior Management Team", "mngrProtocol": "self" } ]
+  },
+  {
     "name": "Head of Human Resources",
     "singular": true,
     "titular": true,
-    "superRole": "Human Resources Agent",
-    "description": "Manages Human Resources Agents and has final responsibility on HR matters."
+    "superRole": "Human Resources Manager",
+    "description": "Oversees and has final responsibility on HR matters."
+  },
+  {
+    "name": "Human Resources Manager",
+    "titular": true,
+    "description": "Managers human resoruces agents and handles elevated cases directly."
   },
   {
     "name": "Human Resources Agent",
@@ -405,6 +427,12 @@
     "superRole": "Customer Service Agent",
     "titular": true,
     "description": "Oversees Customer Service Agents. Sensitive issues of particular complexity or involving particularly high value customers may be referred to the Customer Service Manager."
+  },
+  {
+    "name": "Head of Customer Service",
+    "superRole": "Customer Service Manager",
+    "titular": true,
+    "description": "Oversees all of customer service operations."
   },
   {
     "name": "In House Counsel",
