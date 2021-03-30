@@ -106,10 +106,10 @@ const genDoc = (dataPath, staffPath) => {
   }
 
   for (const role of org.roles.list().reduce(designationsReducer, []).sort(nameSorter('name'))) {
-    sb.push(`## ${role.name}\n`)
+    sb.push(`### ${role.name}\n`)
     sb.push(`${role.description}\n`)
 
-    sb.push('### Members\n')
+    sb.push('#### Members\n')
 
     const staffInRole = org.roles.getStaffInRole(role.name).sort(nameSorter('familyName'))
 
