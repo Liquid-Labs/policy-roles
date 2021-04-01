@@ -115,7 +115,7 @@ const genDoc = (dataPath, staffPath) => {
 
     if (staffInRole && staffInRole.length > 0) {
       for (const staff of staffInRole) {
-        sb.push(`* ${staff.familyName}, ${staff.givenName} _${staff.email}_`)
+        sb.push(`* ${staff.familyName}, ${staff.givenName} as ${staff.roles[0].name} _${staff.email}_`)
       }
       sb.push('')
     }

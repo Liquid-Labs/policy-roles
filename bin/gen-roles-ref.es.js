@@ -2618,7 +2618,7 @@ var genDoc = function genDoc(dataPath, staffPath) {
         try {
           for (_iterator6.s(); !(_step6 = _iterator6.n()).done;) {
             var staff = _step6.value;
-            sb.push("* ".concat(staff.familyName, ", ").concat(staff.givenName, " _").concat(staff.email, "_"));
+            sb.push("* ".concat(staff.familyName, ", ").concat(staff.givenName, " as ").concat(staff.roles[0].name, " _").concat(staff.email, "_"));
           }
         } catch (err) {
           _iterator6.e(err);
