@@ -45,7 +45,7 @@ clean-example: $(EXAMPLE_TARGETS)
 $(DOC_GENERATOR_JS): package.json $(JS_SRC)
 	$(CATALYST_SCRIPTS) build
 
-$(DOC_GENERATOR): src/liq-gen-roles-ref/liq-gen-roles-ref.sh $(DOC_GENERATOR_JS)
+$(DOC_GENERATOR): src/liq-gen-roles-ref/liq-gen-roles-ref.sh
 	$(BASH_ROLLUP) $< $@
 
 $(HTML_GENERATOR): src/md2x/md2x.sh
