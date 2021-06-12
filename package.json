@@ -38,12 +38,20 @@
   },
   "dependencies": {
     "@liquid-labs/policy-projects": "^1.0.0-alpha.10",
-    "fs": "0.0.1-security"
+    "fs": "^0.0.2"
   },
-  "liquidDev": {
+  "liq": {
     "orgBase": "git@github.com:liquid-labs/Liquid-Labs.git",
     "changeControl": {
       "type": "policy"
+    },
+    "versionCheck": {
+      "ignore": [
+        "@babel/runtime"
+      ],
+      "options": [
+        "--skip-unused"
+      ]
     }
   }
 }
