@@ -38,7 +38,7 @@ const genDoc = (dataPath, staffPath) => {
 
   // Note: we expect each line to be terminated with a '\n' when output, so the ending '\n' has the effect of adding an
   // empty line.
-  sb.push('# Company Jobs Reference\n')
+  sb.push('# Company Jobs and Roles Reference\n')
 
   sb.push('## Purpose and scope\n')
   sb.push('Here we find all Company job descriptions.\n')
