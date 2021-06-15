@@ -95,6 +95,9 @@
     ]
   },
   {
+
+  },
+  {
     "name": "Chief Financial Officer",
     "aliases": [ "CFO" ],
     "singular": true,
@@ -138,7 +141,10 @@
     "name": "Head of Marketing",
     "singular": true,
     "titular": true,
-    "description": "Senior manager in charge marketing, brand management, and messaging."
+    "description": "Senior manager in charge marketing, brand management, and messaging.",
+    "implies": [
+      { "name": "Department Heads", "mngrProtocol": "self" }
+    ]
   },
   {
     "name": "Training Manager",
