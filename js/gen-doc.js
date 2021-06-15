@@ -82,7 +82,7 @@ const genDoc = (dataPath, staffPath) => {
         : sb.push('_*This position is currently vacant.*_\n')
     }
     else {
-      sb.push('#### Members\n')
+      sb.push('#### Members\n') // TODO: something like '${role.namePluralized}'
 
       if (hasMembers) {
         for (const staff of staffInRole) {
@@ -96,7 +96,7 @@ const genDoc = (dataPath, staffPath) => {
     }
   }
 
-  sb.push('## Designations\n')
+  sb.push('## Designated roles:\n')
 
   const designationsReducer = (designations, role) => {
     if (role.designated) {
