@@ -95,7 +95,20 @@
     ]
   },
   {
-
+    "name": "Head of Research and Development",
+    "titular": true,
+    "description": "Oversees implementation of software products.",
+    "implies": [
+      { "name": "Department Heads", "mngrProtocol": "self" }
+    ]
+  },
+  {
+    "name": "Head of Technical Operations",
+    "titular": true,
+    "description": "Oversees all technical implementation/devops.",
+    "implies": [
+      { "name": "Department Heads", "mngrProtocol": "self" }
+    ]
   },
   {
     "name": "Chief Financial Officer",
@@ -174,6 +187,21 @@
     "name": "Sales Agent",
     "titular": true,
     "description": "Responsible for directly selling to potential clients."
+  },
+  {
+    "name": "Head of Integrations",
+    "superRole": "Integrations Manager",
+    "singular": true,
+    "titular": true,
+    "description": "Oversees all integrations with third-parties.",
+    "implies": [
+      { "name": "Department Heads", "mngrProtocol": "self" }
+    ]
+  },
+  {
+    "name": "Integrations Manager",
+    "titular": true,
+    "description": "Oversees integrations of Company services/products with third-party partners. Works directly with partners during the integration process."
   },
   {
     "name": "Head of Implementations",
