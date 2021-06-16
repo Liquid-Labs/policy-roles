@@ -2,7 +2,7 @@ import { Organization } from '@liquid-labs/orgs-model'
 
 const nameSorter = (name) => (a, b) => a[name].toLowerCase().localeCompare(b[name].toLowerCase())
 
-// const getPrimaryRole = (staff) => staff.roles[0].getName()
+const getPrimaryRole = (staff) => staff.roles[0].getName()
 
 const staffRef = (staff) => `${staff.familyName}, ${staff.givenName} _${staff.email}_`
 
@@ -25,6 +25,9 @@ const noteDesignationSource = (staff, role) => {
   const attachedRole = staff.getAttachedRole(role.name)
   if (attachedRole.impliedBy !== undefined) {
     return `(implied by ${roleRef(attachedRole.impliedBy.getName())})`
+  }
+  else {
+    return `(as ${getPrimaryRole(staff)})`
   }
 }
 
