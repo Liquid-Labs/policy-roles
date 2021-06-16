@@ -546,6 +546,14 @@
     "implies": [ { "name": "Senior Management Team", "mngrProtocol": "self" } ]
   },
   {
+    "name": "Head of Security, Compliance, and Privacy",
+    "titular": true,
+    "description": "Oversees administrative aspects of security, compliance, and customer privacy.",
+    "implies": [
+      { "name": "Department Heads", "mngrProtocol": "self" }
+    ]
+  },
+  {
     "name": "Key Admin",
     "designated": true,
     "description": "Responsible for managing one or more Company keys involved in critical operations or sensitive access.",
@@ -632,7 +640,8 @@
     "implies": [
       { "name": "Security Officer", "mngrProtocol": "self" },
       { "name": "Compliance Officer", "mngrProtocol": "self" },
-      { "name": "Privacy Officer", "mngrProtocol": "self" }
+      { "name": "Privacy Officer", "mngrProtocol": "self" },
+      { "name": "Head of Security, Compliance, and Privacy", "mngrProtocol": "self" }
     ]
   },
   {
