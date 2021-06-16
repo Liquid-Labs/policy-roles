@@ -21,6 +21,13 @@ const noteManager = (staff, role) => {
   return `(managed by ${managerRef})`
 }
 
+const noteDesignationSource = (staff, role) => {
+  const attachedRole = staff.getAttachedRole(role.name)
+  if (attachedRole.impliedBy !== undefined) {
+    return `(implied by ${roleRef(attachedRole.impliedBy.getName())})`
+  }
+}
+
 const genDoc = (dataPath, staffPath) => {
   const org = new Organization(dataPath, staffPath)
 
@@ -134,7 +141,7 @@ const genDoc = (dataPath, staffPath) => {
 
     if (staffInRole && staffInRole.length > 0) {
       for (const staff of staffInRole) {
-        sb.push(`* ${staff.familyName}, ${staff.givenName} as ${staff.roles[0].name} _${staff.email}_`)
+        sb.push(`* ${staffRef(staff)} ${noteDesignationSource(staff, role)}`)
       }
       sb.push('')
     }
