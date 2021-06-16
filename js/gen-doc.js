@@ -2,6 +2,20 @@ import { Organization } from '@liquid-labs/orgs-model'
 
 const nameSorter = (name) => (a, b) => a[name].toLowerCase().localeCompare(b[name].toLowerCase())
 
+// const getPrimaryRole = (staff) => staff.roles[0].getName()
+
+const staffRef = (staff) => `${staff.familyName}, ${staff.givenName} _${staff.email}_`
+
+const noteManager = (staff, role) => {
+  const attachedRole = staff.getAttachedRole(role.name)
+  const manager = attachedRole.getManager()
+  const managerRef =
+    (manager === null && 'self')
+      || (manager.email === staff.email && `self as ${attachedRole.managerRole.getName()}`)
+      || `${staffRef(manager)} as ${attachedRole.managerRole.getName()}`
+  return `(managed by ${managerRef})`
+}
+
 const genDoc = (dataPath, staffPath) => {
   const org = new Organization(dataPath, staffPath)
 
@@ -78,7 +92,7 @@ const genDoc = (dataPath, staffPath) => {
       const staff = staffInRole[0]
       // TODO: check that we don't have multiples.
       hasMembers
-        ? sb.push(`${staff.familyName}, ${staff.givenName} _${staff.email}_ is the current ${role.name}\n`)
+        ? sb.push(`${staffRef(staff)} is the current ${role.name} ${noteManager(staff, role)}\n`)
         : sb.push('_*This position is currently vacant.*_\n')
     }
     else {
@@ -86,7 +100,7 @@ const genDoc = (dataPath, staffPath) => {
 
       if (hasMembers) {
         for (const staff of staffInRole) {
-          sb.push(`* ${staff.familyName}, ${staff.givenName} _${staff.email}_`)
+          sb.push(`* ${staffRef(staff)} ${noteManager(staff, role)}`)
         }
         sb.push('')
       }
