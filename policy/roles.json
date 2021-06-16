@@ -165,7 +165,10 @@
     "name": "Head of Sales",
     "singular": true,
     "titular": true,
-    "description": "Senior manager in charge of all sales."
+    "description": "Senior manager in charge of all sales.",
+    "implies": [
+      { "name": "Department Heads", "mngrProtocol": "self" }
+    ]
   },
   {
     "name": "Sales Agent",
@@ -177,7 +180,10 @@
     "superRole": "Implementations Manager",
     "singular": true,
     "titular": true,
-    "description": "Oversees all client implementations."
+    "description": "Oversees all client implementations.",
+    "implies": [
+      { "name": "Department Heads", "mngrProtocol": "self" }
+    ]
   },
   {
     "name": "Implementations Manager",
@@ -214,14 +220,20 @@
     "duties": [
       { "description": "Is a member of the Incident Response Team." }
     ],
-    "implies": [ { "name": "Senior Management Team", "mngrProtocol": "self" } ]
+    "implies": [
+      { "name": "Senior Management Team", "mngrProtocol": "self" },
+      { "name": "Department Heads", "mngrProtocol": "self" }
+    ]
   },
   {
     "name": "Head of Human Resources",
     "singular": true,
     "titular": true,
     "superRole": "Human Resources Manager",
-    "description": "Oversees and has final responsibility on HR matters."
+    "description": "Oversees and has final responsibility on HR matters.",
+    "implies": [
+      { "name": "Department Heads", "mngrProtocol": "self" }
+    ]
   },
   {
     "name": "Human Resources Manager",
@@ -270,7 +282,10 @@
     "superRole": "Business Scout",
     "singular": true,
     "titular": true,
-    "description": "Manages overall business development strategy."
+    "description": "Manages overall business development strategy.",
+    "implies": [
+      { "name": "Department Heads", "mngrProtocol": "self" }
+    ]
   },
   {
     "name": "Software Engineer",
@@ -438,7 +453,10 @@
     "name": "Head of Customer Service",
     "superRole": "Customer Service Manager",
     "titular": true,
-    "description": "Oversees all of customer service operations."
+    "description": "Oversees all of customer service operations.",
+    "implies": [
+      { "name": "Department Heads", "mngrProtocol": "self" }
+    ]
   },
   {
     "name": "In House Counsel",
