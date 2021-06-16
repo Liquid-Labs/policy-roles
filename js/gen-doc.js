@@ -6,13 +6,18 @@ const nameSorter = (name) => (a, b) => a[name].toLowerCase().localeCompare(b[nam
 
 const staffRef = (staff) => `${staff.familyName}, ${staff.givenName} _${staff.email}_`
 
+const roleRef = (roleName) => {
+  const roleLink = roleName.toLowerCase().replace(/[^a-z ]*/g, '').replace(/ /g, '-')
+  return `[${roleName}](#${roleLink})`
+}
+
 const noteManager = (staff, role) => {
   const attachedRole = staff.getAttachedRole(role.name)
   const manager = attachedRole.getManager()
   const managerRef =
     (manager === null && 'self')
-      || (manager.email === staff.email && `self as ${attachedRole.managerRole.getName()}`)
-      || `${staffRef(manager)} as ${attachedRole.managerRole.getName()}`
+      || (manager.email === staff.email && `self as ${roleRef(attachedRole.managerRole.getName())}`)
+      || `${staffRef(manager)} as ${roleRef(attachedRole.managerRole.getName())}`
   return `(managed by ${managerRef})`
 }
 
