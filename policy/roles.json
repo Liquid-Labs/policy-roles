@@ -219,15 +219,14 @@
     "description": "Oversees implementation of Company services/products with clients. Works directly with clients and with the client's assigned Account Manager during the implementation process."
   },
   {
-    "name": "Operations Account Manager",
-    "titular": true,
-    "qualifiable": true,
-    "description": "Manages technical/operational relationship with [qual]."
-  },
-  {
     "name": "Account Manager",
     "titular": true,
-    "description": "Operates as the primary point of contact for assigned clients."
+    "qualifiable": true,
+    "description": "The Account Manager is an operational role managing technical/operational relationship with specific clients and partners. Account Managers are the primary technical contact for clients and partners and also internally support sales and integrations.",
+    "duties": [
+      { "description": "Provide first tier support for incoming client technical issues." },
+      { "description": "Provide internal support for technical and operational questions regarding their account." }
+    ]
   },
   {
     "name": "Chief Administrative Officer",
