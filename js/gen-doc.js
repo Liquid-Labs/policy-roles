@@ -22,9 +22,15 @@ const noteManager = (staff, role) => {
 }
 
 const noteDesignationSource = (staff, role) => {
-  const attachedRole = staff.getAttachedRole(role.name)
-  if (attachedRole.impliedBy !== undefined) {
-    return `(implied by ${roleRef(attachedRole.impliedBy.getName())})`
+  // It's possible to be designatd through multiple routes. I.e., the "Head of Administration" and "Head of Human
+  // Resources" could be the same individual.
+  const attachedRoles = staff.getAttachedRoles().filter((r) => r.name === role.name)
+  const implications = attachedRoles // reduce to list of implied role names
+    .map((r) => r.impliedBy)
+    .filter((ir) => ir !== undefined)
+    .map((ir) => roleRef(ir.getName()))
+  if (implications.length > 0) {
+    return `(implied by ${implications.join(', ')})`
   }
   else {
     return `(as ${getPrimaryRole(staff)})`
