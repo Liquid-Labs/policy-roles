@@ -8,7 +8,7 @@ BASH_ROLLUP:=$(NPM_BIN)/bash-rollup
 SPACE:=$(null) $(null)
 POLICY_SRC:=$(shell find policy -type f | sed 's/ /\\ /g')
 TEST_MARKER:=$(shell OUTPUT=$(git status --porcelain) && [ -z "${OUTPUT}" ] && git rev-parse HEAD || echo 'working')
-BUILD_TARGETS:=$(DOC_GENERATOR) $(HTML_GENERATOR)
+BUILD_TARGETS:=$(DOC_GENERATOR) $(DOC_GENERATOR_JS) $(HTML_GENERATOR)
 TEST_TARGETS:=.meta/test-roles.json.log .meta/test-policy.log
 LINT_TARGETS:=.meta/qa-lint.log
 # ALL_TARGETS:=$(BUILD_TARGETS) $(TEST_TARGETS) $(LINT_TARGETS)

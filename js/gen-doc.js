@@ -2,6 +2,41 @@ import { Organization } from '@liquid-labs/orgs-model'
 
 const nameSorter = (name) => (a, b) => a[name].toLowerCase().localeCompare(b[name].toLowerCase())
 
+const getPrimaryRole = (staff) => staff.roles[0].getName()
+
+const staffRef = (staff) => `${staff.familyName}, ${staff.givenName} _${staff.email}_`
+
+const roleRef = (roleName) => {
+  const roleLink = roleName.toLowerCase().replace(/[^a-z ]*/g, '').replace(/ /g, '-')
+  return `[${roleName}](#${roleLink})`
+}
+
+const noteManager = (staff, role) => {
+  const attachedRole = staff.getAttachedRole(role.name)
+  const manager = attachedRole.getManager()
+  const managerRef =
+    (manager === null && 'self')
+      || (manager.email === staff.email && `self as ${roleRef(attachedRole.managerRole.getName())}`)
+      || `${staffRef(manager)} as ${roleRef(attachedRole.managerRole.getName())}`
+  return `(managed by ${managerRef})`
+}
+
+const noteDesignationSource = (staff, role) => {
+  // It's possible to be designatd through multiple routes. I.e., the "Head of Administration" and "Head of Human
+  // Resources" could be the same individual.
+  const attachedRoles = staff.getAttachedRoles().filter((r) => r.name === role.name)
+  const implications = attachedRoles // reduce to list of implied role names
+    .map((r) => r.impliedBy)
+    .filter((ir) => ir !== undefined)
+    .map((ir) => roleRef(ir.getName()))
+  if (implications.length > 0) {
+    return `(implied by ${implications.join(', ')})`
+  }
+  else {
+    return `(as ${getPrimaryRole(staff)})`
+  }
+}
+
 const genDoc = (dataPath, staffPath) => {
   const org = new Organization(dataPath, staffPath)
 
@@ -38,7 +73,7 @@ const genDoc = (dataPath, staffPath) => {
 
   // Note: we expect each line to be terminated with a '\n' when output, so the ending '\n' has the effect of adding an
   // empty line.
-  sb.push('# Company Jobs Reference\n')
+  sb.push('# Company Jobs and Roles Reference\n')
 
   sb.push('## Purpose and scope\n')
   sb.push('Here we find all Company job descriptions.\n')
@@ -78,15 +113,15 @@ const genDoc = (dataPath, staffPath) => {
       const staff = staffInRole[0]
       // TODO: check that we don't have multiples.
       hasMembers
-        ? sb.push(`${staff.familyName}, ${staff.givenName} _${staff.email}_ is the current ${role.name}\n`)
+        ? sb.push(`${staffRef(staff)} is the current ${role.name} ${noteManager(staff, role)}\n`)
         : sb.push('_*This position is currently vacant.*_\n')
     }
     else {
-      sb.push('#### Members\n')
+      sb.push('#### Members\n') // TODO: something like '${role.namePluralized}'
 
       if (hasMembers) {
         for (const staff of staffInRole) {
-          sb.push(`* ${staff.familyName}, ${staff.givenName} _${staff.email}_`)
+          sb.push(`* ${staffRef(staff)} ${noteManager(staff, role)}`)
         }
         sb.push('')
       }
@@ -96,7 +131,7 @@ const genDoc = (dataPath, staffPath) => {
     }
   }
 
-  sb.push('## Designations\n')
+  sb.push('## Designated roles:\n')
 
   const designationsReducer = (designations, role) => {
     if (role.designated) {
@@ -115,7 +150,7 @@ const genDoc = (dataPath, staffPath) => {
 
     if (staffInRole && staffInRole.length > 0) {
       for (const staff of staffInRole) {
-        sb.push(`* ${staff.familyName}, ${staff.givenName} as ${staff.roles[0].name} _${staff.email}_`)
+        sb.push(`* ${staffRef(staff)} ${noteDesignationSource(staff, role)}`)
       }
       sb.push('')
     }

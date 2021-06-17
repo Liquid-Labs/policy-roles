@@ -3,7 +3,7 @@
     "com.liquid-labs.federated-json": {
       "mountSpecs": [
         {
-          "dataPath": "roles",
+          "dataPath": ".roles",
           "dataFile": "${LIQ_PLAYGROUND}/liquid-labs/policy-core/policy/roles.json"
         }
       ]
