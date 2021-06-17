@@ -33,7 +33,7 @@
   "devDependencies": {
     "@liquid-labs/bash-rollup": "^1.0.0-alpha.4+0fedf46f",
     "@liquid-labs/bash-toolkit": "^1.0.0-alpha.50",
-    "@liquid-labs/catalyst-scripts": "^1.0.0-alpha.38",
+    "@liquid-labs/catalyst-scripts": "^1.0.0-alpha.39",
     "@liquid-labs/orgs-model": "file:.yalc/@liquid-labs/orgs-model"
   },
   "dependencies": {
