@@ -58,7 +58,10 @@
     "duties": [
       { "description": "Fulfills statutory requirements as Company President." }
     ],
-    "implies": [ { "name": "Executive Officer", "mngrProtocol": "self" } ]
+    "implies": [
+      { "name": "Executive Officer", "mngrProtocol": "self" },
+      { "name": "Senior Management Team", "mngrProtocol": "self" }
+    ]
   },
   {
     "name": "Chief Operating Officer",
@@ -96,7 +99,8 @@
   },
   {
     "name": "Head of Research and Development",
-    "titular": true,
+    "singular": true,
+    "designated": true,
     "description": "Oversees implementation of software products.",
     "implies": [
       { "name": "Department Heads", "mngrProtocol": "self" }
@@ -104,7 +108,8 @@
   },
   {
     "name": "Head of Technical Operations",
-    "titular": true,
+    "singular": true,
+    "designated": true,
     "description": "Oversees all technical implementation/devops.",
     "implies": [
       { "name": "Department Heads", "mngrProtocol": "self" }
@@ -138,7 +143,8 @@
     "titular": true,
     "description": "Senior executive in charge of revenue generation.",
     "implies": [
-      { "name": "Executive Officer", "mngrProtocol": "self" }
+      { "name": "Executive Officer", "mngrProtocol": "self" },
+      { "name": "Senior Management Team", "mngrProtocol": "self" }
     ]
   },
   {
@@ -153,7 +159,7 @@
   {
     "name": "Head of Marketing",
     "singular": true,
-    "titular": true,
+    "designated": true,
     "description": "Senior manager in charge marketing, brand management, and messaging.",
     "implies": [
       { "name": "Department Heads", "mngrProtocol": "self" }
@@ -177,7 +183,7 @@
   {
     "name": "Head of Sales",
     "singular": true,
-    "titular": true,
+    "designated": true,
     "description": "Senior manager in charge of all sales.",
     "implies": [
       { "name": "Department Heads", "mngrProtocol": "self" }
@@ -192,7 +198,7 @@
     "name": "Head of Integrations",
     "superRole": "Integrations Manager",
     "singular": true,
-    "titular": true,
+    "designated": true,
     "description": "Oversees all integrations with third-parties.",
     "implies": [
       { "name": "Department Heads", "mngrProtocol": "self" }
@@ -207,7 +213,7 @@
     "name": "Head of Implementations",
     "superRole": "Implementations Manager",
     "singular": true,
-    "titular": true,
+    "designated": true,
     "description": "Oversees all client implementations.",
     "implies": [
       { "name": "Department Heads", "mngrProtocol": "self" }
@@ -242,7 +248,7 @@
   {
     "name": "Head of Administration",
     "singular": true,
-    "titular": true,
+    "designated": true,
     "description": "Senior manager in charge of corporate administration, including human resources and legal matters.",
     "duties": [
       { "description": "Is a member of the Incident Response Team." }
@@ -255,11 +261,12 @@
   {
     "name": "Head of Human Resources",
     "singular": true,
-    "titular": true,
+    "designated": true,
     "superRole": "Human Resources Manager",
     "description": "Oversees and has final responsibility on HR matters.",
     "implies": [
-      { "name": "Department Heads", "mngrProtocol": "self" }
+      { "name": "Department Heads", "mngrProtocol": "self" },
+      { "name": "Senior Management Team", "mngrProtocol": "self" }
     ]
   },
   {
@@ -308,7 +315,7 @@
     "name": "Head of Business Development",
     "superRole": "Business Scout",
     "singular": true,
-    "titular": true,
+    "designated": true,
     "description": "Manages overall business development strategy.",
     "implies": [
       { "name": "Department Heads", "mngrProtocol": "self" }
@@ -479,7 +486,8 @@
   {
     "name": "Head of Customer Service",
     "superRole": "Customer Service Manager",
-    "titular": true,
+    "singular": true,
+    "designated": true,
     "description": "Oversees all of customer service operations.",
     "implies": [
       { "name": "Department Heads", "mngrProtocol": "self" }
@@ -546,7 +554,8 @@
   },
   {
     "name": "Head of Security, Compliance, and Privacy",
-    "titular": true,
+    "singular": true,
+    "designated": true,
     "description": "Oversees administrative aspects of security, compliance, and customer privacy.",
     "implies": [
       { "name": "Department Heads", "mngrProtocol": "self" }
