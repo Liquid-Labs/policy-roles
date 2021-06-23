@@ -14,6 +14,9 @@ const roleRef = (roleName) => {
 const noteManager = (staff, role) => {
   const attachedRole = staff.getAttachedRole(role.name)
   const manager = attachedRole.getManager()
+  if (manager !== null && attachedRole.managerRole === undefined) {
+    throw new Error(`Did not find expected 'manager role' for '${staff.email}'`)
+  }
   const managerRef =
     (manager === null && 'self')
       || (manager.email === staff.email && `self as ${roleRef(attachedRole.managerRole.getName())}`)
