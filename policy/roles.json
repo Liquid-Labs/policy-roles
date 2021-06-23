@@ -129,7 +129,7 @@
     ]
   },
   {
-    "name": "Controller",
+    "name": "Corporate Controller",
     "superRole": "Accountant",
     "singular": true,
     "titular": true,
