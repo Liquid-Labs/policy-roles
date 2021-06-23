@@ -684,5 +684,10 @@
     "name": "Marketing Administrator",
     "titular": true,
     "description": "Oversees general marketing process and logistics."
+  },
+  {
+    "name": "IT Support",
+    "titular": true,
+    "description": "Supports internal IT infrastructure, end user programs, etc."
   }
 ]
