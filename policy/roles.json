@@ -110,9 +110,9 @@
     ]
   },
   {
-    "name": "Head of Technical Operations",
+    "name": "Chief of Technical Operations",
     "singular": true,
-    "designated": true,
+    "titular": true,
     "description": "Oversees all technical implementation/devops.",
     "implies": [
       { "name": "Department Heads", "mngrProtocol": "self" }
