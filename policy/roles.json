@@ -190,9 +190,10 @@
     ]
   },
   {
-    "name": "Sales Agent",
+    "name": "Sales",
     "titular": true,
-    "description": "Responsible for directly selling to potential clients."
+    "description": "Responsible for directly selling to potential clients.",
+    "qualifiable": true
   },
   {
     "name": "Head of Integrations",
