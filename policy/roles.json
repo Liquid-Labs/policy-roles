@@ -98,7 +98,7 @@
     ]
   },
   {
-    "name": "Head of Research and Development",
+    "name": "Head of Research & Development",
     "singular": true,
     "designated": true,
     "description": "Oversees implementation of software products.",
@@ -450,7 +450,7 @@
     "name": "Quality Engineer",
     "superRole": "IT Personnel",
     "titular": true,
-    "description": "Qualified to ascertain correctness and conformance of [qual] systems.",
+    "description": "Qualified to ascertain correctness and conformance of Company products.",
     "qualifiable": true
   },
   {
@@ -553,7 +553,7 @@
     "implies": [ { "name": "Senior Management Team", "mngrProtocol": "self" } ]
   },
   {
-    "name": "Head of Security, Compliance, and Privacy",
+    "name": "Head of Security, Compliance, & Privacy",
     "singular": true,
     "designated": true,
     "description": "Oversees administrative aspects of security, compliance, and customer privacy.",
@@ -641,7 +641,7 @@
     "description": "Any individual working within a technical capacity within the company."
   },
   {
-    "name": "Security and Compliance Officer",
+    "name": "Security & Compliance Officer",
     "description": "Oversees general security and compliance, including safeguarding customer and client data.",
     "titular": true,
     "singular": true,
@@ -649,7 +649,7 @@
       { "name": "Security Officer", "mngrProtocol": "self" },
       { "name": "Compliance Officer", "mngrProtocol": "self" },
       { "name": "Privacy Officer", "mngrProtocol": "self" },
-      { "name": "Head of Security, Compliance, and Privacy", "mngrProtocol": "self" }
+      { "name": "Head of Security, Compliance, & Privacy", "mngrProtocol": "self" }
     ]
   },
   {
