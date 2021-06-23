@@ -658,7 +658,7 @@
     "description": "Legal counsel hired by and directly reporting to the Board of Directors."
   },
   {
-    "name": "Auditors",
+    "name": "External Auditors",
     "titular": true,
     "description": "Perform financial audits and report directly to the Board of Directors."
   }
