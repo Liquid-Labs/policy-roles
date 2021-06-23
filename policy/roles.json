@@ -662,5 +662,15 @@
     "name": "External Auditors",
     "titular": true,
     "description": "Perform financial audits and report directly to the Board of Directors."
+  },
+  {
+    "name": "Finance",
+    "titular": true,
+    "description": "General finance analysis."
+  },
+  {
+    "name": "Marketing Administrator",
+    "titular": true,
+    "description": "Oversees general marketing process and logistics."
   }
 ]
