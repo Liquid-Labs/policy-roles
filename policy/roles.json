@@ -307,13 +307,13 @@
     "description": "Oversees implementation of corporate marketing campaigns. Develops and oversees implementation of local campaigns."
   },
   {
-    "name": "Business Scout",
+    "name": "Business Analyst",
     "titular": true,
     "description": "Searches and and secures new lines of business, channels, and partners."
   },
   {
     "name": "Head of Business Development",
-    "superRole": "Business Scout",
+    "superRole": "Business Analyst",
     "singular": true,
     "designated": true,
     "description": "Manages overall business development strategy.",
