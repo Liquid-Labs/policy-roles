@@ -169,6 +169,15 @@
     ]
   },
   {
+    "name": "Head of Finance",
+    "singular": true,
+    "designated": true,
+    "description": "Senior manager in charge financial matters.",
+    "implies": [
+      { "name": "Department Heads", "mngrProtocol": "self" }
+    ]
+  },
+  {
     "name": "Training Manager",
     "singular": true,
     "titular": true,
