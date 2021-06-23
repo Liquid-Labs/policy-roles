@@ -81,7 +81,10 @@
     "name": "General Manager",
     "singular": true,
     "titular": true,
-    "description": "Senior manager overseeing (non-consumer/non-client) internal, partner, and other 3rd party relationships, as well as overall company policy/processes and corporate expenses."
+    "description": "Senior manager overseeing (non-consumer/non-client) internal, partner, and other 3rd party relationships, as well as overall company policy/processes and corporate expenses.",
+    "implies": [
+      { "name": "Head of Implementations", "mngrProtocol": "self" }
+    ]
   },
   {
     "name": "Chief Technical Officer",
