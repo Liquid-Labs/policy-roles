@@ -19,8 +19,11 @@
       width: auto;
       background-color: rgba(12, 83, 255, 0.8);
     }
-    .orgchart .node .title.acting {
+    .orgchart .node .title.tbd {
       background-color: rgba(217,83,79,.8);
+    }
+    .orgchart .node .title.acting {
+      background-color: rgba(90,85,10,.8);
     }
 
     .orgchart .node .content {
@@ -28,6 +31,10 @@
       border-color: rgba(12, 83, 255, 0.8);
     }
     .orgchart .node .content.acting {
+      border-color: rgba(90,85,10,.8);
+      background-color: rgba(90,85,10,.2);
+    }
+    .orgchart .node .content.tbd {
       border-color: rgba(217,83,79,.8);
       background-color: rgba(217,83,79,.2);
     }
@@ -44,7 +51,7 @@
       white-space: normal;
     }
 
-    .orgchart .acting-tag {
+    .orgchart .acting-tag, .orgchart .tbd-tag {
       font-style: italic;
     }
   </style>
@@ -92,8 +99,8 @@
 
     const nodeTemplate = function(data) {
       let content = `
-        ${ data.hideName !== true ? `<div class="title${data.acting ? ' acting' : ''}">${data.name}${data.acting ? '<span class="acting-tag">(acting)</span>' : ''}</div>` : '' }
-        <div class="content${data.acting ? ' acting' : ''}"><div class="primary">${data.titles[0]}</div>`;
+        ${ data.hideName !== true ? `<div class="title${data.acting ? ' acting' : ''}${data.tbd ? ' tbd' : ''}">${data.name}${data.acting ? '<span class="acting-tag">(acting)</span>' : ''}${data.tbd ? '<span class="tbd-tag">(TBD)</span>' : ''}</div>` : '' }
+        <div class="content${data.acting ? ' acting' : ''}${data.tbd ? ' tbd' : ''}"><div class="primary">${data.titles[0]}</div>`;
       if (data.titles.length > 1) content += `<div>${data.titles.slice(1).join(', ')}</div>`;
       content += `</div>`;
       return content;
