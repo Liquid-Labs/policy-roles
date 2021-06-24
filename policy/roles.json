@@ -81,7 +81,10 @@
     "name": "General Manager",
     "singular": true,
     "titular": true,
-    "description": "Senior manager overseeing (non-consumer/non-client) internal, partner, and other 3rd party relationships, as well as overall company policy/processes and corporate expenses."
+    "description": "Senior manager overseeing (non-consumer/non-client) internal, partner, and other 3rd party relationships, as well as overall company policy/processes and corporate expenses.",
+    "implies": [
+      { "name": "Head of Implementations", "mngrProtocol": "self" }
+    ]
   },
   {
     "name": "Chief Technical Officer",
@@ -98,7 +101,7 @@
     ]
   },
   {
-    "name": "Head of Research and Development",
+    "name": "Head of Research & Development",
     "singular": true,
     "designated": true,
     "description": "Oversees implementation of software products.",
@@ -107,9 +110,9 @@
     ]
   },
   {
-    "name": "Head of Technical Operations",
+    "name": "Chief of Technical Operations",
     "singular": true,
-    "designated": true,
+    "titular": true,
     "description": "Oversees all technical implementation/devops.",
     "implies": [
       { "name": "Department Heads", "mngrProtocol": "self" }
@@ -126,7 +129,7 @@
     ]
   },
   {
-    "name": "Controller",
+    "name": "Corporate Controller",
     "superRole": "Accountant",
     "singular": true,
     "titular": true,
@@ -166,6 +169,15 @@
     ]
   },
   {
+    "name": "Head of Finance",
+    "singular": true,
+    "designated": true,
+    "description": "Senior manager in charge financial matters.",
+    "implies": [
+      { "name": "Department Heads", "mngrProtocol": "self" }
+    ]
+  },
+  {
     "name": "Training Manager",
     "singular": true,
     "titular": true,
@@ -190,9 +202,10 @@
     ]
   },
   {
-    "name": "Sales Agent",
+    "name": "Sales",
     "titular": true,
-    "description": "Responsible for directly selling to potential clients."
+    "description": "Responsible for directly selling to potential clients.",
+    "qualifiable": true
   },
   {
     "name": "Head of Integrations",
@@ -307,13 +320,13 @@
     "description": "Oversees implementation of corporate marketing campaigns. Develops and oversees implementation of local campaigns."
   },
   {
-    "name": "Business Scout",
+    "name": "Business Analyst",
     "titular": true,
     "description": "Searches and and secures new lines of business, channels, and partners."
   },
   {
     "name": "Head of Business Development",
-    "superRole": "Business Scout",
+    "superRole": "Business Analyst",
     "singular": true,
     "designated": true,
     "description": "Manages overall business development strategy.",
@@ -450,7 +463,7 @@
     "name": "Quality Engineer",
     "superRole": "IT Personnel",
     "titular": true,
-    "description": "Qualified to ascertain correctness and conformance of [qual] systems.",
+    "description": "Qualified to ascertain correctness and conformance of Company products.",
     "qualifiable": true
   },
   {
@@ -553,7 +566,7 @@
     "implies": [ { "name": "Senior Management Team", "mngrProtocol": "self" } ]
   },
   {
-    "name": "Head of Security, Compliance, and Privacy",
+    "name": "Head of Security, Compliance, & Privacy",
     "singular": true,
     "designated": true,
     "description": "Oversees administrative aspects of security, compliance, and customer privacy.",
@@ -641,7 +654,7 @@
     "description": "Any individual working within a technical capacity within the company."
   },
   {
-    "name": "Security and Compliance Officer",
+    "name": "Head of Security & Compliance",
     "description": "Oversees general security and compliance, including safeguarding customer and client data.",
     "titular": true,
     "singular": true,
@@ -649,7 +662,7 @@
       { "name": "Security Officer", "mngrProtocol": "self" },
       { "name": "Compliance Officer", "mngrProtocol": "self" },
       { "name": "Privacy Officer", "mngrProtocol": "self" },
-      { "name": "Head of Security, Compliance, and Privacy", "mngrProtocol": "self" }
+      { "name": "Head of Security, Compliance, & Privacy", "mngrProtocol": "self" }
     ]
   },
   {
@@ -658,8 +671,23 @@
     "description": "Legal counsel hired by and directly reporting to the Board of Directors."
   },
   {
-    "name": "Auditors",
+    "name": "External Auditors",
     "titular": true,
     "description": "Perform financial audits and report directly to the Board of Directors."
+  },
+  {
+    "name": "Finance",
+    "titular": true,
+    "description": "General finance analysis."
+  },
+  {
+    "name": "Marketing Administrator",
+    "titular": true,
+    "description": "Oversees general marketing process and logistics."
+  },
+  {
+    "name": "IT Support",
+    "titular": true,
+    "description": "Supports internal IT infrastructure, end user programs, etc."
   }
 ]
