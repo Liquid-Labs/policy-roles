@@ -349,11 +349,11 @@
     "qualifiable": true
   },
   {
-    "name": "Chief Software Engineer",
+    "name": "Head Software Engineer",
     "superRole": "Senior Software Engineer",
     "singular": true,
     "titular": true,
-    "description": "Has final responsibility for production [qual] code.; Chief Software Engineer's approval is required for sensitive changes involving customer privacy, regulatory issues, and/or exceptional complexity.",
+    "description": "Has final responsibility for production [qual] code.; Head Software Engineer's approval is required for sensitive changes involving customer privacy, regulatory issues, and/or exceptional complexity.",
     "qualifiable": true,
     "duties": [
       { "description": "Is a member of the Incident Response Team." }
@@ -374,11 +374,11 @@
     "qualifiable": true
   },
   {
-    "name": "Chief Data Engineer",
+    "name": "Head Data Engineer",
     "superRole": "Senior Data Engineer",
     "singular": true,
     "titular": true,
-    "description": "Has final responsibility for production schemas and DBMSs.; Chief Data Engineer's approval is required for sensitive changes involving customer privacy, regulatory issues, and/or exceptional complexity.",
+    "description": "Has final responsibility for production schemas and DBMSs.; Head Data Engineer's approval is required for sensitive changes involving customer privacy, regulatory issues, and/or exceptional complexity.",
     "qualifiable": true,
     "duties": [
       { "description": "Is a member of the Incident Response Team." }
@@ -399,11 +399,11 @@
     "qualifiable": true
   },
   {
-    "name": "Chief Host Engineer",
+    "name": "Head Host Engineer",
     "superRole": "Senior Host Engineer",
     "singular": true,
     "titular": true,
-    "description": "Has final responsibility for production host systems.; Chief Host Engineer approval is required for sensitive changes involving host security, regulatory issues, or exceptional complexity.",
+    "description": "Has final responsibility for production host systems.; Head Host Engineer approval is required for sensitive changes involving host security, regulatory issues, or exceptional complexity.",
     "qualifiable": true,
     "duties": [
       { "description": "Is a member of the Incident Response Team." }
@@ -424,11 +424,11 @@
     "qualifiable": true
   },
   {
-    "name": "Chief Network Engineer",
+    "name": "Head Network Engineer",
     "superRole": "Senior Network Engineer",
     "singular": true,
     "titular": true,
-    "description": "Has final responsibility for the integrity and security of production networks.; Chief Network Engineer approval is required for changes to sensitive networks providing access to private customer data, under regulatory scrutiny, or any change of exceptional complexity.",
+    "description": "Has final responsibility for the integrity and security of production networks.; Head Network Engineer approval is required for changes to sensitive networks providing access to private customer data, under regulatory scrutiny, or any change of exceptional complexity.",
     "qualifiable": true,
     "duties": [
       { "description": "Is a member of the Incident Response Team." }
@@ -449,11 +449,11 @@
     "qualifiable": true
   },
   {
-    "name": "Chief Cloud Engineer",
+    "name": "Head Cloud Engineer",
     "superRole": "Senior Cloud Engineer",
     "singular": true,
     "titular": true,
-    "description": "Has final responsibility for production cloud services systems.; Chief Cloud Engineer approval is required for sensitive changes involving cloud services security, regulatory issues, or exceptional complexity.",
+    "description": "Has final responsibility for production cloud services systems.; Head Cloud Engineer approval is required for sensitive changes involving cloud services security, regulatory issues, or exceptional complexity.",
     "qualifiable": true,
     "duties": [
       { "description": "Is a member of the Incident Response Team." }
@@ -474,7 +474,7 @@
     "qualifiable": true
   },
   {
-    "name": "Chief Quality Engineer",
+    "name": "Head Quality Engineer",
     "superRole": "Senior Quality Engineer",
     "singular": true,
     "titular": true,
