@@ -29,5 +29,22 @@
       "@moca/moca-financial",
       "@liquid-labs/policy-core"
     ]
+  },
+  {
+    "issues": [
+      "https://github.com/Liquid-Labs/policy-projects/issues/20"
+    ],
+    "branch": "2021.08.13-zane@liquid-labs.com-move_change_control_under",
+    "startTimestampLocal": "2021-08-13-2001 UTC",
+    "branchFrom": "f168b26a9179f65c2329f3b61cc4a47fe6a65b80",
+    "description": "Move change control under projects.",
+    "workInitiator": "zane@liquid-labs.com",
+    "branchInitiator": "zane@liquid-labs.com",
+    "involvedProjects": [
+      "@liquid-labs/policy-projects",
+      "@moca/moca-financial-policy",
+      "@liquid-labs/policy-networks",
+      "@liquid-labs/policy-core"
+    ]
   }
 ]
