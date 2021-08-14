@@ -3,7 +3,7 @@
 ## Purpose and scope
 
 This document discusses the controls applied to any modifications to Company Policy.
-{{- template "change_control/standards/Common Change Control Scope" . }}
+{{- template "projects/standards/Common Change Control Scope" . }}
 
 ## Standards
 
