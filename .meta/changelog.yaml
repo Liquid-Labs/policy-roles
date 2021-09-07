@@ -1,0 +1,22 @@
+- startTimestamp: 2021-09-03T11:29:19.246Z
+  startEpochMillis: 1630668559246
+  issues:
+    - https://github.com/Liquid-Labs/policy-projects/issues/26
+    - https://github.com/Liquid-Labs/policy-projects/issues/27
+  branch: 2021.09.02-zane@liquid-labs.com-simplify_change_control_layout
+  branchFrom: ffedf1375abaea8798979698466d32ecdc691187
+  workInitiator: zane@liquid-labs.com
+  branchInitiator: zane@liquid-labs.com
+  involvedProjects:
+    - "@liquid-labs/policy-devops"
+    - "@liquid-labs/policy-cloud"
+    - "@liquid-labs/policy-networks"
+    - "@liquid-labs/policy-hosts"
+    - "@moca/moca-financial-policy"
+    - "@liquid-labs/policy-projects"
+    - "@liquid-labs/policy-core"
+  changeNotes:
+    - Simplify change control layout
+  securityNotes: []
+  drpBcpNotes: []
+  backoutNotes: []
