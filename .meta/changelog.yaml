@@ -8,15 +8,14 @@
   workInitiator: zane@liquid-labs.com
   branchInitiator: zane@liquid-labs.com
   involvedProjects:
-    - "@liquid-labs/policy-devops"
-    - "@liquid-labs/policy-cloud"
-    - "@liquid-labs/policy-networks"
-    - "@liquid-labs/policy-hosts"
     - "@moca/moca-financial-policy"
-    - "@liquid-labs/policy-projects"
     - "@liquid-labs/policy-core"
+    - "@liquid-labs/policy-networks-cisco"
+    - "@liquid-labs/policy-networks-aws"
   changeNotes:
     - Simplify change control layout
   securityNotes: []
   drpBcpNotes: []
   backoutNotes: []
+  contributors:
+    - Zane Rockenbaugh <zane@liquid-labs.com>
