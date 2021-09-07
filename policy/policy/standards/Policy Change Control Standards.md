@@ -2,8 +2,7 @@
 
 ## Purpose and scope
 
-This document discusses the controls applied to any modifications to Company Policy.
-{{- template "projects/standards/Common Change Control Scope" . }}
+This document discusses the controls applied to any modifications to Company policy. It should be understood as a sub-component of the general [Change Control Standards]({{ .projects.standards.CHANGE_CONTROL_STANDARDS }}).
 
 ## Standards
 
