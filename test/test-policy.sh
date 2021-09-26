@@ -48,7 +48,8 @@ mkdir test-out
 ln -s "$PWD" node_modules/${MY_PACKAGE}
 POLICY_COUNT=$(cd node_modules/@liquid-labs && find -L . -path "./policy-*/policy/*" -name "*.md" -not -path "*/node_modules/*" -not -path "*/.yalc/*" -not -path "*/tmpl/*" | wc -l | awk '{print $1}')
 mkdir .build
-echo "$SETTINGS" > .build/settings.sh
+npm explore @liquid-labs/policy-projects -- cat ./test/settings.sh >> .build/settings.sh
+echo "$SETTINGS" >> .build/settings.sh
 
 echo -n "Test document parsing: "
 "${BIN}/liq-init-docs" run test-out > /dev/null || { echo "FAIL"; EXIT=1; }
