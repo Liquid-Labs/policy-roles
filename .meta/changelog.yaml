@@ -8,10 +8,8 @@
   workInitiator: zane@liquid-labs.com
   branchInitiator: zane@liquid-labs.com
   involvedProjects:
-    - "@moca/moca-financial-policy"
     - "@liquid-labs/policy-core"
-    - "@liquid-labs/policy-networks-cisco"
-    - "@liquid-labs/policy-networks-aws"
+    - "@moca/moca-financial-policy"
   changeNotes:
     - Simplify change control layout
   securityNotes: []
