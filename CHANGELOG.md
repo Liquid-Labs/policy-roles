@@ -9,3 +9,6 @@
 
 ## Release 1.0.0-alpha.48
 * _**hotfix**_: support minor changes _(zane@liquid-labs.com; 2021-10-16T19:48:00.000Z)_
+* _**hotfix**_: updated CHANGELOGE.md for release (by liq) _(zane@liquid-labs.com; 2021-10-16T19:48:14.000Z)_
+* _**hotfix**_: fixed test _(zane@liquid-labs.com; 2021-10-16T19:59:35.000Z)_
+* _**hotfix**_: updated packages _(zane@liquid-labs.com; 2021-10-16T20:03:30.000Z)_
