@@ -34,8 +34,8 @@
     "@liquid-labs/bash-rollup": "^1.0.0-alpha.4+0fedf46f",
     "@liquid-labs/bash-toolkit": "^1.0.0-alpha.50",
     "@liquid-labs/catalyst-scripts": "^1.0.0-alpha.39",
-    "@liquid-labs/orgs-model": "^1.0.0-beta.44",
-    "@liquid-labs/policy-projects": "^1.0.0-alpha.28"
+    "@liquid-labs/orgs-model": "^1.0.0-beta.51",
+    "@liquid-labs/policy-projects": "^1.0.0-alpha.33"
   },
   "dependencies": {
     "fs": "^0.0.2"
