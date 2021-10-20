@@ -8,8 +8,9 @@
   workInitiator: zane@liquid-labs.com
   branchInitiator: zane@liquid-labs.com
   involvedProjects:
-    - "@liquid-labs/policy-core"
+    - "@liquid-labs/liq-core"
     - "@moca/moca-financial-policy"
+    - "@liquid-labs/policy-core"
   changeNotes:
     - Simplify change control layout
   securityNotes: []
@@ -30,6 +31,25 @@
     - "@liquid-labs/policy-core"
   changeNotes:
     - Simplify policy attestations
+  securityNotes: []
+  drpBcpNotes: []
+  backoutNotes: []
+- startTimestamp: 2021-10-19T03:02:46.746Z
+  startEpochMillis: 1634612566746
+  issues:
+    - https://github.com/Liquid-Labs/liq-core/issues/28
+    - https://github.com/Liquid-Labs/liq-core/issues/29
+  branch: 2021.10.18-zane@liquid-labs.com-match_roles_and_save
+  branchFrom: 09961489f87f23809d5978fa7b1c5f86f7b405e9
+  workInitiator: zane@liquid-labs.com
+  branchInitiator: zane@liquid-labs.com
+  involvedProjects:
+    - "@liquid-labs/liq-core"
+    - "@liquid-labs/orgs-model"
+    - "@moca/moca-financial-policy"
+    - "@liquid-labs/policy-core"
+  changeNotes:
+    - Match roles and save refreshed employees
   securityNotes: []
   drpBcpNotes: []
   backoutNotes: []

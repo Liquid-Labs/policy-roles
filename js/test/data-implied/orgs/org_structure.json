@@ -14,9 +14,9 @@
     [ "Head Software Engineer", "Chief Technical Officer" ],
       [ "Senior Software Engineer", "Head Software Engineer", [ "Senior Software Engineer" ] ],
       [ "Software Engineer", "Head Software Engineer", [ "Senior Software Engineer" ] ],
-    [ "Head Data Engineer", "Chief Technical Officer" ],
-      [ "Senior Data Engineer", "Head Data Engineer", [ "Senior Data Engineer" ] ],
-      [ "Data Engineer", "Head Data Engineer", [ "Senior Data Engineer" ] ],
+    [ "Head Database Engineer", "Chief Technical Officer" ],
+      [ "Senior Database Engineer", "Head Database Engineer", [ "Senior Database Engineer" ] ],
+      [ "Database Engineer", "Head Database Engineer", [ "Senior Database Engineer" ] ],
     [ "Head Host Engineer", "Chief Technical Officer" ],
       [ "Senior Host Engineer", "Head Host Engineer", [ "Senior Host Engineer" ] ],
       [ "Host Engineer", "Head Host Engineer", [ "Senior Host Engineer" ] ],
@@ -42,6 +42,5 @@
   [ "Chief Administrative Officer", "Chief Executive Officer" ],
     [ "In House Counsel", "Chief Administrative Officer" ],
     [ "Head of Human Resources", "Chief Administrative Officer" ],
-      [ "Human Resources Agent", "Head of Human Resources" ],
-  [ "Consultant", "Chief Executive Officer", ["Chief Sales Officer", "Chief Technical Officer"]]
+      [ "Human Resources Agent", "Head of Human Resources" ]
 ]
