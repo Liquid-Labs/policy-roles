@@ -13,3 +13,6 @@
 * _**hotfix**_: fixed test _(zane@liquid-labs.com; 2021-10-16T19:59:35.000Z)_
 * _**hotfix**_: updated packages _(zane@liquid-labs.com; 2021-10-16T20:03:30.000Z)_
 * _**hotfix**_: updated CHANGELOGE.md for release (by liq) _(zane@liquid-labs.com; 2021-10-16T20:03:33.000Z)_
+
+## Release 1.0.0-alpha.49
+* Match roles and save refreshed employees _(zane@liquid-labs.com; 2021-10-19T03:02:46.746Z)_
