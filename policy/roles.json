@@ -241,7 +241,7 @@
     "name": "Account Manager",
     "titular": true,
     "qualifiable": true,
-    "description": "The Account Manager is an operational role managing technical/operational relationship with specific clients and partners. Account Managers are the primary technical contact for clients and partners and also internally support sales and integrations.",
+    "description": "The Account Manager is an operational role acting as the primary technical contact for clients and partners. The Account Manager supports internal sales and technical support teams.",
     "duties": [
       { "description": "Provide first tier support for incoming client technical issues." },
       { "description": "Provide internal support for technical and operational questions regarding their account." }
@@ -256,7 +256,10 @@
     "duties": [
       { "description": "Is a member of the Incident Response Team." }
     ],
-    "implies": [ { "name": "Senior Management Team", "mngrProtocol": "self" } ]
+    "implies": [ { "name": "Senior Management Team", "mngrProtocol": "self" } ],
+    "matcher": {
+      "pattern": "(Chief|Head|Executive) +Admin(istrative)? (Officer|Executive)"
+    }
   },
   {
     "name": "Head of Administration",
@@ -272,6 +275,18 @@
     ]
   },
   {
+    "name": "Business Administrator",
+    "singular": false,
+    "titular": true,
+    "qualifiable": true,
+    "description": "Business admin for a department or region",
+    "matcher": {
+      "pattern": "Business +Admin(istraator)?( +(.+))",
+      "antiPattern": "Officer|Executive",
+      "qualifierGroup": 3
+    }
+  },
+  {
     "name": "Head of Human Resources",
     "singular": true,
     "designated": true,
@@ -285,7 +300,10 @@
   {
     "name": "Human Resources Manager",
     "titular": true,
-    "description": "Managers human resoruces agents and handles elevated cases directly."
+    "description": "Managers human resoruces agents and handles elevated cases directly.",
+    "matcher": {
+      "pattern": "((Senior|Snr\\.?|Sr\\.?) +)?((HR|Human Resources) +Manager|Manager +(HR|Human Resources))"
+    }
   },
   {
     "name": "Human Resources Agent",
@@ -339,14 +357,23 @@
     "superRole": "IT Personnel",
     "titular": true,
     "description": "Qualified to modify and review [qual] software code. Sensitive changes must be reviewed by a Senior Software Engineer prior to being deployed.",
-    "qualifiable": true
+    "qualifiable": true,
+    "matcher": {
+      "pattern": "(Junior|Jnr\\.?|Jr\\.? *)?((.+) +)?(Software (Engineer|Developer)|Developer)",
+      "antiPattern": "Senior|Snr\\.?|Sr\\.?|Lead|Head",
+      "qualifierGroup": 3
+    }
   },
   {
     "name": "Senior Software Engineer",
     "superRole": "Software Engineer",
     "titular": true,
     "description": "Qualified to review and approve changes to sensitive [qual] code.",
-    "qualifiable": true
+    "qualifiable": true,
+    "matcher": {
+      "pattern": "(Senior|Snr\\.?|Sr\\.?) ((.+) +)?(Software (Engineer|Developer)|Developer)",
+      "qualifierGroup": 3
+    }
   },
   {
     "name": "Head Software Engineer",
@@ -357,28 +384,32 @@
     "qualifiable": true,
     "duties": [
       { "description": "Is a member of the Incident Response Team." }
-    ]
+    ],
+    "matcher": {
+      "pattern": "(Head|Lead|Chief) ((.+) )?(Software (Engineer|Developer)|Developer)",
+      "qualifierGroup": 3
+    }
   },
   {
-    "name": "Data Engineer",
+    "name": "Database Engineer",
     "superRole": "IT Personnel",
     "titular": true,
     "description": "Qualified to modify, review, and manage [qual] database schemas and DBMSs.",
     "qualifiable": true
   },
   {
-    "name": "Senior Data Engineer",
-    "superRole": "Data Engineer",
+    "name": "Senior Database Engineer",
+    "superRole": "Database Engineer",
     "titular": true,
     "description": "Qualified to review and approve changes to production [qual] schemas and DBMSs.",
     "qualifiable": true
   },
   {
-    "name": "Head Data Engineer",
-    "superRole": "Senior Data Engineer",
+    "name": "Head Database Engineer",
+    "superRole": "Senior Database Engineer",
     "singular": true,
     "titular": true,
-    "description": "Has final responsibility for production schemas and DBMSs.; Head Data Engineer's approval is required for sensitive changes involving customer privacy, regulatory issues, and/or exceptional complexity.",
+    "description": "Has final responsibility for production schemas and DBMSs.; Head Database Engineer's approval is required for sensitive changes involving customer privacy, regulatory issues, and/or exceptional complexity.",
     "qualifiable": true,
     "duties": [
       { "description": "Is a member of the Incident Response Team." }
@@ -408,6 +439,38 @@
     "duties": [
       { "description": "Is a member of the Incident Response Team." }
     ]
+  },
+  {
+    "name": "DevOps Engineer",
+    "superRole": "IT Personnel",
+    "titular": true,
+    "description": "Maintains and supports the CI/CD pipeline and other development and operational tools.",
+    "qualifiable": true,
+    "matcher": {
+      "pattern": "DevOps +(Engineer|Dev(eloper)?)"
+    }
+  },
+  {
+    "name": "Senior DevOps Engineer",
+    "superRole": "DevOps Engineer",
+    "titular": true,
+    "description": "Qualified to review and approve changes to production networks.",
+    "qualifiable": true
+  },
+  {
+    "name": "Head DevOps Engineer",
+    "superRole": "Senior DevOps Engineer",
+    "singular": true,
+    "titular": true,
+    "description": "Has final responsibility for the CI/CD pipeline.",
+    "qualifiable": true,
+    "duties": [
+      { "description": "Is a member of the Incident Response Team." }
+    ],
+    "matcher": {
+      "pattern": "((Lead|Chief( +of)?|Head( +of)?) +DevOps( +Engineer(ing)?))|DevOps(( +Engineering)? +(Lead|Chief|Head))",
+      "qualifierGroup": 3
+    }
   },
   {
     "name": "Network Engineer",
@@ -464,21 +527,34 @@
     "superRole": "IT Personnel",
     "titular": true,
     "description": "Qualified to ascertain correctness and conformance of Company products.",
-    "qualifiable": true
+    "qualifiable": true,
+    "matcher": {
+      "pattern": "(Junior|Jnr\\.?|Jr\\.? *)?((.+) +)?((Quality|QA) +Engineer|Tester)",
+      "antiPattern": "Senior|Snr\\.?|Sr\\.?|Lead|Head",
+      "qualifierGroup": 3
+    }
   },
   {
     "name": "Senior Quality Engineer",
     "superRole": "Quality Engineer",
     "titular": true,
     "description": "Qualified to review and approve changes [qual] quality systems.",
-    "qualifiable": true
+    "qualifiable": true,
+    "matcher": {
+      "pattern": "(Senior|Snr\\.?|Sr\\.? *)?((.+) +)?((Quality|QA) +Engineer|Tester)",
+      "antiPattern": "Junior|Jnr\\.?|Jr\\.?|Lead|Head",
+      "qualifierGroup": 3
+    }
   },
   {
     "name": "Head Quality Engineer",
     "superRole": "Senior Quality Engineer",
     "singular": true,
     "titular": true,
-    "description": "Has final responsibility for quality assurance."
+    "description": "Has final responsibility for quality assurance.",
+    "matcher": {
+      "pattern": "(Head|Lead) +((Quality|QA) +Engineer|Tester)|Tester +Lead"
+    }
   },
   {
     "name": "Project Manager",
@@ -621,12 +697,6 @@
     "description": "Manages the company's centralized VPN services."
   },
   {
-    "name": "Consultant",
-    "titular": true,
-    "description": "Provides general or project specific [qual] expertise. Specific duties will be enumerated as part of the epmloyement or contractor agreement",
-    "qualifiable": true
-  },
-  {
     "name": "Senior Management Team",
     "aliases": [ "SMT" ],
     "designated": true,
@@ -686,8 +756,41 @@
     "description": "Oversees general marketing process and logistics."
   },
   {
+    "name": "Marketing Analyst",
+    "titular": true,
+    "description": "Analyzes marketing data to determine effectiveness of marketing campaigns and recommends strategies for future campaigns."
+  },
+  {
+    "name": "Sales Consultant",
+    "titular": true,
+    "description": "Analyzes and recommends sales opportunities."
+  },
+  {
+    "name": "Security Consultant",
+    "titular": true,
+    "Description": "Provides as needed analysis, support, and implementation of security and compliance related matters.",
+    "matcher": {
+      "pattern": "(PCI|SOC|Security|Compliance) Consultant"
+    }
+  },
+  {
     "name": "IT Support",
     "titular": true,
     "description": "Supports internal IT infrastructure, end user programs, etc."
+  },
+  {
+    "name": "Office Administrator",
+    "titular": true,
+    "description": "Completes clerical and administrative tasks for an office. Their main duties include welcoming and directing visitors, coordinating meetings and appointments and performing clerical tasks, like answering phones and responding to emails."
+  },
+  {
+    "name": "IT Consultant",
+    "titular": true,
+    "description": "Provides general support and implements task relating to internal technical system and support."
+  },
+  {
+    "name": "Database Consultant",
+    "titular": true,
+    "description": "Provides general support and implements task relating to database operations and management."
   }
 ]
