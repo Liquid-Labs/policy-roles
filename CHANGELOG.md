@@ -19,3 +19,4 @@
 
 ## Release 1.0.0-alpha.50
 * _**hotfix**_: update build to reflect library changes _(zane@liquid-labs.com; 2021-10-25T22:24:19.000Z)_
+* _**hotfix**_: updated CHANGELOGE.md for release (by liq) _(zane@liquid-labs.com; 2021-10-25T22:24:30.000Z)_
