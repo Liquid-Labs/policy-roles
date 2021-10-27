@@ -24,8 +24,9 @@ eval "$(setSimpleOptions --script OUTPUT_FORMAT= KEEP_INTERMEDIATE: -- "$@")"
 
 # process options
 [[ -n "${OUTPUT_FORMAT}" ]] || OUTPUT_FORMAT='pdf'
-[[ "${OUTPUT_FORMAT}" == 'pdf' ]] \
+true || [[ "${OUTPUT_FORMAT}" == 'pdf' ]] \
   || [[ "${OUTPUT_FORMAT}" == 'html' ]] \
+  || [[ "${OUTPUT_FORMAT}" == 'opendocument' ]] \
   || echoerrandexit "Unsupported output format '${OUTPUT_FORMAT}'."
 
 SEARCH_DIRS=''
@@ -50,6 +51,8 @@ EOF
 )
 
 while read -r MD_FILE; do
+  [[ -n "${MD_FILE}" ]] || continue
+  
   TITLE=$(basename "${MD_FILE}" .md)
 
   SETTINGS=$(cat <<EOF
@@ -60,17 +63,32 @@ author: 'TODO: Author Name'
 EOF
 )
 
+  case "${OUTPUT_FORMAT}" in
+    pdf|html)
+      INTERMEDIDATE_FORMAT=html5;;
+    *)
+      INTERMEDIDATE_FORMAT="${OUTPUT_FORMAT}";;
+  esac
+
   BASE_OUTPUT="${TITLE}"
-  [[ "${OUTPUT_FORMAT}" != 'pdf' ]] || BASE_OUTPUT="${BASE_OUTPUT}-base"
+  if [[ "${OUTPUT_FORMAT}" == 'html' ]]; then BASE_OUTPUT="${BASE_OUTPUT}-base"; fi
   BASE_OUTPUT="${BASE_OUTPUT}.${OUTPUT_FORMAT}"
   # --to html5 : uses the HTML 5 engine. Yes, even when rendering PDF. It renders and
   #              prints and saves us the hassle of having to install pdflatex
+
+  echo "pandoc \
+    --toc \
+    --standalone \
+    --from gfm \
+    --to "${INTERMEDIDATE_FORMAT}" \
+    \"${MD_FILE}\" \
+    -o \"${BASE_OUTPUT}\""
 
   pandoc \
     --toc \
     --standalone \
     --from gfm \
-    --to html5 \
+    --to ${INTERMEDIDATE_FORMAT} \
     --css <(echo "${CSS}") \
     --metadata-file <(echo "${SETTINGS}") \
     "${MD_FILE}" \
@@ -124,7 +142,11 @@ EOF
       -g${XPAGE}0x${YPAGE}0         \
       -c "${FOOTER_STRING}"
 
-    pdftk "${BASE_OUTPUT}" multistamp "${OVERLAY_OUTPUT}" output "${TITLE}.${OUTPUT_FORMAT}"
+    COMBINED_FILE="${TITLE}-combined.${OUTPUT_FORMAT}"
+
+    echo "pdftk \"${BASE_OUTPUT}\" multistamp \"${OVERLAY_OUTPUT}\" output \"${COMBINED_FILE}\""
+    pdftk "${BASE_OUTPUT}" multistamp "${OVERLAY_OUTPUT}" output "${COMBINED_FILE}"
+    mv "${COMBINED_FILE}" "${TITLE}.${OUTPUT_FORMAT}"
     [[ -n "${KEEP_INTERMEDIATE}" ]] || rm "${BASE_OUTPUT}" "${OVERLAY_OUTPUT}"
   fi
 done < <(echo "${MD_FILES}"; for ROOT_DIR in $SEARCH_DIRS; do find ${ROOT_DIR} -name "*.md"; done)
