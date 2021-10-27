@@ -301,6 +301,7 @@
     "name": "Human Resources Manager",
     "titular": true,
     "description": "Managers human resoruces agents and handles elevated cases directly.",
+    "qualifiable": true,
     "matcher": {
       "pattern": "((Senior|Snr\\.?|Sr\\.?) +)?((HR|Human Resources) +Manager|Manager +(HR|Human Resources))"
     }
@@ -308,7 +309,8 @@
   {
     "name": "Human Resources Agent",
     "titular": true,
-    "description": "Oversees personnel management and compliance."
+    "description": "Oversees personnel management and compliance.",
+    "qualifiable": true
   },
   {
     "name": "Product Manager",
