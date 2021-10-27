@@ -15,7 +15,11 @@
     "singular": true,
     "titular": true,
     "superRole": "Board Member",
-    "description": "Chairs meetings of the Board of Directors."
+    "description": "Chairs meetings of the Board of Directors.",
+    "implies": [ {
+        "name": "Board Member",
+        "mngrProtocol": "same"
+      } ]
   },
   {
     "name": "Executive Officer",
