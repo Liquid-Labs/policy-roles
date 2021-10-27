@@ -20,3 +20,8 @@
 ## Release 1.0.0-alpha.50
 * _**hotfix**_: update build to reflect library changes _(zane@liquid-labs.com; 2021-10-25T22:24:19.000Z)_
 * _**hotfix**_: updated CHANGELOGE.md for release (by liq) _(zane@liquid-labs.com; 2021-10-25T22:24:30.000Z)_
+
+## Release 1.0.0-alpha.51
+* _**hotfix**_: allow HR Agent and manager to be qualifed _(zane@liquid-labs.com; 2021-10-27T00:49:16.000Z)_
+* _**hotfix**_: update to support docx... kind of _(zane@liquid-labs.com; 2021-10-27T00:49:29.000Z)_
+* _**hotfix**_: update role chairman implies board memebr _(zane@liquid-labs.com; 2021-10-27T01:25:34.000Z)_
