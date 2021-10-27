@@ -513,9 +513,6 @@ while (( $# > 0 )); do
   fi
 done
 
-echo "MD_FILES: ${MD_FILES}"
-echo "SEARCH_DIRS: ${SEARCH_DIRS}"
-
 VERSION=$(OUTPUT=$(git status --porcelain) && [ -z "${OUTPUT}" ] && cat package.json | jq '.version' || echo 'working')
 
 CSS=$(cat <<'EOF'
