@@ -53,3 +53,19 @@
   securityNotes: []
   drpBcpNotes: []
   backoutNotes: []
+- startTimestamp: 2021-10-29T20:53:01.474Z
+  startEpochMillis: 1635540781474
+  issues:
+    - https://github.com/Liquid-Labs/policy-projects/issues/46
+  branch: 2021.10.28-zane@liquid-labs.com-change_control_and_related
+  branchFrom: f390650279b2f102f05afa88cee6de16feb8766b
+  workInitiator: zane@liquid-labs.com
+  branchInitiator: zane@liquid-labs.com
+  involvedProjects:
+    - "@liquid-labs/policy-projects"
+    - "@liquid-labs/policy-core"
+  changeNotes:
+    - Change control and related fixes
+  securityNotes: []
+  drpBcpNotes: []
+  backoutNotes: []
