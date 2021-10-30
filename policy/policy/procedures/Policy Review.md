@@ -22,8 +22,8 @@ Minor change examples:
 
 This change qualifies as a minor change according to the following criteria:
 
-- [ ] The changes do not add or modify any role definitions.
-- [ ] The changes do not make functional changes to or add new procedures, standards, or policies.
+- [ ] The changes do not modify or add any permissions in fact or documentation.
+- [ ] The changes do not add or make functional changes to procedures, standards, or policies.
 
 ## Reviewer attestation
 
