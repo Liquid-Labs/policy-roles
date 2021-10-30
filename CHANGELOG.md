@@ -25,3 +25,7 @@
 * _**hotfix**_: allow HR Agent and manager to be qualifed _(zane@liquid-labs.com; 2021-10-27T00:49:16.000Z)_
 * _**hotfix**_: update to support docx... kind of _(zane@liquid-labs.com; 2021-10-27T00:49:29.000Z)_
 * _**hotfix**_: update role chairman implies board memebr _(zane@liquid-labs.com; 2021-10-27T01:25:34.000Z)_
+
+## Release 1.0.0-alpha.52
+* _**hotfix**_: updated bin and test log _(zane@liquid-labs.com; 2021-10-27T01:56:06.000Z)_
+* Change control and related fixes _(zane@liquid-labs.com; 2021-10-29T20:53:01.474Z)_
