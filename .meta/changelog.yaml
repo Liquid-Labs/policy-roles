@@ -8,6 +8,7 @@
   workInitiator: zane@liquid-labs.com
   branchInitiator: zane@liquid-labs.com
   involvedProjects:
+    - "@liquid-labs/liq-core"
     - "@liquid-labs/policy-core"
   changeNotes:
     - Simplify change control layout
@@ -64,6 +65,22 @@
     - "@liquid-labs/policy-core"
   changeNotes:
     - Change control and related fixes
+  securityNotes: []
+  drpBcpNotes: []
+  backoutNotes: []
+- startTimestamp: 2021-11-03T20:47:23.062Z
+  startEpochMillis: 1635972443062
+  issues:
+    - https://github.com/Liquid-Labs/liq-core/issues/31
+  branch: 2021.11.01-zane@liquid-labs.com-add_get_orgstaffrolesresponsibilities
+  branchFrom: 8ccffd7a9d4a187b59877b18c797f4cd604249c1
+  workInitiator: zane@liquid-labs.com
+  branchInitiator: zane@liquid-labs.com
+  involvedProjects:
+    - "@liquid-labs/liq-core"
+    - "@liquid-labs/policy-core"
+  changeNotes:
+    - Add GET /org/staff/roles/responsibilities
   securityNotes: []
   drpBcpNotes: []
   backoutNotes: []
