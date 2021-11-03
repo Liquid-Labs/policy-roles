@@ -1,0 +1,302 @@
+{
+  "accessRules": [
+    {
+      "role": "Executive Officer",
+      "access": [
+        { "domain": "accounting", "type": "reader", "scope": "unlimited" }
+      ]
+    },
+    {
+      "role": "Accountant",
+      "access": [
+        { "domain": "accounting", "type": "editor", "scope": "specified" }
+      ]
+    },
+    {
+      "role": "Corporate Controller",
+      "access": [
+        { "domain": "accounting", "type": "manager", "scope": "unlimited" },
+        { "domain": "accounting", "type": "access-manager", "scope": "unlimited" }
+      ]
+    },
+    {
+      "role": "Customer Service Agent",
+      "access": [
+        { "domain": "customer-service", "type": "editor", "scope": "unlimited" }
+      ]
+    },
+    {
+      "role": "Customer Service Manager",
+      "access": [
+        { "domain": "customer-service", "type": "access-manager", "scope": "unlimited" }
+      ]
+    },
+    
+    {
+      "role": "Human Resources Agent",
+      "access": [
+        { "domain": "human-resources", "type": "editor", "scope": "unlimited" }
+      ]
+    },
+    {
+      "role": "Human Resources Manager",
+      "access": [
+        { "domain": "human-resources", "type": "access-manager", "scope": "unlimited" }
+      ]
+    },
+    {
+      "role": "Product Manager",
+      "access": [
+        { "domain": "project", "type": "editor", "scope": "specified" }
+      ]
+    },
+    {
+      "role": "Project Manager",
+      "access": [
+        { "domain": "project", "type": "editor", "scope": "specified" }
+      ]
+    },
+    {
+      "role": "Software Engineer",
+      "access": [
+        { "domain": "software", "type": "editor", "scope": "specified" }
+      ]
+    },
+    {
+      "role": "Senior Software Engineer",
+      "access": [
+        { "domain": "software", "type": "manager", "scope": "specified" }
+      ]
+    },
+    {
+      "role": "Head Software Engineer",
+      "access": [
+        { "domain": "software", "type": "manager", "scope": "unlimited" },
+        { "domain": "software", "type": "access-manager", "scope": "unlimited" }
+      ]
+    },
+    {
+      "role": "Database Engineer",
+      "access": [
+        { "domain": "database", "type": "editor", "scope": "specified" }
+      ]
+    },
+    {
+      "role": "Senior Database Engineer",
+      "access": [
+        { "domain": "database", "type": "manager", "scope": "specified" }
+      ]
+    },
+    {
+      "role": "Head Database Engineer",
+      "access": [
+        { "domain": "database", "type": "manager", "scope": "unlimited" },
+        { "domain": "database", "type": "access-manager", "scope": "unlimited" }
+      ]
+    },
+    {
+      "role": "Host Engineer",
+      "access": [
+        { "domain": "host", "type": "editor", "scope": "specified" }
+      ]
+    },
+    {
+      "role": "Senior Host Engineer",
+      "access": [
+        { "domain": "host", "type": "manager", "scope": "specified" }
+      ]
+    },
+    {
+      "role": "Head Host Engineer",
+      "access": [
+        { "domain": "host", "type": "manager", "scope": "unlimited" },
+        { "domain": "host", "type": "access-manager", "scope": "unlimited" }
+      ]
+    },
+    {
+      "role": "Network Engineer",
+      "access": [
+        { "domain": "network", "type": "editor", "scope": "specified" }
+      ]
+    },
+    {
+      "role": "Senior Network Engineer",
+      "access": [
+        { "domain": "network", "type": "manager", "scope": "specified" }
+      ]
+    },
+    {
+      "role": "Head Network Engineer",
+      "access": [
+        { "domain": "network", "type": "manager", "scope": "unlimited" },
+        { "domain": "network", "type": "access-manager", "scope": "unlimited" }
+      ]
+    },
+    {
+      "role": "DevOps Engineer",
+      "access": [
+        { "domain": "devops", "type": "editor", "scope": "specified" }
+      ]
+    },
+    {
+      "role": "Senior DevOps Engineer",
+      "access": [
+        { "domain": "devops", "type": "manager", "scope": "specified" }
+      ]
+    },
+    {
+      "role": "Head DevOps Engineer",
+      "access": [
+        { "domain": "devops", "type": "manager", "scope": "unlimited" },
+        { "domain": "devops", "type": "access-manager", "scope": "unlimited" }
+      ]
+    },
+    {
+      "role": "Cloud Engineer",
+      "access": [
+        { "domain": "cloud", "type": "editor", "scope": "specified" }
+      ]
+    },
+    {
+      "role": "Senior Cloud Engineer",
+      "access": [
+        { "domain": "cloud", "type": "manager", "scope": "specified" }
+      ]
+    },
+    {
+      "role": "Head Cloud Engineer",
+      "access": [
+        { "domain": "cloud", "type": "manager", "scope": "unlimited" },
+        { "domain": "cloud", "type": "access-manager", "scope": "unlimited" }
+      ]
+    },
+    {
+      "role": "Policy Engineer",
+      "access": [
+        { "domain": "database", "type": "reader", "scope": "unlimited" },
+        { "domain": "cloud", "type": "reader", "scope": "unlimited" },
+        { "domain": "host", "type": "reader", "scope": "unlimited" },
+        { "domain": "human-resources", "type": "reader", "scope": "unlimited" },
+        { "domain": "network", "type": "reader", "scope": "unlimited" },
+        { "domain": "compliance", "type": "editor", "scope": "unlimited" }
+      ]
+    },
+    {
+      "role": "Lead Policy Engineer",
+      "access": [
+        { "domain": "database", "type": "reader", "scope": "unlimited" },
+        { "domain": "cloud", "type": "reader", "scope": "unlimited" },
+        { "domain": "host", "type": "reader", "scope": "unlimited" },
+        { "domain": "human-resources", "type": "reader", "scope": "unlimited" },
+        { "domain": "network", "type": "reader", "scope": "unlimited" },
+        { "domain": "software", "type": "reader", "scope": "unlimited" },
+        { "domain": "compliance", "type": "manager", "scope": "unlimited" },
+        { "domain": "compliance", "type": "access-manager", "scope": "unlimited" }
+      ]
+    },
+    {
+      "role": "Access Manager",
+      "access": [
+        { "domain": "cloud", "type": "access-manager", "scope": "unlimited" },
+        { "domain": "database", "type": "access-manager", "scope": "unlimited" },
+        { "domain": "devops", "type": "access-manager", "scope": "unlimited" },
+        { "domain": "host", "type": "access-manager", "scope": "unlimited" },
+        { "domain": "network", "type": "access-manager", "scope": "unlimited" },
+        { "domain": "software", "type": "access-manager", "scope": "unlimited" }
+      ]
+    }
+  ],
+  "domainServices": [
+    {
+      "domain": "accounting",
+      "services": [
+        "Quickbooks"
+      ]
+    },
+    {
+      "domain": "cloud",
+      "services": [
+        "Amazon SES",
+        "Amazon SNS",
+        "Amazon Cloud Watch",
+        "Amazon Cloud Trail",
+        "GitHub",
+        "Jira"
+      ]
+    },
+    {
+      "domain": "compliance",
+      "services": [
+        "GitHub",
+        "Jira"
+      ]
+    },
+    {
+      "domain": "customer-service",
+      "services": [
+        "ZenDesk",
+        "Jira"
+      ]
+    },
+    {
+      "domain": "database",
+      "services": [
+        "Amazon RDS",
+        "Amazon S3",
+        "Amazon S3 Glacier",
+        "GitHub",
+        "Jira"
+      ]
+    },
+    {
+      "domain": "devops",
+      "services": [
+        "Jenkins",
+        "GitHub",
+        "Jira"
+      ]
+    },
+    {
+      "domain": "host",
+      "services": [
+        "Amazon EC2",
+        "Amazon EFS",
+        "GitHub",
+        "Jira"
+      ]
+    },
+    {
+      "domain": "human-resources",
+      "services": [
+        "GitHub",
+        "Jira"
+      ]
+    },
+    {
+      "domain": "network",
+      "services": [
+        "AWS API Gateway",
+        "AWS Direct Connect",
+        "Amazon Route 53",
+        "Amazon Shield",
+        "Amazon WAF",
+        "GitHub",
+        "Jira"
+      ]
+    },
+    {
+      "domain": "project",
+      "services": [
+        "GitHub",
+        "Jira"
+      ]
+    },
+    {
+      "domain": "software",
+      "services": [
+        "GitHub",
+        "Jira"
+      ]
+    }
+  ]
+}
