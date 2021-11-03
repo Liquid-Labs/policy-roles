@@ -33,3 +33,6 @@
 ## Release 1.0.0-alpha.53
 * _**hotfix**_: fix missing 'superRole' desiggnation on HR Manager _(zane@liquid-labs.com; 2021-11-03T20:30:13.000Z)_
 * _**hotfix**_: updated CHANGELOGE.md for release (by liq) _(zane@liquid-labs.com; 2021-11-03T20:30:25.000Z)_
+
+## Release 1.0.0-alpha.54
+* Add GET /org/staff/roles/responsibilities _(zane@liquid-labs.com; 2021-11-03T20:47:23.062Z)_
