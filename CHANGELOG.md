@@ -29,3 +29,6 @@
 ## Release 1.0.0-alpha.52
 * _**hotfix**_: updated bin and test log _(zane@liquid-labs.com; 2021-10-27T01:56:06.000Z)_
 * Change control and related fixes _(zane@liquid-labs.com; 2021-10-29T20:53:01.474Z)_
+
+## Release 1.0.0-alpha.53
+* _**hotfix**_: fix missing 'superRole' desiggnation on HR Manager _(zane@liquid-labs.com; 2021-11-03T20:30:13.000Z)_
