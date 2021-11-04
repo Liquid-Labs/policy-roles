@@ -39,3 +39,4 @@
 
 ## Release 1.0.0-alpha.55
 * _**hotfix**_: updated access.json _(zane@liquid-labs.com; 2021-11-04T00:23:16.000Z)_
+* _**hotfix**_: updated CHANGELOGE.md for release (by liq) _(zane@liquid-labs.com; 2021-11-04T00:23:26.000Z)_
