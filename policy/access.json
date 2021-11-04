@@ -1,208 +1,554 @@
 {
   "accessRules": [
     {
+      "role": "Staff",
+      "policy": [
+        "staff/acceptable-use/.+",
+        "security/Staff Security Cheat Sheet",
+        "staff/policy/Information User Policy",
+        "staff/policy/Travel and Business Expense Policy"
+      ]
+    },
+    {
+      "role": "Senior Management Team",
+      "policy": [
+        "security/.+",
+        "data/policy/Data Management Policy",
+        "data/standards/Confidential Data Handling Standards",
+        "data/standards/Data Classification and Inventor Standards",
+        "projects/policy/Change Control Policy",
+        "incident-response/.+"
+      ]
+    },
+    {
       "role": "Executive Officer",
       "access": [
-        { "domain": "accounting", "type": "reader", "scope": "unlimited" }
+        {
+          "domain": "accounting",
+          "type": "reader",
+          "scope": "unlimited"
+        }
+      ],
+      "policy": [
+        "data/policy/Data Management Policy",
+        "data/standards/Confidential Data Handling Standards",
+        "data/standards/Data Classification and Inventor Standards"
       ]
     },
     {
       "role": "Accountant",
       "access": [
-        { "domain": "accounting", "type": "editor", "scope": "specified" }
+        {
+          "domain": "accounting",
+          "type": "editor",
+          "scope": "specified"
+        }
+      ],
+      "policy": [
+        "data/policy/Data Management Policy",
+        "data/standards/Confidential Data Handling Standards",
+        "data/standards/Data Classification and Inventor Standards"
       ]
     },
     {
       "role": "Corporate Controller",
       "access": [
-        { "domain": "accounting", "type": "manager", "scope": "unlimited" },
-        { "domain": "accounting", "type": "access-manager", "scope": "unlimited" }
+        {
+          "domain": "accounting",
+          "type": "manager",
+          "scope": "unlimited"
+        },
+        {
+          "domain": "accounting",
+          "type": "access-manager",
+          "scope": "unlimited"
+        }
+      ],
+      "policy": [
+        "security/.+Access Management.*"
       ]
     },
     {
       "role": "Customer Service Agent",
       "access": [
-        { "domain": "customer-service", "type": "editor", "scope": "unlimited" }
+        {
+          "domain": "customer-service",
+          "type": "editor",
+          "scope": "unlimited"
+        }
+      ],
+      "policy": [
+        "customer-support/.+",
+        "data/policy/Data Management Policy",
+        "data/standards/Confidential Data Handling Standards",
+        "data/standards/Data Classification and Inventor Standards"
       ]
     },
     {
       "role": "Customer Service Manager",
       "access": [
-        { "domain": "customer-service", "type": "access-manager", "scope": "unlimited" }
+        {
+          "domain": "customer-service",
+          "type": "access-manager",
+          "scope": "unlimited"
+        }
+      ],
+      "policy": [
+        "security/.+Access Management.*"
       ]
     },
-    
     {
       "role": "Human Resources Agent",
       "access": [
-        { "domain": "human-resources", "type": "editor", "scope": "unlimited" }
+        {
+          "domain": "human-resources",
+          "type": "editor",
+          "scope": "unlimited"
+        }
+      ],
+      "policy": [
+        "data/policy/Data Management Policy",
+        "data/standards/Confidential Data Handling Standards",
+        "data/standards/Data Classification and Inventor Standards"
       ]
     },
     {
       "role": "Human Resources Manager",
       "access": [
-        { "domain": "human-resources", "type": "access-manager", "scope": "unlimited" }
+        {
+          "domain": "human-resources",
+          "type": "access-manager",
+          "scope": "unlimited"
+        }
+      ],
+      "policy": [
+        "security/.+Access Management.*"
       ]
     },
     {
       "role": "Product Manager",
       "access": [
-        { "domain": "project", "type": "editor", "scope": "specified" }
+        {
+          "domain": "project",
+          "type": "editor",
+          "scope": "specified"
+        }
+      ],
+      "policy": [
+        "projects/.+"
       ]
     },
     {
       "role": "Project Manager",
       "access": [
-        { "domain": "project", "type": "editor", "scope": "specified" }
+        {
+          "domain": "project",
+          "type": "editor",
+          "scope": "specified"
+        }
+      ],
+      "policy": [
+        "projects/.+"
       ]
     },
     {
       "role": "Software Engineer",
       "access": [
-        { "domain": "software", "type": "editor", "scope": "specified" }
+        {
+          "domain": "software",
+          "type": "editor",
+          "scope": "specified"
+        }
+      ],
+      "policy": [
+        "data/.+",
+        [
+          "security/.+",
+          "security/.*Access Management.*"
+        ],
+        "projects/.+",
+        "software/.+"
       ]
     },
     {
       "role": "Senior Software Engineer",
       "access": [
-        { "domain": "software", "type": "manager", "scope": "specified" }
+        {
+          "domain": "software",
+          "type": "manager",
+          "scope": "specified"
+        }
       ]
     },
     {
       "role": "Head Software Engineer",
       "access": [
-        { "domain": "software", "type": "manager", "scope": "unlimited" },
-        { "domain": "software", "type": "access-manager", "scope": "unlimited" }
+        {
+          "domain": "software",
+          "type": "manager",
+          "scope": "unlimited"
+        },
+        {
+          "domain": "software",
+          "type": "access-manager",
+          "scope": "unlimited"
+        }
+      ],
+      "policy": [
+        "security/.+Access Management.*",
+        "incident-response/.+"
       ]
     },
     {
       "role": "Database Engineer",
       "access": [
-        { "domain": "database", "type": "editor", "scope": "specified" }
+        {
+          "domain": "database",
+          "type": "editor",
+          "scope": "specified"
+        }
+      ],
+      "policy": [
+        "data/.+",
+        "security/.+",
+        "projects/.+"
       ]
     },
     {
       "role": "Senior Database Engineer",
       "access": [
-        { "domain": "database", "type": "manager", "scope": "specified" }
+        {
+          "domain": "database",
+          "type": "manager",
+          "scope": "specified"
+        }
       ]
     },
     {
       "role": "Head Database Engineer",
       "access": [
-        { "domain": "database", "type": "manager", "scope": "unlimited" },
-        { "domain": "database", "type": "access-manager", "scope": "unlimited" }
+        {
+          "domain": "database",
+          "type": "manager",
+          "scope": "unlimited"
+        },
+        {
+          "domain": "database",
+          "type": "access-manager",
+          "scope": "unlimited"
+        }
+      ],
+      "policy": [
+        "security/.+Access Management.*",
+        "incident-response/.+"
       ]
     },
     {
       "role": "Host Engineer",
       "access": [
-        { "domain": "host", "type": "editor", "scope": "specified" }
+        {
+          "domain": "host",
+          "type": "editor",
+          "scope": "specified"
+        }
+      ],
+      "policy": [
+        "data/.+",
+        "hosts/.+",
+        "projects/.+",
+        "security/.+"
       ]
     },
     {
       "role": "Senior Host Engineer",
       "access": [
-        { "domain": "host", "type": "manager", "scope": "specified" }
+        {
+          "domain": "host",
+          "type": "manager",
+          "scope": "specified"
+        }
       ]
     },
     {
       "role": "Head Host Engineer",
       "access": [
-        { "domain": "host", "type": "manager", "scope": "unlimited" },
-        { "domain": "host", "type": "access-manager", "scope": "unlimited" }
+        {
+          "domain": "host",
+          "type": "manager",
+          "scope": "unlimited"
+        },
+        {
+          "domain": "host",
+          "type": "access-manager",
+          "scope": "unlimited"
+        }
+      ],
+      "policy": [
+        "security/.+Access Management.*",
+        "incident-response/.+"
       ]
     },
     {
       "role": "Network Engineer",
       "access": [
-        { "domain": "network", "type": "editor", "scope": "specified" }
+        {
+          "domain": "network",
+          "type": "editor",
+          "scope": "specified"
+        }
+      ],
+      "policy": [
+        "data/.+",
+        "networks/.+",
+        "projects/.+",
+        "security/.+"
       ]
     },
     {
       "role": "Senior Network Engineer",
       "access": [
-        { "domain": "network", "type": "manager", "scope": "specified" }
+        {
+          "domain": "network",
+          "type": "manager",
+          "scope": "specified"
+        }
       ]
     },
     {
       "role": "Head Network Engineer",
       "access": [
-        { "domain": "network", "type": "manager", "scope": "unlimited" },
-        { "domain": "network", "type": "access-manager", "scope": "unlimited" }
+        {
+          "domain": "network",
+          "type": "manager",
+          "scope": "unlimited"
+        },
+        {
+          "domain": "network",
+          "type": "access-manager",
+          "scope": "unlimited"
+        }
+      ],
+      "policy": [
+        "security/.+Access Management.*",
+        "incident-response/.+"
       ]
     },
     {
       "role": "DevOps Engineer",
       "access": [
-        { "domain": "devops", "type": "editor", "scope": "specified" }
+        {
+          "domain": "devops",
+          "type": "editor",
+          "scope": "specified"
+        }
+      ],
+      "policy": [
+        "data/.+",
+        "devops/.+",
+        "projects/.+",
+        "security/.+"
       ]
     },
     {
       "role": "Senior DevOps Engineer",
       "access": [
-        { "domain": "devops", "type": "manager", "scope": "specified" }
+        {
+          "domain": "devops",
+          "type": "manager",
+          "scope": "specified"
+        }
       ]
     },
     {
       "role": "Head DevOps Engineer",
       "access": [
-        { "domain": "devops", "type": "manager", "scope": "unlimited" },
-        { "domain": "devops", "type": "access-manager", "scope": "unlimited" }
+        {
+          "domain": "devops",
+          "type": "manager",
+          "scope": "unlimited"
+        },
+        {
+          "domain": "devops",
+          "type": "access-manager",
+          "scope": "unlimited"
+        }
+      ],
+      "policy": [
+        "security/.+Access Management.*",
+        "incident-response/.+"
       ]
     },
     {
       "role": "Cloud Engineer",
       "access": [
-        { "domain": "cloud", "type": "editor", "scope": "specified" }
+        {
+          "domain": "cloud",
+          "type": "editor",
+          "scope": "specified"
+        }
+      ],
+      "policy": [
+        "data/.+",
+        "cloud/.+",
+        "projects/.+",
+        "security/.+"
       ]
     },
     {
       "role": "Senior Cloud Engineer",
       "access": [
-        { "domain": "cloud", "type": "manager", "scope": "specified" }
+        {
+          "domain": "cloud",
+          "type": "manager",
+          "scope": "specified"
+        }
       ]
     },
     {
       "role": "Head Cloud Engineer",
       "access": [
-        { "domain": "cloud", "type": "manager", "scope": "unlimited" },
-        { "domain": "cloud", "type": "access-manager", "scope": "unlimited" }
+        {
+          "domain": "cloud",
+          "type": "manager",
+          "scope": "unlimited"
+        },
+        {
+          "domain": "cloud",
+          "type": "access-manager",
+          "scope": "unlimited"
+        }
+      ],
+      "policy": [
+        "security/.+Access Management.*"
       ]
     },
     {
       "role": "Policy Engineer",
       "access": [
-        { "domain": "database", "type": "reader", "scope": "unlimited" },
-        { "domain": "cloud", "type": "reader", "scope": "unlimited" },
-        { "domain": "host", "type": "reader", "scope": "unlimited" },
-        { "domain": "human-resources", "type": "reader", "scope": "unlimited" },
-        { "domain": "network", "type": "reader", "scope": "unlimited" },
-        { "domain": "compliance", "type": "editor", "scope": "unlimited" }
+        {
+          "domain": "database",
+          "type": "reader",
+          "scope": "specified"
+        },
+        {
+          "domain": "cloud",
+          "type": "reader",
+          "scope": "specified"
+        },
+        {
+          "domain": "host",
+          "type": "reader",
+          "scope": "specified"
+        },
+        {
+          "domain": "human-resources",
+          "type": "reader",
+          "scope": "specified"
+        },
+        {
+          "domain": "network",
+          "type": "reader",
+          "scope": "specified"
+        },
+        {
+          "domain": "compliance",
+          "type": "editor",
+          "scope": "specified"
+        }
+      ],
+      "policy": [
+        "data/policy/Data Management Policy",
+        "data/standards/Confidential Data Handling Standards",
+        "data/standards/Data Classification and Inventor Standards",
+        "policy/.+",
+        "projects/.+",
+        "security/.+"
       ]
     },
     {
       "role": "Lead Policy Engineer",
       "access": [
-        { "domain": "database", "type": "reader", "scope": "unlimited" },
-        { "domain": "cloud", "type": "reader", "scope": "unlimited" },
-        { "domain": "host", "type": "reader", "scope": "unlimited" },
-        { "domain": "human-resources", "type": "reader", "scope": "unlimited" },
-        { "domain": "network", "type": "reader", "scope": "unlimited" },
-        { "domain": "software", "type": "reader", "scope": "unlimited" },
-        { "domain": "compliance", "type": "manager", "scope": "unlimited" },
-        { "domain": "compliance", "type": "access-manager", "scope": "unlimited" }
+        {
+          "domain": "database",
+          "type": "reader",
+          "scope": "unlimited"
+        },
+        {
+          "domain": "cloud",
+          "type": "reader",
+          "scope": "unlimited"
+        },
+        {
+          "domain": "host",
+          "type": "reader",
+          "scope": "unlimited"
+        },
+        {
+          "domain": "human-resources",
+          "type": "reader",
+          "scope": "unlimited"
+        },
+        {
+          "domain": "network",
+          "type": "reader",
+          "scope": "unlimited"
+        },
+        {
+          "domain": "software",
+          "type": "reader",
+          "scope": "unlimited"
+        },
+        {
+          "domain": "compliance",
+          "type": "manager",
+          "scope": "unlimited"
+        },
+        {
+          "domain": "compliance",
+          "type": "access-manager",
+          "scope": "unlimited"
+        }
+      ],
+      "policy": [
+        ".+"
       ]
     },
     {
       "role": "Access Manager",
       "access": [
-        { "domain": "cloud", "type": "access-manager", "scope": "unlimited" },
-        { "domain": "database", "type": "access-manager", "scope": "unlimited" },
-        { "domain": "devops", "type": "access-manager", "scope": "unlimited" },
-        { "domain": "host", "type": "access-manager", "scope": "unlimited" },
-        { "domain": "network", "type": "access-manager", "scope": "unlimited" },
-        { "domain": "software", "type": "access-manager", "scope": "unlimited" }
+        {
+          "domain": "cloud",
+          "type": "access-manager",
+          "scope": "unlimited"
+        },
+        {
+          "domain": "database",
+          "type": "access-manager",
+          "scope": "unlimited"
+        },
+        {
+          "domain": "devops",
+          "type": "access-manager",
+          "scope": "unlimited"
+        },
+        {
+          "domain": "host",
+          "type": "access-manager",
+          "scope": "unlimited"
+        },
+        {
+          "domain": "network",
+          "type": "access-manager",
+          "scope": "unlimited"
+        },
+        {
+          "domain": "software",
+          "type": "access-manager",
+          "scope": "unlimited"
+        }
+      ],
+      "policy": [
+        "security/.+Access Management.*"
       ]
     }
   ],
