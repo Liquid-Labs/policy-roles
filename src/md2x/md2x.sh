@@ -20,7 +20,7 @@ import options
 # $(npm bin)/gucci ./cloud/auths/environment/devops-admin-auths.yaml.tmpl
 
 # extract options
-eval "$(setSimpleOptions --script OUTPUT_FORMAT= KEEP_INTERMEDIATE: -- "$@")"
+eval "$(setSimpleOptions --script KEEP_INTERMEDIATE: OUTPUT_FORMAT= -- "$@")"
 
 # process options
 [[ -n "${OUTPUT_FORMAT}" ]] || OUTPUT_FORMAT='pdf'
