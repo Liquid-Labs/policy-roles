@@ -1,6 +1,7 @@
 SHELL=/bin/bash -o pipefail
 DOC_GENERATOR_JS:=bin/gen-roles-ref.js
 DOC_GENERATOR:=bin/liq-gen-roles-ref.sh
+MD2X_LIB_SRC:=$(shell find src/md2x/lib -type f)
 HTML_GENERATOR:=bin/md2x
 NPM_BIN:=$(shell npm bin)
 CATALYST_SCRIPTS:=$(NPM_BIN)/catalyst-scripts
@@ -48,7 +49,7 @@ $(DOC_GENERATOR_JS): package.json $(JS_SRC)
 $(DOC_GENERATOR): src/liq-gen-roles-ref/liq-gen-roles-ref.sh
 	$(BASH_ROLLUP) $< $@
 
-$(HTML_GENERATOR): src/md2x/md2x.sh
+$(HTML_GENERATOR): src/md2x/md2x.sh $(MD2X_LIB_SRC)
 	$(BASH_ROLLUP) $< $@
 
 # TODO: package.json will cause to retest after every version update
