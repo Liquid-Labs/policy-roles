@@ -84,3 +84,18 @@
   securityNotes: []
   drpBcpNotes: []
   backoutNotes: []
+- startTimestamp: 2021-11-12T20:20:27.426Z
+  startEpochMillis: 1636748427426
+  issues:
+    - https://github.com/liquid-labs/policy-core/issues/37
+  branch: 2021.11.12-zane@liquid-labs.com-support_output_of_single
+  branchFrom: bbec8282856b3235ec4c834951e1de95de511887
+  workInitiator: zane@liquid-labs.com
+  branchInitiator: zane@liquid-labs.com
+  involvedProjects:
+    - "@liquid-labs/policy-core"
+  changeNotes:
+    - Support output of single page PDF and docx
+  securityNotes: []
+  drpBcpNotes: []
+  backoutNotes: []
