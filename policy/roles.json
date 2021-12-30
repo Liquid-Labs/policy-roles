@@ -781,7 +781,7 @@
     }
   },
   {
-    "name": "IT Support",
+    "name": "Internal IT Support",
     "titular": true,
     "description": "Supports internal IT infrastructure, end user programs, etc."
   },
@@ -791,7 +791,7 @@
     "description": "Completes clerical and administrative tasks for an office. Their main duties include welcoming and directing visitors, coordinating meetings and appointments and performing clerical tasks, like answering phones and responding to emails."
   },
   {
-    "name": "IT Consultant",
+    "name": "Internal IT Consultant",
     "titular": true,
     "description": "Provides general support and implements task relating to internal technical system and support."
   },
@@ -799,5 +799,11 @@
     "name": "Database Consultant",
     "titular": true,
     "description": "Provides general support and implements task relating to database operations and management."
+  },
+  {
+    "name": "Subject Matter Expert",
+    "titular": true,
+    "qualifiable": true,
+    "description": "Provides expert knowledge and guidance on the subject of [qual]."
   }
 ]
