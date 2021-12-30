@@ -43,3 +43,6 @@
 
 ## Release 1.0.0-alpha.56
 * Support output of single page PDF and docx _(zane@liquid-labs.com; 2021-11-12T20:20:27.426Z)_
+
+## Release 1.0.0-alpha.57
+* _**hotfix**_: added 'Subject Matter Expert'; clarified 'IT' as 'internal' _(zane@liquid-labs.com; 2021-12-30T20:38:19.000Z)_
