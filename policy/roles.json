@@ -3,774 +3,968 @@
     "name": "Board of Directors",
     "titular": true,
     "singular": true,
-    "description": "Appoints and monitors the Chief Executive Officer and the general health of the Company."
+    "summary": "Appoints and monitors the Chief Executive Officer and the general health of the Company."
   },
   {
     "name": "Board Member",
     "titular": true,
-    "description": "Serves on the Board of Directors"
+    "summary": "Serves on the Board of Directors"
   },
   {
     "name": "Chairman of the Board",
     "singular": true,
     "titular": true,
     "superRole": "Board Member",
-    "description": "Chairs meetings of the Board of Directors.",
-    "implies": [ {
+    "implies": [
+      {
         "name": "Board Member",
         "mngrProtocol": "same"
-      } ]
+      }
+    ],
+    "summary": "Chairs meetings of the Board of Directors."
   },
   {
     "name": "Executive Officer",
     "designated": true,
-    "description": "Executive Officers wield executive decision making power.",
     "duties": [
-      { "description": "Review and execute contracts on behalf of the Company within the Officer's designated domain." }
-    ]
+      {
+        "description": "Review and execute contracts on behalf of the Company within the Officer's designated domain."
+      }
+    ],
+    "summary": "Executive Officers wield executive decision making power."
   },
   {
     "name": "Executive Vice President",
     "designated": true,
-    "description": "Executive Officers wield executive decision making power.",
     "duties": [
-      { "description": "Execute contracts on behalf of the Company." }
+      {
+        "description": "Execute contracts on behalf of the Company."
+      }
     ],
-    "implies": [ { "name": "Executive Officer", "mngrProtocol": "self" } ]
+    "implies": [
+      {
+        "name": "Executive Officer",
+        "mngrProtocol": "self"
+      }
+    ],
+    "summary": "Executive Officers wield executive decision making power."
   },
   {
     "name": "Senior Vice President",
     "designated": true,
-    "description": "The most senior, non-executive manager."
+    "summary": "The most senior, non-executive manager."
   },
   {
     "name": "Chief Executive Officer",
-    "aliases": [ "CEO" ],
+    "aliases": [
+      "CEO"
+    ],
     "singular": true,
     "titular": true,
-    "description": "The highest ranking company executive with final responsibility for major strategic decisions and management of operation and corporate resources. Acts as primary contact between the Board of Directors and corporate operations. The CEO is also the \"public face\" of the company.",
     "implies": [
-      { "name": "Senior Management Team", "mngrProtocol": "self" },
-      { "name": "Executive Officer", "mngrProtocol": "self" }
-    ]
+      {
+        "name": "Senior Management Team",
+        "mngrProtocol": "self"
+      },
+      {
+        "name": "Executive Officer",
+        "mngrProtocol": "self"
+      }
+    ],
+    "summary": "The highest ranking company executive with final responsibility for major strategic decisions and management of operation and corporate resources. Acts as primary contact between the Board of Directors and corporate operations. The CEO is also the \"public face\" of the company."
   },
   {
     "name": "President",
     "singular": true,
     "titular": true,
-    "description": "Oversees critical business operations.",
     "duties": [
-      { "description": "Fulfills statutory requirements as Company President." }
+      {
+        "description": "Fulfills statutory requirements as Company President."
+      }
     ],
     "implies": [
-      { "name": "Executive Officer", "mngrProtocol": "self" },
-      { "name": "Senior Management Team", "mngrProtocol": "self" }
-    ]
+      {
+        "name": "Executive Officer",
+        "mngrProtocol": "self"
+      },
+      {
+        "name": "Senior Management Team",
+        "mngrProtocol": "self"
+      }
+    ],
+    "summary": "Oversees critical business operations."
   },
   {
     "name": "Chief Operating Officer",
-    "aliases": [ "COO" ],
+    "aliases": [
+      "COO"
+    ],
     "singular": true,
     "titular": true,
-    "description": "Senior executive overseeing all day-to-day non-technical operational corporate functions.",
     "duties": [
-      { "description": "Is a member of the Incident Response Team." }
+      {
+        "description": "Is a member of the Incident Response Team."
+      }
     ],
     "implies": [
-      { "name": "Senior Management Team", "mngrProtocol": "self" },
-      { "name": "Executive Officer", "mngrProtocol": "self" }
-    ]
+      {
+        "name": "Senior Management Team",
+        "mngrProtocol": "self"
+      },
+      {
+        "name": "Executive Officer",
+        "mngrProtocol": "self"
+      }
+    ],
+    "summary": "Senior executive overseeing all day-to-day non-technical operational corporate functions."
   },
   {
     "name": "General Manager",
     "singular": true,
     "titular": true,
-    "description": "Senior manager overseeing (non-consumer/non-client) internal, partner, and other 3rd party relationships, as well as overall company policy/processes and corporate expenses.",
     "implies": [
-      { "name": "Head of Implementations", "mngrProtocol": "self" }
-    ]
+      {
+        "name": "Head of Implementations",
+        "mngrProtocol": "self"
+      }
+    ],
+    "summary": "Senior manager overseeing (non-consumer/non-client) internal, partner, and other 3rd party relationships, as well as overall company policy/processes and corporate expenses."
   },
   {
     "name": "Chief Technical Officer",
-    "aliases": [ "CTO" ],
+    "aliases": [
+      "CTO"
+    ],
     "singular": true,
     "titular": true,
-    "description": "Senior executive in charge of technical implementation and operations.",
     "duties": [
-      { "description": "Is a member of the Incident Response Team." }
+      {
+        "description": "Is a member of the Incident Response Team."
+      }
     ],
     "implies": [
-      { "name": "Senior Management Team", "mngrProtocol": "self" },
-      { "name": "Executive Officer", "mngrProtocol": "self" }
-    ]
+      {
+        "name": "Senior Management Team",
+        "mngrProtocol": "self"
+      },
+      {
+        "name": "Executive Officer",
+        "mngrProtocol": "self"
+      }
+    ],
+    "summary": "Senior executive in charge of technical implementation and operations."
   },
   {
     "name": "Head of Research & Development",
     "singular": true,
     "designated": true,
-    "description": "Oversees implementation of software products.",
     "implies": [
-      { "name": "Department Heads", "mngrProtocol": "self" }
-    ]
+      {
+        "name": "Department Heads",
+        "mngrProtocol": "self"
+      }
+    ],
+    "summary": "Oversees implementation of software products."
   },
   {
     "name": "Head of Technical Operations",
     "singular": true,
     "titular": true,
-    "description": "Oversees all technical implementation/devops.",
     "implies": [
-      { "name": "Department Heads", "mngrProtocol": "self" }
-    ]
+      {
+        "name": "Department Heads",
+        "mngrProtocol": "self"
+      }
+    ],
+    "summary": "Oversees all technical implementation/devops."
   },
   {
     "name": "Chief Financial Officer",
-    "aliases": [ "CFO" ],
+    "aliases": [
+      "CFO"
+    ],
     "singular": true,
     "titular": true,
-    "description": "Senior executive in charge of corporate accounting records and strategic finance.",
     "implies": [
-      { "name": "Executive Officer", "mngrProtocol": "self" }
-    ]
+      {
+        "name": "Executive Officer",
+        "mngrProtocol": "self"
+      }
+    ],
+    "summary": "Senior executive in charge of corporate accounting records and strategic finance."
   },
   {
     "name": "Corporate Controller",
     "superRole": "Accountant",
     "singular": true,
     "titular": true,
-    "description": "Senior manager with direct responsibility for the corporate accounts and books. Oversees all payables and receivables. Conducts internal financial audits and is the primary contact for external financial auditors."
+    "summary": "Senior manager with direct responsibility for the corporate accounts and books. Oversees all payables and receivables. Conducts internal financial audits and is the primary contact for external financial auditors."
   },
   {
     "name": "Accountant",
     "titular": true,
-    "description": "Responsible for maintaining Company financial records."
+    "summary": "Responsible for maintaining Company financial records."
   },
   {
     "name": "Chief Revenue Officer",
     "singular": true,
     "titular": true,
-    "description": "Senior executive in charge of revenue generation.",
     "implies": [
-      { "name": "Executive Officer", "mngrProtocol": "self" },
-      { "name": "Senior Management Team", "mngrProtocol": "self" }
-    ]
+      {
+        "name": "Executive Officer",
+        "mngrProtocol": "self"
+      },
+      {
+        "name": "Senior Management Team",
+        "mngrProtocol": "self"
+      }
+    ],
+    "summary": "Senior executive in charge of revenue generation."
   },
   {
     "name": "Chief Marketing Officer",
     "singular": true,
     "titular": true,
-    "description": "Senior executive in charge of brand management, corporate and product messaging.",
     "implies": [
-      { "name": "Executive Officer", "mngrProtocol": "self" }
-    ]
+      {
+        "name": "Executive Officer",
+        "mngrProtocol": "self"
+      }
+    ],
+    "summary": "Senior executive in charge of brand management, corporate and product messaging."
   },
   {
     "name": "Head of Marketing",
     "singular": true,
     "designated": true,
-    "description": "Senior manager in charge marketing, brand management, and messaging.",
     "implies": [
-      { "name": "Department Heads", "mngrProtocol": "self" }
-    ]
+      {
+        "name": "Department Heads",
+        "mngrProtocol": "self"
+      }
+    ],
+    "summary": "Senior manager in charge marketing, brand management, and messaging."
   },
   {
     "name": "Head of Finance",
     "singular": true,
     "designated": true,
-    "description": "Senior manager in charge financial matters.",
     "implies": [
-      { "name": "Department Heads", "mngrProtocol": "self" }
-    ]
+      {
+        "name": "Department Heads",
+        "mngrProtocol": "self"
+      }
+    ],
+    "summary": "Senior manager in charge financial matters."
   },
   {
     "name": "Training Manager",
     "singular": true,
     "titular": true,
-    "description": "Responsible for development and implementation of client training curriculum."
+    "summary": "Responsible for development and implementation of client training curriculum."
   },
   {
     "name": "Chief Sales Officer",
     "singular": true,
     "titular": true,
-    "description": "Senior executive in charge of corporate sales strategy and oversight of the sales team.",
     "implies": [
-      { "name": "Executive Officer", "mngrProtocol": "self" }
-    ]
+      {
+        "name": "Executive Officer",
+        "mngrProtocol": "self"
+      }
+    ],
+    "summary": "Senior executive in charge of corporate sales strategy and oversight of the sales team."
   },
   {
     "name": "Head of Sales",
     "singular": true,
     "designated": true,
-    "description": "Senior manager in charge of all sales.",
     "implies": [
-      { "name": "Department Heads", "mngrProtocol": "self" }
-    ]
+      {
+        "name": "Department Heads",
+        "mngrProtocol": "self"
+      }
+    ],
+    "summary": "Senior manager in charge of all sales."
   },
   {
     "name": "Sales",
     "titular": true,
-    "description": "Responsible for directly selling to potential clients.",
-    "qualifiable": true
+    "qualifiable": true,
+    "summary": "Responsible for directly selling to potential clients."
   },
   {
     "name": "Head of Integrations",
     "superRole": "Integrations Manager",
     "singular": true,
     "designated": true,
-    "description": "Oversees all integrations with third-parties.",
     "implies": [
-      { "name": "Department Heads", "mngrProtocol": "self" }
-    ]
+      {
+        "name": "Department Heads",
+        "mngrProtocol": "self"
+      }
+    ],
+    "summary": "Oversees all integrations with third-parties."
   },
   {
     "name": "Integrations Manager",
     "titular": true,
-    "description": "Oversees integrations of Company services/products with third-party partners. Works directly with partners during the integration process."
+    "summary": "Oversees integrations of Company services/products with third-party partners. Works directly with partners during the integration process."
   },
   {
     "name": "Head of Implementations",
     "superRole": "Implementations Manager",
     "singular": true,
     "designated": true,
-    "description": "Oversees all client implementations.",
     "implies": [
-      { "name": "Department Heads", "mngrProtocol": "self" }
-    ]
+      {
+        "name": "Department Heads",
+        "mngrProtocol": "self"
+      }
+    ],
+    "summary": "Oversees all client implementations."
   },
   {
     "name": "Implementations Manager",
     "titular": true,
-    "description": "Oversees implementation of Company services/products with clients. Works directly with clients and with the client's assigned Account Manager during the implementation process."
+    "summary": "Oversees implementation of Company services/products with clients. Works directly with clients and with the client's assigned Account Manager during the implementation process."
   },
   {
     "name": "Account Manager",
     "titular": true,
     "qualifiable": true,
-    "description": "The Account Manager is an operational role acting as the primary technical contact for clients and partners. The Account Manager supports internal sales and technical support teams.",
     "duties": [
-      { "description": "Provide first tier support for incoming client technical issues." },
-      { "description": "Provide internal support for technical and operational questions regarding their account." }
-    ]
+      {
+        "description": "Provide first tier support for incoming client technical issues."
+      },
+      {
+        "description": "Provide internal support for technical and operational questions regarding their account."
+      }
+    ],
+    "summary": "The Account Manager is an operational role acting as the primary technical contact for clients and partners. The Account Manager supports internal sales and technical support teams."
   },
   {
     "name": "Chief Administrative Officer",
-    "aliases": [ "CAO" ],
+    "aliases": [
+      "CAO"
+    ],
     "singular": true,
     "titular": true,
-    "description": "Senior executive in charge of corporate administration, including human resources and legal matters.",
     "duties": [
-      { "description": "Is a member of the Incident Response Team." }
+      {
+        "description": "Is a member of the Incident Response Team."
+      }
     ],
-    "implies": [ { "name": "Senior Management Team", "mngrProtocol": "self" } ],
+    "implies": [
+      {
+        "name": "Senior Management Team",
+        "mngrProtocol": "self"
+      }
+    ],
     "matcher": {
       "pattern": "(Chief|Head|Executive) +Admin(istrative)? (Officer|Executive)"
-    }
+    },
+    "summary": "Senior executive in charge of corporate administration, including human resources and legal matters."
   },
   {
     "name": "Head of Administration",
     "singular": true,
     "designated": true,
-    "description": "Senior manager in charge of corporate administration, including human resources and legal matters.",
     "duties": [
-      { "description": "Is a member of the Incident Response Team." }
+      {
+        "description": "Is a member of the Incident Response Team."
+      }
     ],
     "implies": [
-      { "name": "Senior Management Team", "mngrProtocol": "self" },
-      { "name": "Department Heads", "mngrProtocol": "self" }
-    ]
+      {
+        "name": "Senior Management Team",
+        "mngrProtocol": "self"
+      },
+      {
+        "name": "Department Heads",
+        "mngrProtocol": "self"
+      }
+    ],
+    "summary": "Senior manager in charge of corporate administration, including human resources and legal matters."
   },
   {
     "name": "Business Administrator",
     "singular": false,
     "titular": true,
     "qualifiable": true,
-    "description": "Business admin for a department or region",
     "matcher": {
       "pattern": "Business +Admin(istraator)?( +(.+))",
       "antiPattern": "Officer|Executive",
       "qualifierGroup": 3
-    }
+    },
+    "summary": "Business admin for a department or region"
   },
   {
     "name": "Head of Human Resources",
     "singular": true,
     "designated": true,
     "superRole": "Human Resources Manager",
-    "description": "Oversees and has final responsibility on HR matters.",
     "implies": [
-      { "name": "Department Heads", "mngrProtocol": "self" },
-      { "name": "Senior Management Team", "mngrProtocol": "self" }
-    ]
+      {
+        "name": "Department Heads",
+        "mngrProtocol": "self"
+      },
+      {
+        "name": "Senior Management Team",
+        "mngrProtocol": "self"
+      }
+    ],
+    "summary": "Oversees and has final responsibility on HR matters."
   },
   {
     "name": "Human Resources Manager",
     "titular": true,
     "superRole": "Human Resources Agent",
-    "description": "Managers human resoruces agents and handles elevated cases directly.",
     "qualifiable": true,
     "matcher": {
       "pattern": "((Senior|Snr\\.?|Sr\\.?) +)?((HR|Human Resources) +Manager|Manager +(HR|Human Resources))"
-    }
+    },
+    "summary": "Managers human resoruces agents and handles elevated cases directly."
   },
   {
     "name": "Human Resources Agent",
     "titular": true,
-    "description": "Oversees personnel management and compliance.",
-    "qualifiable": true
+    "qualifiable": true,
+    "summary": "Oversees personnel management and compliance."
   },
   {
     "name": "Product Manager",
     "titular": true,
-    "description": "Responsible for coordinating stakeholder input and managing product specification and setting development priorities."
+    "summary": "Responsible for coordinating stakeholder input and managing product specification and setting development priorities."
   },
   {
     "name": "UI Designer",
     "titular": true,
-    "description": "Produces style guidelines, graphic/UI assets, mockups, and similar artifacts to guide and support implementation of front-end user interface."
+    "summary": "Produces style guidelines, graphic/UI assets, mockups, and similar artifacts to guide and support implementation of front-end user interface."
   },
   {
     "name": "Brand Manager",
     "singular": true,
     "titular": true,
-    "description": "Manages brand assets and usage along with setting and enforcing policy regarding corporate messaging and identity."
+    "summary": "Manages brand assets and usage along with setting and enforcing policy regarding corporate messaging and identity."
   },
   {
     "name": "Social Media Coordinator",
     "singular": true,
     "titular": true,
-    "description": "Responsible for developing and implementing overall social media strategy inline with brand and product messaging and target demographics."
+    "summary": "Responsible for developing and implementing overall social media strategy inline with brand and product messaging and target demographics."
   },
   {
     "name": "Regional Marketing Manager",
     "titular": true,
-    "description": "Oversees implementation of corporate marketing campaigns. Develops and oversees implementation of local campaigns."
+    "summary": "Oversees implementation of corporate marketing campaigns. Develops and oversees implementation of local campaigns."
   },
   {
     "name": "Business Analyst",
     "titular": true,
-    "description": "Searches and and secures new lines of business, channels, and partners."
+    "summary": "Searches and and secures new lines of business, channels, and partners."
   },
   {
     "name": "Head of Business Development",
     "superRole": "Business Analyst",
     "singular": true,
     "designated": true,
-    "description": "Manages overall business development strategy.",
     "implies": [
-      { "name": "Department Heads", "mngrProtocol": "self" }
-    ]
+      {
+        "name": "Department Heads",
+        "mngrProtocol": "self"
+      }
+    ],
+    "summary": "Manages overall business development strategy."
   },
   {
     "name": "Software Engineer",
     "superRole": "IT Personnel",
     "titular": true,
-    "description": "Qualified to modify and review [qual] software code. Sensitive changes must be reviewed by a Senior Software Engineer prior to being deployed.",
     "qualifiable": true,
     "matcher": {
       "pattern": "(Junior|Jnr\\.?|Jr\\.? *)?((.+) +)?(Software (Engineer|Developer)|Developer)",
       "antiPattern": "Senior|Snr\\.?|Sr\\.?|Lead|Head",
       "qualifierGroup": 3
-    }
+    },
+    "summary": "Qualified to modify and review [qual] software code. Sensitive changes must be reviewed by a Senior Software Engineer prior to being deployed."
   },
   {
     "name": "Senior Software Engineer",
     "superRole": "Software Engineer",
     "titular": true,
-    "description": "Qualified to review and approve changes to sensitive [qual] code.",
     "qualifiable": true,
     "matcher": {
       "pattern": "(Senior|Snr\\.?|Sr\\.?) ((.+) +)?(Software (Engineer|Developer)|Developer)",
       "qualifierGroup": 3
-    }
+    },
+    "summary": "Qualified to review and approve changes to sensitive [qual] code."
   },
   {
     "name": "Head Software Engineer",
     "superRole": "Senior Software Engineer",
     "singular": true,
     "titular": true,
-    "description": "Has final responsibility for production [qual] code.; Head Software Engineer's approval is required for sensitive changes involving customer privacy, regulatory issues, and/or exceptional complexity.",
     "qualifiable": true,
     "duties": [
-      { "description": "Is a member of the Incident Response Team." }
+      {
+        "description": "Is a member of the Incident Response Team."
+      }
     ],
     "matcher": {
       "pattern": "(Head|Lead|Chief) ((.+) )?(Software (Engineer|Developer)|Developer)",
       "qualifierGroup": 3
-    }
+    },
+    "summary": "Has final responsibility for production [qual] code.; Head Software Engineer's approval is required for sensitive changes involving customer privacy, regulatory issues, and/or exceptional complexity."
   },
   {
     "name": "Database Engineer",
     "superRole": "IT Personnel",
     "titular": true,
-    "description": "Qualified to modify, review, and manage [qual] database schemas and DBMSs.",
-    "qualifiable": true
+    "qualifiable": true,
+    "summary": "Qualified to modify, review, and manage [qual] database schemas and DBMSs."
   },
   {
     "name": "Senior Database Engineer",
     "superRole": "Database Engineer",
     "titular": true,
-    "description": "Qualified to review and approve changes to production [qual] schemas and DBMSs.",
-    "qualifiable": true
+    "qualifiable": true,
+    "summary": "Qualified to review and approve changes to production [qual] schemas and DBMSs."
   },
   {
     "name": "Head Database Engineer",
     "superRole": "Senior Database Engineer",
     "singular": true,
     "titular": true,
-    "description": "Has final responsibility for production schemas and DBMSs.; Head Database Engineer's approval is required for sensitive changes involving customer privacy, regulatory issues, and/or exceptional complexity.",
     "qualifiable": true,
     "duties": [
-      { "description": "Is a member of the Incident Response Team." }
-    ]
+      {
+        "description": "Is a member of the Incident Response Team."
+      }
+    ],
+    "summary": "Has final responsibility for production schemas and DBMSs.; Head Database Engineer's approval is required for sensitive changes involving customer privacy, regulatory issues, and/or exceptional complexity."
   },
   {
     "name": "Host Engineer",
     "superRole": "IT Personnel",
     "titular": true,
-    "description": "Qualified to configure and management of [qual] hosts systems.",
-    "qualifiable": true
+    "qualifiable": true,
+    "summary": "Qualified to configure and management of [qual] hosts systems."
   },
   {
     "name": "Senior Host Engineer",
     "superRole": "Host Engineer",
     "titular": true,
-    "description": "Qualified to approve changes to production [qual] host systems.",
-    "qualifiable": true
+    "qualifiable": true,
+    "summary": "Qualified to approve changes to production [qual] host systems."
   },
   {
     "name": "Head Host Engineer",
     "superRole": "Senior Host Engineer",
     "singular": true,
     "titular": true,
-    "description": "Has final responsibility for production host systems.; Head Host Engineer approval is required for sensitive changes involving host security, regulatory issues, or exceptional complexity.",
     "qualifiable": true,
     "duties": [
-      { "description": "Is a member of the Incident Response Team." }
-    ]
+      {
+        "description": "Is a member of the Incident Response Team."
+      }
+    ],
+    "summary": "Has final responsibility for production host systems.; Head Host Engineer approval is required for sensitive changes involving host security, regulatory issues, or exceptional complexity."
   },
   {
     "name": "DevOps Engineer",
     "superRole": "IT Personnel",
     "titular": true,
-    "description": "Maintains and supports the CI/CD pipeline and other development and operational tools.",
     "qualifiable": true,
     "matcher": {
       "pattern": "DevOps +(Engineer|Dev(eloper)?)"
-    }
+    },
+    "summary": "Maintains and supports the CI/CD pipeline and other development and operational tools."
   },
   {
     "name": "Senior DevOps Engineer",
     "superRole": "DevOps Engineer",
     "titular": true,
-    "description": "Qualified to review and approve changes to production networks.",
-    "qualifiable": true
+    "qualifiable": true,
+    "summary": "Qualified to review and approve changes to production networks."
   },
   {
     "name": "Head DevOps Engineer",
     "superRole": "Senior DevOps Engineer",
     "singular": true,
     "titular": true,
-    "description": "Has final responsibility for the CI/CD pipeline.",
     "qualifiable": true,
     "duties": [
-      { "description": "Is a member of the Incident Response Team." }
+      {
+        "description": "Is a member of the Incident Response Team."
+      }
     ],
     "matcher": {
       "pattern": "((Lead|Chief( +of)?|Head( +of)?) +DevOps( +Engineer(ing)?))|DevOps(( +Engineering)? +(Lead|Chief|Head))",
       "qualifierGroup": 3
-    }
+    },
+    "summary": "Has final responsibility for the CI/CD pipeline."
   },
   {
     "name": "Network Engineer",
     "superRole": "IT Personnel",
     "titular": true,
-    "description": "Qualified to configure and manage Company networks.",
-    "qualifiable": true
+    "qualifiable": true,
+    "summary": "Qualified to configure and manage Company networks."
   },
   {
     "name": "Senior Network Engineer",
     "superRole": "Network Engineer",
     "titular": true,
-    "description": "Qualified to review and approve changes to production networks.",
-    "qualifiable": true
+    "qualifiable": true,
+    "summary": "Qualified to review and approve changes to production networks."
   },
   {
     "name": "Head Network Engineer",
     "superRole": "Senior Network Engineer",
     "singular": true,
     "titular": true,
-    "description": "Has final responsibility for the integrity and security of production networks.; Head Network Engineer approval is required for changes to sensitive networks providing access to private customer data, under regulatory scrutiny, or any change of exceptional complexity.",
     "qualifiable": true,
     "duties": [
-      { "description": "Is a member of the Incident Response Team." }
-    ]
+      {
+        "description": "Is a member of the Incident Response Team."
+      }
+    ],
+    "summary": "Has final responsibility for the integrity and security of production networks.; Head Network Engineer approval is required for changes to sensitive networks providing access to private customer data, under regulatory scrutiny, or any change of exceptional complexity."
   },
   {
     "name": "Cloud Engineer",
     "superRole": "IT Personnel",
     "titular": true,
-    "description": "Qualified to configure and manage [qual] cloud services.",
-    "qualifiable": true
+    "qualifiable": true,
+    "summary": "Qualified to configure and manage [qual] cloud services."
   },
   {
     "name": "Senior Cloud Engineer",
     "superRole": "Cloud Engineer",
     "titular": true,
-    "description": "Qualified to review and approve changes to production [qual] cloud services.",
-    "qualifiable": true
+    "qualifiable": true,
+    "summary": "Qualified to review and approve changes to production [qual] cloud services."
   },
   {
     "name": "Head Cloud Engineer",
     "superRole": "Senior Cloud Engineer",
     "singular": true,
     "titular": true,
-    "description": "Has final responsibility for production cloud services systems.; Head Cloud Engineer approval is required for sensitive changes involving cloud services security, regulatory issues, or exceptional complexity.",
     "qualifiable": true,
     "duties": [
-      { "description": "Is a member of the Incident Response Team." }
-    ]
+      {
+        "description": "Is a member of the Incident Response Team."
+      }
+    ],
+    "summary": "Has final responsibility for production cloud services systems.; Head Cloud Engineer approval is required for sensitive changes involving cloud services security, regulatory issues, or exceptional complexity."
   },
   {
     "name": "Quality Engineer",
     "superRole": "IT Personnel",
     "titular": true,
-    "description": "Qualified to ascertain correctness and conformance of Company products.",
     "qualifiable": true,
     "matcher": {
       "pattern": "(Junior|Jnr\\.?|Jr\\.? *)?((.+) +)?((Quality|QA) +Engineer|Tester)",
       "antiPattern": "Senior|Snr\\.?|Sr\\.?|Lead|Head",
       "qualifierGroup": 3
-    }
+    },
+    "summary": "Qualified to ascertain correctness and conformance of Company products."
   },
   {
     "name": "Senior Quality Engineer",
     "superRole": "Quality Engineer",
     "titular": true,
-    "description": "Qualified to review and approve changes [qual] quality systems.",
     "qualifiable": true,
     "matcher": {
       "pattern": "(Senior|Snr\\.?|Sr\\.? *)?((.+) +)?((Quality|QA) +Engineer|Tester)",
       "antiPattern": "Junior|Jnr\\.?|Jr\\.?|Lead|Head",
       "qualifierGroup": 3
-    }
+    },
+    "summary": "Qualified to review and approve changes [qual] quality systems."
   },
   {
     "name": "Head Quality Engineer",
     "superRole": "Senior Quality Engineer",
     "singular": true,
     "titular": true,
-    "description": "Has final responsibility for quality assurance.",
     "matcher": {
       "pattern": "(Head|Lead) +((Quality|QA) +Engineer|Tester)|Tester +Lead"
-    }
+    },
+    "summary": "Has final responsibility for quality assurance."
   },
   {
     "name": "Project Manager",
     "titular": true,
-    "description": "Responsible for working with implementation product management to optimize implementation with regard to efficiency and stakeholder priorities."
+    "summary": "Responsible for working with implementation product management to optimize implementation with regard to efficiency and stakeholder priorities."
   },
   {
     "name": "Customer Service Agent",
     "titular": true,
-    "description": "Responsible for handling of customer service requests."
+    "summary": "Responsible for handling of customer service requests."
   },
   {
     "name": "Customer Service Manager",
     "superRole": "Customer Service Agent",
     "titular": true,
-    "description": "Oversees Customer Service Agents. Sensitive issues of particular complexity or involving particularly high value customers may be referred to the Customer Service Manager."
+    "summary": "Oversees Customer Service Agents. Sensitive issues of particular complexity or involving particularly high value customers may be referred to the Customer Service Manager."
   },
   {
     "name": "Head of Customer Service",
     "superRole": "Customer Service Manager",
     "singular": true,
     "designated": true,
-    "description": "Oversees all of customer service operations.",
     "implies": [
-      { "name": "Department Heads", "mngrProtocol": "self" }
-    ]
+      {
+        "name": "Department Heads",
+        "mngrProtocol": "self"
+      }
+    ],
+    "summary": "Oversees all of customer service operations."
   },
   {
     "name": "In House Counsel",
     "titular": true,
-    "description": "Oversees legal matters, agreements, and advises Company on [qual] matters.",
-    "qualifiable": true
+    "qualifiable": true,
+    "summary": "Oversees legal matters, agreements, and advises Company on [qual] matters."
   },
   {
     "name": "Policy Engineer",
     "titular": true,
-    "description": "Manages and develops Company policy definition and implementation. Also works on verification, evidence gathering and compliance."
+    "summary": "Manages and develops Company policy definition and implementation. Also works on verification, evidence gathering and compliance."
   },
   {
     "name": "Lead Policy Engineer",
     "superRole": "Policy Engineer",
     "singular": true,
     "titular": true,
-    "description": "Leads the Company's internal policy development, implementation, and verification."
+    "summary": "Leads the Company's internal policy development, implementation, and verification."
   },
   {
     "name": "Security Officer",
     "superRole": "Policy Engineer",
     "singular": true,
     "titular": true,
-    "description": "Non-executive officer with final responsibility for matters relating to Company security.",
     "duties": [
-      { "description": "Works with senior management to develop and maintain the Company's security policy and infrastructure. _(PCI DSS 3.2.1 ref 12.4, 12.5.1, 12.5.3)_" },
-      { "description": "Works with line management and technical staff to implement Company security policy to ensure understanding, improve effectiveness, and where possible simplify and automate end user procedures. _(PCI DSS 3.2.1 ref 12.4, 12.5.1, 12.5.3)" },
-      { "description": "Develops curriculum for and oversees implementation of a Security Awareness Program. _(PCI DSS 3.2.1 ref 12.6)_" },
-      { "description": "Oversees development, verification, and implementation of the Incident Response Framework. _(PCI DSS v3.2.1 ref 12.10)_" },
-      { "description": "Is a member of the Incident Response Team." }
+      {
+        "description": "Works with senior management to develop and maintain the Company's security policy and infrastructure. _(PCI DSS 3.2.1 ref 12.4, 12.5.1, 12.5.3)_"
+      },
+      {
+        "description": "Works with line management and technical staff to implement Company security policy to ensure understanding, improve effectiveness, and where possible simplify and automate end user procedures. _(PCI DSS 3.2.1 ref 12.4, 12.5.1, 12.5.3)"
+      },
+      {
+        "description": "Develops curriculum for and oversees implementation of a Security Awareness Program. _(PCI DSS 3.2.1 ref 12.6)_"
+      },
+      {
+        "description": "Oversees development, verification, and implementation of the Incident Response Framework. _(PCI DSS v3.2.1 ref 12.10)_"
+      },
+      {
+        "description": "Is a member of the Incident Response Team."
+      }
     ],
-    "implies": [ { "name": "Senior Management Team", "mngrProtocol": "self" } ]
+    "implies": [
+      {
+        "name": "Senior Management Team",
+        "mngrProtocol": "self"
+      }
+    ],
+    "summary": "Non-executive officer with final responsibility for matters relating to Company security."
   },
   {
     "name": "Compliance Officer",
     "superRole": "Policy Engineer",
     "singular": true,
     "titular": true,
-    "description": "Non-executive officer with final responsibility for matters relating to compliance and Company Policy in general.",
     "duties": [
-      { "description": "Ensures Company Policy is compliant with PCI DSS 3.2.1, SOC 2 Type I, and SOC 2 Type II compliance standards." },
-      { "description": "Oversee and ensure updates to Company Policy are according to the Company Change Control Policy." },
-      { "description": "Works with <role>department heads</role> to define, implement, and maintain procedures." },
-      { "description": "Indepndently verifies policy implementation." },
-      { "description": "Is a member of the Incident Response Team." }
+      {
+        "description": "Ensures Company Policy is compliant with PCI DSS 3.2.1, SOC 2 Type I, and SOC 2 Type II compliance standards."
+      },
+      { "description": "Manages the compliance calendar to ensure reviews, audits, and other necessary tasks are performed in a timely manner consistent with company policy and industry standards "},
+      {
+        "description": "Oversee and ensure updates to the Company Policy are according to the Company Change Control Policy."
+      },
+      {
+        "description": "Works with <role>department heads</role> to define, implement, and maintain procedures."
+      },
+      {
+        "description": "Independently verifies policy implementation."
+      },
+      {
+        "description": "Is a member of the Incident Response Team."
+      }
     ],
-    "implies": [ { "name": "Senior Management Team", "mngrProtocol": "self" } ]
+    "implies": [
+      {
+        "name": "Senior Management Team",
+        "mngrProtocol": "self"
+      }
+    ],
+    "summary": "Non-executive officer with final responsibility for matters relating to compliance and Company Policy in general."
   },
   {
     "name": "Privacy Officer",
     "superRole": "Policy Engineer",
     "singular": true,
     "titular": true,
-    "description": "Non-executive officer with final responsibility for matters relating to customer and staff privacy.",
     "duties": [
-      { "description": "Is a member of the Incident Response Team." }
+      {
+        "description": "Is a member of the Incident Response Team."
+      }
     ],
-    "implies": [ { "name": "Senior Management Team", "mngrProtocol": "self" } ]
+    "implies": [
+      {
+        "name": "Senior Management Team",
+        "mngrProtocol": "self"
+      }
+    ],
+    "summary": "Non-executive officer with final responsibility for matters relating to customer and staff privacy."
   },
   {
     "name": "Head of Security, Compliance, & Privacy",
     "singular": true,
     "designated": true,
-    "description": "Oversees administrative aspects of security, compliance, and customer privacy.",
     "implies": [
-      { "name": "Department Heads", "mngrProtocol": "self" }
-    ]
+      {
+        "name": "Department Heads",
+        "mngrProtocol": "self"
+      }
+    ],
+    "summary": "Oversees administrative aspects of security, compliance, and customer privacy."
   },
   {
     "name": "Key Admin",
     "designated": true,
-    "description": "Responsible for managing one or more Company keys involved in critical operations or sensitive access.",
-    "notes": "The designation is generally applied to Executives, Compliance Agents, and/or domain Chiefs or Seniors. Sufficient backups should be provided such that a Key Manager is available at all times for all key types."
+    "notes": "The designation is generally applied to Executives, Compliance Agents, and/or domain Chiefs or Seniors. Sufficient backups should be provided such that a Key Manager is available at all times for all key types.",
+    "summary": "Responsible for managing one or more Company keys involved in critical operations or sensitive access."
   },
   {
     "name": "Access Manager",
     "designated": true,
-    "description": "Can oversee and grant access to sensitive systems."
+    "summary": "Can oversee and grant access to sensitive systems."
   },
   {
     "name": "Operational Admin",
     "designated": true,
-    "description": "Has full access to sensitive operational services. May be designated for emergency and/or backup purposes."
+    "summary": "Has full access to sensitive operational services. May be designated for emergency and/or backup purposes."
   },
   {
     "name": "Incident Response Team",
     "designated": true,
-    "description": "Team members are on call for emergency response and/or disaster recovery."
+    "summary": "Team members are on call for emergency response and/or disaster recovery."
   },
   {
     "name": "Network Alert Responder",
     "designated": true,
-    "description": "Responsible for receiving and evaluating network alerts."
+    "summary": "Responsible for receiving and evaluating network alerts."
   },
   {
     "name": "Badge Manager",
     "designated": true,
-    "description": "Badge Managers oversee issuing and tracking visitor badges.; Sufficient backups should be designated such that a Badge Manager is always available at each physical location."
+    "summary": "Badge Managers oversee issuing and tracking visitor badges.; Sufficient backups should be designated such that a Badge Manager is always available at each physical location."
   },
   {
     "name": "Production Data Reader",
     "designated": true,
-    "description": "An individual with access to sensitive production data."
+    "summary": "An individual with access to sensitive production data."
   },
   {
     "name": "Sensitive Data Handler",
     "designated": true,
-    "description": "Qualified to deal with sensitive data such as card holder data, social security numbers, or other information that requires special handling."
+    "summary": "Qualified to deal with sensitive data such as card holder data, social security numbers, or other information that requires special handling."
   },
   {
     "name": "VPN Manager",
     "designated": true,
-    "description": "Manages the company's centralized VPN services."
+    "summary": "Manages the company's centralized VPN services."
   },
   {
     "name": "Senior Management Team",
-    "aliases": [ "SMT" ],
+    "aliases": [
+      "SMT"
+    ],
     "designated": true,
-    "description": "Annually reviews Company compliance and key processes.",
     "duties": [
-      { "description": "Is a member of the Senior Management Team. _(SOC 2 Type I ref 1.1, SOC 2 Type II ref 1.1)_" }
-    ]
+      {
+        "description": "Is a member of the Senior Management Team. _(SOC 2 Type I ref 1.1, SOC 2 Type II ref 1.1)_"
+      }
+    ],
+    "summary": "Annually reviews Company compliance and key processes."
   },
   {
     "name": "Department Heads",
     "designated": true,
-    "description": "Heads a company department. Genarally, non-executive personell report dircetly or indirectly to a department head and collectively the department heads should encompass all company staff with the exception of the CEO and the Department Heads themselves."
+    "summary": "Heads a company department. Genarally, non-executive personell report dircetly or indirectly to a department head and collectively the department heads should encompass all company staff with the exception of the CEO and the Department Heads themselves."
   },
   {
     "name": "Change Control Board",
-    "aliases": [ "CCB" ],
+    "aliases": [
+      "CCB"
+    ],
     "designated": true,
-    "description": "Reviews proposed changes and assigns priorities in accordance with cost and strategic priorities."
+    "summary": "Reviews proposed changes and assigns priorities in accordance with cost and strategic priorities."
   },
   {
     "name": "IT Personnel",
-    "aliases": [ "Engineering" ],
+    "aliases": [
+      "Engineering"
+    ],
     "designated": true,
     "abstract": true,
-    "description": "Any individual working within a technical capacity within the company."
+    "summary": "Any individual working within a technical capacity within the company."
   },
   {
     "name": "Head of Security & Compliance",
-    "description": "Oversees general security and compliance, including safeguarding customer and client data.",
     "titular": true,
     "singular": true,
     "implies": [
-      { "name": "Security Officer", "mngrProtocol": "self" },
-      { "name": "Compliance Officer", "mngrProtocol": "self" },
-      { "name": "Privacy Officer", "mngrProtocol": "self" },
-      { "name": "Head of Security, Compliance, & Privacy", "mngrProtocol": "self" }
-    ]
+      {
+        "name": "Security Officer",
+        "mngrProtocol": "self"
+      },
+      {
+        "name": "Compliance Officer",
+        "mngrProtocol": "self"
+      },
+      {
+        "name": "Privacy Officer",
+        "mngrProtocol": "self"
+      },
+      {
+        "name": "Head of Security, Compliance, & Privacy",
+        "mngrProtocol": "self"
+      }
+    ],
+    "summary": "Oversees general security and compliance, including safeguarding customer and client data."
   },
   {
     "name": "Outside Counsel",
     "titular": true,
-    "description": "Legal counsel hired by and directly reporting to the Board of Directors."
+    "summary": "Legal counsel hired by and directly reporting to the Board of Directors."
   },
   {
     "name": "External Auditors",
     "titular": true,
-    "description": "Perform financial audits and report directly to the Board of Directors."
+    "summary": "Perform financial audits and report directly to the Board of Directors."
   },
   {
     "name": "Financial Analyst",
     "titular": true,
-    "description": "General finance analysis."
+    "summary": "General finance analysis."
   },
   {
     "name": "Marketing Administrator",
     "titular": true,
-    "description": "Oversees general marketing process and logistics."
+    "summary": "Oversees general marketing process and logistics."
   },
   {
     "name": "Marketing Analyst",
     "titular": true,
-    "description": "Analyzes marketing data to determine effectiveness of marketing campaigns and recommends strategies for future campaigns."
+    "summary": "Analyzes marketing data to determine effectiveness of marketing campaigns and recommends strategies for future campaigns."
   },
   {
     "name": "Sales Consultant",
     "titular": true,
-    "description": "Analyzes and recommends sales opportunities."
+    "summary": "Analyzes and recommends sales opportunities."
   },
   {
     "name": "Security Consultant",
@@ -778,32 +972,33 @@
     "Description": "Provides as needed analysis, support, and implementation of security and compliance related matters.",
     "matcher": {
       "pattern": "(PCI|SOC|Security|Compliance) Consultant"
-    }
+    },
+    "summary": null
   },
   {
     "name": "Internal IT Support",
     "titular": true,
-    "description": "Supports internal IT infrastructure, end user programs, etc."
+    "summary": "Supports internal IT infrastructure, end user programs, etc."
   },
   {
     "name": "Office Administrator",
     "titular": true,
-    "description": "Completes clerical and administrative tasks for an office. Their main duties include welcoming and directing visitors, coordinating meetings and appointments and performing clerical tasks, like answering phones and responding to emails."
+    "summary": "Completes clerical and administrative tasks for an office. Their main duties include welcoming and directing visitors, coordinating meetings and appointments and performing clerical tasks, like answering phones and responding to emails."
   },
   {
     "name": "Internal IT Consultant",
     "titular": true,
-    "description": "Provides general support and implements task relating to internal technical system and support."
+    "summary": "Provides general support and implements task relating to internal technical system and support."
   },
   {
     "name": "Database Consultant",
     "titular": true,
-    "description": "Provides general support and implements task relating to database operations and management."
+    "summary": "Provides general support and implements task relating to database operations and management."
   },
   {
     "name": "Subject Matter Expert",
     "titular": true,
     "qualifiable": true,
-    "description": "Provides expert knowledge and guidance on the subject of [qual]."
+    "summary": "Provides expert knowledge and guidance on the subject of [qual]."
   }
 ]
