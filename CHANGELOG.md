@@ -46,3 +46,6 @@
 
 ## Release 1.0.0-alpha.57
 * _**hotfix**_: added 'Subject Matter Expert'; clarified 'IT' as 'internal' _(zane@liquid-labs.com; 2021-12-30T20:38:19.000Z)_
+
+## Release 1.0.0-alpha.58
+* _**hotfix**_: format change; field 'description' -> 'summary' _(zane@liquid-labs.com; 2022-02-07T02:50:16.000Z)_
