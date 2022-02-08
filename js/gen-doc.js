@@ -1,6 +1,12 @@
 import { Organization } from '@liquid-labs/orgs-model'
 
-const nameSorter = (name) => (a, b) => a[name].toLowerCase().localeCompare(b[name].toLowerCase())
+const nameSorter = (name) => (a, b) => {
+  if (name in a && name in b) {
+    return a[name].toLowerCase().localeCompare(b[name].toLowerCase())
+  }
+  else if (!(name in a)) return 1
+  else /* not in b */ return -1
+}
 
 const getPrimaryRole = (staff) => staff.roles[0].getName()
 
