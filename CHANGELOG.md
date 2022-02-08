@@ -52,3 +52,4 @@
 
 ## Release 1.0.0-alpha.59
 * _**hotfix**_: support undefined staff names _(zane@liquid-labs.com; 2022-02-08T21:56:03.000Z)_
+* _**hotfix**_: updated CHANGELOGE.md for release (by liq) _(zane@liquid-labs.com; 2022-02-08T21:56:42.000Z)_
