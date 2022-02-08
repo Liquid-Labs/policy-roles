@@ -49,3 +49,6 @@
 
 ## Release 1.0.0-alpha.58
 * _**hotfix**_: format change; field 'description' -> 'summary' _(zane@liquid-labs.com; 2022-02-07T02:50:16.000Z)_
+
+## Release 1.0.0-alpha.59
+* _**hotfix**_: support undefined staff names _(zane@liquid-labs.com; 2022-02-08T21:56:03.000Z)_
