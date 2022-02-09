@@ -422,7 +422,8 @@
     "superRole": "Human Resources Agent",
     "qualifiable": true,
     "matcher": {
-      "pattern": "((Senior|Snr\\.?|Sr\\.?) +)?((HR|Human Resources) +Manager|Manager +(HR|Human Resources))"
+      "pattern": "((Senior|Snr\\.?|Sr\\.?) +)(([a-zA-Z]+) +)?((HR|Human Resources) +Manager|Manager +(HR|Human Resources))",
+      "qualifierGroup": 4
     },
     "summary": "Managers human resoruces agents and handles elevated cases directly."
   },
