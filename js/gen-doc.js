@@ -46,8 +46,8 @@ const noteDesignationSource = (staff, role) => {
   }
 }
 
-const genDoc = (dataPath, staffPath) => {
-  const org = new Organization(dataPath, staffPath)
+const genDoc = ({ dataPath }) => {
+  const org = new Organization({ dataPath })
 
   const companyRoles = org.orgStructure.getNodes().reduce((acc, node) => {
     if (!node.implied) {
