@@ -678,7 +678,7 @@
     "titular": true,
     "qualifiable": true,
     "matcher": {
-      "pattern": "(Senior|Snr\\.?|Sr\\.? *)?((.+) +)?((Quality|QA) +Engineer|Tester)",
+      "pattern": "(Senior|Snr\\.?|Sr\\.?) *((.+) +)?((Quality|QA) +Engineer|Tester)",
       "antiPattern": "Junior|Jnr\\.?|Jr\\.?|Lead|Head",
       "qualifierGroup": 3
     },
@@ -1001,5 +1001,13 @@
     "titular": true,
     "qualifiable": true,
     "summary": "Provides expert knowledge and guidance on the subject of [qual]."
+  },
+  {
+    "name": "Recruiter",
+    "titular": true,
+    "matcher": {
+      "pattern": "((Senior|Snr\\.?|Sr\\.?( +Executive)?|Junior|Jnr\\.?|Jr\\.?)?[ -]+)Recruit(er|ment)"
+    },
+    "summary": "Recruits new talent to the team."
   }
 ]
