@@ -9,7 +9,7 @@ const rolesFile = './policy/roles.json'
 describe('roles.json', () => {
   let roles
   beforeAll(() => {
-    roles = new Roles({ items: JSON.parse(fs.readFileSync(rolesFile)) })
+    roles = new Roles({ items : JSON.parse(fs.readFileSync(rolesFile)) })
   })
 
   test('is successfully parsed', () => {
