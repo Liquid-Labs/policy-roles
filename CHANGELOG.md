@@ -56,3 +56,6 @@
 
 ## Release 1.0.0-alpha.60
 * _**hotfix**_: update 'Human Resources Agent' pattern to conform to existing patterns _(zane@liquid-labs.com; 2022-02-09T20:06:10.000Z)_
+
+## Release 1.0.0-alpha.61
+* Initial implementation _(zane@liquid-labs.com; 2022-02-28T19:45:17.840Z)_
