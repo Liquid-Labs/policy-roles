@@ -98,3 +98,27 @@
   securityNotes: []
   drpBcpNotes: []
   backoutNotes: []
+- startTimestamp: 2022-02-28T19:45:17.840Z
+  startEpochMillis: 1646077517840
+  issues:
+    - https://github.com/Liquid-Labs/liq-alerts/issues/1
+    - https://github.com/Liquid-Labs/liq-core/issues/44
+    - https://github.com/Liquid-Labs/federated-json/issues/15
+    - https://github.com/Liquid-Labs/liq-core/issues/45
+    - https://github.com/Liquid-Labs/liq-core/issues/46
+    - https://github.com/liquid-labs/liq-cli/issues/269
+  branch: 2022.02.21-zane@liquid-labs.com-initial_implementation
+  branchFrom: edf1b25603a52bcd99e162b4e4245e97240c8646
+  workInitiator: zane@liquid-labs.com
+  branchInitiator: zane@liquid-labs.com
+  involvedProjects:
+    - "@liquid-labs/liq-alerts"
+    - "@liquid-labs/liq-core"
+    - "@liquid-labs/liq-cli"
+    - "@liquid-labs/orgs-model"
+    - "@liquid-labs/policy-core"
+  changeNotes:
+    - Initial implementation
+  securityNotes: []
+  drpBcpNotes: []
+  backoutNotes: []
