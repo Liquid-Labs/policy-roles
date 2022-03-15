@@ -1,4 +1,7 @@
 SHELL=/bin/bash -o pipefail
+.DELETE_ON_ERROR:
+.PHONY: all test lint qa example clean
+	
 DOC_GENERATOR_JS:=bin/gen-roles-ref.js
 DOC_GENERATOR:=bin/liq-gen-roles-ref.sh
 MD2X_LIB_SRC:=$(shell find src/md2x/lib -type f)
@@ -38,10 +41,6 @@ clean-lint:
 clean-qa: clean-test clean-lint
 clean-example: $(EXAMPLE_TARGETS)
 	rm -f $(EXAMPLE_TARGETS)
-
-.DELETE_ON_ERROR:
-
-.PHONY: all test lint qa example clean
 
 $(DOC_GENERATOR_JS): package.json $(JS_SRC)
 	$(CATALYST_SCRIPTS) build
