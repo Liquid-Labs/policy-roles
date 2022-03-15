@@ -1,5 +1,5 @@
-TESTED VERSION: f47288580528a38fd52b77459c489e967000f2d9
+TESTED VERSION: 5bfd0e3656158489ec3d94fb79d8b41e10fabdb3
 Preparing...
 Test document parsing: PASS
-Expect 17 files; found 17: PASS
+Expect 16 files; found 16: PASS
 Cleaning up... done.
