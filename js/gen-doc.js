@@ -1,4 +1,4 @@
-import { Organization } from '@liquid-labs/orgs-model'
+import { Organization, StaffMember } from '@liquid-labs/orgs-model'
 
 const nameSorter = (name) => (a, b) => {
   if (name in a && name in b) {
@@ -8,7 +8,7 @@ const nameSorter = (name) => (a, b) => {
   else /* not in b */ return -1
 }
 
-const getPrimaryRole = (staff) => staff.roles[0].getName()
+const getPrimaryRole = (staff) => staff.roles[0].name
 
 const staffRef = (staff) => `${staff.familyName}, ${staff.givenName} _${staff.email}_`
 
@@ -17,27 +17,29 @@ const roleRef = (roleName) => {
   return `[${roleName}](#${roleLink})`
 }
 
-const noteManager = (staff, role) => {
-  const attachedRole = staff.getAttachedRole(role.name)
-  const manager = attachedRole.getManager()
-  if (manager !== null && attachedRole.managerRole === undefined) {
-    throw new Error(`Did not find expected 'manager role' for '${staff.email}' as '${role.name}'.`)
+const noteManager = ({ staff, role, org }) => {
+  if (!(staff instanceof StaffMember)) {
+    staff = new StaffMember(staff, { org })
+  }
+  const attachedRole = staff.getRole(role.name, { fuzzy: true })
+  const { manager, managerRole } = attachedRole
+  if (manager !== undefined && managerRole === undefined) {
+    throw new Error(`Did not find expected 'manager role' for '${staff.email}' as '${role.name}' with manager '${manager.name}'.`)
   }
   const managerRef =
-    (manager === null && 'self')
-      || (manager.email === staff.email && `self as ${roleRef(attachedRole.managerRole.getName())}`)
-      || `${staffRef(manager)} as ${roleRef(attachedRole.managerRole.getName())}`
+    (manager === undefined && 'self')
+      || (manager.email === staff.email && `self as ${roleRef(managerRole)}`)
+      || `${staffRef(manager)} as ${roleRef(managerRole)}`
   return `(managed by ${managerRef})`
 }
 
-const noteDesignationSource = (staff, role) => {
+const noteDesignationSource = (staff, orgRole) => {
   // It's possible to be designatd through multiple routes. I.e., the "Head of Administration" and "Head of Human
   // Resources" could be the same individual.
-  const attachedRoles = staff.getAttachedRoles().filter((r) => r.name === role.name)
-  const implications = attachedRoles // reduce to list of implied role names
-    .map((r) => r.impliedBy)
-    .filter((ir) => ir !== undefined)
-    .map((ir) => roleRef(ir.getName()))
+  const attachedRole = staff.getRole(orgRole.name)
+  const implications = attachedRole?.impliedBy // reduce to list of implied role names
+    ?.filter((ir) => ir !== undefined)
+    .map((ir) => roleRef(ir.name))
   if (implications.length > 0) {
     return `(implied by ${implications.join(', ')})`
   }
@@ -122,7 +124,7 @@ const genDoc = ({ dataPath }) => {
       const staff = staffInRole[0]
       // TODO: check that we don't have multiples.
       hasMembers
-        ? sb.push(`${staffRef(staff)} is the current ${role.name} ${noteManager(staff, role)}\n`)
+        ? sb.push(`${staffRef(staff)} is the current ${role.name} ${noteManager({ staff, role, org })}\n`)
         : sb.push('_*This position is currently vacant.*_\n')
     }
     else {
@@ -130,7 +132,7 @@ const genDoc = ({ dataPath }) => {
 
       if (hasMembers) {
         for (const staff of staffInRole) {
-          sb.push(`* ${staffRef(staff)} ${noteManager(staff, role)}`)
+          sb.push(`* ${staffRef(staff)} ${noteManager({ staff, role, org })}`)
         }
         sb.push('')
       }
@@ -159,6 +161,9 @@ const genDoc = ({ dataPath }) => {
 
     if (staffInRole && staffInRole.length > 0) {
       for (const staff of staffInRole) {
+        if (!(staff instanceof StaffMember)) {
+          staff = new StaffMember(staff, { org }) // needed by noteDesignationSource
+        }
         sb.push(`* ${staffRef(staff)} ${noteDesignationSource(staff, role)}`)
       }
       sb.push('')
