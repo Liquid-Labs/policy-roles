@@ -8,10 +8,15 @@
   workInitiator: zane@liquid-labs.com
   branchInitiator: zane@liquid-labs.com
   involvedProjects:
-    - "@liquid-labs/liq-alerts"
-    - "@liquid-labs/liq-core"
-    - "@liquid-labs/liq-cli"
     - "@liquid-labs/policy-core"
+    - "@liquid-labs/policy-cloud-aws"
+    - "@liquid-labs/policy-networks"
+    - "@liquid-labs/policy-business"
+    - "@liquid-labs/policy-vendors"
+    - "@liquid-labs/policy-networks-aws"
+    - "@liquid-labs/policy-data-aws"
+    - "@liquid-labs/policy-networks-cisco"
+    - "@liquid-labs/policy-networks-vertiv"
   changeNotes:
     - Simplify change control layout
   securityNotes: []
