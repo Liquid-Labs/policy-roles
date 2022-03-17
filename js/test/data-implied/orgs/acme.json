@@ -9,6 +9,10 @@
       ]
     }
   },
+  "alerts": {
+    "sources": [],
+    "reviews": []
+  },
   "roles": null,
   "thirdPartyAccounts": []
 }

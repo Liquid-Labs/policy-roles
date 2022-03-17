@@ -13,6 +13,10 @@
       ]
     }
   },
+  "alerts": {
+    "sources": [],
+    "reviews": []
+  },
   "roles": null,
   "staff": null,
   "thirdPartyAccounts": []
