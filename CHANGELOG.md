@@ -66,3 +66,6 @@
 * _**hotfix**_: missed commits; process error, these were supposed to be in v1.0.0-alpha.61 _(zane@liquid-labs.com; 2022-03-01T17:03:02.000Z)_
 * _**hotfix**_: update html2canvas lib; fixes bad render of large charts _(zane@liquid-labs.com; 2022-03-01T17:03:12.000Z)_
 * _**hotfix**_: updated CHANGELOGE.md for release (by liq) _(zane@liquid-labs.com; 2022-03-01T17:03:26.000Z)_
+
+## Release 1.0.0-alpha.63
+* Refresh policy structure _(zane@liquid-labs.com; 2022-03-11T21:49:11.698Z)_
