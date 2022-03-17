@@ -52,8 +52,8 @@ npm explore @liquid-labs/policy-projects -- cat ./test/settings.sh >> .build/set
 echo "$SETTINGS" >> .build/settings.sh
 
 echo -n "Test document parsing: "
-"${BIN}/liq-init-docs" run test-out > /dev/null || { echo "FAIL"; EXIT=1; }
-make -f .build/main.makefile --silent || { echo "FAIL"; EXIT=1; }
+{ "${BIN}/liq-init-docs" run test-out > /dev/null || { echo "FAIL"; EXIT=1; false; }; } \
+  && make -f .build/main.makefile --silent || { echo "FAIL"; EXIT=1; }
 if (( $EXIT == 0 )); then echo "PASS"; fi
 
 EXPECT_OUT=$(( $POLICY_COUNT + 1 )) # for the Glossary.md

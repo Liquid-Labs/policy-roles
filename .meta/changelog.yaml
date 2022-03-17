@@ -8,10 +8,15 @@
   workInitiator: zane@liquid-labs.com
   branchInitiator: zane@liquid-labs.com
   involvedProjects:
-    - "@liquid-labs/liq-alerts"
-    - "@liquid-labs/liq-core"
-    - "@liquid-labs/liq-cli"
     - "@liquid-labs/policy-core"
+    - "@liquid-labs/policy-cloud-aws"
+    - "@liquid-labs/policy-networks"
+    - "@liquid-labs/policy-business"
+    - "@liquid-labs/policy-vendors"
+    - "@liquid-labs/policy-networks-aws"
+    - "@liquid-labs/policy-data-aws"
+    - "@liquid-labs/policy-networks-cisco"
+    - "@liquid-labs/policy-networks-vertiv"
   changeNotes:
     - Simplify change control layout
   securityNotes: []
@@ -122,6 +127,21 @@
     - "@liquid-labs/policy-core"
   changeNotes:
     - Initial implementation
+  securityNotes: []
+  drpBcpNotes: []
+  backoutNotes: []
+- startTimestamp: 2022-03-11T21:49:11.698Z
+  startEpochMillis: 1647035351698
+  issues:
+    - https://github.com/liquid-labs/policy-core/issues/39
+  branch: 2022.03.11-zane@liquid-labs.com-refresh_policy_structure
+  branchFrom: 4ee0e1738c27ee67c273005dee70f0edb0c66882
+  workInitiator: zane@liquid-labs.com
+  branchInitiator: zane@liquid-labs.com
+  involvedProjects:
+    - "@liquid-labs/policy-core"
+  changeNotes:
+    - Refresh policy structure
   securityNotes: []
   drpBcpNotes: []
   backoutNotes: []
