@@ -69,3 +69,6 @@
 
 ## Release 1.0.0-alpha.63
 * Refresh policy structure _(zane@liquid-labs.com; 2022-03-11T21:49:11.698Z)_
+
+## Release 1.0.0-alpha.64
+* Relocate md2x to its own project _(zane@liquid-labs.com; 2022-03-21T19:10:55.538Z)_
