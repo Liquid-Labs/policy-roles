@@ -9,14 +9,7 @@
   branchInitiator: zane@liquid-labs.com
   involvedProjects:
     - "@liquid-labs/policy-core"
-    - "@liquid-labs/policy-cloud-aws"
-    - "@liquid-labs/policy-networks"
-    - "@liquid-labs/policy-business"
-    - "@liquid-labs/policy-vendors"
-    - "@liquid-labs/policy-networks-aws"
-    - "@liquid-labs/policy-data-aws"
-    - "@liquid-labs/policy-networks-cisco"
-    - "@liquid-labs/policy-networks-vertiv"
+    - "@liquid-labs/md2x"
   changeNotes:
     - Simplify change control layout
   securityNotes: []
@@ -142,6 +135,21 @@
     - "@liquid-labs/policy-core"
   changeNotes:
     - Refresh policy structure
+  securityNotes: []
+  drpBcpNotes: []
+  backoutNotes: []
+- startTimestamp: 2022-03-21T19:10:55.538Z
+  startEpochMillis: 1647889855538
+  issues:
+    - https://github.com/liquid-labs/policy-core/issues/43
+  branch: 2022.03.21-zane@liquid-labs.com-relocate_md2x_to_its
+  branchFrom: f161ff3de26ffe927df5c563692589b6505dec83
+  workInitiator: zane@liquid-labs.com
+  branchInitiator: zane@liquid-labs.com
+  involvedProjects:
+    - "@liquid-labs/policy-core"
+  changeNotes:
+    - Relocate md2x to its own project
   securityNotes: []
   drpBcpNotes: []
   backoutNotes: []
