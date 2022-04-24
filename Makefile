@@ -7,7 +7,6 @@ CATALYST_SCRIPTS:=$(NPM_BIN)/catalyst-scripts
 BASH_ROLLUP:=$(NPM_BIN)/bash-rollup
 SPACE:=$(null) $(null)
 
-TEST_SRC=js/test/roles.test.js
 TEST_MARKER:=$(shell OUTPUT=$(git status --porcelain) && [ -z "${OUTPUT}" ] && git rev-parse HEAD || echo 'working')
 BUILD_TARGETS:=$(DOC_GENERATOR) $(DOC_GENERATOR_JS)
 LINT_TARGETS:=.meta/qa-lint.log
