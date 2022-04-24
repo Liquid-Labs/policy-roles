@@ -77,3 +77,6 @@
 * _**hotfix**_: migrated role ref generator to liq-policy _(zane@liquid-labs.com; 2022-04-24T22:37:31.000Z)_
 * _**hotfix**_: removed unused Makefile var _(zane@liquid-labs.com; 2022-04-24T22:52:35.000Z)_
 * _**hotfix**_: updated CHANGELOGE.md for release (by liq) _(zane@liquid-labs.com; 2022-04-24T22:53:39.000Z)_
+
+## Release 1.0.0-alpha.66
+* _**hotfix**_: removed old tool scripts; migrated to mdx and liq-policy _(zane@liquid-labs.com; 2022-04-24T23:02:46.000Z)_
