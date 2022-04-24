@@ -2,11 +2,6 @@
   "name": "@liquid-labs/policy-core",
   "version": "1.0.0-alpha.65",
   "description": "Standard 'roles' definitions compatible with Liquid Policy.",
-  "main": "bin/gen-roles-ref.js",
-  "module": "bin/gen-roles-ref.es.js",
-  "bin": {
-    "liq-gen-roles-ref": "bin/liq-gen-roles-ref.sh"
-  },
   "scripts": {
     "build": "make",
     "test": "make test",
@@ -16,8 +11,7 @@
     "lint:fix": "catalyst-scripts lint-fix"
   },
   "files": [
-    "dist/",
-    "policy"
+    "policy/"
   ],
   "repository": {
     "type": "git",
