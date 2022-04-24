@@ -1,6 +1,6 @@
 {
   "name": "@liquid-labs/policy-core",
-  "version": "1.0.0-alpha.65",
+  "version": "1.0.0-alpha.66",
   "description": "Standard 'roles' definitions compatible with Liquid Policy.",
   "scripts": {
     "build": "make",
