@@ -72,3 +72,8 @@
 
 ## Release 1.0.0-alpha.64
 * Relocate md2x to its own project _(zane@liquid-labs.com; 2022-03-21T19:10:55.538Z)_
+
+## Release 1.0.0-alpha.65
+* _**hotfix**_: migrated role ref generator to liq-policy _(zane@liquid-labs.com; 2022-04-24T22:37:31.000Z)_
+* _**hotfix**_: removed unused Makefile var _(zane@liquid-labs.com; 2022-04-24T22:52:35.000Z)_
+* _**hotfix**_: updated CHANGELOGE.md for release (by liq) _(zane@liquid-labs.com; 2022-04-24T22:53:39.000Z)_
