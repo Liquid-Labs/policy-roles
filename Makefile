@@ -1,27 +1,24 @@
 SHELL=/bin/bash -o pipefail
 .DELETE_ON_ERROR:
 .PHONY: all test lint qa example clean
-	
-DOC_GENERATOR_JS:=bin/gen-roles-ref.js
-DOC_GENERATOR:=bin/liq-gen-roles-ref.sh
+
 NPM_BIN:=$(shell npm bin)
 CATALYST_SCRIPTS:=$(NPM_BIN)/catalyst-scripts
 BASH_ROLLUP:=$(NPM_BIN)/bash-rollup
 SPACE:=$(null) $(null)
 
+TEST_SRC=js/test/roles.test.js
 TEST_MARKER:=$(shell OUTPUT=$(git status --porcelain) && [ -z "${OUTPUT}" ] && git rev-parse HEAD || echo 'working')
 BUILD_TARGETS:=$(DOC_GENERATOR) $(DOC_GENERATOR_JS)
-TEST_TARGETS:=.meta/test-roles.json.log
 LINT_TARGETS:=.meta/qa-lint.log
 # ALL_TARGETS:=$(BUILD_TARGETS) $(TEST_TARGETS) $(LINT_TARGETS)
 EXAMPLE_TARGETS:=example.md example-implied.md
 
-JS_SRC=js/index.js js/gen-doc.js
-TEST_SRC=js/test/roles.test.js js/test/gen-doc.test.js
-
 all: $(BUILD_TARGETS)
 
-test: $(TEST_TARGETS)
+test:
+	$(CATALYST_SCRIPTS) pretest
+	$(CATALYST_SCRIPTS) test
 
 lint: $(LINT_TARGETS)
 
@@ -40,24 +37,6 @@ clean-qa: clean-test clean-lint
 clean-example: $(EXAMPLE_TARGETS)
 	rm -f $(EXAMPLE_TARGETS)
 
-$(DOC_GENERATOR_JS): package.json $(JS_SRC)
-	$(CATALYST_SCRIPTS) build
-
-$(DOC_GENERATOR): src/liq-gen-roles-ref/liq-gen-roles-ref.sh
-	$(BASH_ROLLUP) $< $@
-
-# TODO: package.json will cause to retest after every version update
-.meta/test-roles.json.log: policy/roles.json $(JS_SRC) $(TEST_SRC) # package.json
-	$(CATALYST_SCRIPTS) pretest
-	echo "TESTED VERSION: $(TEST_MARKER)" > $@
-	$(CATALYST_SCRIPTS) test | tee -a $@
-
 .meta/qa-lint.log: $(JS_SRC)
 	echo "TESTED VERSION: $(TEST_MARKER)" > $@
 	$(CATALYST_SCRIPTS) lint | tee -a $@
-
-example.md: $(DOC_GENERATOR_JS) $(shell find ./js/test/data-simple -name "*.json")
-	node $(DOC_GENERATOR_JS) ./js/test/data-simple ./js/test/data-simple/orgs/staff.json > $@
-
-example-implied.md: $(DOC_GENERATOR_JS) $(shell find ./js/test/data-implied -name "*.json")
-	node $(DOC_GENERATOR_JS) ./js/test/data-implied ./js/test/data-implied/orgs/staff.json > $@
