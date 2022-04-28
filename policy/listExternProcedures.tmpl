@@ -1,0 +1,25 @@
+{{/*
+  Why is this so weird? Because when you get the first value from '.', it
+  inexplicably results in a 'map[interface {}]interface{}' whereas all the
+  template functions require a 'map[string]interface {}'. So, to work around
+  this, we can't access the values directly, but have to iterate through and
+  select what we want.
+*/ -}}
+{{ define "listExternProcedures" -}}
+{{ if index . "externalProcedures" -}}
+{{ $key := ._key -}}
+{{ range $domain, $procedures := .externalProcedures -}}
+{{ if eq $domain $key -}}
+{{ range $proc, $procData := $procedures -}}
+{{ $link := "" }}{{ $summary := "" -}}
+{{ range $field, $val := $procData -}}
+{{ if eq $field "link" -}}{{ $link = $val -}}
+{{ else if eq $field "summary" -}}{{ $summary = $val -}}
+{{ end -}}
+{{ end -}}
+[{{ $proc }}]({{ $link }}){{ if $summary }}: {{ $summary }}{{ end }}
+{{ end -}}
+{{- end }}
+{{- end }}
+{{- end }}
+{{- end -}}

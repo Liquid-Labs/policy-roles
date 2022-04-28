@@ -8,8 +8,9 @@
   workInitiator: zane@liquid-labs.com
   branchInitiator: zane@liquid-labs.com
   involvedProjects:
+    - "@liquid-labs/policy-user-devices"
+    - "@liquid-labs/policy-security"
     - "@liquid-labs/policy-core"
-    - "@liquid-labs/md2x"
   changeNotes:
     - Simplify change control layout
   securityNotes: []
@@ -150,6 +151,24 @@
     - "@liquid-labs/policy-core"
   changeNotes:
     - Relocate md2x to its own project
+  securityNotes: []
+  drpBcpNotes: []
+  backoutNotes: []
+- startTimestamp: 2022-04-27T23:56:05.622Z
+  startEpochMillis: 1651103765622
+  issues:
+    - https://github.com/Liquid-Labs/policy-user-devices/issues/21
+  branch: 2022.04.27-zane@liquid-labs.com-update_device_audit_procedures
+  branchFrom: adcb10ac854f914df0717da52c9e94b464136ea3
+  workInitiator: zane@liquid-labs.com
+  branchInitiator: zane@liquid-labs.com
+  involvedProjects:
+    - "@liquid-labs/policy-user-devices"
+    - "@liquid-labs/liq-policy"
+    - "@liquid-labs/policy-security"
+    - "@liquid-labs/policy-core"
+  changeNotes:
+    - Update device audit procedures
   securityNotes: []
   drpBcpNotes: []
   backoutNotes: []
