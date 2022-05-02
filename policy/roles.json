@@ -1,5 +1,20 @@
 [
   {
+    "name": "Staff",
+    "designated": true,
+    "summary": "All staff members. Note, this role is assigned based on employment status and should not be directly assigned."
+  },
+  {
+    "name": "Employee",
+    "designated": true,
+    "summary": "All W-2 staff. Note, this role is assigned based on employment status and should not be directly assigned."
+  },
+  {
+    "name": "Contractor",
+    "designated": true,
+    "summary": "All 1099 staff. Note, this role is assigned based on employment status and should not be directly assigned."
+  },
+  {
     "name": "Board of Directors",
     "titular": true,
     "singular": true,
@@ -598,6 +613,23 @@
     "duties": [
       {
         "description": "Is a member of the Incident Response Team."
+      }
+    ],
+    "implies": [
+      {
+        "name": "Head Network Engineer",
+        "mngrProtocol": "same",
+        "display": false
+      },
+      {
+        "name": "Head Cloud Engineer",
+        "mngrProtocol": "same",
+        "display": false
+      },
+      {
+        "name": "Head Host Engineer",
+        "mngrProtocol": "same",
+        "display": false
       }
     ],
     "matcher": {
