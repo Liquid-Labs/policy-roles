@@ -10,6 +10,16 @@
       ]
     },
     {
+      "role": "Board of Directors",
+      "access": [
+        {
+          "domain": "accounting",
+          "type": "reader",
+          "scope": "unlimited"
+        }
+      ]
+    },
+    {
       "role": "Senior Management Team",
       "policy": [
         "security/.+",
@@ -41,7 +51,7 @@
         {
           "domain": "accounting",
           "type": "editor",
-          "scope": "specified"
+          "scope": "limited"
         }
       ],
       "policy": [
@@ -131,7 +141,7 @@
         {
           "domain": "project",
           "type": "editor",
-          "scope": "specified"
+          "scope": "limited"
         }
       ],
       "policy": [
@@ -144,7 +154,7 @@
         {
           "domain": "project",
           "type": "editor",
-          "scope": "specified"
+          "scope": "limited"
         }
       ],
       "policy": [
@@ -157,7 +167,7 @@
         {
           "domain": "software",
           "type": "editor",
-          "scope": "specified"
+          "scope": "dev"
         }
       ],
       "policy": [
@@ -176,7 +186,7 @@
         {
           "domain": "software",
           "type": "manager",
-          "scope": "specified"
+          "scope": "limited"
         }
       ]
     },
@@ -205,7 +215,7 @@
         {
           "domain": "database",
           "type": "editor",
-          "scope": "specified"
+          "scope": "dev"
         }
       ],
       "policy": [
@@ -220,7 +230,7 @@
         {
           "domain": "database",
           "type": "manager",
-          "scope": "specified"
+          "scope": "limited"
         }
       ]
     },
@@ -249,7 +259,7 @@
         {
           "domain": "host",
           "type": "editor",
-          "scope": "specified"
+          "scope": "dev"
         }
       ],
       "policy": [
@@ -265,7 +275,7 @@
         {
           "domain": "host",
           "type": "manager",
-          "scope": "specified"
+          "scope": "limited"
         }
       ]
     },
@@ -294,7 +304,7 @@
         {
           "domain": "network",
           "type": "editor",
-          "scope": "specified"
+          "scope": "dev"
         }
       ],
       "policy": [
@@ -310,7 +320,7 @@
         {
           "domain": "network",
           "type": "manager",
-          "scope": "specified"
+          "scope": "limited"
         }
       ]
     },
@@ -339,7 +349,7 @@
         {
           "domain": "devops",
           "type": "editor",
-          "scope": "specified"
+          "scope": "dev"
         }
       ],
       "policy": [
@@ -355,7 +365,7 @@
         {
           "domain": "devops",
           "type": "manager",
-          "scope": "specified"
+          "scope": "limited"
         }
       ]
     },
@@ -384,7 +394,7 @@
         {
           "domain": "cloud",
           "type": "editor",
-          "scope": "specified"
+          "scope": "dev"
         }
       ],
       "policy": [
@@ -400,7 +410,7 @@
         {
           "domain": "cloud",
           "type": "manager",
-          "scope": "specified"
+          "scope": "limited"
         }
       ]
     },
@@ -428,32 +438,32 @@
         {
           "domain": "database",
           "type": "reader",
-          "scope": "specified"
+          "scope": "limited"
         },
         {
           "domain": "cloud",
           "type": "reader",
-          "scope": "specified"
+          "scope": "limited"
         },
         {
           "domain": "host",
           "type": "reader",
-          "scope": "specified"
+          "scope": "limited"
         },
         {
           "domain": "human-resources",
           "type": "reader",
-          "scope": "specified"
+          "scope": "limited"
         },
         {
           "domain": "network",
           "type": "reader",
-          "scope": "specified"
+          "scope": "limited"
         },
         {
           "domain": "compliance",
           "type": "editor",
-          "scope": "specified"
+          "scope": "dev"
         }
       ],
       "policy": [
