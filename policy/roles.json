@@ -506,7 +506,7 @@
     "summary": "Qualified to modify and review [qual] software code. Sensitive changes must be reviewed by a Senior Software Engineer prior to being deployed."
   },
   {
-    "name": "Senior Software Engineer",
+    "name": "Software Engineer, Senior",
     "superRole": "Software Engineer",
     "titular": true,
     "qualifiable": true,
@@ -517,9 +517,8 @@
     "summary": "Qualified to review and approve changes to sensitive [qual] code."
   },
   {
-    "name": "Head Software Engineer",
-    "superRole": "Senior Software Engineer",
-    "singular": true,
+    "name": "Software Engineer, Lead",
+    "superRole": "Software Engineer, Senior",
     "titular": true,
     "qualifiable": true,
     "duties": [
@@ -528,10 +527,10 @@
       }
     ],
     "matcher": {
-      "pattern": "(Head|Lead|Chief) ((.+) )?(Software (Engineer|Developer)|Developer)",
-      "qualifierGroup": 3
+      "pattern": "(?:Head|Lead|Chief) (?:(.+) )?(?:Software (?:Engineer|Developer)|Developer)",
+      "qualifierGroup": 1
     },
-    "summary": "Has final responsibility for production [qual] code.; Head Software Engineer's approval is required for sensitive changes involving customer privacy, regulatory issues, and/or exceptional complexity."
+    "summary": "Has final responsibility for production [qual] code.; A Lead Software Engineer's approval is required for sensitive changes involving customer privacy, regulatory issues, and/or exceptional complexity."
   },
   {
     "name": "Database Engineer",
@@ -541,16 +540,19 @@
     "summary": "Qualified to modify, review, and manage [qual] database schemas and DBMSs."
   },
   {
-    "name": "Senior Database Engineer",
+    "name": "Database Engineer, Senior",
     "superRole": "Database Engineer",
     "titular": true,
     "qualifiable": true,
-    "summary": "Qualified to review and approve changes to production [qual] schemas and DBMSs."
+    "summary": "Qualified to review and approve changes to production [qual] schemas and DBMSs.",
+    "matcher": {
+      "pattern": "(?:Senior|Snr\\.?|Sr\\.?) (?:(.+) +)?Database (?:Engineer|Developer)",
+      "qualifierGroup": 1
+    }
   },
   {
-    "name": "Head Database Engineer",
-    "superRole": "Senior Database Engineer",
-    "singular": true,
+    "name": "Database Engineer, Lead",
+    "superRole": "Database Engineer, Senior",
     "titular": true,
     "qualifiable": true,
     "duties": [
@@ -558,7 +560,11 @@
         "description": "Is a member of the Incident Response Team."
       }
     ],
-    "summary": "Has final responsibility for production schemas and DBMSs.; Head Database Engineer's approval is required for sensitive changes involving customer privacy, regulatory issues, and/or exceptional complexity."
+    "summary": "Has final responsibility for production schemas and DBMSs.; A Lead Database Engineer's approval is required for sensitive changes involving customer privacy, regulatory issues, and/or exceptional complexity.",
+    "matcher": {
+      "pattern": "(?:Head|Lead|Chief) (?:(.+) )?Database (?:Engineer|Developer)",
+      "qualifierGroup": 1
+    }
   },
   {
     "name": "Host Engineer",
@@ -568,15 +574,19 @@
     "summary": "Qualified to configure and management of [qual] hosts systems."
   },
   {
-    "name": "Senior Host Engineer",
+    "name": "Host Engineer, Senior",
     "superRole": "Host Engineer",
     "titular": true,
     "qualifiable": true,
-    "summary": "Qualified to approve changes to production [qual] host systems."
+    "summary": "Qualified to approve changes to production [qual] host systems.",
+    "matcher": {
+      "pattern": "(?:Head|Lead|Chief) (?:(.+) )?Host (?:Engineer|Developer)",
+      "qualifierGroup": 1
+    }
   },
   {
-    "name": "Head Host Engineer",
-    "superRole": "Senior Host Engineer",
+    "name": "Host Engineer, Lead",
+    "superRole": "Host Engineer, Senior",
     "singular": true,
     "titular": true,
     "qualifiable": true,
@@ -598,15 +608,19 @@
     "summary": "Maintains and supports the CI/CD pipeline and other development and operational tools."
   },
   {
-    "name": "Senior DevOps Engineer",
+    "name": "DevOps Engineer, Senior",
     "superRole": "DevOps Engineer",
     "titular": true,
     "qualifiable": true,
-    "summary": "Qualified to review and approve changes to production networks."
+    "summary": "Qualified to review and approve changes to production networks.",
+    "matcher": {
+      "pattern": "(?:Head|Lead|Chief) (?:(.+) )?DevOps (?:Engineer|Developer)",
+      "qualifierGroup": 1
+    }
   },
   {
-    "name": "Head DevOps Engineer",
-    "superRole": "Senior DevOps Engineer",
+    "name": "DevOps Engineer, Lead",
+    "superRole": "DevOps Engineer, Senior",
     "singular": true,
     "titular": true,
     "qualifiable": true,
@@ -615,26 +629,9 @@
         "description": "Is a member of the Incident Response Team."
       }
     ],
-    "implies": [
-      {
-        "name": "Head Network Engineer",
-        "mngrProtocol": "same",
-        "display": false
-      },
-      {
-        "name": "Head Cloud Engineer",
-        "mngrProtocol": "same",
-        "display": false
-      },
-      {
-        "name": "Head Host Engineer",
-        "mngrProtocol": "same",
-        "display": false
-      }
-    ],
     "matcher": {
-      "pattern": "((Lead|Chief( +of)?|Head( +of)?) +DevOps( +Engineer(ing)?))|DevOps(( +Engineering)? +(Lead|Chief|Head))",
-      "qualifierGroup": 3
+      "pattern": "(?:(?:Lead|Chief( +of)?|Head(?: +of)?) +DevOps(?: +Engineer(?:ing)?))|DevOps(?:(?: +Engineering)? +(?:Lead|Chief|Head))",
+      "qualifierGroup": 1
     },
     "summary": "Has final responsibility for the CI/CD pipeline."
   },
@@ -646,15 +643,19 @@
     "summary": "Qualified to configure and manage Company networks."
   },
   {
-    "name": "Senior Network Engineer",
+    "name": "Network Engineer, Senior",
     "superRole": "Network Engineer",
     "titular": true,
     "qualifiable": true,
-    "summary": "Qualified to review and approve changes to production networks."
+    "summary": "Qualified to review and approve changes to production networks.",
+    "matcher": {
+      "pattern": "(?:Head|Lead|Chief) (?:(.+) )?Network (?:Engineer|Developer)",
+      "qualifierGroup": 1
+    }
   },
   {
-    "name": "Head Network Engineer",
-    "superRole": "Senior Network Engineer",
+    "name": "Network Engineer, Lead",
+    "superRole": "Network Engineer, Senior",
     "singular": true,
     "titular": true,
     "qualifiable": true,
@@ -663,7 +664,7 @@
         "description": "Is a member of the Incident Response Team."
       }
     ],
-    "summary": "Has final responsibility for the integrity and security of production networks.; Head Network Engineer approval is required for changes to sensitive networks providing access to private customer data, under regulatory scrutiny, or any change of exceptional complexity."
+    "summary": "Has final responsibility for the integrity and security of production networks.; Lead Network Engineer approval is required for changes to sensitive networks providing access to private customer data, under regulatory scrutiny, or any change of exceptional complexity."
   },
   {
     "name": "Cloud Engineer",
@@ -673,15 +674,19 @@
     "summary": "Qualified to configure and manage [qual] cloud services."
   },
   {
-    "name": "Senior Cloud Engineer",
+    "name": "Cloud Engineer, Senior",
     "superRole": "Cloud Engineer",
     "titular": true,
     "qualifiable": true,
-    "summary": "Qualified to review and approve changes to production [qual] cloud services."
+    "summary": "Qualified to review and approve changes to production [qual] cloud services.",
+    "matcher": {
+      "pattern": "(?:Head|Lead|Chief) (?:(.+) )?Cloud (?:Engineer|Developer)",
+      "qualifierGroup": 1
+    }
   },
   {
-    "name": "Head Cloud Engineer",
-    "superRole": "Senior Cloud Engineer",
+    "name": "Cloud Engineer, Lead",
+    "superRole": "Cloud Engineer, Senior",
     "singular": true,
     "titular": true,
     "qualifiable": true,
@@ -705,21 +710,20 @@
     "summary": "Qualified to ascertain correctness and conformance of Company products."
   },
   {
-    "name": "Senior Quality Engineer",
+    "name": "Quality Engineer, Senior",
     "superRole": "Quality Engineer",
     "titular": true,
     "qualifiable": true,
     "matcher": {
-      "pattern": "(Senior|Snr\\.?|Sr\\.?) *((.+) +)?((Quality|QA) +Engineer|Tester)",
+      "pattern": "(?:Senior|Snr\\.?|Sr\\.?) *(?:(.+) +)?(?:(?:Quality|QA) +?Engineer|Tester)",
       "antiPattern": "Junior|Jnr\\.?|Jr\\.?|Lead|Head",
-      "qualifierGroup": 3
+      "qualifierGroup": 1
     },
     "summary": "Qualified to review and approve changes [qual] quality systems."
   },
   {
-    "name": "Head Quality Engineer",
-    "superRole": "Senior Quality Engineer",
-    "singular": true,
+    "name": "Quality Engineer, Lead",
+    "superRole": "Quality Engineer, Senior",
     "titular": true,
     "matcher": {
       "pattern": "(Head|Lead) +((Quality|QA) +Engineer|Tester)|Tester +Lead"

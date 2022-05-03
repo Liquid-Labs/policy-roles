@@ -171,7 +171,7 @@
       ]
     },
     {
-      "role": "Senior Software Engineer",
+      "role": "Software Engineer, Senior",
       "access": [
         {
           "domain": "software",
@@ -181,7 +181,7 @@
       ]
     },
     {
-      "role": "Head Software Engineer",
+      "role": "Software Engineer, Lead",
       "access": [
         {
           "domain": "software",
@@ -215,7 +215,7 @@
       ]
     },
     {
-      "role": "Senior Database Engineer",
+      "role": "Database Engineer, Senior",
       "access": [
         {
           "domain": "database",
@@ -225,7 +225,7 @@
       ]
     },
     {
-      "role": "Head Database Engineer",
+      "role": "Database Engineer, Lead",
       "access": [
         {
           "domain": "database",
@@ -260,7 +260,7 @@
       ]
     },
     {
-      "role": "Senior Host Engineer",
+      "role": "Host Engineer, Senior",
       "access": [
         {
           "domain": "host",
@@ -270,7 +270,7 @@
       ]
     },
     {
-      "role": "Head Host Engineer",
+      "role": "Host Engineer, Lead",
       "access": [
         {
           "domain": "host",
@@ -305,7 +305,7 @@
       ]
     },
     {
-      "role": "Senior Network Engineer",
+      "role": "Network Engineer, Senior",
       "access": [
         {
           "domain": "network",
@@ -315,7 +315,7 @@
       ]
     },
     {
-      "role": "Head Network Engineer",
+      "role": "Network Engineer, Lead",
       "access": [
         {
           "domain": "network",
@@ -350,7 +350,7 @@
       ]
     },
     {
-      "role": "Senior DevOps Engineer",
+      "role": "DevOps Engineer, Senior",
       "access": [
         {
           "domain": "devops",
@@ -360,7 +360,7 @@
       ]
     },
     {
-      "role": "Head DevOps Engineer",
+      "role": "DevOps Engineer, Lead",
       "access": [
         {
           "domain": "devops",
@@ -395,7 +395,7 @@
       ]
     },
     {
-      "role": "Senior Cloud Engineer",
+      "role": "Cloud Engineer, Senior",
       "access": [
         {
           "domain": "cloud",
@@ -405,7 +405,7 @@
       ]
     },
     {
-      "role": "Head Cloud Engineer",
+      "role": "Cloud Engineer, Lead",
       "access": [
         {
           "domain": "cloud",
