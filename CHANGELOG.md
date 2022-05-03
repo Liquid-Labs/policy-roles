@@ -80,3 +80,8 @@
 
 ## Release 1.0.0-alpha.66
 * _**hotfix**_: removed old tool scripts; migrated to mdx and liq-policy _(zane@liquid-labs.com; 2022-04-24T23:02:46.000Z)_
+
+## Release 1.0.0-alpha.67
+* Update device audit procedures _(zane@liquid-labs.com; 2022-04-27T23:56:05.622Z)_
+* _**hotfix**_: moved 'Head Network/Cloud/Host Engineer' to Head of DevOps _(zane@liquid-labs.com; 2022-05-02T22:09:38.000Z)_
+* _**hotfix**_: use new 'XXX, Senior' for canonical name; remove default DevOps, Lead acess to Network, Host, and Cloud _(zane@liquid-labs.com; 2022-05-03T14:48:54.000Z)_
