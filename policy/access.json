@@ -99,7 +99,7 @@
       "access": [
         {
           "domain": "customer-service",
-          "type": "access-manager",
+          "type": "manager",
           "scope": "unlimited"
         }
       ],
@@ -461,6 +461,11 @@
           "scope": "limited"
         },
         {
+          "domain": "software",
+          "type": "reader",
+          "scope": "limited"
+        },
+        {
           "domain": "compliance",
           "type": "editor",
           "scope": "dev"
@@ -476,37 +481,37 @@
       ]
     },
     {
-      "role": "Lead Policy Engineer",
+      "role": "Policy Engineer, Lead",
       "access": [
         {
           "domain": "database",
           "type": "reader",
-          "scope": "unlimited"
+          "scope": "limited"
         },
         {
           "domain": "cloud",
           "type": "reader",
-          "scope": "unlimited"
+          "scope": "limited"
         },
         {
           "domain": "host",
           "type": "reader",
-          "scope": "unlimited"
+          "scope": "limited"
         },
         {
           "domain": "human-resources",
           "type": "reader",
-          "scope": "unlimited"
+          "scope": "limited"
         },
         {
           "domain": "network",
           "type": "reader",
-          "scope": "unlimited"
+          "scope": "limited"
         },
         {
           "domain": "software",
           "type": "reader",
-          "scope": "unlimited"
+          "scope": "limited"
         },
         {
           "domain": "compliance",
