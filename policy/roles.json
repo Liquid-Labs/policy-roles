@@ -771,7 +771,7 @@
     "summary": "Manages and develops Company policy definition and implementation. Also works on verification, evidence gathering and compliance."
   },
   {
-    "name": "Lead Policy Engineer",
+    "name": "Policy Engineer, Lead",
     "superRole": "Policy Engineer",
     "singular": true,
     "titular": true,
@@ -779,7 +779,7 @@
   },
   {
     "name": "Security Officer",
-    "superRole": "Policy Engineer",
+    "superRole": "Policy Engineer, Lead",
     "singular": true,
     "titular": true,
     "duties": [
