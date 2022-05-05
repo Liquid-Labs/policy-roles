@@ -1,4 +1,27 @@
 {{/*
+  Include this template in procedure lists where the policy may define an
+  external procedure reference (such an ticket template) in `setting.yaml`
+  like:
+  ```yaml
+  externalProcedures:
+    security:
+      How to Secure Things:
+        link: https://url.example/tmpl/123
+        summary: Make stuff secure.
+  ```
+
+  The template looks for a '_key' var in the root context and can be called
+  like:
+  ```markdown
+  {{ template "listExternProcedures" (merge . (dict "_key" "security")) }}
+  ```
+
+  The result would look like:
+  ```markdown
+  - [How to Secure Things](https://url.example/tmpl/123): Make stuff secure.
+  
+  ```
+
   Why is this so weird? Because when you get the first value from '.', it
   inexplicably results in a 'map[interface {}]interface{}' whereas all the
   template functions require a 'map[string]interface {}'. So, to work around
@@ -17,7 +40,7 @@
 {{ else if eq $field "summary" -}}{{ $summary = $val -}}
 {{ end -}}
 {{ end -}}
-[{{ $proc }}]({{ $link }}){{ if $summary }}: {{ $summary }}{{ end }}
+- [{{ $proc }}]({{ $link }}){{ if $summary }}: {{ $summary }}{{ end }}
 {{ end -}}
 {{- end }}
 {{- end }}
