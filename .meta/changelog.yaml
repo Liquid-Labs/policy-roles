@@ -8,8 +8,8 @@
   workInitiator: zane@liquid-labs.com
   branchInitiator: zane@liquid-labs.com
   involvedProjects:
-    - "@liquid-labs/policy-user-devices"
     - "@liquid-labs/policy-security"
+    - "@liquid-labs/policy-user-devices"
     - "@liquid-labs/policy-core"
   changeNotes:
     - Simplify change control layout
@@ -169,6 +169,23 @@
     - "@liquid-labs/policy-core"
   changeNotes:
     - Update device audit procedures
+  securityNotes: []
+  drpBcpNotes: []
+  backoutNotes: []
+- startTimestamp: 2022-05-05T17:26:48.087Z
+  startEpochMillis: 1651771608087
+  issues:
+    - https://github.com/Liquid-Labs/policy-security/issues/55
+  branch: 2022.05.05-zane@liquid-labs.com-consolidate_hardening_links
+  branchFrom: d412a63598632d3740c794219db3475919a9ea2f
+  workInitiator: zane@liquid-labs.com
+  branchInitiator: zane@liquid-labs.com
+  involvedProjects:
+    - "@liquid-labs/policy-security"
+    - "@liquid-labs/policy-user-devices"
+    - "@liquid-labs/policy-core"
+  changeNotes:
+    - Consolidate hardening links
   securityNotes: []
   drpBcpNotes: []
   backoutNotes: []
