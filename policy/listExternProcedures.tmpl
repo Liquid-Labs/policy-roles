@@ -1,4 +1,4 @@
-{{/*
+{{- /*
   Include this template in procedure lists where the policy may define an
   external procedure reference (such an ticket template) in `setting.yaml`
   like:
@@ -29,8 +29,29 @@
   select what we want.
 */ -}}
 {{ define "listExternProcedures" -}}
-{{ if index . "externalProcedures" -}}
+{{ $refs := . -}}{{/* copy full . ref here because '.' gets reset later (by range?) */ -}}
+{{ if index . "_source" -}}
+{{ $source := ._source -}}
+{{ range $docName, $docData := $source -}}
+{{ $link := $docData.link -}}
+{{ $linkRef := $docData.linkRef -}}
+{{ $suffix := $docData.suffix -}}
+{{ $summary := $docData.summary -}}
+{{ if $linkRef -}}
+{{ $resolved := $refs -}}
+{{ $pathSegments := regexSplit "\\." $linkRef -1 -}}
+{{ range $_, $pathSegment :=  $pathSegments -}}
+{{ if $pathSegment -}}
+{{ $resolved = index $resolved $pathSegment -}}
+{{ end -}}
+{{ end -}}{{/* path segment range */ -}}
+{{ $link = $resolved -}}
+{{ end -}}{{/* $linkRef */ -}}
+- [{{ $docName }}]({{ $link }}){{ if $suffix }} {{ $suffix }}{{ end }}{{ if $summary }}: {{ $summary }}{{ end }}
+{{ end -}}{{/* range */ -}}
+{{ else if index . "_key" -}}{{/* if source, else if... */ -}}
 {{ $key := ._key -}}
+{{ if index . "externalProcedures" -}}
 {{ range $domain, $procedures := .externalProcedures -}}
 {{ if eq $domain $key -}}
 {{ range $proc, $procData := $procedures -}}
@@ -38,11 +59,12 @@
 {{ range $field, $val := $procData -}}
 {{ if eq $field "link" -}}{{ $link = $val -}}
 {{ else if eq $field "summary" -}}{{ $summary = $val -}}
-{{ end -}}
-{{ end -}}
+{{ end -}}{{/* set by field name */ -}}
+{{ end -}}{{/* range proc data */ -}}
 - [{{ $proc }}]({{ $link }}){{ if $summary }}: {{ $summary }}{{ end }}
-{{ end -}}
-{{- end }}
-{{- end }}
-{{- end }}
-{{- end -}}
+{{ end -}}{{/* range procedure */ -}}
+{{ end -}}{{/* eq $domain $key */ -}}
+{{- end -}}{{/* range .externalProcedures */ -}}
+{{- end -}}{{/* index . "externalProcedures" */ -}}
+{{- end -}}{{/* index . "_source" else if index . "_key" */ -}}
+{{- end -}}{{/* template def */ -}}
