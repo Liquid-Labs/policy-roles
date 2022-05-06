@@ -85,3 +85,10 @@
 * Update device audit procedures _(zane@liquid-labs.com; 2022-04-27T23:56:05.622Z)_
 * _**hotfix**_: moved 'Head Network/Cloud/Host Engineer' to Head of DevOps _(zane@liquid-labs.com; 2022-05-02T22:09:38.000Z)_
 * _**hotfix**_: use new 'XXX, Senior' for canonical name; remove default DevOps, Lead acess to Network, Host, and Cloud _(zane@liquid-labs.com; 2022-05-03T14:48:54.000Z)_
+
+## Release 1.0.0-alpha.68
+* _**hotfix**_: refactor to use new policy scopes _(zane@liquid-labs.com; 2022-05-03T16:17:05.000Z)_
+* _**hotfix**_: tweak basic policy _(zane@liquid-labs.com; 2022-05-05T17:24:51.000Z)_
+* _**hotfix**_: document why the template is weird; improve output for list with optional summary _(zane@liquid-labs.com; 2022-05-05T17:25:41.000Z)_
+* _**hotfix**_: update Lead Policy Engineer cannical name; fix Security Officer super-role _(zane@liquid-labs.com; 2022-05-05T17:26:31.000Z)_
+* Consolidate hardening links _(zane@liquid-labs.com; 2022-05-05T17:26:48.087Z)_
