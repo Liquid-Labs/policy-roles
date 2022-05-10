@@ -900,9 +900,14 @@
     "summary": "Badge Managers oversee issuing and tracking visitor badges.; Sufficient backups should be designated such that a Badge Manager is always available at each physical location."
   },
   {
+    "name": "Production Administrator",
+    "designated": true,
+    "summary": "An individual with backend admin access to sensitive production data and/or systems."
+  },
+  {
     "name": "Production Data Reader",
     "designated": true,
-    "summary": "An individual with access to sensitive production data."
+    "summary": "An individual with backend read access to sensitive production data and/or systems."
   },
   {
     "name": "Sensitive Data Handler",
