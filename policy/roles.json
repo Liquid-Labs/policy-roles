@@ -41,21 +41,14 @@
   {
     "name": "Executive Officer",
     "designated": true,
-    "duties": [
-      {
-        "description": "Review and execute contracts on behalf of the Company within the Officer's designated domain."
-      }
-    ],
+    "duties": {
+      "business": [ "conclude vendor and service agreements" ]
+    },
     "summary": "Executive Officers wield executive decision making power."
   },
   {
     "name": "Executive Vice President",
     "designated": true,
-    "duties": [
-      {
-        "description": "Execute contracts on behalf of the Company."
-      }
-    ],
     "implies": [
       {
         "name": "Executive Officer",
@@ -92,11 +85,6 @@
     "name": "President",
     "singular": true,
     "titular": true,
-    "duties": [
-      {
-        "description": "Fulfills statutory requirements as Company President."
-      }
-    ],
     "implies": [
       {
         "name": "Executive Officer",
@@ -116,18 +104,17 @@
     ],
     "singular": true,
     "titular": true,
-    "duties": [
-      {
-        "description": "Is a member of the Incident Response Team."
-      }
-    ],
     "implies": [
       {
-        "name": "Senior Management Team",
+        "name": "Executive Officer",
         "mngrProtocol": "self"
       },
       {
-        "name": "Executive Officer",
+        "name": "Incident Response Team",
+        "mngrProtocol": "self"
+      },
+      {
+        "name": "Senior Management Team",
         "mngrProtocol": "self"
       }
     ],
@@ -152,18 +139,17 @@
     ],
     "singular": true,
     "titular": true,
-    "duties": [
-      {
-        "description": "Is a member of the Incident Response Team."
-      }
-    ],
     "implies": [
       {
-        "name": "Senior Management Team",
+        "name": "Executive Officer",
         "mngrProtocol": "self"
       },
       {
-        "name": "Executive Officer",
+        "name": "Incident Response Team",
+        "mngrProtocol": "self"
+      },
+      {
+        "name": "Senior Management Team",
         "mngrProtocol": "self"
       }
     ],
@@ -348,14 +334,9 @@
     "name": "Account Manager",
     "titular": true,
     "qualifiable": true,
-    "duties": [
-      {
-        "description": "Provide first tier support for incoming client technical issues."
-      },
-      {
-        "description": "Provide internal support for technical and operational questions regarding their account."
-      }
-    ],
+    "duties": {
+      "business": [ "support client accounts" ]
+    },
     "summary": "The Account Manager is an operational role acting as the primary technical contact for clients and partners. The Account Manager supports internal sales and technical support teams."
   },
   {
@@ -365,12 +346,11 @@
     ],
     "singular": true,
     "titular": true,
-    "duties": [
-      {
-        "description": "Is a member of the Incident Response Team."
-      }
-    ],
     "implies": [
+      {
+        "name": "Incident Response Team",
+        "mngrProtocol": "self"
+      },
       {
         "name": "Senior Management Team",
         "mngrProtocol": "self"
@@ -385,12 +365,11 @@
     "name": "Head of Administration",
     "singular": true,
     "designated": true,
-    "duties": [
-      {
-        "description": "Is a member of the Incident Response Team."
-      }
-    ],
     "implies": [
+      {
+        "name": "Incident Response Team",
+        "mngrProtocol": "self"
+      },
       {
         "name": "Senior Management Team",
         "mngrProtocol": "self"
@@ -521,9 +500,10 @@
     "superRole": "Software Engineer, Senior",
     "titular": true,
     "qualifiable": true,
-    "duties": [
+    "implies": [
       {
-        "description": "Is a member of the Incident Response Team."
+        "name": "Incident Response Team",
+        "mngrProtocol": "self"
       }
     ],
     "matcher": {
@@ -555,9 +535,10 @@
     "superRole": "Database Engineer, Senior",
     "titular": true,
     "qualifiable": true,
-    "duties": [
+    "implies": [
       {
-        "description": "Is a member of the Incident Response Team."
+        "name": "Incident Response Team",
+        "mngrProtocol": "self"
       }
     ],
     "summary": "Has final responsibility for production schemas and DBMSs.; A Lead Database Engineer's approval is required for sensitive changes involving customer privacy, regulatory issues, and/or exceptional complexity.",
@@ -590,9 +571,10 @@
     "singular": true,
     "titular": true,
     "qualifiable": true,
-    "duties": [
+    "implies": [
       {
-        "description": "Is a member of the Incident Response Team."
+        "name": "Incident Response Team",
+        "mngrProtocol": "self"
       }
     ],
     "summary": "Has final responsibility for production host systems.; Head Host Engineer approval is required for sensitive changes involving host security, regulatory issues, or exceptional complexity."
@@ -624,9 +606,10 @@
     "singular": true,
     "titular": true,
     "qualifiable": true,
-    "duties": [
+    "implies": [
       {
-        "description": "Is a member of the Incident Response Team."
+        "name": "Incident Response Team",
+        "mngrProtocol": "self"
       }
     ],
     "matcher": {
@@ -640,7 +623,10 @@
     "superRole": "IT Personnel",
     "titular": true,
     "qualifiable": true,
-    "summary": "Qualified to configure and manage Company networks."
+    "summary": "Qualified to configure and manage Company networks.",
+    "duties": {
+      "networks": [ "implement and test" ]
+    }
   },
   {
     "name": "Network Engineer, Senior",
@@ -651,17 +637,23 @@
     "matcher": {
       "pattern": "(?:Head|Lead|Chief) (?:(.+) )?Network (?:Engineer|Developer)",
       "qualifierGroup": 1
+    },
+    "duties": {
+      "networks": [ "review and verify changes" ]
     }
   },
   {
     "name": "Network Engineer, Lead",
     "superRole": "Network Engineer, Senior",
-    "singular": true,
+    "duties": {
+      "networks": [ "design" ]
+    },
     "titular": true,
     "qualifiable": true,
-    "duties": [
+    "implies": [
       {
-        "description": "Is a member of the Incident Response Team."
+        "name": "Incident Response Team",
+        "mngrProtocol": "self"
       }
     ],
     "summary": "Has final responsibility for the integrity and security of production networks.; Lead Network Engineer approval is required for changes to sensitive networks providing access to private customer data, under regulatory scrutiny, or any change of exceptional complexity."
@@ -690,9 +682,10 @@
     "singular": true,
     "titular": true,
     "qualifiable": true,
-    "duties": [
+    "implies": [
       {
-        "description": "Is a member of the Incident Response Team."
+        "name": "Incident Response Team",
+        "mngrProtocol": "self"
       }
     ],
     "summary": "Has final responsibility for production cloud services systems.; Head Cloud Engineer approval is required for sensitive changes involving cloud services security, regulatory issues, or exceptional complexity."
@@ -749,6 +742,9 @@
   {
     "name": "Head of Customer Service",
     "superRole": "Customer Service Manager",
+    "duties": {
+      "customer service": [ "coordinates with CMO" ]
+    },
     "singular": true,
     "designated": true,
     "implies": [
@@ -782,24 +778,16 @@
     "superRole": "Policy Engineer, Lead",
     "singular": true,
     "titular": true,
-    "duties": [
-      {
-        "description": "Works with senior management to develop and maintain the Company's security policy and infrastructure. _(PCI DSS 3.2.1 ref 12.4, 12.5.1, 12.5.3)_"
-      },
-      {
-        "description": "Works with line management and technical staff to implement Company security policy to ensure understanding, improve effectiveness, and where possible simplify and automate end user procedures. _(PCI DSS 3.2.1 ref 12.4, 12.5.1, 12.5.3)"
-      },
-      {
-        "description": "Develops curriculum for and oversees implementation of a Security Awareness Program. _(PCI DSS 3.2.1 ref 12.6)_"
-      },
-      {
-        "description": "Oversees development, verification, and implementation of the Incident Response Framework. _(PCI DSS v3.2.1 ref 12.10)_"
-      },
-      {
-        "description": "Is a member of the Incident Response Team."
-      }
-    ],
+    "duties": {
+      "incident response": [ "policy management" ],
+      "networks": [ "assess vulnerabilities" ],
+      "security": [ "policy management", "security training" ]
+    },
     "implies": [
+      {
+        "name": "Incident Response Team",
+        "mngrProtocol": "self"
+      },
       {
         "name": "Senior Management Team",
         "mngrProtocol": "self"
@@ -812,25 +800,14 @@
     "superRole": "Policy Engineer",
     "singular": true,
     "titular": true,
-    "duties": [
-      {
-        "description": "Ensures Company Policy is compliant with PCI DSS 3.2.1, SOC 2 Type I, and SOC 2 Type II compliance standards."
-      },
-      { "description": "Manages the compliance calendar to ensure reviews, audits, and other necessary tasks are performed in a timely manner consistent with company policy and industry standards "},
-      {
-        "description": "Oversee and ensure updates to the Company Policy are according to the Company Change Control Policy."
-      },
-      {
-        "description": "Works with <role>department heads</role> to define, implement, and maintain procedures."
-      },
-      {
-        "description": "Independently verifies policy implementation."
-      },
-      {
-        "description": "Is a member of the Incident Response Team."
-      }
-    ],
+    "duties": {
+      "compliance": [ "policy management" ]
+    },
     "implies": [
+      {
+        "name": "Incident Response Team",
+        "mngrProtocol": "self"
+      },
       {
         "name": "Senior Management Team",
         "mngrProtocol": "self"
@@ -843,12 +820,11 @@
     "superRole": "Policy Engineer",
     "singular": true,
     "titular": true,
-    "duties": [
-      {
-        "description": "Is a member of the Incident Response Team."
-      }
-    ],
     "implies": [
+      {
+        "name": "Incident Response Team",
+        "mngrProtocol": "self"
+      },
       {
         "name": "Senior Management Team",
         "mngrProtocol": "self"
@@ -883,11 +859,6 @@
     "name": "Operational Admin",
     "designated": true,
     "summary": "Has full access to sensitive operational services. May be designated for emergency and/or backup purposes."
-  },
-  {
-    "name": "Incident Response Team",
-    "designated": true,
-    "summary": "Team members are on call for emergency response and/or disaster recovery."
   },
   {
     "name": "Network Alert Responder",
@@ -925,12 +896,23 @@
       "SMT"
     ],
     "designated": true,
-    "duties": [
-      {
-        "description": "Is a member of the Senior Management Team. _(SOC 2 Type I ref 1.1, SOC 2 Type II ref 1.1)_"
-      }
-    ],
+    "duties": {
+      "business": [ "senior management team" ]
+    },
     "summary": "Annually reviews Company compliance and key processes."
+  },
+  {
+    "name": "Incident Response Team",
+    "summary": "Members are on call to respond to significant incidents",
+    "aliases": [
+      "IRT"
+    ],
+    "designated": true,
+    "duties": {
+      "incident response": [
+        "incident response"
+      ]
+    }
   },
   {
     "name": "Department Heads",
