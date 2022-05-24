@@ -43,6 +43,15 @@
     ]
   },
   "networks": {
+    "access management": [
+      "Ensure access policies and user configurations implement Company policy and a general \"least necessary access\" approach.",
+      "Ensure access is disabled when no longer required.",
+      "Review and audit user accounts and access levels."
+    ],
+    "administration": [
+      "Oversee system updates.",
+      "Manually intervene as appropriate to address system issues and respond to incidents."
+    ],
     "design": [
       "Specify changes to be made change tickets.",
       "Review and approve provisional change tickets."

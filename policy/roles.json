@@ -42,7 +42,7 @@
     "name": "Executive Officer",
     "designated": true,
     "duties": {
-      "business": [ "conclude vendor and service agreements" ]
+      "business": [ "strategic vendor management" ]
     },
     "summary": "Executive Officers wield executive decision making power."
   },
@@ -848,12 +848,17 @@
     "name": "Key Admin",
     "designated": true,
     "notes": "The designation is generally applied to Executives, Compliance Agents, and/or domain Chiefs or Seniors. Sufficient backups should be provided such that a Key Manager is available at all times for all key types.",
-    "summary": "Responsible for managing one or more Company keys involved in critical operations or sensitive access."
+    "summary": "Responsible for managing one or more Company keys involved in critical operations or sensitive access.",
+    "enumerate": "always"
   },
   {
     "name": "Access Manager",
     "designated": true,
-    "summary": "Can oversee and grant access to sensitive systems."
+    "summary": "Oversees access configurations and manages user accounts for sensitive systems.",
+    "duties": {
+      "networks": [ "access management" ]
+    },
+    "enumerate": "always"
   },
   {
     "name": "Operational Admin",
@@ -868,27 +873,35 @@
   {
     "name": "Badge Manager",
     "designated": true,
-    "summary": "Badge Managers oversee issuing and tracking visitor badges.; Sufficient backups should be designated such that a Badge Manager is always available at each physical location."
+    "summary": "Badge Managers oversee issuing and tracking visitor badges.; Sufficient backups should be designated such that a Badge Manager is always available at each physical location.",
+    "enumerate": "when used"
   },
   {
     "name": "Production Administrator",
     "designated": true,
-    "summary": "An individual with backend admin access to sensitive production data and/or systems."
+    "summary": "An individual with backend admin access to sensitive production data and/or systems.",
+    "enumerate": "always",
+    "duties": {
+      "networks": [ "administration" ]
+    }
   },
   {
     "name": "Production Data Reader",
     "designated": true,
-    "summary": "An individual with backend read access to sensitive production data and/or systems."
+    "summary": "An individual with backend read access to sensitive production data and/or systems.",
+    "enumerate": "always"
   },
   {
     "name": "Sensitive Data Handler",
     "designated": true,
-    "summary": "Qualified to deal with sensitive data such as card holder data, social security numbers, or other information that requires special handling."
+    "summary": "Qualified to deal with sensitive data such as card holder data, social security numbers, or other information that requires special handling.",
+    "enumerate": "always"
   },
   {
     "name": "VPN Manager",
     "designated": true,
-    "summary": "Manages the company's centralized VPN services."
+    "summary": "Manages the company's centralized VPN services.",
+    "enumerate": "when used"
   },
   {
     "name": "Senior Management Team",
@@ -899,7 +912,8 @@
     "duties": {
       "business": [ "senior management team" ]
     },
-    "summary": "Annually reviews Company compliance and key processes."
+    "summary": "Annually reviews Company compliance and key processes.",
+    "enumerate": "always"
   },
   {
     "name": "Incident Response Team",
@@ -912,7 +926,8 @@
       "incident response": [
         "on call response"
       ]
-    }
+    },
+    "enumerate": "always"
   },
   {
     "name": "Department Heads",
@@ -925,7 +940,8 @@
       "CCB"
     ],
     "designated": true,
-    "summary": "Reviews proposed changes and assigns priorities in accordance with cost and strategic priorities."
+    "summary": "Reviews proposed changes and assigns priorities in accordance with cost and strategic priorities.",
+    "enumerate": "when used"
   },
   {
     "name": "IT Personnel",
@@ -934,7 +950,8 @@
     ],
     "designated": true,
     "abstract": true,
-    "summary": "Any individual working within a technical capacity within the company."
+    "summary": "Any individual working within a technical capacity within the company.",
+    "enumerate": "when used"
   },
   {
     "name": "Head of Security & Compliance",
@@ -1002,7 +1019,8 @@
   {
     "name": "Internal IT Support",
     "titular": true,
-    "summary": "Supports internal IT infrastructure, end user programs, etc."
+    "summary": "Supports internal IT infrastructure, end user programs, etc.",
+    "enumerate": "when used"
   },
   {
     "name": "Office Administrator",
