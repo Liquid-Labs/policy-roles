@@ -1,7 +1,8 @@
 {
   "business": {
-    "conclude vendor and service agreements": [
-      "Review and execute third party vendor and service contracts on behalf of the Company within the Officer's designated domain.\n- Any agreement involving technologies or services to be used within or in support of production services  in conjuction with internal council. Standard agreements must involve an annual expense of {{ .s.business.STANDARD_AGREEMENT_MAX }} or less unless explicitly budgetted or approved by the SMT"
+    "strategic vendor management": [
+      "Review and execute third party vendor and service contracts on behalf of the Company according to Vendor Management policies.",
+      "Oversee and review strategic vendors and service suppliers."
     ],
     "senior management team": [
       "Is a member of the Senior Management Team. _(SOC 2 Type I ref 1.1, SOC 2 Type II ref 1.1)_",
@@ -37,7 +38,7 @@
       "Oversees development, verification, and implementation of the Incident Response Plan. _(PCI DSS v3.2.1 ref 12.10)_",
       "Works with line management and technical staff to implement Company practice and refine the Incident Response Plan to ensure understanding, improve effectiveness, and where possible simplify and automate procedures. _(PCI DSS 3.2.1 ref 12.4, 12.10)_"
     ],
-    "incident response": [
+    "on call response": [
       "Is on call for significant incidents."
     ]
   },

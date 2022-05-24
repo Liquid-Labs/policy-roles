@@ -910,7 +910,7 @@
     "designated": true,
     "duties": {
       "incident response": [
-        "incident response"
+        "on call response"
       ]
     }
   },
