@@ -63,12 +63,12 @@
     ],
     "review and verify changes": [
       "Reviews network changes according to Company policy.",
-      "Ensures evidenciary requirements are met, including test reports and proper linkage between changes and change tickets",
+      "Ensures evidentiary requirements are met, including test reports and proper linkage between changes and change tickets",
       "Work with change authors to address any issues."
     ],
     "assess vulnerabilities": [
       "Ensure ASV scans are performed quarterly.",
-      "Ensure external penetration tests are performed at least annualy.",
+      "Ensure external penetration tests are performed at least annually.",
       "Review and manage notifications from continuous internal vulnerability assessments.",
       "Ensure any necessary remediation is performed."
     ]
