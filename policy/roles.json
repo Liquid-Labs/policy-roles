@@ -916,6 +916,15 @@
     "enumerate": "always"
   },
   {
+    "name": "Vendor Management Team",
+    "designated": true,
+    "duties": {
+      "vendors": [ "procedure management", "procedure enforcement" ]
+    },
+    "summary": "Maintains and enforces procedures to ensure that important vendor and product information is properly maintained on an ongoing basis.",
+    "enumerate": "always"
+  },
+  {
     "name": "Incident Response Team",
     "summary": "Members are on call to respond to significant incidents",
     "aliases": [
