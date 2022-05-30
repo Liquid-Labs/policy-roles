@@ -84,5 +84,13 @@
     "security training": [
       "Develops curriculum for and oversees implementation of a Security Awareness Program. _(PCI DSS 3.2.1 ref 12.6)_"
     ]
+  },
+  "vendors": {
+    "procedure management": [
+      "Oversee evaluation and update of department processes regarding vendor management to ensure vendor and product records are complete and updated as needed."
+    ],
+    "procedure enforcement": {
+      
+    }
   }
 }
