@@ -861,6 +861,11 @@
     "enumerate": "always"
   },
   {
+    "name": "Staff Account Manager",
+    "desinated": true,
+    "summary": "Manages general staff accounts and business access."
+  },
+  {
     "name": "Operational Admin",
     "designated": true,
     "summary": "Has full access to sensitive operational services. May be designated for emergency and/or backup purposes."
@@ -1026,20 +1031,22 @@
     "summary": null
   },
   {
-    "name": "Internal IT Support",
+    "name": "Internal IT",
+    "superRole": "IT Personnel",
     "titular": true,
     "summary": "Supports internal IT infrastructure, end user programs, etc.",
     "enumerate": "when used"
   },
   {
+    "name": "Internal IT, Lead",
+    "superRole": "Internal IT",
+    "titular": true,
+    "summary": "Leads internal IT infrastructure support team."
+  },
+  {
     "name": "Office Administrator",
     "titular": true,
     "summary": "Completes clerical and administrative tasks for an office. Their main duties include welcoming and directing visitors, coordinating meetings and appointments and performing clerical tasks, like answering phones and responding to emails."
-  },
-  {
-    "name": "Internal IT Consultant",
-    "titular": true,
-    "summary": "Provides general support and implements task relating to internal technical system and support."
   },
   {
     "name": "Database Consultant",
