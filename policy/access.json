@@ -10,12 +10,53 @@
       ]
     },
     {
+      "role": "Access Manager",
+      "access": [
+        {
+          "serviceBundle": "technical access",
+          "type": "access-manager"
+        }
+      ],
+      "policy": [
+        "security/.+Access Management.*"
+      ]
+    },
+    {
+      "role": "Staff Account Manager",
+      "access": [
+        {
+          "serviceBundle": "core business",
+          "type": "admin"
+        }
+      ],
+      "policy": [
+        "security/.+Access Management.*"
+      ]
+    },
+    {
+      "role": "MOCA Administrator",
+      "access": [
+        {
+          "serviceBundle": "MOCA Admin Portal",
+          "type": "admin"
+        }
+      ]
+    },
+    {
       "role": "Board of Directors",
       "access": [
         {
-          "domain": "accounting",
-          "type": "reader",
-          "scope": "unlimited"
+          "serviceBundle": "accounting",
+          "type": "reader"
+        }
+      ]
+    },
+    {
+      "role": "IT Personnel",
+      "access": [
+        {
+          "serviceBundle": "project",
+          "type": "editor"
         }
       ]
     },
@@ -34,9 +75,8 @@
       "role": "Executive Officer",
       "access": [
         {
-          "domain": "accounting",
-          "type": "reader",
-          "scope": "unlimited"
+          "serviceBundle": "accounting",
+          "type": "reader"
         }
       ],
       "policy": [
@@ -49,7 +89,7 @@
       "role": "Accountant",
       "access": [
         {
-          "domain": "accounting",
+          "serviceBundle": "accounting",
           "type": "editor",
           "scope": "limited"
         }
@@ -64,14 +104,8 @@
       "role": "Corporate Controller",
       "access": [
         {
-          "domain": "accounting",
-          "type": "manager",
-          "scope": "unlimited"
-        },
-        {
-          "domain": "accounting",
-          "type": "access-manager",
-          "scope": "unlimited"
+          "serviceBundle": "accounting",
+          "type": "admin"
         }
       ],
       "policy": [
@@ -82,9 +116,8 @@
       "role": "Customer Service Agent",
       "access": [
         {
-          "domain": "customer-service",
-          "type": "editor",
-          "scope": "unlimited"
+          "serviceBundle": "customer service",
+          "type": "editor"
         }
       ],
       "policy": [
@@ -98,9 +131,12 @@
       "role": "Customer Service Manager",
       "access": [
         {
-          "domain": "customer-service",
-          "type": "manager",
-          "scope": "unlimited"
+          "serviceBundle": "customer service",
+          "type": "admin"
+        },
+        {
+          "serviceBundle": "processor records",
+          "type": "editor"
         }
       ],
       "policy": [
@@ -111,7 +147,7 @@
       "role": "Human Resources Agent",
       "access": [
         {
-          "domain": "human-resources",
+          "serviceBundle": "human resources",
           "type": "editor",
           "scope": "unlimited"
         }
@@ -126,7 +162,7 @@
       "role": "Human Resources Manager",
       "access": [
         {
-          "domain": "human-resources",
+          "serviceBundle": "human resources",
           "type": "access-manager",
           "scope": "unlimited"
         }
@@ -139,7 +175,7 @@
       "role": "Product Manager",
       "access": [
         {
-          "domain": "project",
+          "serviceBundle": "project",
           "type": "editor",
           "scope": "limited"
         }
@@ -152,7 +188,7 @@
       "role": "Project Manager",
       "access": [
         {
-          "domain": "project",
+          "serviceBundle": "project",
           "type": "editor",
           "scope": "limited"
         }
@@ -163,13 +199,6 @@
     },
     {
       "role": "Software Engineer",
-      "access": [
-        {
-          "domain": "software",
-          "type": "editor",
-          "scope": "dev"
-        }
-      ],
       "policy": [
         "data/.+",
         [
@@ -181,29 +210,7 @@
       ]
     },
     {
-      "role": "Software Engineer, Senior",
-      "access": [
-        {
-          "domain": "software",
-          "type": "manager",
-          "scope": "limited"
-        }
-      ]
-    },
-    {
       "role": "Software Engineer, Lead",
-      "access": [
-        {
-          "domain": "software",
-          "type": "manager",
-          "scope": "unlimited"
-        },
-        {
-          "domain": "software",
-          "type": "access-manager",
-          "scope": "unlimited"
-        }
-      ],
       "policy": [
         "security/.+Access Management.*",
         "incident-response/.+"
@@ -211,13 +218,6 @@
     },
     {
       "role": "Database Engineer",
-      "access": [
-        {
-          "domain": "database",
-          "type": "editor",
-          "scope": "dev"
-        }
-      ],
       "policy": [
         "data/.+",
         "security/.+",
@@ -225,43 +225,19 @@
       ]
     },
     {
-      "role": "Database Engineer, Senior",
-      "access": [
-        {
-          "domain": "database",
-          "type": "manager",
-          "scope": "limited"
-        }
-      ]
-    },
-    {
       "role": "Database Engineer, Lead",
       "access": [
         {
-          "domain": "database",
-          "type": "manager",
-          "scope": "unlimited"
-        },
-        {
-          "domain": "database",
-          "type": "access-manager",
-          "scope": "unlimited"
+          "serviceBundle": "database",
+          "type": "manager"
         }
       ],
       "policy": [
-        "security/.+Access Management.*",
         "incident-response/.+"
       ]
     },
     {
       "role": "Host Engineer",
-      "access": [
-        {
-          "domain": "host",
-          "type": "editor",
-          "scope": "dev"
-        }
-      ],
       "policy": [
         "data/.+",
         "hosts/.+",
@@ -273,7 +249,7 @@
       "role": "Host Engineer, Senior",
       "access": [
         {
-          "domain": "host",
+          "serviceBundle": "host",
           "type": "manager",
           "scope": "limited"
         }
@@ -283,12 +259,12 @@
       "role": "Host Engineer, Lead",
       "access": [
         {
-          "domain": "host",
+          "serviceBundle": "host",
           "type": "manager",
           "scope": "unlimited"
         },
         {
-          "domain": "host",
+          "serviceBundle": "host",
           "type": "access-manager",
           "scope": "unlimited"
         }
@@ -302,7 +278,7 @@
       "role": "Network Engineer",
       "access": [
         {
-          "domain": "network",
+          "serviceBundle": "network",
           "type": "editor",
           "scope": "dev"
         }
@@ -315,43 +291,44 @@
       ]
     },
     {
-      "role": "Network Engineer, Senior",
+      "role": "Settlement Agent",
       "access": [
         {
-          "domain": "network",
-          "type": "manager",
-          "scope": "limited"
+          "serviceBundle": "processor records",
+          "type": "reader"
         }
       ]
     },
     {
       "role": "Network Engineer, Lead",
-      "access": [
-        {
-          "domain": "network",
-          "type": "manager",
-          "scope": "unlimited"
-        },
-        {
-          "domain": "network",
-          "type": "access-manager",
-          "scope": "unlimited"
-        }
-      ],
       "policy": [
-        "security/.+Access Management.*",
         "incident-response/.+"
       ]
     },
     {
-      "role": "DevOps Engineer",
+      "role": "Head of Technical Operations",
       "access": [
         {
-          "domain": "devops",
-          "type": "editor",
-          "scope": "dev"
+          "serviceBundle": "client messaging",
+          "type": "manager"
+        },
+        {
+          "serviceBundle": "database",
+          "type": "manager"
+        },
+        {
+          "serviceBundle": "devops",
+          "type": "manager"
+        },
+        
+        {
+          "serviceBundle": "network",
+          "type": "manager"
         }
-      ],
+      ]
+    },
+    {
+      "role": "DevOps Engineer",
       "policy": [
         "data/.+",
         "devops/.+",
@@ -360,43 +337,13 @@
       ]
     },
     {
-      "role": "DevOps Engineer, Senior",
-      "access": [
-        {
-          "domain": "devops",
-          "type": "manager",
-          "scope": "limited"
-        }
-      ]
-    },
-    {
       "role": "DevOps Engineer, Lead",
-      "access": [
-        {
-          "domain": "devops",
-          "type": "manager",
-          "scope": "unlimited"
-        },
-        {
-          "domain": "devops",
-          "type": "access-manager",
-          "scope": "unlimited"
-        }
-      ],
       "policy": [
-        "security/.+Access Management.*",
         "incident-response/.+"
       ]
     },
     {
       "role": "Cloud Engineer",
-      "access": [
-        {
-          "domain": "cloud",
-          "type": "editor",
-          "scope": "dev"
-        }
-      ],
       "policy": [
         "data/.+",
         "cloud/.+",
@@ -405,25 +352,15 @@
       ]
     },
     {
-      "role": "Cloud Engineer, Senior",
-      "access": [
-        {
-          "domain": "cloud",
-          "type": "manager",
-          "scope": "limited"
-        }
-      ]
-    },
-    {
       "role": "Cloud Engineer, Lead",
       "access": [
         {
-          "domain": "cloud",
+          "serviceBundle": "client messaging",
           "type": "manager",
           "scope": "unlimited"
         },
         {
-          "domain": "cloud",
+          "serviceBundle": "client messaging",
           "type": "access-manager",
           "scope": "unlimited"
         }
@@ -433,42 +370,29 @@
       ]
     },
     {
+      "role": "Security Officer",
+      "access": [
+        {
+          "serviceBundle": "compliance",
+          "type": "admin"
+        }
+      ]
+    },
+    {
+      "role": "Internal IT, Lead",
+      "access": [
+        {
+          "serviceBundle": "internal technology",
+          "type": "admin"
+        }
+      ]
+    },
+    {
       "role": "Policy Engineer",
       "access": [
         {
-          "domain": "database",
-          "type": "reader",
-          "scope": "limited"
-        },
-        {
-          "domain": "cloud",
-          "type": "reader",
-          "scope": "limited"
-        },
-        {
-          "domain": "host",
-          "type": "reader",
-          "scope": "limited"
-        },
-        {
-          "domain": "human-resources",
-          "type": "reader",
-          "scope": "limited"
-        },
-        {
-          "domain": "network",
-          "type": "reader",
-          "scope": "limited"
-        },
-        {
-          "domain": "software",
-          "type": "reader",
-          "scope": "limited"
-        },
-        {
-          "domain": "compliance",
-          "type": "editor",
-          "scope": "dev"
+          "serviceBundle": "compliance",
+          "type": "manager"
         }
       ],
       "policy": [
@@ -484,44 +408,8 @@
       "role": "Policy Engineer, Lead",
       "access": [
         {
-          "domain": "database",
-          "type": "reader",
-          "scope": "limited"
-        },
-        {
-          "domain": "cloud",
-          "type": "reader",
-          "scope": "limited"
-        },
-        {
-          "domain": "host",
-          "type": "reader",
-          "scope": "limited"
-        },
-        {
-          "domain": "human-resources",
-          "type": "reader",
-          "scope": "limited"
-        },
-        {
-          "domain": "network",
-          "type": "reader",
-          "scope": "limited"
-        },
-        {
-          "domain": "software",
-          "type": "reader",
-          "scope": "limited"
-        },
-        {
-          "domain": "compliance",
-          "type": "manager",
-          "scope": "unlimited"
-        },
-        {
-          "domain": "compliance",
-          "type": "access-manager",
-          "scope": "unlimited"
+          "serviceBundle": "compliance",
+          "type": "manager"
         }
       ],
       "policy": [
@@ -529,134 +417,163 @@
       ]
     },
     {
-      "role": "Access Manager",
+      "role": "VDM Admin",
       "access": [
         {
-          "domain": "cloud",
-          "type": "access-manager",
-          "scope": "unlimited"
-        },
-        {
-          "domain": "database",
-          "type": "access-manager",
-          "scope": "unlimited"
-        },
-        {
-          "domain": "devops",
-          "type": "access-manager",
-          "scope": "unlimited"
-        },
-        {
-          "domain": "host",
-          "type": "access-manager",
-          "scope": "unlimited"
-        },
-        {
-          "domain": "network",
-          "type": "access-manager",
-          "scope": "unlimited"
-        },
-        {
-          "domain": "software",
-          "type": "access-manager",
-          "scope": "unlimited"
+          "serviceBundle": "processor records",
+          "type": "admin"
         }
-      ],
-      "policy": [
-        "security/.+Access Management.*"
+      ]
+    },
+    {
+      "role": "Sensitive Data Handler",
+      "access": [
+        {
+          "serviceBundle": "cardholder data",
+          "type": "reader"
+        }
       ]
     }
   ],
-  "domainServices": [
+  "serviceBundles": [
     {
-      "domain": "accounting",
+      "serviceBundle": "internal technology",
+      "services": [
+        "Apple Filevault",
+        "Gmail - client",
+        "GravityZone - client",
+        "MacOS",
+        "Microsoft Bitlocker",
+        "Windows"
+      ]
+    },
+    {
+      "serviceBundle": "core business",
+      "services": [
+        "Gmail - service",
+        "Google Admin",
+        "Google Drive",
+        "LastPass"
+      ]
+    },
+    {
+      "serviceBundle": "accounting",
       "services": [
         "Quickbooks"
       ]
     },
     {
-      "domain": "cloud",
+      "serviceBundle": "cardholder data",
+      "services": [
+        "various CHD sources"
+      ]
+    },
+    {
+      "serviceBundle": "processor records",
+      "services": [
+        "Visa VDM"
+      ]
+    },
+    {
+      "serviceBundle": "cloud compute",
+      "services": [
+        "Amazon MSK",
+        "AWS Lambda"
+      ]
+    },
+    {
+      "serviceBundle": "client messaging",
       "services": [
         "Amazon SES",
-        "Amazon SNS",
-        "Amazon Cloud Watch",
-        "Amazon Cloud Trail",
-        "GitHub",
-        "Jira"
+        "Amazon SNS"
       ]
     },
     {
-      "domain": "compliance",
+      "serviceBundle": "compliance",
       "services": [
-        "GitHub",
-        "Jira"
+        "Amazon CloudWatch",
+        "Amazon CloudTrail",
+        "GravityZone - service"
       ]
     },
     {
-      "domain": "customer-service",
+      "serviceBundle": "customer service",
       "services": [
         "ZenDesk",
         "Jira"
       ]
     },
     {
-      "domain": "database",
+      "serviceBundle": "database",
       "services": [
         "Amazon RDS",
-        "Amazon S3",
-        "Amazon S3 Glacier",
-        "GitHub",
-        "Jira"
+        "AWS Database Migration Service"
       ]
     },
     {
-      "domain": "devops",
+      "serviceBundle": "storage",
       "services": [
-        "Jenkins",
-        "GitHub",
-        "Jira"
+        "Amazon S3",
+        "Amazon S3 Glacier"
       ]
     },
     {
-      "domain": "host",
+      "serviceBundle": "devops",
+      "services": [
+        "Jenkins"
+      ]
+    },
+    {
+      "serviceBundle": "host",
       "services": [
         "Amazon EC2",
         "Amazon EFS",
-        "GitHub",
-        "Jira"
+        "Amazon EKS"
       ]
     },
     {
-      "domain": "human-resources",
+      "serviceBundle": "human resources",
       "services": [
         "GitHub",
         "Jira"
       ]
     },
     {
-      "domain": "network",
+      "serviceBundle": "data center",
+      "services": [
+        "AWS Direct Connect",
+        "physical routers and switches",
+        "terminal server"
+      ]
+    },
+    {
+      "serviceBundle": "network",
       "services": [
         "AWS API Gateway",
         "AWS Direct Connect",
         "Amazon Route 53",
         "Amazon Shield",
         "Amazon WAF",
-        "GitHub",
-        "Jira"
+        "Amazon VPC"
       ]
     },
     {
-      "domain": "project",
+      "serviceBundle": "project",
       "services": [
         "GitHub",
         "Jira"
       ]
     },
     {
-      "domain": "software",
+      "serviceBundle": "technical access",
       "services": [
-        "GitHub",
-        "Jira"
+        "Amazon IAM"
+      ]
+    },
+    {
+      "serviceBundle": "MOCA Admin Portal",
+      "services": [
+        "MOCA Admin Portal"
       ]
     }
   ]

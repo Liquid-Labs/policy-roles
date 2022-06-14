@@ -13,7 +13,7 @@
       "Provide internal support for technical and operational questions regarding client accounts."
     ]
   },
-  "cloud": {
+  "client messaging": {
     
   },
   "compliance": {
@@ -89,8 +89,8 @@
     "procedure management": [
       "Oversee evaluation and update of department processes regarding vendor management to ensure vendor and product records are complete and updated as needed."
     ],
-    "procedure enforcement": {
+    "procedure enforcement": [
       
-    }
+    ]
   }
 }
