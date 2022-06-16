@@ -350,10 +350,6 @@
       {
         "name": "Incident Response Team",
         "mngrProtocol": "self"
-      },
-      {
-        "name": "Senior Management Team",
-        "mngrProtocol": "self"
       }
     ],
     "matcher": {
@@ -368,10 +364,6 @@
     "implies": [
       {
         "name": "Incident Response Team",
-        "mngrProtocol": "self"
-      },
-      {
-        "name": "Senior Management Team",
         "mngrProtocol": "self"
       },
       {
@@ -401,10 +393,6 @@
     "implies": [
       {
         "name": "Department Heads",
-        "mngrProtocol": "self"
-      },
-      {
-        "name": "Senior Management Team",
         "mngrProtocol": "self"
       }
     ],
@@ -787,10 +775,6 @@
       {
         "name": "Incident Response Team",
         "mngrProtocol": "self"
-      },
-      {
-        "name": "Senior Management Team",
-        "mngrProtocol": "self"
       }
     ],
     "summary": "Non-executive officer with final responsibility for matters relating to Company security."
@@ -807,10 +791,6 @@
       {
         "name": "Incident Response Team",
         "mngrProtocol": "self"
-      },
-      {
-        "name": "Senior Management Team",
-        "mngrProtocol": "self"
       }
     ],
     "summary": "Non-executive officer with final responsibility for matters relating to compliance and Company Policy in general."
@@ -823,10 +803,6 @@
     "implies": [
       {
         "name": "Incident Response Team",
-        "mngrProtocol": "self"
-      },
-      {
-        "name": "Senior Management Team",
         "mngrProtocol": "self"
       }
     ],
@@ -862,8 +838,13 @@
   },
   {
     "name": "Staff Account Manager",
-    "desinated": true,
+    "designated": true,
     "summary": "Manages general staff accounts and business access."
+  },
+  {
+    "name": "Projects Technical Adiminstrator",
+    "designated": true,
+    "summary": "Manages technical components of the project management infrastructure."
   },
   {
     "name": "Operational Admin",
