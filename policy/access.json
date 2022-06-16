@@ -13,12 +13,57 @@
       "role": "Access Manager",
       "access": [
         {
-          "serviceBundle": "technical access",
+          "serviceBundle": "client messaging",
           "type": "access-manager"
+        },
+        {
+          "serviceBundle": "cloud compute",
+          "type": "access-manager"
+        },
+        {
+          "serviceBundle": "compliance",
+          "type": "access-manager"
+        },
+        {
+          "serviceBundle": "data center",
+          "type": "access-manager"
+        },
+        {
+          "serviceBundle": "database",
+          "type": "access-manager"
+        },
+        {
+          "serviceBundle": "deploy",
+          "type": "access-manager"
+        },
+        {
+          "serviceBundle": "host",
+          "type": "access-manager"
+        },
+        {
+          "serviceBundle": "network",
+          "type": "access-manager"
+        },
+        {
+          "serviceBundle": "storage",
+          "type": "access-manager"
+        },
+        {
+          "serviceBundle": "technical access",
+          "type": "admin"
         }
       ],
       "policy": [
         "security/.+Access Management.*"
+      ]
+    },
+    {
+      "role": "Projects Technical Adiminstrator",
+      "access": [
+        {
+          "serviceBundle": "project",
+          "type": "admin"
+        }
       ]
     },
     {
@@ -159,12 +204,11 @@
       ]
     },
     {
-      "role": "Human Resources Manager",
+      "role": "Head of Human Resources",
       "access": [
         {
           "serviceBundle": "human resources",
-          "type": "access-manager",
-          "scope": "unlimited"
+          "type": "admin"
         }
       ],
       "policy": [
@@ -246,27 +290,11 @@
       ]
     },
     {
-      "role": "Host Engineer, Senior",
-      "access": [
-        {
-          "serviceBundle": "host",
-          "type": "manager",
-          "scope": "limited"
-        }
-      ]
-    },
-    {
       "role": "Host Engineer, Lead",
       "access": [
         {
           "serviceBundle": "host",
-          "type": "manager",
-          "scope": "unlimited"
-        },
-        {
-          "serviceBundle": "host",
-          "type": "access-manager",
-          "scope": "unlimited"
+          "type": "editor"
         }
       ],
       "policy": [
@@ -310,19 +338,58 @@
       "access": [
         {
           "serviceBundle": "client messaging",
+          "type": "editor"
+        },
+        {
+          "serviceBundle": "client messaging",
           "type": "manager"
+        },
+        {
+          "serviceBundle": "cloud compute",
+          "type": "editor"
+        },
+        {
+          "serviceBundle": "cloud compute",
+          "type": "manager"
+        },
+        {
+          "serviceBundle": "data center",
+          "type": "editor"
+        },
+        {
+          "serviceBundle": "data center",
+          "type": "manager"
+        },
+        {
+          "serviceBundle": "database",
+          "type": "editor"
         },
         {
           "serviceBundle": "database",
           "type": "manager"
         },
         {
-          "serviceBundle": "devops",
+          "serviceBundle": "deploy",
+          "type": "editor"
+        },
+        {
+          "serviceBundle": "deploy",
           "type": "manager"
         },
-        
         {
           "serviceBundle": "network",
+          "type": "editor"
+        },
+        {
+          "serviceBundle": "network",
+          "type": "manager"
+        },
+        {
+          "serviceBundle": "storage",
+          "type": "editor"
+        },
+        {
+          "serviceBundle": "storage",
           "type": "manager"
         }
       ]
@@ -356,13 +423,7 @@
       "access": [
         {
           "serviceBundle": "client messaging",
-          "type": "manager",
-          "scope": "unlimited"
-        },
-        {
-          "serviceBundle": "client messaging",
-          "type": "access-manager",
-          "scope": "unlimited"
+          "type": "editor"
         }
       ],
       "policy": [
@@ -374,7 +435,7 @@
       "access": [
         {
           "serviceBundle": "compliance",
-          "type": "admin"
+          "type": "manager"
         }
       ]
     },
@@ -518,7 +579,7 @@
       ]
     },
     {
-      "serviceBundle": "devops",
+      "serviceBundle": "deploy",
       "services": [
         "Jenkins"
       ]
