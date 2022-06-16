@@ -45,6 +45,10 @@
           "type": "access-manager"
         },
         {
+          "serviceBundle": "project",
+          "type": "editor"
+        },
+        {
           "serviceBundle": "storage",
           "type": "access-manager"
         },
@@ -84,6 +88,10 @@
         {
           "serviceBundle": "MOCA Admin Portal",
           "type": "admin"
+        },
+        {
+          "serviceBundle": "cardholder data",
+          "type": "editor"
         }
       ]
     },
@@ -162,6 +170,10 @@
       "access": [
         {
           "serviceBundle": "customer service",
+          "type": "editor"
+        },
+        {
+          "serviceBundle": "project",
           "type": "editor"
         }
       ],
@@ -273,6 +285,10 @@
       "access": [
         {
           "serviceBundle": "database",
+          "type": "editor"
+        },
+        {
+          "serviceBundle": "database",
           "type": "manager"
         }
       ],
@@ -304,13 +320,6 @@
     },
     {
       "role": "Network Engineer",
-      "access": [
-        {
-          "serviceBundle": "network",
-          "type": "editor",
-          "scope": "dev"
-        }
-      ],
       "policy": [
         "data/.+",
         "networks/.+",
@@ -329,6 +338,16 @@
     },
     {
       "role": "Network Engineer, Lead",
+      "access": [
+        {
+          "serviceBundle": "data center",
+          "type": "editor"
+        },
+        {
+          "serviceBundle": "network",
+          "type": "editor"
+        }
+      ],
       "policy": [
         "incident-response/.+"
       ]
@@ -377,6 +396,14 @@
           "type": "manager"
         },
         {
+          "serviceBundle": "host",
+          "type": "editor"
+        },
+        {
+          "serviceBundle": "host",
+          "type": "manager"
+        },
+        {
           "serviceBundle": "network",
           "type": "editor"
         },
@@ -405,6 +432,16 @@
     },
     {
       "role": "DevOps Engineer, Lead",
+      "access": [
+        {
+          "serviceBundle": "deploy",
+          "type": "editor"
+        },
+        {
+          "serviceBundle": "storage",
+          "type": "editor"
+        }
+      ],
       "policy": [
         "incident-response/.+"
       ]
@@ -424,6 +461,10 @@
         {
           "serviceBundle": "client messaging",
           "type": "editor"
+        },
+        {
+          "serviceBundle": "cloud compute",
+          "type": "editor"
         }
       ],
       "policy": [
@@ -436,6 +477,10 @@
         {
           "serviceBundle": "compliance",
           "type": "manager"
+        },
+        {
+          "serviceBundle": "project",
+          "type": "editor"
         }
       ]
     },
@@ -483,6 +528,10 @@
         {
           "serviceBundle": "processor records",
           "type": "admin"
+        },
+        {
+          "serviceBundle": "cardholder data",
+          "type": "reader"
         }
       ]
     },
