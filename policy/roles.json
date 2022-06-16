@@ -2,16 +2,19 @@
   {
     "name": "Staff",
     "designated": true,
+    "enumerate": "never",
     "summary": "All staff members. Note, this role is assigned based on employment status and should not be directly assigned."
   },
   {
     "name": "Employee",
     "designated": true,
+    "enumerate": "never",
     "summary": "All W-2 staff. Note, this role is assigned based on employment status and should not be directly assigned."
   },
   {
     "name": "Contractor",
     "designated": true,
+    "enumerate": "never",
     "summary": "All 1099 staff. Note, this role is assigned based on employment status and should not be directly assigned."
   },
   {
@@ -49,6 +52,7 @@
   {
     "name": "Executive Vice President",
     "designated": true,
+    "enumerate": "never",
     "implies": [
       {
         "name": "Executive Officer",
@@ -60,6 +64,7 @@
   {
     "name": "Senior Vice President",
     "designated": true,
+    "enumerate": "never",
     "summary": "The most senior, non-executive manager."
   },
   {
@@ -159,6 +164,7 @@
     "name": "Head of Research & Development",
     "singular": true,
     "designated": true,
+    "enumerate": "never",
     "implies": [
       {
         "name": "Department Heads",
@@ -169,6 +175,7 @@
   },
   {
     "name": "Head of Technical Operations",
+    "superRole": "DevOps Engineer, Lead",
     "singular": true,
     "titular": true,
     "implies": [
@@ -238,6 +245,7 @@
     "name": "Head of Marketing",
     "singular": true,
     "designated": true,
+    "enumerate": "never",
     "implies": [
       {
         "name": "Department Heads",
@@ -250,6 +258,7 @@
     "name": "Head of Finance",
     "singular": true,
     "designated": true,
+    "enumerate": "never",
     "implies": [
       {
         "name": "Department Heads",
@@ -280,6 +289,7 @@
     "name": "Head of Sales",
     "singular": true,
     "designated": true,
+    "enumerate": "never",
     "implies": [
       {
         "name": "Department Heads",
@@ -299,6 +309,7 @@
     "superRole": "Integrations Manager",
     "singular": true,
     "designated": true,
+    "enumerate": "never",
     "implies": [
       {
         "name": "Department Heads",
@@ -317,6 +328,7 @@
     "superRole": "Implementations Manager",
     "singular": true,
     "designated": true,
+    "enumerate": "never",
     "implies": [
       {
         "name": "Department Heads",
@@ -361,6 +373,7 @@
     "name": "Head of Administration",
     "singular": true,
     "designated": true,
+    "enumerate": "never",
     "implies": [
       {
         "name": "Incident Response Team",
@@ -389,6 +402,7 @@
     "name": "Head of Human Resources",
     "singular": true,
     "designated": true,
+    "enumerate": "never",
     "superRole": "Human Resources Manager",
     "implies": [
       {
@@ -452,6 +466,7 @@
     "superRole": "Business Analyst",
     "singular": true,
     "designated": true,
+    "enumerate": "never",
     "implies": [
       {
         "name": "Department Heads",
@@ -735,6 +750,7 @@
     },
     "singular": true,
     "designated": true,
+    "enumerate": "never",
     "implies": [
       {
         "name": "Department Heads",
@@ -812,6 +828,7 @@
     "name": "Head of Security, Compliance, & Privacy",
     "singular": true,
     "designated": true,
+    "enumerate": "never",
     "implies": [
       {
         "name": "Department Heads",
@@ -854,6 +871,7 @@
   {
     "name": "Network Alert Responder",
     "designated": true,
+    "enumerate": "when used",
     "summary": "Responsible for receiving and evaluating network alerts."
   },
   {
@@ -861,21 +879,6 @@
     "designated": true,
     "summary": "Badge Managers oversee issuing and tracking visitor badges.; Sufficient backups should be designated such that a Badge Manager is always available at each physical location.",
     "enumerate": "when used"
-  },
-  {
-    "name": "Production Administrator",
-    "designated": true,
-    "summary": "An individual with backend admin access to sensitive production data and/or systems.",
-    "enumerate": "always",
-    "duties": {
-      "networks": [ "administration" ]
-    }
-  },
-  {
-    "name": "Production Data Reader",
-    "designated": true,
-    "summary": "An individual with backend read access to sensitive production data and/or systems.",
-    "enumerate": "always"
   },
   {
     "name": "Sensitive Data Handler",
@@ -927,6 +930,7 @@
   {
     "name": "Department Heads",
     "designated": true,
+    "enumerate": "never",
     "summary": "Heads a company department. Genarally, non-executive personell report dircetly or indirectly to a department head and collectively the department heads should encompass all company staff with the exception of the CEO and the Department Heads themselves."
   },
   {
@@ -944,6 +948,7 @@
       "Engineering"
     ],
     "designated": true,
+    "enumerate": "never",
     "abstract": true,
     "summary": "Any individual working within a technical capacity within the company.",
     "enumerate": "when used"
