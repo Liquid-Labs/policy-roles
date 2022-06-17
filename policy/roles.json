@@ -571,7 +571,6 @@
   {
     "name": "Host Engineer, Lead",
     "superRole": "Host Engineer, Senior",
-    "singular": true,
     "titular": true,
     "qualifiable": true,
     "implies": [
@@ -606,7 +605,6 @@
   {
     "name": "DevOps Engineer, Lead",
     "superRole": "DevOps Engineer, Senior",
-    "singular": true,
     "titular": true,
     "qualifiable": true,
     "implies": [
@@ -682,7 +680,6 @@
   {
     "name": "Cloud Engineer, Lead",
     "superRole": "Cloud Engineer, Senior",
-    "singular": true,
     "titular": true,
     "qualifiable": true,
     "implies": [
@@ -773,7 +770,6 @@
   {
     "name": "Policy Engineer, Lead",
     "superRole": "Policy Engineer",
-    "singular": true,
     "titular": true,
     "summary": "Leads the Company's internal policy development, implementation, and verification."
   },
