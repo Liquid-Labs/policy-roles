@@ -42,7 +42,13 @@
     "summary": "Chairs meetings of the Board of Directors."
   },
   {
+    "name": "Senior Management",
+    "designated": true,
+    "summary": "A high level management position. Senior management is expected have expertise within their own domain, as well as strong general knowledge of general Company processes across all departments."
+  },
+  {
     "name": "Executive Officer",
+    "superRole": "Senior Vice President",
     "designated": true,
     "duties": {
       "business": [ "strategic vendor management" ]
@@ -52,6 +58,7 @@
   {
     "name": "Executive Vice President",
     "designated": true,
+    "superRole": "Senior Vice President",
     "enumerate": "never",
     "implies": [
       {
@@ -63,6 +70,7 @@
   },
   {
     "name": "Senior Vice President",
+    "superRole": "Senior Management",
     "designated": true,
     "enumerate": "never",
     "summary": "The most senior, non-executive manager."
