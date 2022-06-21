@@ -44,7 +44,15 @@
   {
     "name": "Senior Management",
     "designated": true,
-    "summary": "A high level management position. Senior management is expected have expertise within their own domain, as well as strong general knowledge of general Company processes across all departments."
+    "summary": "A high level management position. Senior management is expected have expertise within their own domain, as well as strong general knowledge of general Company processes across all departments.",
+    "implies": [
+      {
+        "name": "Background checked, criminal"
+      },
+      {
+        "name": "Background checked, credit"
+      }
+    ]
   },
   {
     "name": "Executive Officer",
@@ -72,7 +80,7 @@
     "name": "Senior Vice President",
     "superRole": "Senior Management",
     "designated": true,
-    "enumerate": "never",
+    "enumerate": "when used",
     "summary": "The most senior, non-executive manager."
   },
   {
@@ -219,7 +227,15 @@
   {
     "name": "Accountant",
     "titular": true,
-    "summary": "Responsible for maintaining Company financial records."
+    "summary": "Responsible for maintaining Company financial records.",
+    "implies": [
+      {
+        "name": "Background checked, criminal"
+      },
+      {
+        "name": "Background checked, credit"
+      }
+    ]
   },
   {
     "name": "Chief Revenue Officer",
@@ -773,7 +789,15 @@
   {
     "name": "Policy Engineer",
     "titular": true,
-    "summary": "Manages and develops Company policy definition and implementation. Also works on verification, evidence gathering and compliance."
+    "summary": "Manages and develops Company policy definition and implementation. Also works on verification, evidence gathering and compliance.",
+    "implies": [
+      {
+        "name": "Background checked, criminal"
+      },
+      {
+        "name": "Background checked, credit"
+      }
+    ]
   },
   {
     "name": "Policy Engineer, Lead",
@@ -955,7 +979,12 @@
     "enumerate": "never",
     "abstract": true,
     "summary": "Any individual working within a technical capacity within the company.",
-    "enumerate": "when used"
+    "enumerate": "when used",
+    "implies": [
+      {
+        "name": "Background checked, criminal"
+      }
+    ]
   },
   {
     "name": "Head of Security & Compliance",
@@ -1056,5 +1085,17 @@
       "pattern": "((Senior|Snr\\.?|Sr\\.?( +Executive)?|Junior|Jnr\\.?|Jr\\.?)?[ -]+)Recruit(er|ment)"
     },
     "summary": "Recruits new talent to the team."
+  },
+  {
+    "name": "Background checked, criminal",
+    "designated": true,
+    "enumerate": "never",
+    "summary": "Positions where a criminal background check is required."
+  },
+  {
+    "name": "Background checked, credit",
+    "designated": true,
+    "enumerate": "never",
+    "summary": "Positions where a credit background check is required."
   }
 ]
