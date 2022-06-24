@@ -5,7 +5,7 @@
       "Oversee and review strategic vendors and service suppliers."
     ],
     "senior management team": [
-      "Is a member of the Senior Management Team. _(SOC 2 Type I ref 1.1, SOC 2 Type II ref 1.1)_",
+      "Is a member of the Senior Management Team. _(SOC 2 Type I/1.1, SOC 2 Type II/1.1)_",
       "Reviews Company controls at least annually."
     ],
     "support client accounts": [
@@ -35,11 +35,37 @@
   },
   "incident response": {
     "policy management": [
-      "Oversees development, verification, and implementation of the Incident Response Plan. _(PCI DSS v3.2.1 ref 12.10)_",
-      "Works with line management and technical staff to implement Company practice and refine the Incident Response Plan to ensure understanding, improve effectiveness, and where possible simplify and automate procedures. _(PCI DSS 3.2.1 ref 12.4, 12.10)_"
+      "Oversees development, verification, and implementation of the Incident Response Plan. _(PCI DSS 3.2.1/12.10)_",
+      "Works with line management and technical staff to implement Company practice and refine the Incident Response Plan to ensure understanding, improve effectiveness, and where possible simplify and automate procedures. _(PCI DSS 3.2.1/12.4, 12.10)_"
     ],
     "on call response": [
       "Is on call for significant incidents."
+    ]
+  },
+  "information security": {
+    "security and data awareness": [
+      "Make policy available to staff and ensure updates are disseminated in a timely fashion. _(PCI DSS 3.2.1/12.1)_",
+      "Ensure staff review relevant policy during onboarding and annually thereafter. _(PCI DSS 3.2.1/12.1.1)_",
+      "Develop acceptable use policy in coordinaton with technical experts. _(PCI DSS 3.2.1/12.3.5)_",
+      "Ensure staff is aware of the proper handling of data in general and cardholder data in particular which requires special handling. _(PCI DSS 3.2.1/12.3.10)"
+    ],
+    "risk assessments": [
+      "Oversee risk assessment to identify critical assets, threats, and potential as well as actual vulnerabilities annually and after significant enviornment changes. _(PCI DSS 3.2.1/12.2)_",
+      "Determines risk assessment process resulting in formal documentation. _(PCI DSS 3.2.1/12.2)_"
+    ],
+    "access oversight": [
+      "Work with senior management to define access and ownership of system components based on job titles and designated roles. _(PCI DSS 3.2.1/12.4)"
+      "Capture authentication procedures, track system access, and monitor actual access and implementation is in accordance with policy. _(PCI DSS 3.2.1/12.3.1, 12.3.2, 12.3.3)_"
+    ],
+    "critical device oversight": [
+      "Manage inventory of critical device inventory, including labeling, device location and other data. _(PCI DSS 3.2.1/12.2.4)_"
+    ],
+    "critical technology oversight": [
+      "Manage inventory of approved company technologies. _(PCI DSS 3.2.1/12.3.7)"
+    ],
+    "systems security": [
+      "Implement secure systems according to company standards and current best practices. _(PCI DSS 3.2.1/12.3.8)_",
+      "Implement 'least access' policies, including tightly scoped and time-limited policies for temporary access by staff or third-parties, such as vendors. _(PCI DSS 3.2.1/12.3.9)"
     ]
   },
   "networks": {
@@ -78,11 +104,11 @@
   },
   "security": {
     "policy management": [
-      "Works with senior management to develop and maintain the Company's security policy and infrastructure. _(PCI DSS 3.2.1 ref 12.4, 12.5.1, 12.5.3)_",
-      "Works with line management and technical staff to implement Company security policy to ensure understanding, improve effectiveness, and where possible simplify and automate security procedures. _(PCI DSS 3.2.1 ref 12.4, 12.5.1, 12.5.3)_"
+      "Works with senior management to develop and maintain the Company's security policy and infrastructure. _(PCI DSS 3.2.1/12.4, 12.5.1, 12.5.3)_",
+      "Works with line management and technical staff to implement Company security policy to ensure understanding, improve effectiveness, and where possible simplify and automate security procedures. _(PCI DSS 3.2.1/12.4, 12.5.1, 12.5.3)_"
     ],
     "security training": [
-      "Develops curriculum for and oversees implementation of a Security Awareness Program. _(PCI DSS 3.2.1 ref 12.6)_"
+      "Develops curriculum for and oversees implementation of a Security Awareness Program. _(PCI DSS 3.2.1/12.6)_"
     ]
   },
   "vendors": {
