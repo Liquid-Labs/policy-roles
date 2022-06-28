@@ -160,6 +160,9 @@
     ],
     "singular": true,
     "titular": true,
+    "duties": {
+      "information security": [ "risk assessment" ]
+    },
     "implies": [
       {
         "name": "Executive Officer",
@@ -194,6 +197,9 @@
     "superRole": "DevOps Engineer, Lead",
     "singular": true,
     "titular": true,
+    "duties": {
+      "information security": [ "systems security implementation", "system security monitoring" ]
+    },
     "implies": [
       {
         "name": "Department Heads",
@@ -813,7 +819,17 @@
     "duties": {
       "incident response": [ "policy management" ],
       "networks": [ "assess vulnerabilities" ],
-      "security": [ "policy management", "security training" ]
+      "information security": [
+        "access oversight",
+        "critical device oversight",
+        "critical technology oversight",
+        "security and compliance training",
+        "security and data awareness",
+        "system security monitoring",
+        "system security planning",
+        "vulnerability monitoring"
+      ],
+      "vendors": [ "procedure management", "vendor oversight" ]
     },
     "implies": [
       {
@@ -936,7 +952,7 @@
     "name": "Vendor Management Team",
     "designated": true,
     "duties": {
-      "vendors": [ "procedure management", "procedure enforcement" ]
+      "vendors": [ "procedure management", "vendor manager" ]
     },
     "summary": "Maintains and enforces procedures to ensure that important vendor and product information is properly maintained on an ongoing basis.",
     "enumerate": "always"

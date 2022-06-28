@@ -13,9 +13,6 @@
       "Provide internal support for technical and operational questions regarding client accounts."
     ]
   },
-  "client messaging": {
-    
-  },
   "compliance": {
     "policy management": [
       "Ensures Company Policy is compliant with PCI DSS 3.2.1, SOC 2 Type I, and SOC 2 Type II compliance standards.",
@@ -30,16 +27,19 @@
       "Oversees customer support and works closely with the Chief Marketing Officer to ensure a positive customer experience."
     ]
   },
-  "hosts": {
-    
-  },
   "incident response": {
     "policy management": [
-      "Oversees development, verification, and implementation of the Incident Response Plan. _(PCI DSS 3.2.1/12.10)_",
-      "Works with line management and technical staff to implement Company practice and refine the Incident Response Plan to ensure understanding, improve effectiveness, and where possible simplify and automate procedures. _(PCI DSS 3.2.1/12.4, 12.10)_"
+      "Oversees development, verification, and implementation of the Incident Response Plan including:\n  - define roles and responsibilities,\n  - document contacts,\n  - specify response procedures,\n  - address business continuity,\n  - address data backup,\n  - address and analyze legal requirements,\n  - ensure staff are assigned to cover all critical systems, and\n  - reference and integrate procedures from the payment brands. _(PCI DSS 3.2.1/12.10.1)_",
+      "Works with line management and technical staff to implement Company practice and refine the Incident Response Plan to ensure understanding, improve effectiveness, and where possible simplify and automate procedures. _(PCI DSS 3.2.1/12.4, 12.10.1)_",
+      "Work with senior management to assign respnosibility for IRP designated roles. _(PCI DSS 3.2.1/12.10.3)_",
+      "Ensure the IRP is updated and evolved to incorporate lessons learned and industry developments/best practices. _(PCI DSS 3.2.1/12.10.6)_"
+    ],
+    "IRP verification and testing": [
+      "Organize and oversee annual review and testing of the IRP. _(PCI DSS 3.2.1/12.10.2)_",
+      "Ensure that possible incident indicators including but not limited to IDS/IDP, FIM, and attempted firewall violations are properly captured and monitored. _(PCI DSS 3.2.1/12.10.5)_"
     ],
     "on call response": [
-      "Is on call for significant incidents."
+      "Is on call for significant incidents. _(PCI DSS 3.2.1/12.10.3)_"
     ]
   },
   "information security": {
@@ -48,7 +48,7 @@
       "Verify access and authorizatiotns are properly requested, documented, and comply with company policy. _(PCI DSS 3.2.1/12.5.5)_"
     ],
     "access oversight": [
-      "Work with senior management to define access and ownership of system components based on job titles and designated roles. _(PCI DSS 3.2.1/12.4)_"
+      "Work with senior management to define access and ownership of system components based on job titles and designated roles. _(PCI DSS 3.2.1/12.4)_",
       "Capture authentication procedures, track system access, and monitor actual access and implementation is in accordance with policy. _(PCI DSS 3.2.1/12.3.1, 12.3.2, 12.3.3)_",
       "Monitor and periodically audit system access. _(PCI DSS 3.2.1/12.5.5)_"
     ],
@@ -60,13 +60,14 @@
       "Manage inventory of approved company technologies. _(PCI DSS 3.2.1/12.3.7)_",
       "Periodically audit technology inventory."
     ],
-    "risk assessments": [
+    "risk assessment": [
       "Oversee risk assessment to identify critical assets, threats, and potential as well as actual vulnerabilities annually and after significant enviornment changes. _(PCI DSS 3.2.1/12.2)_",
       "Determines risk assessment process resulting in formal documentation. _(PCI DSS 3.2.1/12.2)_"
     ],
     "security and compliance training": [
       "Develops curriculum for and oversees implementation of a Security Awareness Program. _(PCI DSS 3.2.1/12.6)_",
-      "Ensure staff receive and acknowledge training in general security awareness during onboarding and at least annually thereafter. _(PCI DSS 3.2.1/12.6.1, 12.6.2)_"
+      "Ensure staff receive and acknowledge training in general security awareness during onboarding and at least annually thereafter. _(PCI DSS 3.2.1/12.6.1, 12.6.2)_",
+      "Ensure staff with IRP roles review and understand their responsibilities and participate in annual testing and/or training. _(PCI DSS 3.2.1/12.10.4)_"
     ],
     "security and data awareness": [
       "Make policy available to staff and ensure updates are disseminated in a timely fashion. _(PCI DSS 3.2.1/12.1)_",
@@ -120,9 +121,6 @@
       "Review and manage notifications from continuous internal vulnerability assessments.",
       "Ensure any necessary remediation is performed."
     ]
-  },
-  "operations": {
-    
   },
   "vendors": {
     "procedure management": [
