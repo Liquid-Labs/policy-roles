@@ -773,7 +773,7 @@
     "name": "Head of Customer Service",
     "superRole": "Customer Service Manager",
     "duties": {
-      "customer service": [ "coordinates with CMO" ]
+      "customer service": [ "coordinates with stakeholders" ]
     },
     "singular": true,
     "designated": true,
@@ -893,7 +893,7 @@
     "designated": true,
     "summary": "Oversees access configurations and manages user accounts for sensitive systems.",
     "duties": {
-      "networks": [ "access management" ]
+      "information security": [ "access management" ]
     },
     "enumerate": "always"
   },

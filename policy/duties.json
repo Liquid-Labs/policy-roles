@@ -1,139 +1,155 @@
-{
-  "business": {
-    "strategic vendor management": [
-      "Review and execute third party vendor and service contracts on behalf of the Company according to Vendor Management policies.",
-      "Oversee and review strategic vendors and service suppliers."
-    ],
-    "senior management team": [
-      "Is a member of the Senior Management Team. _(SOC 2 Type I/1.1, SOC 2 Type II/1.1)_",
-      "Reviews Company controls at least annually."
-    ],
-    "support client accounts": [
-      "Provide first tier support for incoming client technical issues.",
-      "Provide internal support for technical and operational questions regarding client accounts."
-    ]
+[
+  {
+    "domain": "business",
+    "duties": {
+      "strategic vendor management": [
+        "Review and execute third party vendor and service contracts on behalf of the Company according to Vendor Management policies.",
+        "Oversee and review strategic vendors and service suppliers."
+      ],
+      "senior management team": [
+        "Is a member of the Senior Management Team. _(SOC 2 Type I/1.1, SOC 2 Type II/1.1)_",
+        "Reviews Company controls at least annually."
+      ],
+      "support client accounts": [
+        "Provide first tier support for incoming client technical issues.",
+        "Provide internal support for technical and operational questions regarding client accounts."
+      ]
+    }
   },
-  "compliance": {
-    "policy management": [
-      "Ensures Company Policy is compliant with PCI DSS 3.2.1, SOC 2 Type I, and SOC 2 Type II compliance standards.",
-      "Manages the compliance calendar to ensure reviews, audits, and other necessary tasks are performed in a timely manner consistent with company policy and industry standards.",
-      "Oversee and ensure updates to the Company Policy are according to the Company Change Control Policy.",
-      "Works with <role>department heads</role> to define, implement, and maintain procedures.",
-      "Independently verifies policy implementation."
-    ]
+  {
+    "domain": "compliance",
+    "duties": {
+      "policy management": [
+        "Ensures Company Policy is compliant with PCI DSS 3.2.1, SOC 2 Type I, and SOC 2 Type II compliance standards.",
+        "Manages the compliance calendar to ensure reviews, audits, and other necessary tasks are performed in a timely manner consistent with company policy and industry standards.",
+        "Oversee and ensure updates to the Company Policy are according to the Company Change Control Policy.",
+        "Works with <role>department heads</role> to define, implement, and maintain procedures.",
+        "Independently verifies policy implementation."
+      ]
+    }
   },
-  "customer service": {
-    "coordinates with CMO": [
-      "Oversees customer support and works closely with the Chief Marketing Officer to ensure a positive customer experience."
-    ]
+  {
+    "domain": "customer service",
+    "duties": {
+      "coordinates with stakeholders": [
+        "Oversees customer support and works closely with the Chief Marketing Officer to ensure a positive customer experience."
+      ]
+    }
   },
-  "incident response": {
-    "policy management": [
-      "Oversees development, verification, and implementation of the Incident Response Plan including:\n  - define roles and responsibilities,\n  - document contacts,\n  - specify response procedures,\n  - address business continuity,\n  - address data backup,\n  - address and analyze legal requirements,\n  - ensure staff are assigned to cover all critical systems, and\n  - reference and integrate procedures from the payment brands. _(PCI DSS 3.2.1/12.10.1)_",
-      "Works with line management and technical staff to implement Company practice and refine the Incident Response Plan to ensure understanding, improve effectiveness, and where possible simplify and automate procedures. _(PCI DSS 3.2.1/12.4, 12.10.1)_",
-      "Work with senior management to assign respnosibility for IRP designated roles. _(PCI DSS 3.2.1/12.10.3)_",
-      "Ensure the IRP is updated and evolved to incorporate lessons learned and industry developments/best practices. _(PCI DSS 3.2.1/12.10.6)_"
-    ],
-    "IRP verification and testing": [
-      "Organize and oversee annual review and testing of the IRP. _(PCI DSS 3.2.1/12.10.2)_",
-      "Ensure that possible incident indicators including but not limited to IDS/IDP, FIM, and attempted firewall violations are properly captured and monitored. _(PCI DSS 3.2.1/12.10.5)_"
-    ],
-    "on call response": [
-      "Is on call for significant incidents. _(PCI DSS 3.2.1/12.10.3)_"
-    ]
+  {
+    "domain": "incident response",
+    "duties": {
+      "policy management": [
+        "Oversees development, verification, and implementation of the Incident Response Plan including:\n  - define roles and responsibilities,\n  - document contacts,\n  - specify response procedures,\n  - address business continuity,\n  - address data backup,\n  - address and analyze legal requirements,\n  - ensure staff are assigned to cover all critical systems, and\n  - reference and integrate procedures from the payment brands. _(PCI DSS 3.2.1/12.10.1)_",
+        "Works with line management and technical staff to implement Company practice and refine the Incident Response Plan to ensure understanding, improve effectiveness, and where possible simplify and automate procedures. _(PCI DSS 3.2.1/12.4, 12.10.1)_",
+        "Work with senior management to assign respnosibility for IRP designated roles. _(PCI DSS 3.2.1/12.10.3)_",
+        "Ensure the IRP is updated and evolved to incorporate lessons learned and industry developments/best practices. _(PCI DSS 3.2.1/12.10.6)_"
+      ],
+      "IRP verification and testing": [
+        "Organize and oversee annual review and testing of the IRP. _(PCI DSS 3.2.1/12.10.2)_",
+        "Ensure that possible incident indicators including but not limited to IDS/IDP, FIM, and attempted firewall violations are properly captured and monitored. _(PCI DSS 3.2.1/12.10.5)_"
+      ],
+      "on call response": [
+        "Is on call for significant incidents. _(PCI DSS 3.2.1/12.10.3)_"
+      ]
+    }
   },
-  "information security": {
-    "access management": [
-      "Administer sensitive user accounts. _(PCI DSS 3.2.1/12.5.4, 12.5.5)_",
-      "Verify access and authorizatiotns are properly requested, documented, and comply with company policy. _(PCI DSS 3.2.1/12.5.5)_"
-    ],
-    "access oversight": [
-      "Work with senior management to define access and ownership of system components based on job titles and designated roles. _(PCI DSS 3.2.1/12.4)_",
-      "Capture authentication procedures, track system access, and monitor actual access and implementation is in accordance with policy. _(PCI DSS 3.2.1/12.3.1, 12.3.2, 12.3.3)_",
-      "Monitor and periodically audit system access. _(PCI DSS 3.2.1/12.5.5)_"
-    ],
-    "critical device oversight": [
-      "Manage inventory of critical device inventory, including labeling, device location and other data. _(PCI DSS 3.2.1/12.2.4)_",
-      "Periodically audit device inventory."
-    ],
-    "critical technology oversight": [
-      "Manage inventory of approved company technologies. _(PCI DSS 3.2.1/12.3.7)_",
-      "Periodically audit technology inventory."
-    ],
-    "risk assessment": [
-      "Oversee risk assessment to identify critical assets, threats, and potential as well as actual vulnerabilities annually and after significant enviornment changes. _(PCI DSS 3.2.1/12.2)_",
-      "Determines risk assessment process resulting in formal documentation. _(PCI DSS 3.2.1/12.2)_"
-    ],
-    "security and compliance training": [
-      "Develops curriculum for and oversees implementation of a Security Awareness Program. _(PCI DSS 3.2.1/12.6)_",
-      "Ensure staff receive and acknowledge training in general security awareness during onboarding and at least annually thereafter. _(PCI DSS 3.2.1/12.6.1, 12.6.2)_",
-      "Ensure staff with IRP roles review and understand their responsibilities and participate in annual testing and/or training. _(PCI DSS 3.2.1/12.10.4)_"
-    ],
-    "security and data awareness": [
-      "Make policy available to staff and ensure updates are disseminated in a timely fashion. _(PCI DSS 3.2.1/12.1)_",
-      "Ensure staff review relevant policy during onboarding and annually thereafter. _(PCI DSS 3.2.1/12.1.1)_",
-      "Develop acceptable use policy in coordinaton with technical experts. _(PCI DSS 3.2.1/12.3.5)_",
-      "Ensure staff is aware of the proper handling of data in general and cardholder data in particular which requires special handling. _(PCI DSS 3.2.1/12.3.10_)",
-      "Work with <role>Senior Management</role> to assign, document, and make staff aware of responsibilities under this company policy. _(PCI DSS 3.2.1/12.5)_",
-      "Work with <role>Senior Management</role> to develop, document, and distribute company policy. _(PCI DSS 3.2.1/12.5.1)_"
-    ],
-    "systems security implementation": [
-      "Implement secure systems according to company standards and current best practices. _(PCI DSS 3.2.1/12.3.8)_",
-      "Implement 'least access' policies, including tightly scoped and time-limited policies for temporary access by staff or third-parties, such as vendors. _(PCI DSS 3.2.1/12.3.9)_"
-    ],
-    "system security monitoring": [
-      "Monitor and analyze security events and—where indicated—alert appropriate personnel and/or take pre-scripted action _(PCI DSS 3.2.1/12.5.2)_"
-    ],
-    "system security planning": [
-      "Work with <role>Senior Management</role> to develop, distribute, and implement security incident response and escelation procedures. _(PCI DSS 3.2.1/12.5.3)_"
-    ],
-    "vulnerability monitoring": [
-      "Monitor and analyze third-party vulnerability announcements and—where indicated—alert appropriate personnel and/or take pre-scripted action. _(PCI DSS 3.2.1/12.5.2)_"
-    ]
+  {
+    "domain": "information security",
+    "duties": {
+      "access management": [
+        "Administer sensitive user accounts. _(PCI DSS 3.2.1/12.5.4, 12.5.5)_",
+        "Verify access and authorizatiotns are properly requested, documented, and comply with company policy. _(PCI DSS 3.2.1/12.5.5)_"
+      ],
+      "access oversight": [
+        "Work with senior management to define access and ownership of system components based on job titles and designated roles. _(PCI DSS 3.2.1/12.4)_",
+        "Capture authentication procedures, track system access, and monitor actual access and implementation is in accordance with policy. _(PCI DSS 3.2.1/12.3.1, 12.3.2, 12.3.3)_",
+        "Monitor and periodically audit system access. _(PCI DSS 3.2.1/12.5.5)_"
+      ],
+      "critical device oversight": [
+        "Manage inventory of critical device inventory, including labeling, device location and other data. _(PCI DSS 3.2.1/12.2.4)_",
+        "Periodically audit device inventory."
+      ],
+      "critical technology oversight": [
+        "Manage inventory of approved company technologies. _(PCI DSS 3.2.1/12.3.7)_",
+        "Periodically audit technology inventory."
+      ],
+      "risk assessment": [
+        "Oversee risk assessment to identify critical assets, threats, and potential as well as actual vulnerabilities annually and after significant enviornment changes. _(PCI DSS 3.2.1/12.2)_",
+        "Determines risk assessment process resulting in formal documentation. _(PCI DSS 3.2.1/12.2)_"
+      ],
+      "security and compliance training": [
+        "Develops curriculum for and oversees implementation of a Security Awareness Program. _(PCI DSS 3.2.1/12.6)_",
+        "Ensure staff receive and acknowledge training in general security awareness during onboarding and at least annually thereafter. _(PCI DSS 3.2.1/12.6.1, 12.6.2)_",
+        "Ensure staff with IRP roles review and understand their responsibilities and participate in annual testing and/or training. _(PCI DSS 3.2.1/12.10.4)_"
+      ],
+      "security and data awareness": [
+        "Make policy available to staff and ensure updates are disseminated in a timely fashion. _(PCI DSS 3.2.1/12.1)_",
+        "Ensure staff review relevant policy during onboarding and annually thereafter. _(PCI DSS 3.2.1/12.1.1)_",
+        "Develop acceptable use policy in coordinaton with technical experts. _(PCI DSS 3.2.1/12.3.5)_",
+        "Ensure staff is aware of the proper handling of data in general and cardholder data in particular which requires special handling. _(PCI DSS 3.2.1/12.3.10_)",
+        "Work with <role>Senior Management</role> to assign, document, and make staff aware of responsibilities under this company policy. _(PCI DSS 3.2.1/12.5)_",
+        "Work with <role>Senior Management</role> to develop, document, and distribute company policy. _(PCI DSS 3.2.1/12.5.1)_"
+      ],
+      "systems security implementation": [
+        "Implement secure systems according to company standards and current best practices. _(PCI DSS 3.2.1/12.3.8)_",
+        "Implement 'least access' policies, including tightly scoped and time-limited policies for temporary access by staff or third-parties, such as vendors. _(PCI DSS 3.2.1/12.3.9)_"
+      ],
+      "system security monitoring": [
+        "Monitor and analyze security events and—where indicated—alert appropriate personnel and/or take pre-scripted action _(PCI DSS 3.2.1/12.5.2)_"
+      ],
+      "system security planning": [
+        "Work with <role>Senior Management</role> to develop, distribute, and implement security incident response and escelation procedures. _(PCI DSS 3.2.1/12.5.3)_"
+      ],
+      "vulnerability monitoring": [
+        "Monitor and analyze third-party vulnerability announcements and—where indicated—alert appropriate personnel and/or take pre-scripted action. _(PCI DSS 3.2.1/12.5.2)_"
+      ]
+    }
   },
-  "networks": {
-    "access management": [
-      "Ensure access policies and user configurations implement Company policy and a general \"least necessary access\" approach.",
-      "Ensure access is disabled when no longer required.",
-      "Review and audit user accounts and access levels."
-    ],
-    "administration": [
-      "Oversee system updates.",
-      "Manually intervene as appropriate to address system issues and respond to incidents."
-    ],
-    "design": [
-      "Specify changes to be made change tickets.",
-      "Review and approve provisional change tickets."
-    ],
-    "implement and test": [
-      "Ensures that changes are linked to the relevant change ticket(s).",
-      "Implements network changes in test environments according to Company policy.",
-      "Provides test evidence."
-    ],
-    "review and verify changes": [
-      "Reviews network changes according to Company policy.",
-      "Ensures evidentiary requirements are met, including test reports and proper linkage between changes and change tickets",
-      "Work with change authors to address any issues."
-    ],
-    "assess vulnerabilities": [
-      "Ensure ASV scans are performed quarterly.",
-      "Ensure external penetration tests are performed at least annually.",
-      "Review and manage notifications from continuous internal vulnerability assessments.",
-      "Ensure any necessary remediation is performed."
-    ]
+  {
+    "domain": "networks",
+    "duties": {
+      "administration": [
+        "Oversee system updates.",
+        "Manually intervene as appropriate to address system issues and respond to incidents."
+      ],
+      "design": [
+        "Specify changes to be made change tickets.",
+        "Review and approve provisional change tickets."
+      ],
+      "implement and test": [
+        "Ensures that changes are linked to the relevant change ticket(s).",
+        "Implements network changes in test environments according to Company policy.",
+        "Provides test evidence."
+      ],
+      "review and verify changes": [
+        "Reviews network changes according to Company policy.",
+        "Ensures evidentiary requirements are met, including test reports and proper linkage between changes and change tickets",
+        "Work with change authors to address any issues."
+      ],
+      "assess vulnerabilities": [
+        "Ensure ASV scans are performed quarterly.",
+        "Ensure external penetration tests are performed at least annually.",
+        "Review and manage notifications from continuous internal vulnerability assessments.",
+        "Ensure any necessary remediation is performed."
+      ]
+    }
   },
-  "vendors": {
-    "procedure management": [
-      "Work with <role>Senior Management</role> to develop policy regarding evaluation, selection, due dilligance and engagement of vendors. _(PCI DSS 3.2.1/12.8.3)_",
-      "Oversee evaluation and update of department processes regarding vendor management to ensure vendor and product records are complete and updated as needed."
-    ],
-    "vendor manager": [
-      "Ensure written agreements between managed vendors and company are in place and up-to-date. _(PCI DSS 3.2.1/12.8.2)_"
-    ],
-    "vendor oversight": [
-      "Maintain a list of vendors—service providers, software providers, hardware providers, etc.—and the services and technologies provided along with the company agreements. _(PCI DSS 3.2.1/12.8.1, 12.8.2)_",
-      "Periodically audit vendor inventory for correctness, agreements, and compliance requirements{{ if .HAS_CARDHOLDER_DATA }}; in particular that vendors maintain PCI DSS compliance where required{{ end }}. _(PCI DSS 3.2.1/12.8.4)_",
-      "Maintain list of vendor/service provider responsibities{{ if .HAS_CARDHOLDER_DATA }}—especially as regards PCI DSS requirements{{ end }}. _(PCI DSS 3.2.1 12.8.5)_"
-    ]
+  {
+    "domain": "vendors",
+    "duties": {
+      "procedure management": [
+        "Work with <role>Senior Management</role> to develop policy regarding evaluation, selection, due dilligance and engagement of vendors. _(PCI DSS 3.2.1/12.8.3)_",
+        "Oversee evaluation and update of department processes regarding vendor management to ensure vendor and product records are complete and updated as needed."
+      ],
+      "vendor manager": [
+        "Ensure written agreements between managed vendors and company are in place and up-to-date. _(PCI DSS 3.2.1/12.8.2)_"
+      ],
+      "vendor oversight": [
+        "Maintain a list of vendors—service providers, software providers, hardware providers, etc.—and the services and technologies provided along with the company agreements. _(PCI DSS 3.2.1/12.8.1, 12.8.2)_",
+        "Periodically audit vendor inventory for correctness, agreements, and compliance requirements{{ if .HAS_CARDHOLDER_DATA }}; in particular that vendors maintain PCI DSS compliance where required{{ end }}. _(PCI DSS 3.2.1/12.8.4)_",
+        "Maintain list of vendor/service provider responsibities{{ if .HAS_CARDHOLDER_DATA }}—especially as regards PCI DSS requirements{{ end }}. _(PCI DSS 3.2.1 12.8.5)_"
+      ]
+    }
   }
-}
+]
