@@ -59,7 +59,7 @@
     "duties": {
       "access management": [
         "Administer sensitive user accounts. _(PCI DSS 3.2.1/12.5.4, 12.5.5)_",
-        "Verify access and authorizatiotns are properly requested, documented, and comply with company policy. _(PCI DSS 3.2.1/12.5.5)_"
+        "Verify access and authorizations are properly requested, documented, and comply with company policy. _(PCI DSS 3.2.1/12.5.5)_"
       ],
       "access oversight": [
         "Work with senior management to define access and ownership of system components based on job titles and designated roles. _(PCI DSS 3.2.1/12.4)_",
@@ -75,7 +75,7 @@
         "Periodically audit technology inventory."
       ],
       "risk assessment": [
-        "Oversee risk assessment to identify critical assets, threats, and potential as well as actual vulnerabilities annually and after significant enviornment changes. _(PCI DSS 3.2.1/12.2)_",
+        "Oversee risk assessment to identify critical assets, threats, and potential as well as actual vulnerabilities annually and after significant environment changes. _(PCI DSS 3.2.1/12.2)_",
         "Determines risk assessment process resulting in formal documentation. _(PCI DSS 3.2.1/12.2)_"
       ],
       "security and compliance training": [
@@ -95,16 +95,20 @@
         "Implement secure systems according to company standards and current best practices. _(PCI DSS 3.2.1/12.3.8)_",
         "Implement 'least access' policies, including tightly scoped and time-limited policies for temporary access by staff or third-parties, such as vendors. _(PCI DSS 3.2.1/12.3.9)_"
       ],
-      "system security monitoring": [
+      "systems security monitoring": [
         "Monitor and analyze security events and—where indicated—alert appropriate personnel and/or take pre-scripted action _(PCI DSS 3.2.1/12.5.2)_"
       ],
-      "system security planning": [
+      "systems security planning": [
         "Work with <role>Senior Management</role> to develop, distribute, and implement security incident response and escelation procedures. _(PCI DSS 3.2.1/12.5.3)_"
       ],
       "vulnerability monitoring": [
         "Monitor and analyze third-party vulnerability announcements and—where indicated—alert appropriate personnel and/or take pre-scripted action. _(PCI DSS 3.2.1/12.5.2)_"
       ]
-    }
+    },
+    "relatedDuties": [
+      { "domain": "incident response", "dutyGroups": "*" },
+      { "domain": "vendors", "dutyGroups": "*" }
+    ]
   },
   {
     "domain": "networks",
@@ -148,7 +152,7 @@
       "vendor oversight": [
         "Maintain a list of vendors—service providers, software providers, hardware providers, etc.—and the services and technologies provided along with the company agreements. _(PCI DSS 3.2.1/12.8.1, 12.8.2)_",
         "Periodically audit vendor inventory for correctness, agreements, and compliance requirements{{ if .HAS_CARDHOLDER_DATA }}; in particular that vendors maintain PCI DSS compliance where required{{ end }}. _(PCI DSS 3.2.1/12.8.4)_",
-        "Maintain list of vendor/service provider responsibities{{ if .HAS_CARDHOLDER_DATA }}—especially as regards PCI DSS requirements{{ end }}. _(PCI DSS 3.2.1 12.8.5)_"
+        "Maintain list of vendor/service provider responsibilities{{ if .HAS_CARDHOLDER_DATA }}—especially as regards PCI DSS requirements{{ end }}. _(PCI DSS 3.2.1 12.8.5)_"
       ]
     }
   }
