@@ -47,6 +47,9 @@
     "summary": "A high level management position. Senior management is expected have expertise within their own domain, as well as strong general knowledge of general Company processes across all departments.",
     "implies": [
       {
+        "name": "Vendor Management Team"
+      },
+      {
         "name": "Background checked, criminal"
       },
       {
@@ -161,7 +164,8 @@
     "singular": true,
     "titular": true,
     "duties": {
-      "information security": [ "risk assessment" ]
+      "information security": [ "risk assessment" ],
+      "networks": [ "administration" ]
     },
     "implies": [
       {
@@ -198,7 +202,8 @@
     "singular": true,
     "titular": true,
     "duties": {
-      "information security": [ "systems security implementation", "system security monitoring" ]
+      "information security": [ "systems security implementation", "systems security monitoring" ],
+      "networks": [ "administration" ]
     },
     "implies": [
       {
@@ -817,7 +822,10 @@
     "singular": true,
     "titular": true,
     "duties": {
-      "incident response": [ "policy management" ],
+      "incident response": [
+        "IRP verification and testing",
+        "policy management"
+      ],
       "networks": [ "assess vulnerabilities" ],
       "information security": [
         "access oversight",
@@ -825,8 +833,8 @@
         "critical technology oversight",
         "security and compliance training",
         "security and data awareness",
-        "system security monitoring",
-        "system security planning",
+        "systems security monitoring",
+        "systems security planning",
         "vulnerability monitoring"
       ],
       "vendors": [ "procedure management", "vendor oversight" ]
@@ -952,7 +960,7 @@
     "name": "Vendor Management Team",
     "designated": true,
     "duties": {
-      "vendors": [ "procedure management", "vendor manager" ]
+      "vendors": [ "vendor manager" ]
     },
     "summary": "Maintains and enforces procedures to ensure that important vendor and product information is properly maintained on an ongoing basis.",
     "enumerate": "always"
