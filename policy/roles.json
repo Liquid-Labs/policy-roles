@@ -1087,6 +1087,11 @@
     "summary": "Leads internal IT infrastructure support team."
   },
   {
+    "name": "Production Administrator",
+    "designated": true,
+    "summary": "Indicates that the designated staff have full production administration capabilities except the ability to manage admin users, which is indicated by the 'Access Manager' designated role."
+  },
+  {
     "name": "Office Administrator",
     "titular": true,
     "summary": "Completes clerical and administrative tasks for an office. Their main duties include welcoming and directing visitors, coordinating meetings and appointments and performing clerical tasks, like answering phones and responding to emails."
