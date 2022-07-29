@@ -814,7 +814,12 @@
     "name": "Policy Engineer, Lead",
     "superRole": "Policy Engineer",
     "titular": true,
-    "summary": "Leads the Company's internal policy development, implementation, and verification."
+    "summary": "Leads the Company's internal policy development, implementation, and verification.",
+    "implies": [
+      {
+        "name": "Policy Document Manager"
+      }
+    ]
   },
   {
     "name": "Security Officer",
@@ -843,6 +848,9 @@
       {
         "name": "Incident Response Team",
         "mngrProtocol": "self"
+      },
+      {
+        "name": "Production Auditor"
       }
     ],
     "summary": "Non-executive officer with final responsibility for matters relating to Company security."
@@ -1092,6 +1100,11 @@
     "summary": "Indicates that the designated staff have full production administration capabilities except the ability to manage admin users, which is indicated by the 'Access Manager' designated role."
   },
   {
+    "name": "Production Auditor",
+    "designated": true,
+    "summary": "Production Auditors have read-only access to all CDE runtime and adjacent components."
+  },
+  {
     "name": "Office Administrator",
     "titular": true,
     "summary": "Completes clerical and administrative tasks for an office. Their main duties include welcoming and directing visitors, coordinating meetings and appointments and performing clerical tasks, like answering phones and responding to emails."
@@ -1126,5 +1139,10 @@
     "designated": true,
     "enumerate": "never",
     "summary": "Positions where a credit background check is required."
+  },
+  {
+    "name": "Policy Document Manager",
+    "designated": true,
+    "summary": "Manages policy documents including company procedures, stated policy, and key tracking inventories."
   }
 ]
