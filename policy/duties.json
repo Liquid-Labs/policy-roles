@@ -140,6 +140,20 @@
     }
   },
   {
+    "domain": "user devices",
+    "duties": {
+      "harden user devices": [
+        "Install firewall, HD encryption, and generally harden configuration according to company policy. _(PCI DSS 3.2.1 ref 1.4, 3.4.1, 8.1.8, 12.3.2)_"
+      ],
+      "issue user devices": [
+        "Securely transfer the hardened device to the assigned staff member and update the inventory. _(PCI DSS 3.2.1 ref 2.4)_"
+      ],
+      "track user device inventory": [
+        "Maintain an accurate inventory of company issued staff devices as devices are issued, replaced, reclaimed, etc. _(PCI DSS 3.2.1 ref 2.4)_"
+      ]
+    }
+  },
+  {
     "domain": "vendors",
     "duties": {
       "procedure management": [

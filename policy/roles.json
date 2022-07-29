@@ -1144,5 +1144,13 @@
     "name": "Policy Document Manager",
     "designated": true,
     "summary": "Manages policy documents including company procedures, stated policy, and key tracking inventories."
+  },
+  {
+    "name": "Staff Hardware Manager",
+    "designated": true,
+    "summary": "Is responsible for configuring, issuing, and tracking inventory of staff hardware (e.g., laptops, mobile devices, etc.).",
+    "duties": {
+      "user devices": [ "harden user devices", "issue user devices", "track user device inventory" ]
+    }
   }
 ]
