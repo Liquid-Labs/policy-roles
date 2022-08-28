@@ -660,6 +660,10 @@
     "titular": true,
     "qualifiable": true,
     "summary": "Qualified to configure and manage Company networks.",
+    "matcher": {
+      "pattern": "((?:Junior|Jr\\.?|Jnr\\.?) )?(?:(.+) )?Network (?:Engineer|Developer)",
+      "qualifierGroup": 1
+    },
     "duties": {
       "networks": [ "implement and test" ]
     }
@@ -671,7 +675,7 @@
     "qualifiable": true,
     "summary": "Qualified to review and approve changes to production networks.",
     "matcher": {
-      "pattern": "(?:Head|Lead|Chief) (?:(.+) )?Network (?:Engineer|Developer)",
+      "pattern": "(?:Senior|Sr\\.?|Snr\\.?) (?:(.+) )?Network (?:Engineer|Developer)",
       "qualifierGroup": 1
     },
     "duties": {
@@ -692,14 +696,22 @@
         "mngrProtocol": "self"
       }
     ],
-    "summary": "Has final responsibility for the integrity and security of production networks.; Lead Network Engineer approval is required for changes to sensitive networks providing access to private customer data, under regulatory scrutiny, or any change of exceptional complexity."
+    "summary": "Has final responsibility for the integrity and security of production networks.; Lead Network Engineer approval is required for changes to sensitive networks providing access to private customer data, under regulatory scrutiny, or any change of exceptional complexity.",
+    "matcher": {
+      "pattern": "(?:Head|Lead|Chief) (?:(.+) )?Network (?:Engineer|Developer)",
+      "qualifierGroup": 1
+    }
   },
   {
     "name": "Cloud Engineer",
     "superRole": "IT Personnel",
     "titular": true,
     "qualifiable": true,
-    "summary": "Qualified to configure and manage [qual] cloud services."
+    "summary": "Qualified to configure and manage [qual] cloud services.",
+    "matcher": {
+      "pattern": "(?:Junior|Jr\\.?|Jnr\\.?) (?:(.+) )?Cloud (?:Engineer|Developer)",
+      "qualifierGroup": 1
+    }
   },
   {
     "name": "Cloud Engineer, Senior",
@@ -708,7 +720,7 @@
     "qualifiable": true,
     "summary": "Qualified to review and approve changes to production [qual] cloud services.",
     "matcher": {
-      "pattern": "(?:Head|Lead|Chief) (?:(.+) )?Cloud (?:Engineer|Developer)",
+      "pattern": "(?:Senior|Sr\\.?|Snr\\.?) (?:(.+) )?Cloud (?:Engineer|Developer)",
       "qualifierGroup": 1
     }
   },
@@ -723,7 +735,11 @@
         "mngrProtocol": "self"
       }
     ],
-    "summary": "Has final responsibility for production cloud services systems.; Head Cloud Engineer approval is required for sensitive changes involving cloud services security, regulatory issues, or exceptional complexity."
+    "summary": "Has final responsibility for production cloud services systems.; Head Cloud Engineer approval is required for sensitive changes involving cloud services security, regulatory issues, or exceptional complexity.",
+    "matcher": {
+      "pattern": "(?:Head|Lead|Chief) (?:(.+) )?Cloud (?:Engineer|Developer)",
+      "qualifierGroup": 1
+    }
   },
   {
     "name": "Quality Engineer",
@@ -731,9 +747,9 @@
     "titular": true,
     "qualifiable": true,
     "matcher": {
-      "pattern": "(Junior|Jnr\\.?|Jr\\.? *)?((.+) +)?((Quality|QA) +Engineer|Tester)",
+      "pattern": "(?:Junior|Jnr\\.?|Jr\\.? *)?(?:(.+) +)?(?:(?:Quality|QA) +Engineer|Tester)",
       "antiPattern": "Senior|Snr\\.?|Sr\\.?|Lead|Head",
-      "qualifierGroup": 3
+      "qualifierGroup": 1
     },
     "summary": "Qualified to ascertain correctness and conformance of Company products."
   },
@@ -754,7 +770,9 @@
     "superRole": "Quality Engineer, Senior",
     "titular": true,
     "matcher": {
-      "pattern": "(Head|Lead) +((Quality|QA) +Engineer|Tester)|Tester +Lead"
+      "pattern": "(?:(?:Head|Lead|Chief) +)?(?:(.+) +)?(?:Quality|QA|Tester) +(?:Engineer|Lead)",
+      "antiPattern": "Senior|Snr\\.?|Sr\\.?|Junior|Jnr\\.|Jr\\.",
+      "qualifierGroup": 1
     },
     "summary": "Has final responsibility for quality assurance."
   },
