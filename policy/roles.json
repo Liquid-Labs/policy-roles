@@ -663,6 +663,7 @@
     "summary": "Qualified to configure and manage Company networks.",
     "matcher": {
       "pattern": "((?:Junior|Jr\\.?|Jnr\\.?) )?(?:(.+) )?Network (?:Engineer|Developer)",
+      "antiPattern": "Senior|Snr\\.?|Sr\\.?|Lead|Head",
       "qualifierGroup": 1
     },
     "duties": {
@@ -711,6 +712,7 @@
     "summary": "Qualified to configure and manage [qual] cloud services.",
     "matcher": {
       "pattern": "(?:Junior|Jr\\.?|Jnr\\.?) (?:(.+) )?Cloud (?:Engineer|Developer)",
+      "antiPattern": "Senior|Snr\\.?|Sr\\.?|Lead|Head",
       "qualifierGroup": 1
     }
   },
