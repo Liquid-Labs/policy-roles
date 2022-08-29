@@ -21,6 +21,7 @@
     "name": "Board of Directors",
     "titular": true,
     "singular": true,
+    "selfManaged": true,
     "summary": "Appoints and monitors the Chief Executive Officer and the general health of the Company."
   },
   {
