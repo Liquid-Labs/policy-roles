@@ -250,6 +250,15 @@
     ]
   },
   {
+    "name": "Accountant, Senior",
+    "superRole": "Accountant",
+    "titular": true,
+    "summary": "Is responsible for managing corporate books.",
+    "matcher": {
+      "pattern": "(?:(?:Senior|Snr\\.?|Sr\\.?) +)(?:(?:[a-zA-Z]+) +)?(?:Accountant|CPA)"
+    }
+  },
+  {
     "name": "Chief Revenue Officer",
     "singular": true,
     "titular": true,
