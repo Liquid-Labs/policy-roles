@@ -475,6 +475,13 @@
     "summary": "Oversees personnel management and compliance."
   },
   {
+    "name": "Chief Product Officer",
+    "aliases": [ "CPO" ],
+    "titular": true,
+    "singular": true,
+    "summary": "Oversees strategic product planning and short to medium term feature proritization."
+  },
+  {
     "name": "Product Manager",
     "titular": true,
     "summary": "Responsible for coordinating stakeholder input and managing product specification and setting development priorities."
@@ -1182,5 +1189,10 @@
     "duties": {
       "user devices": [ "harden user devices", "issue user devices", "track user device inventory" ]
     }
+  },
+  {
+    "name": "General Consultant",
+    "titular": true,
+    "summary": "Catch all consultant."
   }
 ]
