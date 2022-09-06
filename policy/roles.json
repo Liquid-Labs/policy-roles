@@ -1194,5 +1194,10 @@
     "name": "General Consultant",
     "titular": true,
     "summary": "Catch all consultant."
+  },
+  {
+    "name": "Outside Consultant",
+    "designated": true,
+    "summary": "A consultant who operates outside the Company. One or more staff members within the Company are responsible for the Outside Consultant's work. The Outside Consultant is generally excluded from training requirements."
   }
 ]
