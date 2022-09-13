@@ -2,10 +2,8 @@
   {
     "role": "Staff",
     "policies": [
-      "staff/acceptable-use/.+",
-      "security/Staff Security Cheat Sheet",
-      "staff/policy/Information User Policy",
-      "staff/policy/Travel and Business Expense Policy"
+      "staff/policies/Acceptable Use Policy",
+      "information_security/Security Cheat Sheet"
     ]
   },
   {
@@ -34,27 +32,25 @@
     "role": "Senior Management Team",
     "policies": [
       "security/.+",
-      "information_security/policy/Data Management Policy",
-      "information_security/standards/Confidential Data Handling Standards",
-      "information_security/standards/Data Classification and Inventory Standards",
-      "projects/policy/Change Control Policy",
-      "incident-response/.+"
+      "information_security/policies/.+",
+      "information_security/standards/Data .+ Standards",
+      "information_security/standards/Sensitive Password Standards",
+      "projects/policies/Change Control Policy",
+      "incident_response/.+"
     ]
   },
   {
     "role": "Executive Officer",
     "policies": [
-      "information_security/policy/Data Management Policy",
-      "information_security/standards/Confidential Data Handling Standards",
-      "information_security/standards/Data Classification and Inventory Standards"
+      "information_security/policies/.+",
+      "information_security/standards/Data .+ Standards"
     ]
   },
   {
     "role": "Accountant",
     "policies": [
-      "information_security/policy/Data Management Policy",
-      "information_security/standards/Confidential Data Handling Standards",
-      "information_security/standards/Data Classification and Inventory Standards"
+      "information_security/policies/.+",
+      "information_security/standards/Data .+ Standards"
     ]
   },
   {
@@ -66,10 +62,8 @@
   {
     "role": "Customer Service Agent",
     "policies": [
-      "customer-support/.+",
-      "information_security/policy/Data Management Policy",
-      "information_security/standards/Confidential Data Handling Standards",
-      "information_security/standards/Data Classification and Inventory Standards"
+      "information_security/policies/.+",
+      "information_security/standards/Data .+ Standards"
     ]
   },
   {
@@ -81,9 +75,8 @@
   {
     "role": "Human Resources Agent",
     "policies": [
-      "information_security/policy/Data Management Policy",
-      "information_security/standards/Confidential Data Handling Standards",
-      "information_security/standards/Data Classification and Inventory Standards"
+      "information_security/policies/.+",
+      "information_security/standards/Data .+ Standards"
     ]
   },
   {
@@ -118,7 +111,7 @@
     "role": "Software Engineer, Lead",
     "policies": [
       "security/.+Access Management.*",
-      "incident-response/.+"
+      "incident_response/.+"
     ]
   },
   {
@@ -132,7 +125,7 @@
   {
     "role": "Database Engineer, Lead",
     "policies": [
-      "incident-response/.+"
+      "incident_response/.+"
     ]
   },
   {
@@ -148,7 +141,7 @@
     "role": "Host Engineer, Lead",
     "policies": [
       "security/.+Access Management.*",
-      "incident-response/.+"
+      "incident_response/.+"
     ]
   },
   {
@@ -163,7 +156,7 @@
   {
     "role": "Network Engineer, Lead",
     "policies": [
-      "incident-response/.+"
+      "incident_response/.+"
     ]
   },
   {
@@ -187,7 +180,7 @@
   {
     "role": "DevOps Engineer, Lead",
     "policies": [
-      "incident-response/.+"
+      "incident_response/.+"
     ]
   },
   {
@@ -222,9 +215,8 @@
   {
     "role": "Policy Engineer",
     "policies": [
-      "information_security/policy/Data Management Policy",
-      "information_security/standards/Confidential Data Handling Standards",
-      "information_security/standards/Data Classification and Inventory Standards",
+      "information_security/policies/.+",
+      "information_security/standards/Data .+ Standards",
       "policy/.+",
       "projects/.+",
       "security/.+"
