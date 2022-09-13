@@ -1,0 +1,245 @@
+[
+  {
+    "role": "Staff",
+    "policies": [
+      "staff/acceptable-use/.+",
+      "security/Staff Security Cheat Sheet",
+      "staff/policy/Information User Policy",
+      "staff/policy/Travel and Business Expense Policy"
+    ]
+  },
+  {
+    "role": "Access Manager",
+    "policies": [
+      "security/.+Access Management.*"
+    ]
+  },
+  {
+    "role": "Projects Technical Adiminstrator",
+    "policies": []
+  },
+  {
+    "role": "Staff Account Manager",
+    "policies": [
+      "security/.+Access Management.*"
+    ]
+  },
+  {
+    "role": "IT Personnel",
+    "policies": [
+      "information_security/.+"
+    ]
+  },
+  {
+    "role": "Senior Management Team",
+    "policies": [
+      "security/.+",
+      "information_security/policy/Data Management Policy",
+      "information_security/standards/Confidential Data Handling Standards",
+      "information_security/standards/Data Classification and Inventory Standards",
+      "projects/policy/Change Control Policy",
+      "incident-response/.+"
+    ]
+  },
+  {
+    "role": "Executive Officer",
+    "policies": [
+      "information_security/policy/Data Management Policy",
+      "information_security/standards/Confidential Data Handling Standards",
+      "information_security/standards/Data Classification and Inventory Standards"
+    ]
+  },
+  {
+    "role": "Accountant",
+    "policies": [
+      "information_security/policy/Data Management Policy",
+      "information_security/standards/Confidential Data Handling Standards",
+      "information_security/standards/Data Classification and Inventory Standards"
+    ]
+  },
+  {
+    "role": "Corporate Controller",
+    "policies": [
+      "security/.+Access Management.*"
+    ]
+  },
+  {
+    "role": "Customer Service Agent",
+    "policies": [
+      "customer-support/.+",
+      "information_security/policy/Data Management Policy",
+      "information_security/standards/Confidential Data Handling Standards",
+      "information_security/standards/Data Classification and Inventory Standards"
+    ]
+  },
+  {
+    "role": "Customer Service Manager",
+    "policies": [
+      "security/.+Access Management.*"
+    ]
+  },
+  {
+    "role": "Human Resources Agent",
+    "policies": [
+      "information_security/policy/Data Management Policy",
+      "information_security/standards/Confidential Data Handling Standards",
+      "information_security/standards/Data Classification and Inventory Standards"
+    ]
+  },
+  {
+    "role": "Head of Human Resources",
+    "policies": [
+      "security/.+Access Management.*"
+    ]
+  },
+  {
+    "role": "Product Manager",
+    "policies": [
+      "projects/.+"
+    ]
+  },
+  {
+    "role": "Project Manager",
+    "policies": [
+      "projects/.+"
+    ]
+  },
+  {
+    "role": "Software Engineer",
+    "policies": [
+      "information_security/.+",
+      "security/.+",
+      "security/.*Access Management.*",
+      "projects/.+",
+      "devops/code/.+"
+    ]
+  },
+  {
+    "role": "Software Engineer, Lead",
+    "policies": [
+      "security/.+Access Management.*",
+      "incident-response/.+"
+    ]
+  },
+  {
+    "role": "Database Engineer",
+    "policies": [
+      "information_security/.+",
+      "security/.+",
+      "projects/.+"
+    ]
+  },
+  {
+    "role": "Database Engineer, Lead",
+    "policies": [
+      "incident-response/.+"
+    ]
+  },
+  {
+    "role": "Host Engineer",
+    "policies": [
+      "information_security/.+",
+      "hosts/.+",
+      "projects/.+",
+      "security/.+"
+    ]
+  },
+  {
+    "role": "Host Engineer, Lead",
+    "policies": [
+      "security/.+Access Management.*",
+      "incident-response/.+"
+    ]
+  },
+  {
+    "role": "Network Engineer",
+    "policies": [
+      "information_security/.+",
+      "devops/networks/.+",
+      "projects/.+",
+      "security/.+"
+    ]
+  },
+  {
+    "role": "Network Engineer, Lead",
+    "policies": [
+      "incident-response/.+"
+    ]
+  },
+  {
+    "role": "Head of Technical Operations",
+    "policies": [
+      "information_security/.+",
+      "devops/.+",
+      "projects/.+",
+      "security/.+"
+    ]
+  },
+  {
+    "role": "DevOps Engineer",
+    "policies": [
+      "information_security/.+",
+      "devops/.+",
+      "projects/.+",
+      "security/.+"
+    ]
+  },
+  {
+    "role": "DevOps Engineer, Lead",
+    "policies": [
+      "incident-response/.+"
+    ]
+  },
+  {
+    "role": "Cloud Engineer",
+    "policies": [
+      "information_security/.+",
+      "cloud/.+",
+      "projects/.+",
+      "security/.+"
+    ]
+  },
+  {
+    "role": "Cloud Engineer, Lead",
+    "policies": [
+      "security/.+Access Management.*"
+    ]
+  },
+  {
+    "role": "Security Officer",
+    "policies": [
+      ".+"
+    ]
+  },
+  {
+    "role": "Internal IT, Lead",
+    "policies": [
+      "information_security/.+",
+      "security/Hardening Framework",
+      "user_devices/.*"
+    ]
+  },
+  {
+    "role": "Policy Engineer",
+    "policies": [
+      "information_security/policy/Data Management Policy",
+      "information_security/standards/Confidential Data Handling Standards",
+      "information_security/standards/Data Classification and Inventory Standards",
+      "policy/.+",
+      "projects/.+",
+      "security/.+"
+    ]
+  },
+  {
+    "role": "Policy Engineer, Lead",
+    "policies": [
+      ".+"
+    ]
+  },
+  {
+    "role": "Sensitive Data Handler",
+    "policies": [
+      "information_security/.+"
+    ]
+  }
+]
