@@ -529,7 +529,7 @@
   },
   {
     "name": "Software Engineer",
-    "superRole": "IT Personnel",
+    "superRole": "Engineer",
     "titular": true,
     "qualifiable": true,
     "matcher": {
@@ -569,7 +569,7 @@
   },
   {
     "name": "Database Engineer",
-    "superRole": "IT Personnel",
+    "superRole": "Engineer",
     "titular": true,
     "qualifiable": true,
     "summary": "Qualified to modify, review, and manage [qual] database schemas and DBMSs."
@@ -604,7 +604,7 @@
   },
   {
     "name": "Host Engineer",
-    "superRole": "IT Personnel",
+    "superRole": "Engineer",
     "titular": true,
     "qualifiable": true,
     "summary": "Qualified to configure and management of [qual] hosts systems."
@@ -635,7 +635,7 @@
   },
   {
     "name": "DevOps Engineer",
-    "superRole": "IT Personnel",
+    "superRole": "Release Engineer",
     "titular": true,
     "qualifiable": true,
     "matcher": {
@@ -673,7 +673,7 @@
   },
   {
     "name": "Network Engineer",
-    "superRole": "IT Personnel",
+    "superRole": "Engineer",
     "titular": true,
     "qualifiable": true,
     "summary": "Qualified to configure and manage Company networks.",
@@ -722,7 +722,7 @@
   },
   {
     "name": "Cloud Engineer",
-    "superRole": "IT Personnel",
+    "superRole": "Engineer",
     "titular": true,
     "qualifiable": true,
     "summary": "Qualified to configure and manage [qual] cloud services.",
@@ -762,7 +762,7 @@
   },
   {
     "name": "Quality Engineer",
-    "superRole": "IT Personnel",
+    "superRole": "Engineer",
     "titular": true,
     "qualifiable": true,
     "matcher": {
@@ -1041,11 +1041,7 @@
   },
   {
     "name": "IT Personnel",
-    "aliases": [
-      "Engineering"
-    ],
     "designated": true,
-    "enumerate": "never",
     "abstract": true,
     "summary": "Any individual working within a technical capacity within the company.",
     "enumerate": "when used",
@@ -1054,6 +1050,23 @@
         "name": "Background checked, criminal"
       }
     ]
+  },
+  {
+    "name": "Engineer",
+    "aliases": [ "Developer" ],
+    "superRole": "IT Personnel",
+    "designated": true,
+    "abstract": true,
+    "summary": "An individual who builds, maintains, deploys, and/or tests company software and/or services.",
+    "enumerate": "when used"
+  },
+  {
+    "name": "Release Engineer",
+    "superRole": "Engineer",
+    "designated": true,
+    "abstract": true,
+    "summary": "An engineer who develops, overseas, and/or maintains at least some aspects of the CI/CD and release process.",
+    "enumerate": "when used"
   },
   {
     "name": "Head of Security & Compliance",
