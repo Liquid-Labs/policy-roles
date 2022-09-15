@@ -9,6 +9,8 @@
   {
     "role": "Access Manager",
     "policies": [
+      "user_devices/procedures/Password Manager Configuration",
+      "information_security/.*Password"
       "security/.+Access Management.*"
     ]
   },
@@ -25,16 +27,46 @@
   {
     "role": "IT Personnel",
     "policies": [
+      "information_security/.+ Framework",
+      "information_security/policies/.+",
+      "information_security/standards/.*(?:Data|Passwords)",
+      "information_security/procedures/.*(?:Secure|Data)"
+    ]
+  },
+  {
+    "role": "Engineer",
+    "policies": [
       "information_security/.+"
+      "projects/.+ Framework",
+      "projects/.+ Guidelines",
+      "projects/policies/.+",
+      "projects/standards/.+",
+      "projects/procedures/Source Code Modification",
+      "projects/procedures/Task Management",
+      "projects/procedures/git Management",
+      "security/standards/General Security Standards",
+      "security/standards/Log and System Monitoring Standards"
+    ]
+  },
+  {
+    "role": "Release Engineer",
+    "policies": [
+      "projects/Release Audits and Controls References",
+      "projects/procedures/Project Release",
+      "security/procedures/Remote Systems Access"
     ]
   },
   {
     "role": "Senior Management Team",
     "policies": [
-      "security/.+",
+      "security/PCI .+",
+      "security/Security Framework",
+      "security/policies/.+",
+      "security/standards/.*(?:Risk|General|Training)",
+      "security/procedures/Risk Assessment",
+      "security/procedures/Vulnerability Assessment",
       "information_security/policies/.+",
-      "information_security/standards/Data .+ Standards",
-      "information_security/standards/Sensitive Password Standards",
+      "information_security/standards/.*(?:Data|Password)",
       "projects/policies/Change Control Policy",
       "incident_response/.+"
     ]
@@ -43,7 +75,8 @@
     "role": "Executive Officer",
     "policies": [
       "information_security/policies/.+",
-      "information_security/standards/Data .+ Standards"
+      "information_security/standards/Data .+ Standards",
+      "information_security/procedures/Secure Password Management"
     ]
   },
   {
@@ -56,27 +89,32 @@
   {
     "role": "Corporate Controller",
     "policies": [
-      "security/.+Access Management.*"
+      "information_security/.+ Framework",
+      "information_security/policies/.+",
+      "information_security/standards/.*(?:Data|Passwords)",
+      "information_security/procedures/.*(?:Secure|Data)"
     ]
   },
   {
     "role": "Customer Service Agent",
     "policies": [
+      "information_security/.+ Framework",
       "information_security/policies/.+",
-      "information_security/standards/Data .+ Standards"
+      "information_security/standards/.*(?:Data|Passwords)",
+      "information_security/procedures/.*(?:Secure|Data)"
     ]
   },
   {
     "role": "Customer Service Manager",
-    "policies": [
-      "security/.+Access Management.*"
-    ]
+    "policies": []
   },
   {
     "role": "Human Resources Agent",
     "policies": [
+      "information_security/.+ Framework",
       "information_security/policies/.+",
-      "information_security/standards/Data .+ Standards"
+      "information_security/standards/.*(?:Data|Passwords)",
+      "information_security/procedures/.*(?:Secure|Data)"
     ]
   },
   {
@@ -100,27 +138,18 @@
   {
     "role": "Software Engineer",
     "policies": [
-      "information_security/.+",
-      "security/.+",
-      "security/.*Access Management.*",
-      "projects/.+",
       "devops/code/.+"
     ]
   },
   {
     "role": "Software Engineer, Lead",
     "policies": [
-      "security/.+Access Management.*",
       "incident_response/.+"
     ]
   },
   {
     "role": "Database Engineer",
-    "policies": [
-      "information_security/.+",
-      "security/.+",
-      "projects/.+"
-    ]
+    "policies": []
   },
   {
     "role": "Database Engineer, Lead",
@@ -131,10 +160,7 @@
   {
     "role": "Host Engineer",
     "policies": [
-      "information_security/.+",
-      "hosts/.+",
-      "projects/.+",
-      "security/.+"
+      "devops/hosts/.+"
     ]
   },
   {
@@ -147,10 +173,7 @@
   {
     "role": "Network Engineer",
     "policies": [
-      "information_security/.+",
-      "devops/networks/.+",
-      "projects/.+",
-      "security/.+"
+      "devops/networks/.+"
     ]
   },
   {
@@ -162,19 +185,21 @@
   {
     "role": "Head of Technical Operations",
     "policies": [
-      "information_security/.+",
       "devops/.+",
-      "projects/.+",
       "security/.+"
     ]
   },
   {
     "role": "DevOps Engineer",
     "policies": [
-      "information_security/.+",
       "devops/.+",
-      "projects/.+",
-      "security/.+"
+      "security/.+ Framework",
+      "security/standards/System Access Standards",
+      "security/procedures/.*AWS .+",
+      "security/procedures/.*IAM .+",
+      "security/procedures/.*Logging .+",
+      "security/procedures/Access Management",
+      "security/procedures/Remote Systems Access"
     ]
   },
   {
@@ -186,16 +211,20 @@
   {
     "role": "Cloud Engineer",
     "policies": [
-      "information_security/.+",
-      "cloud/.+",
-      "projects/.+",
-      "security/.+"
+      "devops/cloud/.+",
+      "security/.+ Framework",
+      "security/standards/System Access Standards",
+      "security/procedures/.*(?:IAM|AWS)",
+      "security/procedures/.*Logging .+",
+      "security/procedures/Access Management",
+      "security/procedures/Update Access",
+      "security/procedures/Remote Systems Access"
     ]
   },
   {
     "role": "Cloud Engineer, Lead",
     "policies": [
-      "security/.+Access Management.*"
+      "incident_response/.+"
     ]
   },
   {
@@ -207,7 +236,6 @@
   {
     "role": "Internal IT, Lead",
     "policies": [
-      "information_security/.+",
       "security/Hardening Framework",
       "user_devices/.*"
     ]
@@ -231,7 +259,10 @@
   {
     "role": "Sensitive Data Handler",
     "policies": [
-      "information_security/.+"
+      "information_security/.+ Framework",
+      "information_security/policies/.+",
+      "information_security/standards/.*(?:Data|Passwords)",
+      "information_security/procedures/.*(?:Secure|Data)"
     ]
   }
 ]
