@@ -22,6 +22,7 @@
     "titular": true,
     "singular": true,
     "selfManaged": true,
+    "external": true,
     "summary": "Appoints and monitors the Chief Executive Officer and the general health of the Company."
   },
   {
@@ -380,7 +381,7 @@
         "mngrProtocol": "self"
       }
     ],
-    "summary": "Oversees all client implementations."
+    "summary": "Oversees all client implementations from a business perspective."
   },
   {
     "name": "Implementations Manager",
@@ -1095,12 +1096,20 @@
   {
     "name": "Outside Counsel",
     "titular": true,
+    "external": true,
     "summary": "Legal counsel hired by and directly reporting to the Board of Directors."
   },
   {
     "name": "External Auditors",
     "titular": true,
+    "external": true,
     "summary": "Perform financial audits and report directly to the Board of Directors."
+  },
+  {
+    "name": "External Consultant",
+    "designated": true,
+    "external": true,
+    "summary": "Marks the contractor as external to the company."
   },
   {
     "name": "Financial Analyst",
@@ -1212,5 +1221,10 @@
     "name": "Outside Consultant",
     "designated": true,
     "summary": "A consultant who operates outside the Company. One or more staff members within the Company are responsible for the Outside Consultant's work. The Outside Consultant is generally excluded from training requirements."
+  },
+  {
+    "name": "System Architect",
+    "designated": true,
+    "summary": "Designs applications and environments."
   }
 ]
