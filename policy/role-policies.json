@@ -10,7 +10,7 @@
     "role": "Access Manager",
     "policies": [
       "user_devices/procedures/Password Manager Configuration",
-      "information_security/.*Password"
+      "information_security/.*Password",
       "security/.+Access Management.*"
     ]
   },
@@ -27,7 +27,7 @@
   {
     "role": "IT Personnel",
     "policies": [
-      "information_security/.+ Framework",
+      "information_security/(Data|Information)[^/]* Framework",
       "information_security/policies/.+",
       "information_security/standards/.*(?:Data|Passwords)",
       "information_security/procedures/.*(?:Secure|Data)"
@@ -36,7 +36,7 @@
   {
     "role": "Engineer",
     "policies": [
-      "information_security/.+"
+      "information_security/.+",
       "projects/.+ Framework",
       "projects/.+ Guidelines",
       "projects/policies/.+",
@@ -89,7 +89,7 @@
   {
     "role": "Corporate Controller",
     "policies": [
-      "information_security/.+ Framework",
+      "information_security/(Data|Information)[^/]* Framework",
       "information_security/policies/.+",
       "information_security/standards/.*(?:Data|Passwords)",
       "information_security/procedures/.*(?:Secure|Data)"
@@ -98,7 +98,7 @@
   {
     "role": "Customer Service Agent",
     "policies": [
-      "information_security/.+ Framework",
+      "information_security/(Data|Information)[^/]* Framework",
       "information_security/policies/.+",
       "information_security/standards/.*(?:Data|Passwords)",
       "information_security/procedures/.*(?:Secure|Data)"
@@ -111,7 +111,7 @@
   {
     "role": "Human Resources Agent",
     "policies": [
-      "information_security/.+ Framework",
+      "information_security/(Data|Information)[^/]* Framework",
       "information_security/policies/.+",
       "information_security/standards/.*(?:Data|Passwords)",
       "information_security/procedures/.*(?:Secure|Data)"
@@ -133,6 +133,34 @@
     "role": "Project Manager",
     "policies": [
       "projects/.+"
+    ]
+  },
+  {
+    "role": "Head of Research & Development",
+    "policies": [
+      "incident_response/.+",
+      "information_security/(Data|Information)[^/]* Framework",
+      "information_security/policies/.+",
+      "information_security/standards/.*(?:Data|Passwords)",
+      "information_security/procedures/.*(?:Secure|Data)",
+      "security/.+Access Management.*",
+      "security/standards/System Access Standards",
+      "security/procedures/Access Management",
+      "security/procedures/Update Access"
+    ]
+  },
+  {
+    "role": "Head of Platform Development",
+    "policies": [
+      "incident_response/.+",
+      "information_security/(Data|Information)[^/]* Framework",
+      "information_security/policies/.+",
+      "information_security/standards/.*(?:Data|Passwords)",
+      "information_security/procedures/.*(?:Secure|Data)",
+      "security/.+Access Management.*",
+      "security/standards/System Access Standards",
+      "security/procedures/Access Management",
+      "security/procedures/Update Access"
     ]
   },
   {
@@ -166,8 +194,12 @@
   {
     "role": "Host Engineer, Lead",
     "policies": [
+      "incident_response/.+",
       "security/.+Access Management.*",
-      "incident_response/.+"
+      "security/standards/System Access Standards",
+      "security/procedures/Access Management",
+      "security/procedures/Update Access",
+      "security/procedures/Remote Systems Access"
     ]
   },
   {
@@ -179,7 +211,12 @@
   {
     "role": "Network Engineer, Lead",
     "policies": [
-      "incident_response/.+"
+      "incident_response/.+",
+      "security/.+Access Management.*",
+      "security/standards/System Access Standards",
+      "security/procedures/Access Management",
+      "security/procedures/Update Access",
+      "security/procedures/Remote Systems Access"
     ]
   },
   {
@@ -194,18 +231,20 @@
     "policies": [
       "devops/.+",
       "security/.+ Framework",
-      "security/standards/System Access Standards",
       "security/procedures/.*AWS .+",
       "security/procedures/.*IAM .+",
-      "security/procedures/.*Logging .+",
-      "security/procedures/Access Management",
-      "security/procedures/Remote Systems Access"
+      "security/procedures/.*Logging .+"
     ]
   },
   {
     "role": "DevOps Engineer, Lead",
     "policies": [
-      "incident_response/.+"
+      "incident_response/.+",
+      "security/.+Access Management.*",
+      "security/standards/System Access Standards",
+      "security/procedures/Access Management",
+      "security/procedures/Update Access",
+      "security/procedures/Remote Systems Access"
     ]
   },
   {
@@ -213,18 +252,19 @@
     "policies": [
       "devops/cloud/.+",
       "security/.+ Framework",
-      "security/standards/System Access Standards",
       "security/procedures/.*(?:IAM|AWS)",
-      "security/procedures/.*Logging .+",
-      "security/procedures/Access Management",
-      "security/procedures/Update Access",
-      "security/procedures/Remote Systems Access"
+      "security/procedures/.*Logging .+"
     ]
   },
   {
     "role": "Cloud Engineer, Lead",
     "policies": [
-      "incident_response/.+"
+      "incident_response/.+",
+      "security/.+Access Management.*",
+      "security/standards/System Access Standards",
+      "security/procedures/Access Management",
+      "security/procedures/Update Access",
+      "security/procedures/Remote Systems Access"
     ]
   },
   {
@@ -237,7 +277,11 @@
     "role": "Internal IT, Lead",
     "policies": [
       "security/Hardening Framework",
-      "user_devices/.*"
+      "user_devices/.*",
+      "security/.+Access Management.*",
+      "security/standards/System Access Standards",
+      "security/procedures/Access Management",
+      "security/procedures/Update Access"
     ]
   },
   {
@@ -257,12 +301,31 @@
     ]
   },
   {
+    "role": "Production Administrator",
+    "policies": [
+      "incident_response/.+",
+      "information_security/.+",
+      "security/.+Access Management.*",
+      "security/standards/System Access Standards",
+      "security/procedures/Access Management",
+      "security/procedures/Update Access",
+      "security/procedures/Remote Systems Access"
+    ]
+  },
+  {
     "role": "Sensitive Data Handler",
     "policies": [
-      "information_security/.+ Framework",
+      "information_security/(Data|Information)[^/]* Framework",
       "information_security/policies/.+",
       "information_security/standards/.*(?:Data|Passwords)",
       "information_security/procedures/.*(?:Secure|Data)"
+    ]
+  },
+  {
+    "role": "System Architect",
+    "policies": [
+      "devops/.*Framework",
+      "devops/networks/.*Network Structure"
     ]
   }
 ]
