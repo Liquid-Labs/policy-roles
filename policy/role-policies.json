@@ -3,7 +3,8 @@
     "role": "Staff",
     "policies": [
       "staff/policies/Acceptable Use Policy",
-      "information_security/Security Cheat Sheet"
+      "information_security/policies/Information Security Policy",
+      "information_security/Staff Acknowledgement of the Company Information Security Policy"
     ]
   },
   {
@@ -146,7 +147,7 @@
       "security/.+Access Management.*",
       "security/standards/System Access Standards",
       "security/procedures/Access Management",
-      "security/procedures/Update Access"
+      "security/procedures/Update Sensitive Access"
     ]
   },
   {
@@ -160,7 +161,7 @@
       "security/.+Access Management.*",
       "security/standards/System Access Standards",
       "security/procedures/Access Management",
-      "security/procedures/Update Access"
+      "security/procedures/Update Sensitive Access"
     ]
   },
   {
@@ -198,7 +199,7 @@
       "security/.+Access Management.*",
       "security/standards/System Access Standards",
       "security/procedures/Access Management",
-      "security/procedures/Update Access",
+      "security/procedures/Update Sensitive Access",
       "security/procedures/Remote Systems Access"
     ]
   },
@@ -215,7 +216,7 @@
       "security/.+Access Management.*",
       "security/standards/System Access Standards",
       "security/procedures/Access Management",
-      "security/procedures/Update Access",
+      "security/procedures/Update Sensitive Access",
       "security/procedures/Remote Systems Access"
     ]
   },
@@ -243,7 +244,7 @@
       "security/.+Access Management.*",
       "security/standards/System Access Standards",
       "security/procedures/Access Management",
-      "security/procedures/Update Access",
+      "security/procedures/Update Sensitive Access",
       "security/procedures/Remote Systems Access"
     ]
   },
@@ -263,7 +264,7 @@
       "security/.+Access Management.*",
       "security/standards/System Access Standards",
       "security/procedures/Access Management",
-      "security/procedures/Update Access",
+      "security/procedures/Update Sensitive Access",
       "security/procedures/Remote Systems Access"
     ]
   },
@@ -281,7 +282,7 @@
       "security/.+Access Management.*",
       "security/standards/System Access Standards",
       "security/procedures/Access Management",
-      "security/procedures/Update Access"
+      "security/procedures/Update Sensitive Access"
     ]
   },
   {
@@ -308,7 +309,7 @@
       "security/.+Access Management.*",
       "security/standards/System Access Standards",
       "security/procedures/Access Management",
-      "security/procedures/Update Access",
+      "security/procedures/Update Sensitive Access",
       "security/procedures/Remote Systems Access"
     ]
   },
