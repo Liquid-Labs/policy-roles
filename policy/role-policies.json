@@ -9,7 +9,7 @@
   {
     "role": "Access Manager",
     "policies": [
-      "user_devices/procedures/Password Manager Configuration",
+      "user_devices/procedures/Password Manager Usage",
       "information_security/.*Password",
       "security/.+Access Management.*"
     ]
