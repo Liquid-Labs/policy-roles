@@ -546,8 +546,7 @@
     "titular": true,
     "qualifiable": true,
     "matcher": {
-      "pattern": "(Senior|Snr\\.?|Sr\\.?) ((.+) +)?(Software (Engineer|Developer)|Developer)",
-      "qualifierGroup": 3
+      "pattern": "(?:Senior|Snr\\.?|Sr\\.?) (?:(.+) +)?(?:Software (?:Engineer|Developer)|Developer)"
     },
     "summary": "Qualified to review and approve changes to sensitive [qual] code."
   },
@@ -767,9 +766,8 @@
     "titular": true,
     "qualifiable": true,
     "matcher": {
-      "pattern": "(?:Junior|Jnr\\.?|Jr\\.? *)?(?:(.+) +)?(?:(?:Quality|QA) +Engineer|Tester)",
-      "antiPattern": "Senior|Snr\\.?|Sr\\.?|Lead|Head",
-      "qualifierGroup": 1
+      "pattern": "(?:Junior|Jnr\\.?|Jr\\.? *)?(?:(.+) +)?(?:(?:Quality|QA) +Engineer|(?:Software +)?Tester)",
+      "antiPattern": "Senior|Snr\\.?|Sr\\.?|Lead|Head"
     },
     "summary": "Qualified to ascertain correctness and conformance of Company products."
   },
@@ -779,9 +777,8 @@
     "titular": true,
     "qualifiable": true,
     "matcher": {
-      "pattern": "(?:Senior|Snr\\.?|Sr\\.?) *(?:(.+) +)?(?:(?:Quality|QA) +?Engineer|Tester)",
-      "antiPattern": "Junior|Jnr\\.?|Jr\\.?|Lead|Head",
-      "qualifierGroup": 1
+      "pattern": "(?:Senior|Snr\\.?|Sr\\.?) *(?:(.+) +)?(?:(?:Quality|QA) +?Engineer|(?:Software +)?Tester)",
+      "antiPattern": "Junior|Jnr\\.?|Jr\\.?|Lead|Head"
     },
     "summary": "Qualified to review and approve changes [qual] quality systems."
   },
@@ -790,7 +787,7 @@
     "superRole": "Quality Engineer, Senior",
     "titular": true,
     "matcher": {
-      "pattern": "(?:(?:Head|Lead|Chief) +)?(?:(.+) +)?(?:Quality|QA|Tester) +(?:Engineer|Lead)",
+      "pattern": "(?:(?:Head|Lead|Chief) +)?(?:(.+) +)?(?:Quality|QA|(?:Software +)?Tester) +(?:Engineer|Lead)",
       "antiPattern": "Senior|Snr\\.?|Sr\\.?|Junior|Jnr\\.|Jr\\.",
       "qualifierGroup": 1
     },
