@@ -2,7 +2,7 @@
   {
     "role": "Staff",
     "policies": [
-      "staff/policies/Acceptable Use Policy",
+      "information_security/policies/Acceptable Use Policy",
       "information_security/policies/Information Security Policy",
       "information_security/Staff Acknowledgement of the Company Information Security Policy"
     ]
