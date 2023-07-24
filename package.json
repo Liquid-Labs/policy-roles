@@ -28,7 +28,7 @@
     "@liquid-labs/bash-toolkit": "^1.0.0-alpha.50",
     "@liquid-labs/catalyst-scripts": "^1.0.0-alpha.50",
     "@liquid-labs/orgs-model": "^1.0.0-beta.74",
-    "@liquid-labs/policy-projects": "^1.0.0-alpha.36"
+    "@liquid-labs/policy-projects": "file:.yalc/@liquid-labs/policy-projects"
   },
   "dependencies": {
     "fs": "^0.0.2"
