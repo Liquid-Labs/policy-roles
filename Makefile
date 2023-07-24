@@ -2,9 +2,8 @@ SHELL=/bin/bash -o pipefail
 .DELETE_ON_ERROR:
 .PHONY: all test lint qa example clean
 
-NPM_BIN:=$(shell npm bin)
-CATALYST_SCRIPTS:=$(NPM_BIN)/catalyst-scripts
-BASH_ROLLUP:=$(NPM_BIN)/bash-rollup
+CATALYST_SCRIPTS:=npx catalyst-scripts
+BASH_ROLLUP:=npx bash-rollup
 SPACE:=$(null) $(null)
 
 TEST_MARKER:=$(shell OUTPUT=$(git status --porcelain) && [ -z "${OUTPUT}" ] && git rev-parse HEAD || echo 'working')
