@@ -1,0 +1,15 @@
+Test git rev: 281dd3107ebce4abf6afe98d80c304dd9aba7226
+PASS test/roles.test.js
+  roles.json
+    ✓ is successfully parsed (11 ms)
+
+----------|---------|----------|---------|---------|-------------------
+File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+----------|---------|----------|---------|---------|-------------------
+All files |       0 |        0 |       0 |       0 |                   
+----------|---------|----------|---------|---------|-------------------
+Test Suites: 1 passed, 1 total
+Tests:       1 passed, 1 total
+Snapshots:   0 total
+Time:        0.333 s, estimated 1 s
+Ran all test suites.
