@@ -1,129 +1,5 @@
 [
   {
-    "name": "Staff",
-    "designated": true,
-    "enumerate": "never",
-    "summary": "All staff members. Note, this role is assigned based on employment status and should not be directly assigned."
-  },
-  {
-    "name": "Employee",
-    "designated": true,
-    "enumerate": "never",
-    "summary": "All W-2 staff. Note, this role is assigned based on employment status and should not be directly assigned."
-  },
-  {
-    "name": "Contractor",
-    "designated": true,
-    "enumerate": "never",
-    "summary": "All 1099 staff. Note, this role is assigned based on employment status and should not be directly assigned."
-  },
-  {
-    "name": "Board of Directors",
-    "titular": true,
-    "singular": true,
-    "selfManaged": true,
-    "external": true,
-    "summary": "Appoints and monitors the Chief Executive Officer and the general health of the Company."
-  },
-  {
-    "name": "Board Member",
-    "titular": true,
-    "summary": "Serves on the Board of Directors"
-  },
-  {
-    "name": "Chairman of the Board",
-    "singular": true,
-    "titular": true,
-    "superRole": "Board Member",
-    "implies": [
-      {
-        "name": "Board Member",
-        "mngrProtocol": "same"
-      }
-    ],
-    "summary": "Chairs meetings of the Board of Directors."
-  },
-  {
-    "name": "Senior Management",
-    "designated": true,
-    "summary": "A high level management position. Senior management is expected have expertise within their own domain, as well as strong general knowledge of general Company processes across all departments.",
-    "implies": [
-      {
-        "name": "Vendor Management Team"
-      },
-      {
-        "name": "Background checked, criminal"
-      },
-      {
-        "name": "Background checked, credit"
-      }
-    ]
-  },
-  {
-    "name": "Executive Officer",
-    "superRole": "Senior Vice President",
-    "designated": true,
-    "duties": {
-      "business": [ "strategic vendor management" ]
-    },
-    "summary": "Executive Officers wield executive decision making power."
-  },
-  {
-    "name": "Executive Vice President",
-    "designated": true,
-    "superRole": "Senior Vice President",
-    "enumerate": "never",
-    "implies": [
-      {
-        "name": "Executive Officer",
-        "mngrProtocol": "self"
-      }
-    ],
-    "summary": "Executive Officers wield executive decision making power."
-  },
-  {
-    "name": "Senior Vice President",
-    "superRole": "Senior Management",
-    "designated": true,
-    "enumerate": "when used",
-    "summary": "The most senior, non-executive manager."
-  },
-  {
-    "name": "Chief Executive Officer",
-    "aliases": [
-      "CEO"
-    ],
-    "singular": true,
-    "titular": true,
-    "implies": [
-      {
-        "name": "Senior Management Team",
-        "mngrProtocol": "self"
-      },
-      {
-        "name": "Executive Officer",
-        "mngrProtocol": "self"
-      }
-    ],
-    "summary": "The highest ranking company executive with final responsibility for major strategic decisions and management of operation and corporate resources. Acts as primary contact between the Board of Directors and corporate operations. The CEO is also the \"public face\" of the company."
-  },
-  {
-    "name": "President",
-    "singular": true,
-    "titular": true,
-    "implies": [
-      {
-        "name": "Executive Officer",
-        "mngrProtocol": "self"
-      },
-      {
-        "name": "Senior Management Team",
-        "mngrProtocol": "self"
-      }
-    ],
-    "summary": "Oversees critical business operations."
-  },
-  {
     "name": "Chief Operating Officer",
     "aliases": [
       "COO"
@@ -476,18 +352,6 @@
     "summary": "Oversees personnel management and compliance."
   },
   {
-    "name": "Chief Product Officer",
-    "aliases": [ "CPO" ],
-    "titular": true,
-    "singular": true,
-    "summary": "Oversees strategic product planning and short to medium term feature proritization."
-  },
-  {
-    "name": "Product Manager",
-    "titular": true,
-    "summary": "Responsible for coordinating stakeholder input and managing product specification and setting development priorities."
-  },
-  {
     "name": "UI Designer",
     "titular": true,
     "summary": "Produces style guidelines, graphic/UI assets, mockups, and similar artifacts to guide and support implementation of front-end user interface."
@@ -794,11 +658,6 @@
     "summary": "Has final responsibility for quality assurance."
   },
   {
-    "name": "Project Manager",
-    "titular": true,
-    "summary": "Responsible for working with implementation product management to optimize implementation with regard to efficiency and stakeholder priorities."
-  },
-  {
     "name": "Customer Service Agent",
     "titular": true,
     "summary": "Responsible for handling of customer service requests."
@@ -988,27 +847,6 @@
     "enumerate": "when used"
   },
   {
-    "name": "Senior Management Team",
-    "aliases": [
-      "SMT"
-    ],
-    "designated": true,
-    "duties": {
-      "business": [ "senior management team" ]
-    },
-    "summary": "Annually reviews Company compliance and key processes.",
-    "enumerate": "always"
-  },
-  {
-    "name": "Vendor Management Team",
-    "designated": true,
-    "duties": {
-      "vendors": [ "vendor manager" ]
-    },
-    "summary": "Maintains and enforces procedures to ensure that important vendor and product information is properly maintained on an ongoing basis.",
-    "enumerate": "always"
-  },
-  {
     "name": "Incident Response Team",
     "summary": "Members are on call to respond to significant incidents",
     "aliases": [
@@ -1183,18 +1021,6 @@
       "pattern": "((Senior|Snr\\.?|Sr\\.?( +Executive)?|Junior|Jnr\\.?|Jr\\.?)?[ -]+)Recruit(er|ment)"
     },
     "summary": "Recruits new talent to the team."
-  },
-  {
-    "name": "Background checked, criminal",
-    "designated": true,
-    "enumerate": "never",
-    "summary": "Positions where a criminal background check is required."
-  },
-  {
-    "name": "Background checked, credit",
-    "designated": true,
-    "enumerate": "never",
-    "summary": "Positions where a credit background check is required."
   },
   {
     "name": "Policy Document Manager",

@@ -8,7 +8,8 @@
     "preversion": "make all && make qa",
     "postversion": "git push upstream v${npm_package_version}",
     "lint": "make lint",
-    "lint:fix": "catalyst-scripts lint-fix"
+    "lint:fix": "catalyst-scripts lint-fix",
+    "qa": "make qa"
   },
   "files": [
     "policy/"
@@ -24,14 +25,8 @@
   },
   "homepage": "https://github.com/liquid-labs/policy-core#readme",
   "devDependencies": {
-    "@liquid-labs/bash-rollup": "^1.0.0-alpha.4+0fedf46f",
-    "@liquid-labs/bash-toolkit": "^1.0.0-alpha.50",
-    "@liquid-labs/catalyst-scripts": "^1.0.0-alpha.50",
-    "@liquid-labs/orgs-model": "^1.0.0-beta.74",
-    "@liquid-labs/policy-projects": "^1.0.0-alpha.36"
-  },
-  "dependencies": {
-    "fs": "^0.0.2"
+    "@liquid-labs/catalyst-scripts-node-project": "^1.0.0-alpha.20",
+    "@liquid-labs/liq-roles": "^1.0.0-alpha.7"
   },
   "liq": {
     "orgBase": "git@github.com:liquid-labs/Liquid-Labs.git",
